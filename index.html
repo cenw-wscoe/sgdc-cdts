@@ -11,17 +11,23 @@
 		<!-- Meta data-->
 		<!-- Load closure template scripts -->
 		<script type="text/javascript" src="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_27/cdts/compiled/soyutils.js"></script>
-		<script type="text/javascript" src="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_27/cdts/compiled/wet-en.text.js"></script>
-		<noscript>
+		<script type="text/javascript" src="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_27/cdts/compiled/wet-en.test.js"></script>
+		<noscript id="ref-top">
 			<!-- Write closure fall-back static file -->
 			<!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_27/cdts/static/refTop.html -->
 		</noscript>
 		<!-- Write closure template -->
-		<script type="text/javascript" async>
+		<script type="text/javascript">
+			var refTop = document.getElementById("ref-top");
+			refTop.outerHTML = wet.builder.refTop({
+				"cdnEnv": "esdcprod"
+			});
+		</script>
+		<!-- <script type="text/javascript" async>
 			document.write(wet.builder.refTop({
 				"cdnEnv": "esdcprod"
 			}));
-		</script>
+		</script> -->
 	</head>
 	<body vocab="http://schema.org/" typeof="WebPage">
 		<div id="def-top">
