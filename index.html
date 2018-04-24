@@ -10,8 +10,8 @@
 		<meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
 		<!-- Meta data-->
 		<!-- Load closure template scripts -->
-		<script type="text/javascript" src="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_27/cdts/compiled/soyutils.js"></script>
-		<script type="text/javascript" src="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_27/cdts/compiled/wet-en.test.js"></script>
+		<script type="text/javascript" src="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_27/cdts/compiled/soyutils.js" async></script>
+		<script type="text/javascript" src="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_27/cdts/compiled/wet-en.test.js" async></script>
 		<noscript id="ref-top">
 			<!-- Write closure fall-back static file -->
 			<!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_27/cdts/static/refTop.html -->
@@ -183,20 +183,20 @@
 			});
 		</script>
 
-		<script type="text/javascript">
+		<!-- <script type="text/javascript">
 			document.write(wet.builder.refFooter({
 				"cdnEnv": "esdcprod"
 			}));
-		</script>
+		</script> -->
 
 		<!-- Write closure template -->
-		<!-- <div id="ref-footer">
+		<div id="ref-footer">
 		</div>
 		<script type="text/javascript">
 			var refFooter = document.getElementById("ref-footer");
 			refFooter.outerHTML = wet.builder.refFooter({
 				"cdnEnv": "esdcprod"
 			});
-		</script> -->
+		</script>
 	</body>
 </html>
