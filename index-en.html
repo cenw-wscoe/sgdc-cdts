@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+		<title>Centrally Deployed Templates Solution (CDTS)</title>
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<!-- Meta data -->
+		<meta name="description" content="Centrally Deployed Templates Solution (CDTS)">
+		<!-- Meta data-->
+		<!-- Load closure template scripts -->
+		<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/soyutils.js"></script>
+		<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/wet-en.js"></script>
+
+
+		<!-- Write closure template -->
+		<script>
+			document.write(wet.builder.refTop({
+				"isApplication": true
+			}));
+		</script>
+	</head>
+	<body vocab="http://schema.org/" typeof="WebPage">
+		<div id="def-top">
+		</div>
+		<!-- Write closure template -->
+		<script>
+			var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.appTop({
+				"cdnEnv": "prod",
+				"breadcrumbs": [{title: "Home", href: "./index-en.html"}],
+				"appName": [{"text": "Centrally Deployed Templates Solution (CDTS)", "href": "./index-en.html"}],
+                "lngLinks": [{"lang": "fr",	"href": "index-fr.html", "text": "Français"}],
+                "menuPath": "./ajax/cdtsMenu-en.html"
+			});
+		</script>
+		<main role="main" property="mainContentOfPage" class="container">
+            <h1 property="name" id="wb-cont">Centrally Deployed Templates Solution (CDTS)</h1>
+            <p>CDTS: Centrally Deployed Templates Solution, IITB Branch Award: Excellence in Transforming our Business/Operations, GTEC: Distinction Awards</p>
+
+            <div class="alert alert-info">
+
+                <p>CDTS v4.0.28 has been released. Any issues can be reported to <a href="mailto:nc-sgdc-cdts-gd@hrsdc-rhdcc.gc.ca">nc-sgdc-cdts-gd@hrsdc-rhdcc.gc.ca</a>. Please note that the next release of the CDTS is scheduled for October 31, 2018. </p>
+            </div>
+
+
+
+
+
+            <div>
+                <h2><span id="What_is_the_Centrally_Deployed_Templates_Solution_.28CDTS.29">What is the Centrally Deployed Templates Solution (CDTS)</span></h2>
+               </div>
+               <div>
+                <p>The purpose of the CDTS is essentially to deliver the presentation layer of the Canada.ca theme or Intranet.canada.ca theme to web assets. It decouples the presentation layer from the business logic of a static website or web application and allows rapid updates across multiple networks. </p>
+                <p>The CDTS will help you meet the target option on the maturity model presented by Treasury Board Secretariat (<span data-hasqtip="0">TBS</span>) for the Web Renewal Initiative (WRI). Easily implement the following: </p>
+                <ul>
+                   <li>Keep pace with the frequency of Canada.ca updates;
+                    <ul>
+                       <li>Implement updates within the required narrow timeframes;</li>
+                       <li>Reduce ongoing development and maintenance costs;</li>
+                       <li>Ensure Canada.ca requirements are implemented consistently;</li>
+                       <li>Enable centralized management of the presentation layer of all web assets by December 31st 2017 with centrally deployed templates.</li>
+                    </ul>
+                   </li>
+                   <li>Aligned to Government of Canada (<span data-hasqtip="1">GoC</span>) WRI</li>
+                   <li>Aligned to Canada.ca Look and Feel (Information Architecture standard)</li>
+                   <li>Includes &ldquo;versioning&rdquo; process for Web Experience Toolkit (WET) updates</li>
+                </ul>
+                <p>More information about the CDTS is available on the <a href="/History" title="Centrally Deployed Templates Solution (CDTS)/History">CDTS history page</a>. </p>
+               </div>
+               <div class="row">
+                <section id="About_the_CDTS" class="pull-right panel panel-default">
+                <header class="panel-heading">
+                    <h2 class="panel-title">About the CDTS</h2>
+                </header>
+                <div class="panel-body">
+                    <ul>
+                     <li><a href="#News_and_announcements">News and announcements</a></li>
+                     <li><a href="#Register_for_the_CDTS">Register for the CDTS</a></li>
+                     <li><a href="/Enabled" title="Centrally Deployed Templates Solution (CDTS)/Enabled">Who uses the CDTS?</a></li>
+                     <li><a href="#Current_CDTS_supported_versions">Current CDTS supported versions</a></li>
+                     <li><a href="#Static_pages_.28version_.2F_run.29">Static pages (version / run)</a></li>
+                     <li><a href="#Local_.2F_performance_testing">Local / performance testing</a></li>
+                     <li><a href="#Demo_pages">Demo pages</a></li>
+                     <li><a href="/History" title="Centrally Deployed Templates Solution (CDTS)/History">CDTS history</a></li>
+                    </ul>
+                </div>
+               </section>
+               <div class="col-md-8">
+               <h2><span id="Which_CDTS_version_is_right_for_me.3F">Which CDTS version is right for me?</span></h2>
+               <p>Before you go through the decision tree, please <a href="#Register_for_the_CDTS">register for the CDTS</a>. It's important you register so that you receive any announcements concerning the CDTS! In the decision tree below, the following questions wil be asked: </p>
+               <ul>
+                <li>What theme will you use? Simple question, do you want to use the GCWeb theme which is the Canada.ca look and feel or the GCIntranet theme which is the Intranet.canada.ca look and feel. Typically a public facing web asset will use the GCWeb theme and any intranet site will use the GCIntranet theme.</li>
+                <li>Do you require a versioning system? The versioning system question requires you to decide how you want to receive updates from the WET. If you answer yes this means you will <strong>NOT</strong> automatically receive any new WET updates. You will implement a "version" in your web asset and add a mechanism to keep this updated as you do your testing for each new WET version. If you answer no this means that you will automatically receive all new WET releases with no intervertion on your part using the "run" version.
+                   <ul>
+                    <li>Please note that whichever decision you make you will <strong>ALWAYS</strong> receive updates to the GCWeb theme related to the mega menu or to the <span data-hasqtip="2">GoC</span> activities and initiatives section. Any common changes to the header/footer will be automatically pushed to your web asset. You need to have implemented the latest or two previous versions of the CDTS to obtain updates.</li>
+                   </ul>
+                </li>
+                <li>Will you need a custom header/footer? For this question you will need to decide if you need a custom header/footer. Keep in mind this is different than removing or adding certain elements that are allowed as per the <a href="http://www.gcpedia.gc.ca/wiki/Canada.ca_Content_and_Information_Architecture_Specification">C&amp;IA specifications document</a>. Any element that can be implemented using the C&amp;IA specifications document does not require a custom header/footer and is available in the default version of the CDTS. Currently it is advisable to not implement a custom header/footer unless you have permission to do so from your department, <span data-hasqtip="3">TBS</span> or Principal Publisher.</li>
+               </ul>
+            </div>
+        </div>
+               <p><img class="img-responsive" alt="CDTS version selection decision tree." src="./img/CDTS-Flow-Chart-En.png"></p>
+               <p>Please see below for the results of your decision tree. We suggest you consult the main implementation pages (<a href="/Internet" title="Centrally Deployed Templates Solution (CDTS)/Internet">GCWeb</a> / <a href="/Intranet" title="Centrally Deployed Templates Solution (CDTS)/Intranet">GCIntranet</a>) first, the links below will guide you to the quick implementation checklists. </p>
+               <ul>
+                <li>1 - <a href="/Quick_guide_gcweb#GCWeb_.2F_version_.2F_application" title="Centrally Deployed Templates Solution (CDTS)/Quick guide gcweb">GCWeb / version - Application</a> - Target : You want to implement the Canada.ca theme with a custom header/footer and you want to test any new changes that are released.</li>
+                <li>2 - <a href="/Quick_guide_gcweb#GCWeb_.2F_version_.2F_default" title="Centrally Deployed Templates Solution (CDTS)/Quick guide gcweb">GCWeb / version - Default</a> - Target : You want to implement the Canada.ca theme with the default header/footer and you want to test any new changes that are released.</li>
+                <li>3 - <a href="/Quick_guide_gcweb#GCWeb_.2F_run_.2F_application" title="Centrally Deployed Templates Solution (CDTS)/Quick guide gcweb">GCWeb / run - Application</a> - Target : You want to implement the Canada.ca theme with a custom header/footer and you want to always be up to date with the latest WET and Canada.ca changes.</li>
+                <li>4 - <a href="/Quick_guide_gcweb#GCWeb_.2F_run_.2F_default" title="Centrally Deployed Templates Solution (CDTS)/Quick guide gcweb">GCWeb / run - Default</a> - Target : You want to implement the Canada.ca theme with the default header/footer and you want to always be up to date with the latest WET and Canada.ca changes.</li>
+                <li>5 - <a href="/Quick_guide_gcintranet#GCIntranet_.2F_run_.2F_default" title="Centrally Deployed Templates Solution (CDTS)/Quick guide gcintranet">GCIntranet / run - Default</a> - Target : You want to implement the Intranet.canada.ca theme with the default header/footer and you want to always be up to date with the latest WET and intranet.canada.ca changes.</li>
+                <li>6 - <a href="/Quick_guide_gcintranet#GCIntranet_.2F_run_.2F_application" title="Centrally Deployed Templates Solution (CDTS)/Quick guide gcintranet">GCIntranet / run - Application</a> - Target : You want to implement the Intranet.canada.ca theme with a custom header/footer and you want to always be up to date with the latest WET and intranet.canada.ca changes.</li>
+                <li>7 - <a href="/Quick_guide_gcintranet#GCIntranet_.2F_version_.2F_default" title="Centrally Deployed Templates Solution (CDTS)/Quick guide gcintranet">GCintranet / version - Default</a> - Target : You want to implement the intranet.canada.ca theme with the default header/footer and you want to test any new changes that are released.</li>
+                <li>8 - <a href="/Quick_guide_gcintranet#GCIntranet_.2F_version_.2F_application" title="Centrally Deployed Templates Solution (CDTS)/Quick guide gcintranet">GCIntranet / version - Application</a> - Target : You want to implement the intranet.canada.ca with the custom header/footer and you want to test any new changes that are released.</li>
+               </ul>
+               <p>Are you starting from scratch? Are you migrating your old web asset or application? The Employment and Social Development Canada (<span data-hasqtip="4">ESDC</span>) Solutions Design Services (SDS) team has created .NET and JAVA templates that are ready to go for any of the above options! For more information, visit the <a href="/GoC_.NET_template_guide" title="Centrally Deployed Templates Solution (CDTS)/GoC .NET template guide">CDTS .NET/Java template guide</a>. </p>
+               <h2><span id="News_and_announcements">News and announcements</span></h2>
+               <ul>
+                <li>We're currently seeking <a href="https://github.com/wet-boew/GCWeb/issues/1223">feedback on the application templates via GitHub</a>.</li>
+               </ul>
+               <h2><span id="Register_for_the_CDTS">Register for the CDTS</span></h2>
+               <h3><span id="Other_Government_of_Canada_departments_.28OGDs.29">Other Government of Canada departments (OGDs)</span></h3>
+               <p>If you are planning to use the CDTS, please fill in your information on the <a href="/Registration" title="Centrally Deployed Templates Solution (CDTS)/Registration">CDTS registration page</a> to register and receive updates. </p>
+               <h3><span id="ESDC_department"><span data-hasqtip="5">ESDC</span> department</span></h3>
+               <p>It is very important that before you start using the CDTS you must register your participation with the Web Standards Centre of Expertise (WS CoE). The WS CoE is responsible for managing the CDTS and the contacts of all web assets who will be using the CDTS. Please <a href="mailto:NC-SGDC-CDTS-GD@hrsdc-rhdcc.gc.ca">email the CDTS' generic inbox</a> at NC-SGDC-CDTS-GD@hrsdc-rhdcc.gc.ca with the following information: </p>
+               <ul>
+                <li>Web asset name and <span data-hasqtip="6">URL</span>(s)</li>
+                <li>Primary contact for CDTS updates including email address</li>
+                <li>Application distribution list</li>
+               </ul>
+               <h2><span id="Who_uses_the_CDTS.3F">Who uses the CDTS?</span></h2>
+               <p>The <a href="/Enabled" title="Centrally Deployed Templates Solution (CDTS)/Enabled">CDTS-enabled web assets</a> page contains a list of web assets with the CDTS enabled in a production environment. If you have implemented the CDTS please update the page with the <span data-hasqtip="7">URL</span>. </p>
+               <h2><span id="Current_CDTS_supported_versions">Current CDTS supported versions</span></h2>
+               <p>Currently-supported versions of the CDTS are based on the following versions of WET: </p>
+               <ul>
+                <li><a href="http://wet-boew.github.io/v4.0-ci/docs/versions/v4.0/v4.0.28-en.html">WET v4.0.28 release notes</a></li>
+                <li><a href="http://wet-boew.github.io/v4.0-ci/docs/versions/v4.0/v4.0.27-en.html">WET v4.0.27 release notes</a></li>
+                <li><a href="http://wet-boew.github.io/v4.0-ci/docs/versions/v4.0/v4.0.26-en.html">WET v4.0.26 release notes</a></li>
+               </ul>
+               <p>Looking for Subresource Integrity (SRI) values for jQuery files? They can be found on the <a href="/SRI" title="Centrally Deployed Templates Solution (CDTS)/SRI">SRI for CDTS page</a>. </p>
+               <p>Are you using an older version of the CDTS? Older versions will still work but they will not receive any updates to the Canada.ca theme or any fixes related to the WET. </p>
+               <h2><span id="Static_pages_.28version_.2F_run.29">Static pages (version / run)</span></h2>
+               <h3><span id="Canada.ca_theme">Canada.ca theme</span></h3>
+               <ul>
+                <li><a href="http://www.gcpedia.gc.ca/gcwiki/images/0/07/Gcwebstatic-v4_0_28.zip" title="Gcwebstatic-v4 0 28.zip">v4.0.28/run - Canada.ca theme</a></li>
+                <li><a href="http://www.gcpedia.gc.ca/gcwiki/images/d/dd/Gcwebstatic-v4_0_27.zip" title="Gcwebstatic-v4 0 27.zip">v4.0.27 - Canada.ca theme</a></li>
+                <li><a href="http://www.gcpedia.gc.ca/gcwiki/images/0/0e/Gcwebstatic-v4_0_26.zip" title="Gcwebstatic-v4 0 26.zip">v4.0.26 - Canada.ca theme</a></li>
+               </ul>
+               <h3><span id="Intranet.canada.ca_theme">Intranet.canada.ca theme</span></h3>
+               <ul>
+                <li><a href="http://www.gcpedia.gc.ca/gcwiki/images/2/2e/Gcintranetstatic-v4_0_28.zip" title="Gcintranetstatic-v4 0 28.zip">v4.0.28/run - Intranet.canada.ca theme</a></li>
+                <li><a href="http://www.gcpedia.gc.ca/gcwiki/images/8/80/Gcintranetstatic-v4_0_27.zip" title="Gcintranetstatic-v4 0 27.zip">v4.0.27 - Intranet.canada.ca theme</a></li>
+                <li><a href="http://www.gcpedia.gc.ca/gcwiki/images/6/6a/Gcintranetstatic-v4_0_26.zip" title="Gcintranetstatic-v4 0 26.zip">v4.0.26 - Intranet.canada.ca theme</a></li>
+               </ul>
+               <h2><span id="Local_.2F_performance_testing">Local / performance testing</span></h2>
+               <p>If you want to test the CDTS in a local environment or for a performance test, please <a href="mailto:NC-SGDC-CDTS-GD@hrsdc-rhdcc.gc.ca">email the CDTS' generic inbox</a> at NC-SGDC-CDTS-GD@hrsdc-rhdcc.gc.ca. </p>
+               <h2><span id="Demo_pages">Demo pages</span></h2>
+               <h3><span id="Canada.ca_theme_demo_pages">Canada.ca theme demo pages</span></h3>
+               <p>The following are demo pages for the Canada.ca theme. </p>
+               <h4><span id="Bilingual">Bilingual</span></h4>
+               <ul>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/splashpage.shtml">Splash page - Bilingual - Canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/server.shtml">Bilingual server message page - Bilingual - Canada.ca theme</a></li>
+               </ul>
+               <h4><span id="English:">English:</span></h4>
+               <ul>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/content-en.shtml">Content page - English - Canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/sectionmenu-en.shtml">Section menu - English - Canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/breadcrumbs-en.shtml">Breadcrumbs page - English - Canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/contactlinks-en.shtml">Contact links page - English - Canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/transactional-en.shtml">Transactional links page - English - Canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/share-en.shtml">Share page - English - Canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/exitscript-en.shtml">Exit script page - English - Canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/versionidentifier-en.shtml">Version identifier page - English - Canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/screenidentifier-en.shtml">Screen identifier page - English - Canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/server-en.shtml">Server message page - English - Canada.ca theme</a></li>
+               </ul>
+               <h4><span id="French:">French:</span></h4>
+               <ul>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/content-fr.shtml">Content page - French - Canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/sectionmenu-fr.shtml">Section menu - French - Canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/breadcrumbs-fr.shtml">Breadcrumbs page - French - Canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/contactlinks-fr.shtml">Contact links page - French - Canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/transactional-fr.shtml">Transactional links page - French - Canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/share-fr.shtml">Share page - French - Canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/exitscript-fr.shtml">Exit script page - French - Canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/versionidentifier-fr.shtml">Version identifier page - French - Canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/screenidentifier-fr.shtml">Screen identifier page - French - Canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/samples/server-fr.shtml">Server message page - French - Canada.ca theme</a></li>
+               </ul>
+               <h3><span id="Intranet.canada.ca_theme_demo_pages">Intranet.canada.ca theme demo pages</span></h3>
+               <p>The following are demo pages for the Canada Intranet Theme. </p>
+               <h4><span id="English:_2">English:</span></h4>
+               <ul>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/cdts/samples/splashpage.shtml">Splash page - English - Intranet.canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/cdts/samples/content-en.shtml">Content page - English - Intranet.canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/cdts/samples/sectionmenu-en.shtml">Section menu - English - Intranet.canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/cdts/samples/breadcrumbs-en.shtml">Breadcrumbs page - English - Intranet.canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/cdts/samples/contactlinks-en.shtml">Contact links page - English - Intranet.canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/cdts/samples/versionidentifier-en.shtml">Version identifier page - English - Intranet.canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/cdts/samples/screenidentifier-en.shtml">Screen identifier page - English - Intranet.canada.ca theme</a></li>
+               </ul>
+               <h4><span id="French:_2">French:</span></h4>
+               <ul>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/cdts/samples/content-fr.shtml">Content page - French - Intranet.canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/cdts/samples/sectionmenu-fr.shtml">Section menu - French - Intranet.canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/cdts/samples/breadcrumbs-fr.shtml">Breadcrumbs page - French - Intranet.canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/cdts/samples/contactlinks-fr.shtml">Contact links page - French - Intranet.canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/cdts/samples/versionidentifier-fr.shtml">Version identifier page - French - Intranet.canada.ca theme</a></li>
+                <li><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_28/cdts/samples/screenidentifier-fr.shtml">Screen identifier page</a></li>
+               </ul>
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div id="def-preFooter">
+				<!-- Write closure fall-back static file -->
+				<!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/static/preFooter-en.html -->
+				<!--#include virtual="/app/cls/WET/gcweb/v4_0_28/cdts/static/preFooter-en.html" -->
+			</div>
+			<!-- Write closure template -->
+			<script>
+				var defPreFooter = document.getElementById("def-preFooter");
+				defPreFooter.outerHTML = wet.builder.preFooter({
+					"cdnEnv": "prod",
+					"dateModified": "2017-06-05"
+				});
+			</script>
+		</main>
+		<div id="def-footer">
+		</div>
+		<!-- Write closure template -->
+		<script>
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.appFooter({
+				"cdnEnv": "prod",
+				"showFeatures": false
+			});
+		</script>
+		<!-- Write closure template -->
+		<script>
+			document.write(wet.builder.refFooter({
+				"cdnEnv": "prod",
+				"isApplication": true
+			}));
+		</script>
+	</body>
+</html>
+
+
