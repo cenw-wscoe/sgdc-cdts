@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="utf-8">
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-		<title>Centrally Deployed Templates Solution (CDTS)</title>
+		<title>Home - Centrally Deployed Templates Solution (CDTS)</title>
 		<meta content="width=device-width,initial-scale=1" name="viewport">
 		<!-- Meta data -->
 		<meta name="description" content="Centrally Deployed Templates Solution (CDTS)">
@@ -13,8 +13,6 @@
 		<!-- Load closure template scripts -->
 		<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/soyutils.js"></script>
 		<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/wet-en.js"></script>
-
-
 		<!-- Write closure template -->
 		<script>
 			document.write(wet.builder.refTop({
@@ -29,7 +27,6 @@
 		<script>
 			var defTop = document.getElementById("def-top");
 			defTop.outerHTML = wet.builder.appTop({
-				"cdnEnv": "prod",
 				"breadcrumbs": [{title: "Home", href: "./index-en.html"}],
 				"appName": [{"text": "Centrally Deployed Templates Solution (CDTS)", "href": "./index-en.html"}],
                 "lngLinks": [{"lang": "fr",	"href": "index-fr.html", "text": "Français"}],
@@ -38,21 +35,11 @@
 		</script>
 		<main role="main" property="mainContentOfPage" class="container">
             <h1 property="name" id="wb-cont">Centrally Deployed Templates Solution (CDTS)</h1>
-            <p>CDTS: Centrally Deployed Templates Solution, IITB Branch Award: Excellence in Transforming our Business/Operations, GTEC: Distinction Awards</p>
-
+			<p data-json-replace="./ajax/data.json#/sloganEn">Slogan</p>
             <div class="alert alert-info">
-
-                <p>CDTS v4.0.28 has been released. Any issues can be reported to <a href="mailto:nc-sgdc-cdts-gd@hrsdc-rhdcc.gc.ca">nc-sgdc-cdts-gd@hrsdc-rhdcc.gc.ca</a>. Please note that the next release of the CDTS is scheduled for October 31, 2018. </p>
+                <p data-json-replace="./ajax/data.json#/noteEn">Note</p>
             </div>
-
-
-
-
-
-            <div>
                 <h2><span id="What_is_the_Centrally_Deployed_Templates_Solution_.28CDTS.29">What is the Centrally Deployed Templates Solution (CDTS)</span></h2>
-               </div>
-               <div>
                 <p>The purpose of the CDTS is essentially to deliver the presentation layer of the Canada.ca theme or Intranet.canada.ca theme to web assets. It decouples the presentation layer from the business logic of a static website or web application and allows rapid updates across multiple networks. </p>
                 <p>The CDTS will help you meet the target option on the maturity model presented by Treasury Board Secretariat (<span data-hasqtip="0">TBS</span>) for the Web Renewal Initiative (WRI). Easily implement the following: </p>
                 <ul>
@@ -69,7 +56,6 @@
                    <li>Includes &ldquo;versioning&rdquo; process for Web Experience Toolkit (WET) updates</li>
                 </ul>
                 <p>More information about the CDTS is available on the <a href="/History" title="Centrally Deployed Templates Solution (CDTS)/History">CDTS history page</a>. </p>
-               </div>
                <div class="row">
                 <section id="About_the_CDTS" class="pull-right panel panel-default">
                 <header class="panel-heading">
@@ -101,7 +87,6 @@
                 <li>Will you need a custom header/footer? For this question you will need to decide if you need a custom header/footer. Keep in mind this is different than removing or adding certain elements that are allowed as per the <a href="http://www.gcpedia.gc.ca/wiki/Canada.ca_Content_and_Information_Architecture_Specification">C&amp;IA specifications document</a>. Any element that can be implemented using the C&amp;IA specifications document does not require a custom header/footer and is available in the default version of the CDTS. Currently it is advisable to not implement a custom header/footer unless you have permission to do so from your department, <span data-hasqtip="3">TBS</span> or Principal Publisher.</li>
                </ul>
             </div>
-        </div>
                <p><img class="img-responsive" alt="CDTS version selection decision tree." src="./img/CDTS-Flow-Chart-En.png"></p>
                <p>Please see below for the results of your decision tree. We suggest you consult the main implementation pages (<a href="/Internet" title="Centrally Deployed Templates Solution (CDTS)/Internet">GCWeb</a> / <a href="/Intranet" title="Centrally Deployed Templates Solution (CDTS)/Intranet">GCIntranet</a>) first, the links below will guide you to the quick implementation checklists. </p>
                <ul>
@@ -236,8 +221,9 @@
 			<script>
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
-					"cdnEnv": "prod",
-					"dateModified": "2017-06-05"
+					"dateModified": "2017-06-05",
+                    "showShare" : false,
+                    "showFeedback" : false
 				});
 			</script>
 		</main>
@@ -247,14 +233,12 @@
 		<script>
 			var defFooter = document.getElementById("def-footer");
 			defFooter.outerHTML = wet.builder.appFooter({
-				"cdnEnv": "prod",
-				"showFeatures": false
+                "contactLink" : "./contact-en.html"
 			});
 		</script>
 		<!-- Write closure template -->
 		<script>
 			document.write(wet.builder.refFooter({
-				"cdnEnv": "prod",
 				"isApplication": true
 			}));
 		</script>
