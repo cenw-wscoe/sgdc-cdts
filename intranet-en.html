@@ -131,14 +131,14 @@
 				<ul>
 					<li>[CDTS reference URL]/[theme]/[WET version]/filename-[language].extension</li>
 				</ul>
-				<p>Currently with CDTS v4.0.29 the URL in english for GCIntranet would be:</p>
+				<p>Currently with CDTS v4.0.30 the URL in english for GCIntranet would be:</p>
 				<ul>
-					<li><a href="https://ssl-templates.services.gc.ca/app/cls/wet/gcintranet/v4_0_29/cdts/compiled/wet-en.js">https://ssl-templates.services.gc.ca/app/cls/wet/gcintranet/v4_0_29/cdts/compiled/wet-en.js</a></li>
+					<li><a href="https://ssl-templates.services.gc.ca/app/cls/wet/gcintranet/v4_0_30/cdts/compiled/wet-en.js">https://ssl-templates.services.gc.ca/app/cls/wet/gcintranet/v4_0_30/cdts/compiled/wet-en.js</a></li>
 				</ul>
 				<p>The "CDTS reference URL",
 					"theme",
 					"WET version" and "language" must be the configurable options in your web asset. As indicated above we suggest using your web.config file, XML config file or database to store these variables. Make sure your web asset uses your new configurable file path.</p>
-				<p><strong>IMPORTANT NOTE #1</strong>: When upgrading your web asset to a higher version we suggest that you also update your backup static files to obtain new versions. Otherwise make sure that your backup static files can be updated separately from your main WET CDTS version. It’s acceptable if your main WET CDTS points to v4_0_29 but your backup static files still point to v4_0_23. If you can keep both updated it is highly recommended to do so but not mandatory. Your backup files can fall behind until you perform a full release, we will notify you if your static files need to be updated. It will be indicated in the email you will receive announcing a new version.</p>
+				<p><strong>IMPORTANT NOTE #1</strong>: When upgrading your web asset to a higher version we suggest that you also update your backup static files to obtain new versions. Otherwise make sure that your backup static files can be updated separately from your main WET CDTS version. It’s acceptable if your main WET CDTS points to v4_0_30 but your backup static files still point to v4_0_29. If you can keep both updated it is highly recommended to do so but not mandatory. Your backup files can fall behind until you perform a full release, we will notify you if your static files need to be updated. It will be indicated in the email you will receive announcing a new version.</p>
 				<p><strong>IMPORTANT NOTE #2</strong>: The CDTS only updates the latest CDTS version as well as the two previous versions. If you are on an older version of the CDTS you will not receive updates. The purpose of the CDTS is to easily allow you to stay up to date so follow the instructions in this guide carefully. If you fall behind you are negating the main advantage of the CDTS!</p>
 			</section>
 			<section>
@@ -170,7 +170,7 @@
 					<pre>"cdnEnv" : "esdcprod"</pre>
 					<p>For all the screenshots below please update in your own code:</p>
 					<ul>
-						<li>(version) – Insert the version you will be using (ex: v4_0_29) or use rn for the run variant</li>
+						<li>(version) – Insert the version you will be using (ex: v4_0_30) or use rn for the run variant</li>
 						<li>(language) – Insert the correct language (language user is browsing in) you will be using (en or fr)</li>
 						<li>Add / edit / update the references to the JavaScript variables</li>
 					</ul>
@@ -568,7 +568,6 @@
 				</section>
 				<section>
 					<h3 id="Section_appTop_references">Section appTop references</h3>
-					<p>So you want a custom header? Before proceeding please ensure you have permission from your department, TBS or Principal Publisher. The changes below <strong>DO NOT</strong> follow the <a href="http://www.gcpedia.gc.ca/wiki/Canada.ca_Content_and_Information_Architecture_Specification">C&amp;IA specifications document</a>. Still want to continue? Sounds good, follow these steps:</p>
 					<p>You will replace the <a href="#Section_top_references">Section top references</a> with the following:</p>
 					<ol>
 						<li>The first one will be to add a new <code>&lt;div&gt;</code> to wrap the entire top content with an ID of “def-top”. This <code>&lt;div&gt;</code> will start at the top of your page all the way down to the opening <code>&lt;main&gt;</code> element.</li>
@@ -614,6 +613,25 @@
 						<li>OPTIONAL – menuPath – This variable is used to display a custom menu. Although you don't need to we suggest you <a href="./contact-en.html">contact the CDTS team</a> to enable this option. If you have done this before then simply provide the URL to your valid menu file to enable this option. You can copy the format in the sample custom menu file provided below in our sample.
 							<pre>"menuPath" : "https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/(version)/cdts/ajax/custommenu-eng.html"</pre>
 						</li>
+						<li>OPTIONAL – menuLinks – This variable will be used to create a top navigation menu, it will override the menuPath variable if provided. You can also create submenu items.
+							<pre>"menuLinks" : [{
+	"href" : "#",
+	"text": "Link 1",
+	"subLinks" : [{
+		"subhref" : "#",
+		"subtext": "SubLink 1"
+	},{
+		"subhref" : "#",
+		"subtext": "SubLink 2"
+	}]
+},{
+	"href" : "#",
+	"text": "Link 2"
+},{
+	"href" : "#",
+	"text": "Link 3"
+}]</pre>
+						</li>
 						<li>OPTIONAL – showPreContent – This will be used by Principal Publisher to insert content into the pre content space of your page. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.
 							<pre>"showPreContent" : false</pre>
 						</li>
@@ -640,7 +658,7 @@
 }]</pre>
 						</li>
 					</ul>
-					<p>We have not provided sample code images for the application templates as there are too many options. Instead please see our <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_24/cdts/appTop/apptop-en.shtml">application template sample pages</a> that we keep updated. It has all the different scenarios listed above.</p>
+					<p>We have not provided sample code images for the application templates as there are too many options. Instead please see our <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_30/cdts/appTop/apptop-en.shtml">application template sample pages</a> that we keep updated. It has all the different scenarios listed above.</p>
 					<p><strong>NOTE</strong>: Don’t forget the <code>&lt;div&gt;</code> that is wrapped around your fall-back static file is named “def-top” otherwise your page will not display correctly. Also note that when using the application templates you will use <code>wet.builder.appTop</code> instead of <code>wet.builder.top</code> in your JavaScript code.</p>
 				</section>
 				<section>
@@ -686,7 +704,7 @@
 						</li>
 					</ul>
 					<p><strong>IMPORTANT</strong>: You can only use one variable for the footer appearance. The <code>globalNav</code> variable will overwrite the <code>footerSections</code> variable if both are provided. If you don't provide <code>globalNav</code> or <code>footerSections</code> then the default footer from the <a href="#Transactional_page_references">transactional template</a> will be displayed.</p>
-					<p>We have not provided sample code images for the application templates as there are too many options. Instead please see our <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_24/cdts/appTop/apptop-en.shtml">application template sample pages</a> that we keep updated. It has all the different scenarios listed above.</p>
+					<p>We have not provided sample code images for the application templates as there are too many options. Instead please see our <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_30/cdts/appTop/apptop-en.shtml">application template sample pages</a> that we keep updated. It has all the different scenarios listed above.</p>
 					<p><strong>NOTE</strong>: Don’t forget the <code>&lt;div&gt;</code> that is wrapped around your fall-back static file is named “def-footer” otherwise your page will not display correctly. Also note that when using the application templates you will use <code>wet.builder.appFooter</code> instead of <code>wet.builder.footer</code> in your JavaScript code.</p>
 				</section>
 			</section>

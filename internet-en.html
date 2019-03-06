@@ -128,12 +128,12 @@
 				<ul>
 					<li>[CDTS reference URL]/[theme]/[WET version]/filename-[language].extension</li>
 				</ul>
-				<p>Currently with CDTS v4.0.25 the URL in english for GCWeb would be:</p>
+				<p>Currently with CDTS v4.0.30 the URL in english for GCWeb would be:</p>
 				<ul>
-					<li><a href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/compiled/wet-en.js">https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/compiled/wet-en.js</a></li>
+					<li><a href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js">https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js</a></li>
 				</ul>
 				<p>The "CDTS reference URL", "theme", "WET version" and "language" must be the configurable options in your web asset. As indicated above we suggest using your web.config file, XML config file or database to store these variables. Make sure your web asset uses your new configurable file path.</p>
-				<p><strong>IMPORTANT NOTE #1</strong>: When upgrading your web asset to a higher version we suggest that you also update your backup static files to obtain new versions. Otherwise make sure that your backup static files can be updated separately from your main WET CDTS version. It’s acceptable if your main WET CDTS points to v4_0_25 but your backup static files still point to v4_0_23. If you can keep both updated it is highly recommended to do so but not mandatory. Your backup files can fall behind until you perform a full release, we will notify you if your static files need to be updated. It will be indicated in the email you will receive announcing a new version.</p>
+				<p><strong>IMPORTANT NOTE #1</strong>: When upgrading your web asset to a higher version we suggest that you also update your backup static files to obtain new versions. Otherwise make sure that your backup static files can be updated separately from your main WET CDTS version. It’s acceptable if your main WET CDTS points to v4_0_30 but your backup static files still point to v4_0_29. If you can keep both updated it is highly recommended to do so but not mandatory. Your backup files can fall behind until you perform a full release, we will notify you if your static files need to be updated. It will be indicated in the email you will receive announcing a new version.</p>
 				<p><strong>IMPORTANT NOTE #2</strong>: The CDTS only updates the latest CDTS version as well as the two previous versions. If you are on an older version of the CDTS you will not receive updates. The purpose of the CDTS is to easily allow you to stay up to date so follow the instructions in this guide carefully. If you fall behind you are negating the main advantage of the CDTS!</p>
 			</section>
 			<section>
@@ -172,7 +172,7 @@
 					<p>For all the screenshots below please update in your own code:</p>
 					<ul>
 						<li>(theme) – Insert the correct theme you are using, either gcweb or gcintranet</li>
-						<li>(version) – Insert the version you will be using (ex: v4_0_25) or use rn for the run variant</li>
+						<li>(version) – Insert the version you will be using (ex: v4_0_30) or use rn for the run variant</li>
 						<li>(language) – Insert the correct language (language user is browsing in) you will be using (en or fr)</li>
 						<li>Add / edit / update the references to the JavaScript variables</li>
 					</ul>
@@ -777,7 +777,7 @@
 							<pre>"showPreContent" : false</pre>
 						</li>
 					</ul>
-					<p>We have not provided sample code images for the application templates as there are too many options. Instead please see our <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_25/cdts/appTop/apptop-en.shtml">application template sample pages</a> that we keep updated. It has all the different scenarios listed above.</p>
+					<p>We have not provided sample code images for the application templates as there are too many options. Instead please see our <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_30/cdts/appTop/apptop-en.shtml">application template sample pages</a> that we keep updated. It has all the different scenarios listed above.</p>
 					<p><strong>NOTE</strong>: Don’t forget the <code>&lt;div&gt;</code> that is wrapped around your fall-back static file is named “def-top” otherwise your page will not display correctly. Also note that when using the application templates you will use <code>wet.builder.appTop</code> instead of <code>wet.builder.top</code> in your JavaScript code.</p>
 				</section>
 				<section>
@@ -814,7 +814,7 @@
 						</ul>
 					</section>
 					<section>
-						<h4 id="v4.0.29_.28Coming_soon.29">v4.0.29 (Coming soon)</h4>
+						<h4 id="v4.0.29.2B">v4.0.29+</h4>
 						<ul>
 							<li>OPTIONAL – contactLink – This variable will override the default contact link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom contact us link. You can also add an optional variable to have the link open in a new window with <code>"newWindow" : true</code>.
 								<pre>"contactLink": [{
@@ -836,7 +836,7 @@
 							</li>
 						</ul>
 						<p><strong>IMPORTANT</strong>: You can only use one variable for the footer appearance. If you don't provide <code>footerSections</code> then the default footer from the <a href="#Transactional_page_references">transactional template</a> will be displayed.</p>
-						<p>We have not provided sample code images for the application templates as there are too many options. Instead please see our <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_28/cdts/appTop/apptop-en.shtml">application template sample pages</a> that we keep updated. It has all the different scenarios listed above.</p>
+						<p>We have not provided sample code images for the application templates as there are too many options. Instead please see our <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_30/cdts/appTop/apptop-en.shtml">application template sample pages</a> that we keep updated. It has all the different scenarios listed above.</p>
 						<p><strong>NOTE</strong>: Don’t forget the <code>&lt;div&gt;</code> that is wrapped around your fall-back static file is named “def-footer” otherwise your page will not display correctly. Also note that when using the application templates you will use <code>wet.builder.appFooter</code> instead of <code>wet.builder.footer</code> in your JavaScript code.</p>
 					</section>
 				</section>
