@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
 <!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
@@ -30,9 +29,9 @@
 				"breadcrumbs": [{title: "Home", href: "./index-en.html"}],
 				"appName": [{"text": "Centrally Deployed Templates Solution (CDTS)",
 				"href": "./index-en.html"}],
-                "lngLinks": [{"lang": "fr",	"href": "intranet-fr.html",
+				"lngLinks": [{"lang": "fr",	"href": "intranet-fr.html",
 				"text": "Français"}],
-                "menuPath": "./ajax/cdtsMenu-en.html"
+				"menuPath": "./ajax/cdtsMenu-en.html"
 			});
 		</script>
 		<main role="main" property="mainContentOfPage" class="container wb-prettify all-pre">
@@ -225,20 +224,20 @@
 		</ol>
 		<ul>
 			<li>OPTIONAL - lngLinks – Use this variable to specify where the language toggle link will go. Although this is optional it is usually mandatory to provide the language toggle link.
-				<pre>"lngLinks" : [{ 
+				<pre>"lngLinks" : [{
 	"lang" : "fr",
 	"href" : "content-fr.html",
-	"text" : "Français" 
+	"text" : "Français"
 }]</pre>
 			</li>
 			<li>OPTIONAL – breadcrumbs – Use this variable to specify the breadcrumbs in your page. Note that if no breadcrumbs are specified the template will insert a link to the home page of the Canada.ca website.
-				<pre>"breadcrumbs" : [{ 
+				<pre>"breadcrumbs" : [{
 	"title" : "Home",
 	"href" : "http://www.canada.ca/en/index.htm"
 },{
 	"title" : "CDTS",
 	"acronym" : "Centrally Deployed Templates Solution",
-	"href" : “http://www.canada.ca/en/index.htm" 
+	"href" : “http://www.canada.ca/en/index.htm"
 }]</pre>
 			</li>
 			<li>OPTIONAL – showPreContent – This will be used by Principal Publisher to insert content into the pre content space of your page. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.</li>
@@ -252,9 +251,9 @@
 				<pre>"subTheme" : "esdc"</pre>
 			</li>
 			<li>OPTIONAL – intranetTitle – This variable is used to display a custom intranet title. Before proceeding please ensure you have permission from your department, TBS or Principal Publisher. This variable does not conform to the <a href="http://www.gcpedia.gc.ca/wiki/Canada.ca_Content_and_Information_Architecture_Specification">C&amp;IA specifications document</a>.
-				<pre>"intranetTitle" : [{ 
+				<pre>"intranetTitle" : [{
 	text: "Custom title",
-	"url" :"#" 
+	"url" :"#"
 }]</pre>
 			</li>
 		</ul>
@@ -327,8 +326,8 @@
 		</ol>
 		<ul>
 			<li>OPTIONAL – contactLinks – This will be used to customize the contact us link located in the footer of the page.
-				<pre>"contactLinks" : [{ 
-	"href" : "#" 
+				<pre>"contactLinks" : [{
+	"href" : "#"
 }]</pre>
 			</li>
 			<li>OPTIONAL – showFeatures – This will be used by the Principal Publisher to insert GoC activities and initiatives into your page. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.
@@ -457,9 +456,9 @@
 				<pre>"siteMenu" : false</pre>
 			</li>
 			<li>MANDATORY – breadcrumbs – Note that in a transactional scenario, the breadcrumbs are replaced with a link to exit the transaction that directs users to a safe point where they can abandon the current transaction and restart it should they wish.
-				<pre>"breadcrumbs" : [{ 
+				<pre>"breadcrumbs" : [{
 	"title" : "Exit secure transaction",
-	"href" : "http://www.canada.ca/en/index.htm" 
+	"href" : "http://www.canada.ca/en/index.htm"
 }]</pre>
 			</li>
 			<li>MANDATORY – showPreContent – This variable is used to hide the content inserted into the pre content space of your page.
@@ -489,8 +488,8 @@
 				<pre>"showFeatures" : false</pre>
 			</li>
 			<li>OPTIONAL – contactLinks – This variable will override the default contact link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom contact us link.
-				<pre>"contactLinks" : [{ 
-	"href" : "#" 
+				<pre>"contactLinks" : [{
+	"href" : "#"
 }]</pre>
 			</li>
 			<li>OPTIONAL – termsLink – This variable will override the “Terms &amp; conditions” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link.
@@ -540,16 +539,16 @@
 				<pre>"sectionName" : "Section name"</pre>
 			</li>
 			<li>MANDATORY – menuLinks – This variable will be used to display the links in the menu.
-				<pre>"menuLinks": [{ 
+				<pre>"menuLinks": [{
 	"href" : "#",
-	"text" : "Link 1" 
+	"text" : "Link 1"
 }]</pre>
 			</li>
 			<li>OPTIONAL – subLinks – This variable will be used to display the sub-links in the menu. You can also add newWindow: true if you want the link to open in a new window.
-				<pre>"subLinks": [{ 
+				<pre>"subLinks": [{
 	"subhref" : "#",
 	"subtext" : "Link 1",
-	"newWindow" : true 
+	"newWindow" : true
 }]</pre>
 			</li>
 		</ul>
@@ -576,23 +575,23 @@
 				<pre>"appUrl" : "#"</pre>
 			</li>
 			<li>OPTIONAL - lngLinks – Use this variable to specify where the language toggle link will go.
-				<pre>"lngLinks" : [{ 
+				<pre>"lngLinks" : [{
 	"lang" : "fr",
 	"href" : "content-fr.html",
-	"text" : "Français" 
+	"text" : "Français"
 }]</pre>
 			</li>
 			<li>OPTIONAL - secure – Use this variable to display the lock icon beside the application name
 				<pre>"secure" : true</pre>
 			</li>
 			<li>OPTIONAL - signIn – Use this variable to add a link for the sign in button
-				<pre>"signIn" : [{ 
-	"href" : "#" 
+				<pre>"signIn" : [{
+	"href" : "#"
 }]</pre>
 			</li>
 			<li>OPTIONAL - signOut – Use this variable to add a link for the sign out button
-				<pre>"signOut" : [{ 
-	"href" : "#" 
+				<pre>"signOut" : [{
+	"href" : "#"
 }]</pre>
 			</li>
 			<li>OPTIONAL – search – This variable is used to hide the search.
@@ -630,14 +629,13 @@
 				<pre>"showPreContent" : false</pre>
 			</li>
 			<li>OPTIONAL – breadcrumbs – Use this variable to specify the breadcrumbs in your page. Note that if no breadcrumbs are specified the application template will <strong>NOT</strong> insert a default link.
-				<pre>"breadcrumbs" : [{ 
+				<pre>"breadcrumbs" : [{
 	"title" : "Home",
 	"href" : "http://www.canada.ca/en/index.htm"
 },{
 	"title" : "CDTS",
 	"acronym" : "Centrally Deployed Templates Solution",
-	"href" : “http://www.canada.ca/en/index.htm" 
-
+	"href" : “http://www.canada.ca/en/index.htm"
 }]</pre>
 			</li>
 			<li>OPTIONAL - subTheme – This variable is used to display a custom theme for your intranet web asset. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
@@ -647,8 +645,8 @@
 				<pre>"topSecMenu" : true</pre>
 			</li>
 			<li>OPTIONAL – intranetTitle – This variable is used to display a custom intranet title. Before proceeding please ensure you have permission from your department, TBS or Principal Publisher. This variable does not conform to the <a href="http://www.gcpedia.gc.ca/wiki/Canada.ca_Content_and_Information_Architecture_Specification">C&amp;IA specifications document</a>.
-				<pre>"intranetTitle" : [{ 
-	"text" : "Custom title", url:"#" 
+				<pre>"intranetTitle" : [{
+	"text" : "Custom title", url:"#"
 }]</pre>
 			</li>
 		</ul>
@@ -671,17 +669,17 @@
 				</ul>
 			</li>
 			<li>OPTIONAL – footerSections – This variable will create a custom set of columns for your footer links. See sample URL below for an example.
-				<pre>"footerSections" : [{ 
+				<pre>"footerSections" : [{
 	"href" : "#",
 	"text" : "Link 1"
 },{
 	"href" : "#",
-	"text" : "Link 2" 
+	"text" : "Link 2"
 }]</pre>
 			</li>
 			<li>OPTIONAL – contactLinks – This variable will override the default contact link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom contact us link.
-				<pre>"contactLinks" : [{ 
-	"href" : "#" 
+				<pre>"contactLinks" : [{
+	"href" : "#"
 }]</pre>
 			</li>
 			<li>OPTIONAL – termsLink – This variable will override the “Terms &amp; conditions” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link.
@@ -702,19 +700,7 @@
 		<p><strong>NOTE</strong>: Don’t forget the <code>&lt;div&gt;</code> that is wrapped around your fall-back static file is named “def-footer” otherwise your page will not display correctly. Also note that when using the application templates you will use <code>wet.builder.appFooter</code> instead of <code>wet.builder.footer</code> in your JavaScript code.</p>
 	</section>
 </section>
-					
-
-
-
-
-
-
-
-
-
-
-
-            <div id="def-preFooter">
+			<div id="def-preFooter">
 				<!-- Write closure fall-back static file -->
 				<!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/static/preFooter-en.html -->
 				<!--#include virtual="/app/cls/WET/gcweb/v4_0_28/cdts/static/preFooter-en.html" -->
@@ -724,8 +710,8 @@
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
 					"dateModified": "2019-03-08",
-                    "showShare" : false,
-                    "showFeedback" : false
+					"showShare" : false,
+					"showFeedback" : false
 				});
 			</script>
 		</main>
@@ -746,5 +732,3 @@
 		</script>
 	</body>
 </html>
-
-
