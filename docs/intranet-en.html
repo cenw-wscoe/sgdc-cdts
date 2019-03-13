@@ -439,7 +439,7 @@
 	&lt;!-- /ROOT/app/cls/WET/gcintranet/v4_0_27/cdts/static/splash.html --&gt;
 	&lt;!--#include virtual="/app/cls/WET/gcintranet/v4_0_27/cdts/static/splash.html" --&gt;
 	&lt;!-- Write closure template --&gt;
-	&lt;script type="text/javascript"&gt;
+	&lt;script&gt;
 		var contentSplash = document.getElementById("splashContent");
 		contentSplash.innerHTML = wet.builder.splash({
 			indexEng: "http://intranet.canada.ca/index-eng.html",
@@ -485,7 +485,7 @@
 	&lt;!--#include virtual="/app/cls/WET/gcintranet/v4_0_27/cdts/static/top-(language).html" --&gt;
 &lt;/div&gt;
 &lt;!-- Write closure template --&gt;
-&lt;script type="text/javascript"&gt;
+&lt;script&gt;
 	var defTop = document.getElementById("def-top");
 	defTop.outerHTML = wet.builder.top({
 		search: false,
@@ -513,7 +513,7 @@
 	&lt;!--#include virtual="/app/cls/WET/gcintranet/v4_0_27/cdts/static/preFooter-(language).html" --&gt;
 &lt;/div&gt;
 &lt;!-- Write closure template --&gt;
-&lt;script type="text/javascript"&gt;
+&lt;script&gt;
 	var defPreFooter = document.getElementById("def-preFooter");
 	defPreFooter.outerHTML = wet.builder.preFooter({
 		dateModified: "2016-05-05",
@@ -545,7 +545,7 @@
 		</ul>
 		<p>Sample:</p>
 		<pre>&lt;!-- Write closure template --&gt;
-&lt;script type="text/javascript"&gt;
+&lt;script&gt;
 	var defFooter = document.getElementById("def-footer");
 	defFooter.outerHTML = wet.builder.footer({
 		showFeatures: false
@@ -576,7 +576,7 @@
 	&lt;!--#include virtual="/app/cls/WET/gcintranet/v4_0_27/cdts/static/secMenuTop-en.html" --&gt;
 &lt;/div&gt;
 &lt;!-- Write closure template --&gt;
-&lt;script type="text/javascript"&gt;
+&lt;script&gt;
 	var defTop = document.getElementById("def-top");
 	defTop.outerHTML = wet.builder.top({
 		topSecMenu: true,
@@ -621,7 +621,7 @@
 	&lt;!--#include virtual="/app/cls/WET/gcintranet/v4_0_27/cdts/static/secMenu-en.html" --&gt;
 &lt;/nav&gt;
 &lt;!-- Write closure template --&gt;
-&lt;script type="text/javascript"&gt;
+&lt;script&gt;
 	var secondarymenu = document.getElementById("wb-sec");
 	secondarymenu.innerHTML = wet.builder.secmenu({
 		sections: [{
