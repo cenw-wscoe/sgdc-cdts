@@ -152,19 +152,19 @@
 		<p>For all templates and sections the following JavaScript variable is optional:</p>
 		<ul>
 			<li>OPTIONAL - cdnEnv – Use this variable to specify which environment you are currently using.
-				<pre>"cdnEnv" : "prod"</pre>
+				<pre>"cdnEnv": "prod"</pre>
 			</li>
 		</ul>
 		<p><strong>Employees at ESDC</strong> may use the following variables:</p>
 		<ul>
 			<li>https://cdn-canada.services.gc.qat
-				<pre>"cdnEnv" : "esdcqat"</pre>
+				<pre>"cdnEnv": "esdcqat"</pre>
 			</li>
 			<li>https://s2tst-cdn-canada.sade-edap.prv
-				<pre>"cdnEnv" : "esdcnonprod"</pre>
+				<pre>"cdnEnv": "esdcnonprod"</pre>
 			</li>
 			<li>https://ssl-templates.services.gc.ca
-				<pre>"cdnEnv" : "esdcprod"</pre>
+				<pre>"cdnEnv": "esdcprod"</pre>
 			</li>
 		</ul>
 		<p>Employees at ESDC may contact the WS CoE to obtain other variables that can be used for internal development.</p>
@@ -186,10 +186,10 @@
 		</ol>
 		<ul>
 			<li>OPTIONAL - jqueryEnv – Use this variable to specify which environment you want to pull the jQuery files from. By default they are loaded locally from the WET build. Otherwise use the following to load from Google CDN:
-				<pre>"jqueryEnv" : "external"</pre>
+				<pre>"jqueryEnv": "external"</pre>
 			</li>
 			<li>OPTIONAL - isApplication – Use this variable to include web application specific CSS file.
-				<pre>"isApplication" : true</pre>
+				<pre>"isApplication": true</pre>
 			</li>
 		</ul>
 		<p>Sample:</p>
@@ -218,24 +218,24 @@
 		</ol>
 		<ul>
 			<li>OPTIONAL - lngLinks – Use this variable to specify where the language toggle link will go. Although this is optional it is usually mandatory to provide the language toggle link.
-				<pre>"lngLinks" : [{
-	"lang" : "fr",
-	"href" : "content-fr.html",
-	"text" : "Français"
+				<pre>"lngLinks": [{
+	"lang": "fr",
+	"href": "content-fr.html",
+	"text": "Français"
 }]</pre>
 			</li>
 			<li>OPTIONAL – breadcrumbs – Use this variable to specify the breadcrumbs in your page. Note that if no breadcrumbs are specified the template will insert a link to the home page of the Canada.ca website.
-				<pre>"breadcrumbs" : [{
-	"title" : "Home",
-	"href" : "http://www.canada.ca/en/index.htm"
+				<pre>"breadcrumbs": [{
+	"title": "Home",
+	"href": "http://www.canada.ca/en/index.htm"
 },{
-	"title" : "CDTS",
-	"acronym" : "Centrally Deployed Templates Solution",
-	"href" : "http://www.canada.ca/en/index.htm"
+	"title": "CDTS",
+	"acronym": "Centrally Deployed Templates Solution",
+	"href": "http://www.canada.ca/en/index.htm"
 }]</pre>
 			</li>
 			<li>OPTIONAL – showPreContent – This will be used by Principal Publisher to insert content into the pre content space of your page. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.
-				<pre>"showPreContent" : false</pre>
+				<pre>"showPreContent": false</pre>
 			</li>
 		</ul>
 		<p>Sample:</p>
@@ -267,27 +267,27 @@
 		</ol>
 		<ul>
 			<li>OPTIONAL – showPostContent – This will be used by the Principal Publisher to insert content into the post content space of your page. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.
-				<pre>"showPostContent" : false</pre>
+				<pre>"showPostContent": false</pre>
 			</li>
 			<li>OPTIONAL – showShare – Use this variable to specify the share button of your page.
-				<pre>"showShare" : false</pre>
-				<pre>"showShare" : ["email", "facebook", "linkedin", "twitter"]</pre>
+				<pre>"showShare": false</pre>
+				<pre>"showShare": ["email", "facebook", "linkedin", "twitter"]</pre>
 			</li>
 			<li>OPTIONAL – showFeedback – Use this variable to specify the “Report a problem or mistake on this page” button of your page. By default this button is shown with the default Canada.ca URL. You can customize the URL or simply hide the button.
-				<pre>"showFeedback" : false</pre>
-				<pre>"showFeedback" : "Custom URL here"</pre>
+				<pre>"showFeedback": false</pre>
+				<pre>"showFeedback": "Custom URL here"</pre>
 			</li>
 			<li>OPTIONAL – screenIdentifier – Use this variable to specify the screen identifier of the web application.
-				<pre>"screenIdentifier" : "0123456789"</pre>
+				<pre>"screenIdentifier": "0123456789"</pre>
 			</li>
 			<li>OPTIONAL – dateModified – Use this variable to specify the date modified of your page. If you prefer to use the version identifier technique, use the variable below. Note that you must use one option or the other.
-				<pre>"dateModified" : "2015-10-09"</pre>
+				<pre>"dateModified": "2015-10-09"</pre>
 			</li>
 			<li>OPTIONAL – verisonIdentifier – Use this variable to specify the version of the web application instead of dateModified.
-				<pre>"versionIdentifier" : "0123456789"</pre>
+				<pre>"versionIdentifier": "0123456789"</pre>
 			</li>
 			<li>OPTIONAL – pagedetails – Use this variable to remove the <code>&lt;div class="pagedetails"&gt;</code> when using the server message page template.
-				<pre>"pagedetails" : false</pre>
+				<pre>"pagedetails": false</pre>
 			</li>
 		</ul>
 		<p>Sample:</p>
@@ -316,7 +316,7 @@
 		<ul>
 			<li>OPTIONAL – contactLinks – This will be used to customize the contact us link located in the footer of the page.
 				<pre>"contactLinks": [{
-	"href" : "#"
+	"href": "#"
 }]</pre>
 			</li>
 		</ul>
@@ -342,22 +342,22 @@
 		</ol>
 		<ul>
 			<li>OPTIONAL – exitScript – Use this variable if you want to warn the users they are leaving a secured session.
-				<pre>"exitScript" : true</pre>
+				<pre>"exitScript": true</pre>
 			</li>
 			<li>OPTIONAL – exitURL – Specify the URL where the users will be redirected to leave their secured session.
-				<pre>"exitURL" : "#"</pre>
+				<pre>"exitURL": "#"</pre>
 			</li>
 			<li>OPTIONAL – exitMsg – Specify the message the users will get before being redirected and leaving their secured session.
-				<pre>"exitMsg" : "You are about to leave a secure site, do you wish to continue?"</pre>
+				<pre>"exitMsg": "You are about to leave a secure site, do you wish to continue?"</pre>
 			</li>
 			<li>OPTIONAL – exitDomains – Specify the additional domains that should not be checked for secure exit.
-				<pre>"exitDomains" : "#"</pre>
+				<pre>"exitDomains": "#"</pre>
 			</li>
 			<li>OPTIONAL – displayModal – Use this variable if you want to skip the modal dialog to confirm the exit notice. Keep in mind this will not display the exit notice to the user.
-				<pre>"displayModal" : false</pre>
+				<pre>"displayModal": false</pre>
 			</li>
 			<li>OPTIONAL - jqueryEnv – Use this variable to specify which environment you want to pull the jQuery files from. By default they are loaded locally from the WET build. Otherwise use the following to load from Google CDN:
-				<pre>"jqueryEnv" : external</pre>
+				<pre>"jqueryEnv": external</pre>
 			</li>
 		</ul>
 		<p>Sample:</p>
@@ -401,22 +401,22 @@
 		</ol>
 		<ul>
 			<li>MANDATORY – indexEng – This variable indicates what the URL for the home page in English is.
-				<pre>"indexEng" : "http://www.canada.ca/en/index.html"</pre>
+				<pre>"indexEng": "http://www.canada.ca/en/index.html"</pre>
 			</li>
 			<li>MANDATORY – indexFra – This variable indicates what the URL for the home page in French is.
-				<pre>"indexFra" : "http://www.canada.ca/fr/index.html"</pre>
+				<pre>"indexFra": "http://www.canada.ca/fr/index.html"</pre>
 			</li>
 			<li>MANDATORY – termsEng – This variable indicates what the URL for the terms and conditions page in English is.
-				<pre>"termsEng" : "http://www.canada.ca/en/transparency/terms.html"</pre>
+				<pre>"termsEng": "http://www.canada.ca/en/transparency/terms.html"</pre>
 			</li>
 			<li>MANDATORY – termsFra – This variable indicates what the URL for the terms and conditions page in French is.
-				<pre>"termsFra" : http://www.canada.ca/fr/transparence/avis.html</pre>
+				<pre>"termsFra": http://www.canada.ca/fr/transparence/avis.html</pre>
 			</li>
 			<li>OPTIONAL – nameEng – This variable is used to brand the splash page with the web asset’s name (in English). If not used, the default “Government of Canada” will appear.
-				<pre>"nameEng" : "My web asset"</pre>
+				<pre>"nameEng": "My web asset"</pre>
 			</li>
 			<li>OPTIONAL – nameFra – This variable is used to brand the splash page with the web asset’s name (in French). If not used, the default “Gouvernement du Canada” will appear.
-				<pre>"nameFra" : "Mon actif Web"</pre>
+				<pre>"nameFra": "Mon actif Web"</pre>
 			</li>
 		</ul>
 		<p>Sample:</p>
@@ -449,19 +449,19 @@
 		<p>The <a href="#Section_top_references">Section top references</a> are the same except for the following modifications:</p>
 		<ul>
 			<li>MANDATORY – search – This variable is used to hide the search.
-				<pre>"search" : false</pre>
+				<pre>"search": false</pre>
 			</li>
 			<li>MANDATORY – siteMenu – This variable is used to hide the site menu.
-				<pre>"siteMenu" : false</pre>
+				<pre>"siteMenu": false</pre>
 			</li>
 			<li>MANDATORY – breadcrumbs – Note that in a transactional scenario, the breadcrumbs are replaced with a link to exit the transaction that directs users to a safe point where they can abandon the current transaction and restart it should they wish.
-				<pre>"breadcrumbs" : [{
-	"title" : "Exit secure transaction",
-	"href" : "http://www.canada.ca/en/index.htm"
+				<pre>"breadcrumbs": [{
+	"title": "Exit secure transaction",
+	"href": "http://www.canada.ca/en/index.htm"
 }]</pre>
 			</li>
 			<li>MANDATORY – showPreContent – This variable is used to hide the content inserted into the pre content space of your page.
-				<pre>"showPreContent" : false</pre>
+				<pre>"showPreContent": false</pre>
 			</li>
 		</ul>
 		<p>Sample:</p>
@@ -487,13 +487,13 @@
 		<p>The <a href="#Section_pre-footer_references">Section pre-footer references</a> are the same except for the following modifications:</p>
 		<ul>
 			<li>MANDATORY – showPostContent – This variable is used to hide the content inserted into the post content space of your page.
-				<pre>"showPostContent" : false</pre>
+				<pre>"showPostContent": false</pre>
 			</li>
 			<li>MANDATORY – showFeedback – This variable is used to hide the “Report a problem or mistake on this page” button.
-				<pre>"showFeedback" : false</pre>
+				<pre>"showFeedback": false</pre>
 			</li>
 			<li>MANDATORY – showShare – This variable is used to hide the “Share this page” button.
-				<pre>"showShare" : false</pre>
+				<pre>"showShare": false</pre>
 			</li>
 		</ul>
 		<p>Sample:</p>
@@ -515,24 +515,24 @@
 		<p>The <a href="#Section_footer_references">Section footer references</a> are the same except for the following modifications:</p>
 		<ul>
 			<li>MANDATORY – showFooter – This variable is used to hide the content inside the footer.
-				<pre>"showFooter" : false</pre>
+				<pre>"showFooter": false</pre>
 			</li>
-			<li>OPTIONAL – contactLinks – This variable will override the default contact link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom contact us link. You can also add an optional variable to have the link open in a new window with <code>"newWindow" : true</code>.
-				<pre>"contactLinks" : [{
-	"href" : "#",
-	"newWindow" : true
+			<li>OPTIONAL – contactLinks – This variable will override the default contact link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom contact us link. You can also add an optional variable to have the link open in a new window with <code>"newWindow": true</code>.
+				<pre>"contactLinks": [{
+	"href": "#",
+	"newWindow": true
 }]</pre>
 			</li>
-			<li>OPTIONAL – termsLink – This variable will override the “Terms &amp; conditions” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link. You can also add an optional variable to have the link open in a new window with <code>"newWindow" : true</code>.
-				<pre>"termsLink" : [{
-	"href" : "http://canada.ca/en/transparency/terms.html",
-	"newWindow" : true
+			<li>OPTIONAL – termsLink – This variable will override the “Terms &amp; conditions” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link. You can also add an optional variable to have the link open in a new window with <code>"newWindow": true</code>.
+				<pre>"termsLink": [{
+	"href": "http://canada.ca/en/transparency/terms.html",
+	"newWindow": true
 }]</pre>
 			</li>
-			<li>OPTIONAL – privacyLink – This variable will override the “Privacy” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link. You can also add an optional variable to have the link open in a new window with <code>"newWindow" : true</code>.
-				<pre>"privacyLink" : [{
-	"href" : "http://canada.ca/en/transparency/privacy.html",
-	"newWindow" : true
+			<li>OPTIONAL – privacyLink – This variable will override the “Privacy” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link. You can also add an optional variable to have the link open in a new window with <code>"newWindow": true</code>.
+				<pre>"privacyLink": [{
+	"href": "http://canada.ca/en/transparency/privacy.html",
+	"newWindow": true
 }]</pre>
 			</li>
 		</ul>
@@ -601,17 +601,17 @@
 		</ol>
 		<ul>
 			<li>MANDATORY – sectionName – This variable will be used to display the heading(s) of the section menu(s).
-				<pre>"sectionName" : "Section name"</pre>
+				<pre>"sectionName": "Section name"</pre>
 			</li>
 			<li>MANDATORY – menuLinks – This variable will be used to display the links in the menu.
-				<pre>"menuLinks" : [{
-	"href" : "#",
+				<pre>"menuLinks": [{
+	"href": "#",
 	"text": "Link 1"
 }</pre>
 			</li>
 			<li>OPTIONAL – subLinks – This variable will be used to display the sub-links in the menu. You can also add <code>"newWindow": true</code> if you want the link to open in a new window.
-				<pre>"subLinks" : [{
-	"subhref" : "#",
+				<pre>"subLinks": [{
+	"subhref": "#",
 	"subtext": "Link 1",
 	"newWindow": true
 }]</pre>
@@ -725,57 +725,57 @@
 		</ol>
 		<ul>
 			<li>MANDATORY - appName – Use this variable to specify the application name and URL.
-				<pre>"appName" : [{
-	"text" : "Application name",
-	"href" : "#"
+				<pre>"appName": [{
+	"text": "Application name",
+	"href": "#"
 }]</pre>
 			</li>
 			<li>OPTIONAL - appSettings – Use this variable to specify the URL for the "Account settings" button.
-				<pre>"appSettings" : [{
-	"href" : "#"
+				<pre>"appSettings": [{
+	"href": "#"
 }]</pre>
 			</li>
 			<li>OPTIONAL - signIn – Use this variable to add a button for the sign in and specify the URL.
-				<pre>"signIn" : [{
-	"href" : "#"
+				<pre>"signIn": [{
+	"href": "#"
 }]</pre>
 			</li>
 			<li>OPTIONAL - signOut – Use this variable to add a button for the sign out and specify the URL.
-				<pre>"signOut" : [{
-	"href" : "#"
+				<pre>"signOut": [{
+	"href": "#"
 }]</pre>
 			</li>
 			<li>OPTIONAL - lngLinks – Use this variable to specify where the language toggle link will go.
-				<pre>"lngLinks" : [{
-	"lang" : "fr",
-	"href" : "content-fr.html",
-	"text" : "Français"
+				<pre>"lngLinks": [{
+	"lang": "fr",
+	"href": "content-fr.html",
+	"text": "Français"
 }]</pre>
 			</li>
 			<li>OPTIONAL – customSearch – This variable is used to display a custom search. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
-				<pre>"customSearch" : "customSearch"</pre>
+				<pre>"customSearch": "customSearch"</pre>
 			</li>
 			<li>OPTIONAL – menuPath – This variable is used to display a custom menu. Although you don't need to we suggest you <a href="./contact-en.html">contact the CDTS team</a> to enable this option. If you have done this before then simply provide the URL to your valid menu file to enable this option. You can copy the format in the sample custom menu file provided below in our sample.
-				<pre>"menuPath" : "https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/(version)/cdts/ajax/appmenu-en.html"</pre>
+				<pre>"menuPath": "https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/(version)/cdts/ajax/appmenu-en.html"</pre>
 			</li>
 			<li>OPTIONAL – menuLinks – This variable will be used to create a top navigation menu, it will override the menuPath variable if provided. You can also create submenu items.
-				<pre>"menuLinks" : [{
-	"href" : "#",
-	"text" : "Link 1"
+				<pre>"menuLinks": [{
+	"href": "#",
+	"text": "Link 1"
 }]</pre>
 			</li>
 			<li>OPTIONAL – breadcrumbs – Use this variable to specify the breadcrumbs in your page. Note that if no breadcrumbs are specified the application template will <strong>NOT</strong> insert a default link.
-				<pre>"breadcrumbs" : [{
-	"title" : "Home",
-	"href" : "http://www.canada.ca/en/index.htm"
+				<pre>"breadcrumbs": [{
+	"title": "Home",
+	"href": "http://www.canada.ca/en/index.htm"
 },{
 	"title": "CDTS",
-	"acronym" : "Centrally Deployed Templates Solution",
-	"href" : "http://www.canada.ca/en/index.htm"
+	"acronym": "Centrally Deployed Templates Solution",
+	"href": "http://www.canada.ca/en/index.htm"
 }]</pre>
 			</li>
 			<li>OPTIONAL – showPreContent – This will be used by Principal Publisher to insert content into the pre content space of your page. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.
-				<pre>"showPreContent" : false</pre>
+				<pre>"showPreContent": false</pre>
 			</li>
 		</ul>
 		<p>We have not provided sample code images for the application templates as there are too many options. Instead please see our <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_30/cdts/appTop/apptop-en.shtml">application template sample pages</a> that we keep updated. It has all the different scenarios listed above.</p>
@@ -793,46 +793,46 @@
 		<ul>
 			<li>OPTIONAL – footerSections – This variable will create a custom set of columns for your footer links. See sample URL below for an example.</li>
 		</ul>
-		<pre>"footerSections" : [{
-	"href" : "#",
-	"text" : "Link 1"
+		<pre>"footerSections": [{
+	"href": "#",
+	"text": "Link 1"
 },{
-	"href" : "#",
-	"text" : "Link 2"
+	"href": "#",
+	"text": "Link 2"
 }]</pre>
 		<section>
 			<h4 id="v4.0.28">v4.0.28</h4>
 			<ul>
 				<li>OPTIONAL – contactLink – This variable will override the default contact link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom contact us link.
-					<pre>"contactLink" : "https://www.canada.ca/en/contact.html"</pre>
+					<pre>"contactLink": "https://www.canada.ca/en/contact.html"</pre>
 				</li>
 				<li>OPTIONAL – termsLink – This variable will override the “Terms &amp; conditions” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link.
-					<pre>"termsLink" : "http://canada.ca/en/transparency/terms.html"</pre>
+					<pre>"termsLink": "http://canada.ca/en/transparency/terms.html"</pre>
 				</li>
 				<li>OPTIONAL – privacyLink – This variable will override the “Privacy” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link.
-					<pre>"privacyLink" : "http://canada.ca/en/transparency/privacy.html"</pre>
+					<pre>"privacyLink": "http://canada.ca/en/transparency/privacy.html"</pre>
 				</li>
 			</ul>
 		</section>
 		<section>
 			<h4 id="v4.0.29.2B">v4.0.29+</h4>
 			<ul>
-				<li>OPTIONAL – contactLink – This variable will override the default contact link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom contact us link. You can also add an optional variable to have the link open in a new window with <code>"newWindow" : true</code>.
+				<li>OPTIONAL – contactLink – This variable will override the default contact link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom contact us link. You can also add an optional variable to have the link open in a new window with <code>"newWindow": true</code>.
 					<pre>"contactLink": [{
-	"href" : "https://www.canada.ca/en/contact.html",
-	"newWindow" : true
+	"href": "https://www.canada.ca/en/contact.html",
+	"newWindow": true
 }]</pre>
 				</li>
-				<li>OPTIONAL – termsLink – This variable will override the “Terms &amp; conditions” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link. You can also add an optional variable to have the link open in a new window with <code>"newWindow" : true</code>.
+				<li>OPTIONAL – termsLink – This variable will override the “Terms &amp; conditions” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link. You can also add an optional variable to have the link open in a new window with <code>"newWindow": true</code>.
 					<pre>"termsLink": [{
-	"href" : "http://canada.ca/en/transparency/terms.html",
-	"newWindow" : true
+	"href": "http://canada.ca/en/transparency/terms.html",
+	"newWindow": true
 }]</pre>
 				</li>
-				<li>OPTIONAL – privacyLink – This variable will override the “Privacy” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link. You can also add an optional variable to have the link open in a new window with <code>"newWindow" : true</code>.
+				<li>OPTIONAL – privacyLink – This variable will override the “Privacy” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link. You can also add an optional variable to have the link open in a new window with <code>"newWindow": true</code>.
 					<pre>"privacyLink": [{
-	"href" : "http://canada.ca/en/transparency/privacy.html",
-	"newWindow" : true
+	"href": "http://canada.ca/en/transparency/privacy.html",
+	"newWindow": true
 }]</pre>
 				</li>
 			</ul>
@@ -852,8 +852,8 @@
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
 					"dateModified": "2019-03-13",
-					"showShare" : false,
-					"showFeedback" : false
+					"showShare": false,
+					"showFeedback": false
 				});
 			</script>
 		</main>
@@ -863,7 +863,7 @@
 		<script>
 			var defFooter = document.getElementById("def-footer");
 			defFooter.outerHTML = wet.builder.appFooter({
-				"contactLink" : "./contact-en.html"
+				"contactLink": "./contact-en.html"
 			});
 		</script>
 		<!-- Write closure template -->
