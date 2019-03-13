@@ -434,7 +434,23 @@
 			</li>
 		</ul>
 		<p>Exemple&#160;:</p>
-		<img class="img-responsive mrgn-bttm-md" lang="en" alt="CDTS section menu top section references" src="http://www.gcpedia.gc.ca/gcwiki/images/2/29/Cdts-i-sectionmenu-top.PNG">
+		<pre>&lt;div id="def-top"&gt;
+	&lt;!-- Write closure fall-back static file --&gt;
+	&lt;!-- /ROOT/app/cls/WET/gcintranet/(version)/cdts/static/secMenuTop-en.html --&gt;
+	&lt;!--#include virtual="/app/cls/WET/gcintranet/v4_0_27/cdts/static/secMenuTop-en.html" --&gt;
+&lt;/div&gt;
+&lt;!-- Write closure template --&gt;
+&lt;script type="text/javascript"&gt;
+	var defTop = document.getElementById("def-top");
+	defTop.outerHTML = wet.builder.top({
+		topSecMenu: true,
+		lngLinks: [{
+			lang: "fr",
+			href: "sectionmenu-fr.shtml",
+			text: "Français"
+		}]
+	});
+&lt;/script&gt;</pre>
 		<p>Les <a href="#Section_pre-footer_references">références de la section qui précède le pied de page</a> ne changent pas.</p>
 		<p>Immédiatement après la fermeture de la balise <code>&lt;main&gt;</code>, vous devez apporter 4 changements.</p>
 		<ol>
@@ -463,7 +479,48 @@
 		</ul>
 		<p><strong>Prenez note que bien qu'il soit possible d'obtenir plusieurs menus, un seul devrait être utilisé.</strong></p>
 		<p>Exemple&#160;:</p>
-		<img class="img-responsive mrgn-bttm-md" lang="en" alt="CDTS section menu references" src="http://www.gcpedia.gc.ca/gcwiki/images/4/44/Cdts-sectionmenu.png">
+		<pre>&lt;nav class="wb-sec col-md-3 col-md-pull-9" typeof="SiteNavigationElement" id="wb-sec" role="navigation"&gt;
+	&lt;!-- Write closure fall-back static file --&gt;
+	&lt;!-- /ROOT/app/cls/WET/gcintranet/v4_0_27/cdts/static/secMenu-en.html --&gt;
+	&lt;!--#include virtual="/app/cls/WET/gcintranet/v4_0_27/cdts/static/secMenu-en.html" --&gt;
+&lt;/nav&gt;
+&lt;!-- Write closure template --&gt;
+&lt;script type="text/javascript"&gt;
+	var secondarymenu = document.getElementById("wb-sec");
+	secondarymenu.innerHTML = wet.builder.secmenu({
+		sections: [{
+			sectionName: "[Topic - Local navigation]",
+			menuLinks: [{
+				href: "#",
+				text: "Link 1",
+				subLinks: [{
+					subhref: "#11a",
+					subtext: "Link 1.1 a)"
+				}, {
+					subhref: "#11b",
+					subtext: "Link 1.1 b)"
+				}, {
+					subhref: "#11c",
+					subtext: "Opens in a new window",
+					newWindow: true
+				}, {
+					subhref: "#11d",
+					subtext: "Link 1.1 d)"
+				}]
+			}, {
+				href: "#",
+				text: "Link 2"
+			}, {
+				href: "#",
+				text: "Opens in a new window",
+				newWindow: true
+			}, {
+				href: "#",
+				text: "Link 4"
+			}]
+		}]
+	});
+&lt;/script&gt;</pre>
 		<p>Les <a href="#Section_footer_references">références du pied de page</a> ne changent pas.</p>
 		<p>Les <a href="#Section_footer_file_references">références de fichiers du pied de page</a> ne changent pas.</p>
 	</section>
@@ -635,7 +692,7 @@
 			<script>
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
-					"dateModified": "2019-03-12",
+					"dateModified": "2019-03-13",
 					"showShare" : false,
 					"showFeedback" : false
 				});

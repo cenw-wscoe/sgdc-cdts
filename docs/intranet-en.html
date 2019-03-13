@@ -434,8 +434,23 @@
 			</li>
 		</ul>
 		<p>Sample:</p>
-		<pre></pre>
-		<img class="img-responsive mrgn-bttm-md" alt="CDTS splash page main section references" src="http://www.gcpedia.gc.ca/gcwiki/images/b/b1/Cdts-i-splash-main.PNG">
+		<pre>&lt;div id="splashContent"&gt;
+	&lt;!-- Write closure fall-back static file --&gt;
+	&lt;!-- /ROOT/app/cls/WET/gcintranet/v4_0_27/cdts/static/splash.html --&gt;
+	&lt;!--#include virtual="/app/cls/WET/gcintranet/v4_0_27/cdts/static/splash.html" --&gt;
+	&lt;!-- Write closure template --&gt;
+	&lt;script type="text/javascript"&gt;
+		var contentSplash = document.getElementById("splashContent");
+		contentSplash.innerHTML = wet.builder.splash({
+			indexEng: "http://intranet.canada.ca/index-eng.html",
+			indexFra: "http://intranet.canada.ca/index-fra.html",
+			termsEng: "http://intranet.canada.ca/terms-avis-eng.html",
+			termsFra: "http://intranet.canada.ca/terms-avis-fra.html",
+			nameEng: "My web asset",
+			nameFra: "Mon actif web"
+		});
+	&lt;/script&gt;
+&lt;/div&gt;</pre>
 	</section>
 	<section>
 		<h3 id="Transactional_page_references">Transactional page references</h3>
@@ -464,8 +479,25 @@
 			</li>
 		</ul>
 		<p>Sample:</p>
-		<pre></pre>
-		<img class="img-responsive mrgn-bttm-md" alt="CDTS transactional top section references" src="http://www.gcpedia.gc.ca/gcwiki/images/7/7f/Cdts-i-trans-top.PNG">
+		<pre>&lt;div id="def-top"&gt;
+	&lt;!-- Write closure fall-back static file --&gt;
+	&lt;!-- /ROOT/app/cls/WET/gcintranet/(version)/cdts/static/top-(language).html --&gt;
+	&lt;!--#include virtual="/app/cls/WET/gcintranet/v4_0_27/cdts/static/top-(language).html" --&gt;
+&lt;/div&gt;
+&lt;!-- Write closure template --&gt;
+&lt;script type="text/javascript"&gt;
+	var defTop = document.getElementById("def-top");
+	defTop.outerHTML = wet.builder.top({
+		search: false,
+		siteMenu: false,
+		lngLinks: [{
+			lang: "fr",
+			href: "content-fr.shtml",
+			text: "Français",
+		}],
+		showPreContent: false
+	});
+&lt;/script&gt;</pre>
 		<p>The <a href="#Section_pre-footer_references">Section pre-footer references</a> are the same except for the following modifications:</p>
 		<ul>
 			<li>MANDATORY – showPostContent – This variable is used to hide the content inserted into the post content space of your page.
@@ -475,8 +507,19 @@
 			</li>
 		</ul>
 		<p>Sample:</p>
-		<pre></pre>
-		<img class="img-responsive mrgn-bttm-md" alt="CDTS transactional preFooter section references" src="http://www.gcpedia.gc.ca/gcwiki/images/f/f0/Cdts-i-trans-prefooter.PNG">
+		<pre>&lt;div id="def-preFooter"&gt;
+	&lt;!-- Write closure fall-back static file --&gt;
+	&lt;!-- /ROOT/app/cls/WET/gcintranet/(version)/cdts/static/preFooter-(language).html --&gt;
+	&lt;!--#include virtual="/app/cls/WET/gcintranet/v4_0_27/cdts/static/preFooter-(language).html" --&gt;
+&lt;/div&gt;
+&lt;!-- Write closure template --&gt;
+&lt;script type="text/javascript"&gt;
+	var defPreFooter = document.getElementById("def-preFooter");
+	defPreFooter.outerHTML = wet.builder.preFooter({
+		dateModified: "2016-05-05",
+		showPostContent: false
+	});
+&lt;/script&gt;</pre>
 		<p>The <a href="#Section_footer_references">Section footer references</a> are the same except for the following modifications:</p>
 		<ul>
 			<li>MANDATORY – showFooter – This variable is used to hide the content inside the footer.
@@ -501,8 +544,13 @@
 			</li>
 		</ul>
 		<p>Sample:</p>
-		<pre></pre>
-		<img class="img-responsive mrgn-bttm-md" alt="CDTS transactional footer section references" src="http://www.gcpedia.gc.ca/gcwiki/images/8/80/Cdts-i-trans-footer.PNG">
+		<pre>&lt;!-- Write closure template --&gt;
+&lt;script type="text/javascript"&gt;
+	var defFooter = document.getElementById("def-footer");
+	defFooter.outerHTML = wet.builder.footer({
+		showFeatures: false
+	});
+&lt;/script&gt;</pre>
 		<p>The <a href="#Section_footer_file_references">Section footer file references</a> don't change.</p>
 	</section>
 	<section>
@@ -522,8 +570,23 @@
 			</li>
 		</ul>
 		<p>Sample:</p>
-		<pre></pre>
-		<img class="img-responsive mrgn-bttm-md" alt="CDTS section menu top section references" src="http://www.gcpedia.gc.ca/gcwiki/images/2/29/Cdts-i-sectionmenu-top.PNG">
+		<pre>&lt;div id="def-top"&gt;
+	&lt;!-- Write closure fall-back static file --&gt;
+	&lt;!-- /ROOT/app/cls/WET/gcintranet/(version)/cdts/static/secMenuTop-en.html --&gt;
+	&lt;!--#include virtual="/app/cls/WET/gcintranet/v4_0_27/cdts/static/secMenuTop-en.html" --&gt;
+&lt;/div&gt;
+&lt;!-- Write closure template --&gt;
+&lt;script type="text/javascript"&gt;
+	var defTop = document.getElementById("def-top");
+	defTop.outerHTML = wet.builder.top({
+		topSecMenu: true,
+		lngLinks: [{
+			lang: "fr",
+			href: "sectionmenu-fr.shtml",
+			text: "Français"
+		}]
+	});
+&lt;/script&gt;</pre>
 		<p>The <a href="#Section_pre-footer_references">Section pre-footer references</a> don't change.</p>
 		<p>Immediately after the closing <code>&lt;main&gt;</code> element, you will need to perform 4 changes.</p>
 		<ol>
@@ -552,8 +615,48 @@
 		</ul>
 		<p><strong>Please note that although it’s possible to have multiple secondary menus, only one menu should be used.</strong></p>
 		<p>Sample:</p>
-		<pre></pre>
-		<img class="img-responsive mrgn-bttm-md" alt="CDTS section menu references" src="http://www.gcpedia.gc.ca/gcwiki/images/b/bd/Cdts-i-sectionmenu.PNG">
+		<pre>&lt;nav class="wb-sec col-md-3 col-md-pull-9" typeof="SiteNavigationElement" id="wb-sec" role="navigation"&gt;
+	&lt;!-- Write closure fall-back static file --&gt;
+	&lt;!-- /ROOT/app/cls/WET/gcintranet/v4_0_27/cdts/static/secMenu-en.html --&gt;
+	&lt;!--#include virtual="/app/cls/WET/gcintranet/v4_0_27/cdts/static/secMenu-en.html" --&gt;
+&lt;/nav&gt;
+&lt;!-- Write closure template --&gt;
+&lt;script type="text/javascript"&gt;
+	var secondarymenu = document.getElementById("wb-sec");
+	secondarymenu.innerHTML = wet.builder.secmenu({
+		sections: [{
+			sectionName: "[Topic - Local navigation]",
+			menuLinks: [{
+				href: "#",
+				text: "Link 1",
+				subLinks: [{
+					subhref: "#11a",
+					subtext: "Link 1.1 a)"
+				}, {
+					subhref: "#11b",
+					subtext: "Link 1.1 b)"
+				}, {
+					subhref: "#11c",
+					subtext: "Opens in a new window",
+					newWindow: true
+				}, {
+					subhref: "#11d",
+					subtext: "Link 1.1 d)"
+				}]
+			}, {
+				href: "#",
+				text: "Link 2"
+			}, {
+				href: "#",
+				text: "Opens in a new window",
+				newWindow: true
+			}, {
+				href: "#",
+				text: "Link 4"
+			}]
+		}]
+	});
+&lt;/script&gt;</pre>
 		<p>The <a href="#Section_footer_references">Section footer references</a> don't change.</p>
 		<p>The <a href="#Section_footer_file_references">Section footer file references</a> don't change.</p>
 	</section>
@@ -707,7 +810,7 @@
 			<script>
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
-					"dateModified": "2019-03-12",
+					"dateModified": "2019-03-13",
 					"showShare" : false,
 					"showFeedback" : false
 				});
