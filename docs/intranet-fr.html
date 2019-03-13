@@ -26,7 +26,7 @@
 		<script>
 			var defTop = document.getElementById("def-top");
 			defTop.outerHTML = wet.builder.appTop({
-				"breadcrumbs": [{title: "Accueil", href: "./index-fr.html"}],
+				"breadcrumbs": [{"title": "Accueil", "href": "./index-fr.html"}],
 				"appName": [{"text": "Solution de gabarits à déploiement centralisé (SGDC)", "href": "./index-fr.html"}],
 				"lngLinks": [{"lang": "fr", "href": "intranet-en.html", "text": "English"}],
 				"menuPath": "../ajax/cdtsMenu-fr.html"
@@ -443,11 +443,11 @@
 &lt;script&gt;
 	var defTop = document.getElementById("def-top");
 	defTop.outerHTML = wet.builder.top({
-		topSecMenu: true,
-		lngLinks: [{
-			lang: "fr",
-			href: "sectionmenu-fr.shtml",
-			text: "Français"
+		"topSecMenu": true,
+		"lngLinks": [{
+			"lang": "fr",
+			"href": "sectionmenu-fr.shtml",
+			"text": "Français"
 		}]
 	});
 &lt;/script&gt;</pre>
@@ -469,7 +469,7 @@
 	"text" : "Lien 1"
 }]</pre>
 			</li>
-			<li>FACULTATIF – subLinks – Cette variable est utilisée pour afficher les sous-liens du menu de la section. Vous pouvez également ajouter <code>newWindow: true</code> si vous voulez que le lien s'ouvre dans une nouvelle fenêtre.
+			<li>FACULTATIF – subLinks – Cette variable est utilisée pour afficher les sous-liens du menu de la section. Vous pouvez également ajouter <code>"newWindow": true</code> si vous voulez que le lien s'ouvre dans une nouvelle fenêtre.
 				<pre>"subLinks" : [{
 	"subhref" : "#",
 	"subtext" : "Lien 1",
@@ -488,35 +488,35 @@
 &lt;script&gt;
 	var secondarymenu = document.getElementById("wb-sec");
 	secondarymenu.innerHTML = wet.builder.secmenu({
-		sections: [{
-			sectionName: "[Topic - Local navigation]",
-			menuLinks: [{
-				href: "#",
-				text: "Link 1",
-				subLinks: [{
-					subhref: "#11a",
-					subtext: "Link 1.1 a)"
+		"sections": [{
+			"sectionName": "[Topic - Local navigation]",
+			"menuLinks": [{
+				"href": "#",
+				"text": "Link 1",
+				"subLinks": [{
+					"subhref": "#11a",
+					"subtext": "Link 1.1 a)"
 				}, {
-					subhref: "#11b",
-					subtext: "Link 1.1 b)"
+					"subhref": "#11b",
+					"subtext": "Link 1.1 b)"
 				}, {
-					subhref: "#11c",
-					subtext: "Opens in a new window",
-					newWindow: true
+					"subhref": "#11c",
+					"subtext": "Opens in a new window",
+					"newWindow": true
 				}, {
-					subhref: "#11d",
-					subtext: "Link 1.1 d)"
+					"subhref": "#11d",
+					"subtext": "Link 1.1 d)"
 				}]
 			}, {
-				href: "#",
-				text: "Link 2"
+				"href": "#",
+				"text": "Link 2"
 			}, {
-				href: "#",
-				text: "Opens in a new window",
-				newWindow: true
+				"href": "#",
+				"text": "Opens in a new window",
+				"newWindow": true
 			}, {
-				href: "#",
-				text: "Link 4"
+				"href": "#",
+				"text": "Link 4"
 			}]
 		}]
 	});

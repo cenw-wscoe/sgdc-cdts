@@ -26,7 +26,7 @@
 		<script>
 			var defTop = document.getElementById("def-top");
 			defTop.outerHTML = wet.builder.appTop({
-				"breadcrumbs": [{title: "Home", href: "./index-en.html"}],
+				"breadcrumbs": [{"title": "Home", "href": "./index-en.html"}],
 				"appName": [{"text": "Centrally Deployed Templates Solution (CDTS)", "href": "./index-en.html"}],
 				"lngLinks": [{"lang": "fr", "href": "intranet-fr.html", "text": "Français"}],
 				"menuPath": "../ajax/cdtsMenu-en.html"
@@ -250,7 +250,7 @@
 			</li>
 			<li>OPTIONAL – intranetTitle – This variable is used to display a custom intranet title. Before proceeding please ensure you have permission from your department, TBS or Principal Publisher. This variable does not conform to the <a href="http://www.gcpedia.gc.ca/wiki/Canada.ca_Content_and_Information_Architecture_Specification">C&amp;IA specifications document</a>.
 				<pre>"intranetTitle" : [{
-	text: "Custom title",
+	"text": "Custom title",
 	"url" :"#"
 }]</pre>
 			</li>
@@ -442,12 +442,12 @@
 	&lt;script&gt;
 		var contentSplash = document.getElementById("splashContent");
 		contentSplash.innerHTML = wet.builder.splash({
-			indexEng: "http://intranet.canada.ca/index-eng.html",
-			indexFra: "http://intranet.canada.ca/index-fra.html",
-			termsEng: "http://intranet.canada.ca/terms-avis-eng.html",
-			termsFra: "http://intranet.canada.ca/terms-avis-fra.html",
-			nameEng: "My web asset",
-			nameFra: "Mon actif web"
+			"indexEng": "http://intranet.canada.ca/index-eng.html",
+			"indexFra": "http://intranet.canada.ca/index-fra.html",
+			"termsEng": "http://intranet.canada.ca/terms-avis-eng.html",
+			"termsFra": "http://intranet.canada.ca/terms-avis-fra.html",
+			"nameEng": "My web asset",
+			"nameFra": "Mon actif web"
 		});
 	&lt;/script&gt;
 &lt;/div&gt;</pre>
@@ -488,21 +488,21 @@
 &lt;script&gt;
 	var defTop = document.getElementById("def-top");
 	defTop.outerHTML = wet.builder.top({
-		search: false,
-		siteMenu: false,
-		lngLinks: [{
-			lang: "fr",
-			href: "content-fr.shtml",
-			text: "Français",
+		"search": false,
+		"siteMenu": false,
+		"lngLinks": [{
+			"lang": "fr",
+			"href": "content-fr.shtml",
+			"text": "Français",
 		}],
-		showPreContent: false
+		"showPreContent": false
 	});
 &lt;/script&gt;</pre>
 		<p>The <a href="#Section_pre-footer_references">Section pre-footer references</a> are the same except for the following modifications:</p>
 		<ul>
 			<li>MANDATORY – showPostContent – This variable is used to hide the content inserted into the post content space of your page.
 				<ul>
-					<li>showPostContent: false</li>
+					<li>"showPostContent": false</li>
 				</ul>
 			</li>
 		</ul>
@@ -516,8 +516,8 @@
 &lt;script&gt;
 	var defPreFooter = document.getElementById("def-preFooter");
 	defPreFooter.outerHTML = wet.builder.preFooter({
-		dateModified: "2016-05-05",
-		showPostContent: false
+		"dateModified": "2016-05-05",
+		"showPostContent": false
 	});
 &lt;/script&gt;</pre>
 		<p>The <a href="#Section_footer_references">Section footer references</a> are the same except for the following modifications:</p>
@@ -548,7 +548,7 @@
 &lt;script&gt;
 	var defFooter = document.getElementById("def-footer");
 	defFooter.outerHTML = wet.builder.footer({
-		showFeatures: false
+		"showFeatures": false
 	});
 &lt;/script&gt;</pre>
 		<p>The <a href="#Section_footer_file_references">Section footer file references</a> don't change.</p>
@@ -579,11 +579,11 @@
 &lt;script&gt;
 	var defTop = document.getElementById("def-top");
 	defTop.outerHTML = wet.builder.top({
-		topSecMenu: true,
-		lngLinks: [{
-			lang: "fr",
-			href: "sectionmenu-fr.shtml",
-			text: "Français"
+		"topSecMenu": true,
+		"lngLinks": [{
+			"lang": "fr",
+			"href": "sectionmenu-fr.shtml",
+			"text": "Français"
 		}]
 	});
 &lt;/script&gt;</pre>
@@ -605,7 +605,7 @@
 	"text" : "Link 1"
 }]</pre>
 			</li>
-			<li>OPTIONAL – subLinks – This variable will be used to display the sub-links in the menu. You can also add newWindow: true if you want the link to open in a new window.
+			<li>OPTIONAL – subLinks – This variable will be used to display the sub-links in the menu. You can also add "newWindow": true if you want the link to open in a new window.
 				<pre>"subLinks": [{
 	"subhref" : "#",
 	"subtext" : "Link 1",
@@ -624,35 +624,35 @@
 &lt;script&gt;
 	var secondarymenu = document.getElementById("wb-sec");
 	secondarymenu.innerHTML = wet.builder.secmenu({
-		sections: [{
-			sectionName: "[Topic - Local navigation]",
-			menuLinks: [{
-				href: "#",
-				text: "Link 1",
-				subLinks: [{
-					subhref: "#11a",
-					subtext: "Link 1.1 a)"
+		"sections": [{
+			"sectionName": "[Topic - Local navigation]",
+			"menuLinks": [{
+				"href": "#",
+				"text": "Link 1",
+				"subLinks": [{
+					"subhref": "#11a",
+					"subtext": "Link 1.1 a)"
 				}, {
-					subhref: "#11b",
-					subtext: "Link 1.1 b)"
+					"subhref": "#11b",
+					"subtext": "Link 1.1 b)"
 				}, {
-					subhref: "#11c",
-					subtext: "Opens in a new window",
-					newWindow: true
+					"subhref": "#11c",
+					"subtext": "Opens in a new window",
+					"newWindow": true
 				}, {
-					subhref: "#11d",
-					subtext: "Link 1.1 d)"
+					"subhref": "#11d",
+					"subtext": "Link 1.1 d)"
 				}]
 			}, {
-				href: "#",
-				text: "Link 2"
+				"href": "#",
+				"text": "Link 2"
 			}, {
-				href: "#",
-				text: "Opens in a new window",
-				newWindow: true
+				"href": "#",
+				"text": "Opens in a new window",
+				"newWindow": true
 			}, {
-				href: "#",
-				text: "Link 4"
+				"href": "#",
+				"text": "Link 4"
 			}]
 		}]
 	});
@@ -766,7 +766,7 @@
 		<ul>
 			<li>OPTIONAL – globalNav – This variable will override the default footer and display the global navigation menu for Canada.ca in the footer as a list of links. See sample URL below for an example.
 				<ul>
-					<li>globalNav: true</li>
+					<li>"globalNav": true</li>
 				</ul>
 			</li>
 			<li>OPTIONAL – footerSections – This variable will create a custom set of columns for your footer links. See sample URL below for an example.
