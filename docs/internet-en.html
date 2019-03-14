@@ -19,7 +19,7 @@
 			}));
 		</script>
 	</head>
-	<body vocab="http://schema.org/" typeof="WebPage">
+	<body vocab="https://schema.org/" typeof="WebPage">
 		<div id="def-top">
 		</div>
 		<!-- Write closure template -->
@@ -227,11 +227,11 @@
 			<li>OPTIONAL – breadcrumbs – Use this variable to specify the breadcrumbs in your page. Note that if no breadcrumbs are specified the template will insert a link to the home page of the Canada.ca website.
 				<pre>"breadcrumbs": [{
 	"title": "Home",
-	"href": "http://www.canada.ca/en/index.html"
+	"href": "https://www.canada.ca/en/index.html"
 },{
 	"title": "CDTS",
 	"acronym": "Centrally Deployed Templates Solution",
-	"href": "http://www.canada.ca/en/index.html"
+	"href": "https://www.canada.ca/en/index.html"
 }]</pre>
 			</li>
 			<li>OPTIONAL – showPreContent – This will be used by Principal Publisher to insert content into the pre content space of your page. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.
@@ -401,16 +401,16 @@
 		</ol>
 		<ul>
 			<li>MANDATORY – indexEng – This variable indicates what the URL for the home page in English is.
-				<pre>"indexEng": "http://www.canada.ca/en/index.html"</pre>
+				<pre>"indexEng": "https://www.canada.ca/en/index.html"</pre>
 			</li>
 			<li>MANDATORY – indexFra – This variable indicates what the URL for the home page in French is.
-				<pre>"indexFra": "http://www.canada.ca/fr/index.html"</pre>
+				<pre>"indexFra": "https://www.canada.ca/fr/index.html"</pre>
 			</li>
 			<li>MANDATORY – termsEng – This variable indicates what the URL for the terms and conditions page in English is.
-				<pre>"termsEng": "http://www.canada.ca/en/transparency/terms.html"</pre>
+				<pre>"termsEng": "https://www.canada.ca/en/transparency/terms.html"</pre>
 			</li>
 			<li>MANDATORY – termsFra – This variable indicates what the URL for the terms and conditions page in French is.
-				<pre>"termsFra": "http://www.canada.ca/fr/transparence/avis.html"</pre>
+				<pre>"termsFra": "https://www.canada.ca/fr/transparence/avis.html"</pre>
 			</li>
 			<li>OPTIONAL – nameEng – This variable is used to brand the splash page with the web asset’s name (in English). If not used, the default “Government of Canada” will appear.
 				<pre>"nameEng": "My web asset"</pre>
@@ -428,10 +428,10 @@
 	&lt;script&gt;
 		var contentSplash = document.getElementById("splashContent");
 		contentSplash.innerHTML = wet.builder.splash({
-			"indexEng": "http://www.canada.ca/en/index.html",
-			"indexFra": "http://www.canada.ca/fr/index.html",
-			"termsEng": "http://www.canada.ca/en/transparency/terms.html",
-			"termsFra": "http://www.canada.ca/fr/transparence/avis.html",
+			"indexEng": "https://www.canada.ca/en/index.html",
+			"indexFra": "https://www.canada.ca/fr/index.html",
+			"termsEng": "https://www.canada.ca/en/transparency/terms.html",
+			"termsFra": "https://www.canada.ca/fr/transparence/avis.html",
 			"nameEng": "My web asset",
 			"nameFra": "Mon actif web"
 		});
@@ -457,7 +457,7 @@
 			<li>MANDATORY – breadcrumbs – Note that in a transactional scenario, the breadcrumbs are replaced with a link to exit the transaction that directs users to a safe point where they can abandon the current transaction and restart it should they wish.
 				<pre>"breadcrumbs": [{
 	"title": "Exit secure transaction",
-	"href": "http://www.canada.ca/en/index.html"
+	"href": "https://www.canada.ca/en/index.html"
 }]</pre>
 			</li>
 			<li>MANDATORY – showPreContent – This variable is used to hide the content inserted into the pre content space of your page.
@@ -525,13 +525,13 @@
 			</li>
 			<li>OPTIONAL – termsLink – This variable will override the “Terms &amp; conditions” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link. You can also add an optional variable to have the link open in a new window with <code>"newWindow": true</code>.
 				<pre>"termsLink": [{
-	"href": "http://canada.ca/en/transparency/terms.html",
+	"href": "https://canada.ca/en/transparency/terms.html",
 	"newWindow": true
 }]</pre>
 			</li>
 			<li>OPTIONAL – privacyLink – This variable will override the “Privacy” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link. You can also add an optional variable to have the link open in a new window with <code>"newWindow": true</code>.
 				<pre>"privacyLink": [{
-	"href": "http://canada.ca/en/transparency/privacy.html",
+	"href": "https://canada.ca/en/transparency/privacy.html",
 	"newWindow": true
 }]</pre>
 			</li>
@@ -767,11 +767,11 @@
 			<li>OPTIONAL – breadcrumbs – Use this variable to specify the breadcrumbs in your page. Note that if no breadcrumbs are specified the application template will <strong>NOT</strong> insert a default link.
 				<pre>"breadcrumbs": [{
 	"title": "Home",
-	"href": "http://www.canada.ca/en/index.html"
+	"href": "https://www.canada.ca/en/index.html"
 },{
 	"title": "CDTS",
 	"acronym": "Centrally Deployed Templates Solution",
-	"href": "http://www.canada.ca/en/index.html"
+	"href": "https://www.canada.ca/en/index.html"
 }]</pre>
 			</li>
 			<li>OPTIONAL – showPreContent – This will be used by Principal Publisher to insert content into the pre content space of your page. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.
@@ -807,10 +807,10 @@
 					<pre>"contactLink": "https://www.canada.ca/en/contact.html"</pre>
 				</li>
 				<li>OPTIONAL – termsLink – This variable will override the “Terms &amp; conditions” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link.
-					<pre>"termsLink": "http://canada.ca/en/transparency/terms.html"</pre>
+					<pre>"termsLink": "https://canada.ca/en/transparency/terms.html"</pre>
 				</li>
 				<li>OPTIONAL – privacyLink – This variable will override the “Privacy” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link.
-					<pre>"privacyLink": "http://canada.ca/en/transparency/privacy.html"</pre>
+					<pre>"privacyLink": "https://canada.ca/en/transparency/privacy.html"</pre>
 				</li>
 			</ul>
 		</section>
@@ -825,13 +825,13 @@
 				</li>
 				<li>OPTIONAL – termsLink – This variable will override the “Terms &amp; conditions” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link. You can also add an optional variable to have the link open in a new window with <code>"newWindow": true</code>.
 					<pre>"termsLink": [{
-	"href": "http://canada.ca/en/transparency/terms.html",
+	"href": "https://canada.ca/en/transparency/terms.html",
 	"newWindow": true
 }]</pre>
 				</li>
 				<li>OPTIONAL – privacyLink – This variable will override the “Privacy” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link. You can also add an optional variable to have the link open in a new window with <code>"newWindow": true</code>.
 					<pre>"privacyLink": [{
-	"href": "http://canada.ca/en/transparency/privacy.html",
+	"href": "https://canada.ca/en/transparency/privacy.html",
 	"newWindow": true
 }]</pre>
 				</li>
