@@ -416,7 +416,23 @@
 			</li>
 		</ul>
 		<p>Exemple&#160;:</p>
-		<img class="img-responsive mrgn-bttm-md" lang="en" alt="CDTS splash page main section references" src="http://www.gcpedia.gc.ca/gcwiki/images/b/b1/Cdts-i-splash-main.PNG">
+		<pre>&lt;div id="splashContent"&gt;
+	&lt;!-- Write closure fall-back static file --&gt;
+	&lt;!-- /ROOT/app/cls/WET/gcintranet/v4_0_27/cdts/static/splash.html --&gt;
+	&lt;!--#include virtual="/app/cls/WET/gcintranet/v4_0_27/cdts/static/splash.html" --&gt;
+	&lt;!-- Write closure template --&gt;
+	&lt;script&gt;
+		var contentSplash = document.getElementById("splashContent");
+		contentSplash.innerHTML = wet.builder.splash({
+			"indexEng": "https://intranet.canada.ca/index-eng.html",
+			"indexFra": "https://intranet.canada.ca/index-fra.html",
+			"termsEng": "https://intranet.canada.ca/terms-avis-eng.html",
+			"termsFra": "https://intranet.canada.ca/terms-avis-fra.html",
+			"nameEng": "My web asset",
+			"nameFra": "Mon actif web"
+		});
+	&lt;/script&gt;
+&lt;/div&gt;</pre>
 	</section>
 	<section>
 		<h3 id="R.C3.A9f.C3.A9rences_du_menu_de_la_section">Références du menu de la section</h3>
