@@ -295,7 +295,7 @@
 		<p>The Web Template provides a "string" collection to include HTML Elements, including Meta Tags, to the head section of the page. This collection can be used by your application to include any Meta Tag required by your site.</p>
 		<ul>
 			<li>Set programmatically by populating the "HTMLHeaderElements" collection of the Web Template.</li>
-			<li>The collection is of type "String", and the complete html tag for your MetaTag to include should be supplied. ex: "&lt;meta name='singer' content='Elvis'&gt;"</li>
+			<li>The collection is of type "String", and the complete html tag for your MetaTag to include should be supplied. ex: "&lt;meta name="singer" content="Elvis"&gt;"</li>
 		</ul>
 	</section>
 	<section>
@@ -503,7 +503,7 @@
 			<script>
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
-					"dateModified": "2019-03-11",
+					"dateModified": "2019-03-15",
 					"showShare": false,
 					"showFeedback": false
 				});
