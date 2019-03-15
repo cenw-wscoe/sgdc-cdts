@@ -105,7 +105,7 @@
 </div>
 <section>
 	<h2 id="What_will_the_CDTS_manage_and_how_it_will_affect_my_web_asset">What will the CDTS manage and how it will affect my web asset</h2>
-	<p>The CDTS is meant to remove the presentation layer from your web asset and instead have it rendered from a central location. Wait I need to change things! The CDTS allows for all customizations that are available in the <a href="http://www.gcpedia.gc.ca/wiki/Canada.ca_Content_and_Information_Architecture_Specification">C&amp;IA specifications document</a>. For example you can still control the language toggle and search or remove the activities and initiatives section through CDTS variables, these are explained in each section below. The CDTS will manage:</p>
+	<p>The CDTS is meant to remove the presentation layer from your web asset and instead have it rendered from a central location. Wait I need to change things! The CDTS allows for all customizations that are available in the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">C&amp;IA specifications document</a>. For example you can still control the language toggle and search or remove the activities and initiatives section through CDTS variables, these are explained in each section below. The CDTS will manage:</p>
 	<ul>
 		<li>GCWeb / WET files (CSS, JS and other applicable files)</li>
 		<li>GCWeb Site icon</li>
@@ -440,7 +440,7 @@
 	</section>
 	<section>
 		<h3 id="Transactional_page_references">Transactional page references</h3>
-		<p>Transactional pages are to be used under specific scenarios as detailed in section 6.5 of the <a href="http://www.gcpedia.gc.ca/wiki/Canada.ca_Content_and_Information_Architecture_Specification">C&amp;IA specifications document</a>. Extract:</p>
+		<p>Transactional pages are to be used under specific scenarios as detailed in section 6.5 of the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">C&amp;IA specifications document</a>. Extract:</p>
 		<ul>
 			<li><em>Users are engaged in a transactional process where allowing them to navigate away from the current page would interrupt the intended flow and result in errors, loss of data or accidental termination of the session</em></li>
 		</ul>
@@ -715,7 +715,7 @@
 	</section>
 	<section>
 		<h3 id="Section_appTop_references">Section appTop references</h3>
-		<p>So you want a custom header? Before proceeding please ensure you have permission from your department, TBS or Principal Publisher before proceeding. The changes below <strong>DO NOT</strong> follow the <a href="http://www.gcpedia.gc.ca/wiki/Canada.ca_Content_and_Information_Architecture_Specification">C&amp;IA specifications document</a>. Still want to continue? Sounds good, follow these steps:</p>
+		<p>So you want a custom header? Before proceeding please ensure you have permission from your department, TBS or Principal Publisher before proceeding. The changes below <strong>DO NOT</strong> follow the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">C&amp;IA specifications document</a>. Still want to continue? Sounds good, follow these steps:</p>
 		<p>You first need to make sure you are using <code>isApplication</code> in <code>wet.builder.refTop</code>. This will ensure you are pulling in the <code>cdtsapps.css</code> file that will properly style the web application elements.</p>
 		<p>You will then replace the <a href="#Section_top_references">Section top references</a> with the following:</p>
 		<ol>
@@ -783,7 +783,7 @@
 	</section>
 	<section>
 		<h3 id="Section_appFooter_references">Section appFooter references</h3>
-		<p>So you want a custom footer? Before proceeding please ensure you have permission from your department, TBS or Principal Publisher before proceeding. The changes below <strong>DO NOT</strong> follow the <a href="http://www.gcpedia.gc.ca/wiki/Canada.ca_Content_and_Information_Architecture_Specification">C&amp;IA specifications document</a>. Still want to continue? Sounds good, follow these steps:</p>
+		<p>So you want a custom footer? Before proceeding please ensure you have permission from your department, TBS or Principal Publisher before proceeding. The changes below <strong>DO NOT</strong> follow the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">C&amp;IA specifications document</a>. Still want to continue? Sounds good, follow these steps:</p>
 		<p>You will replace the <a href="#Section_footer_references">Section footer references</a> with the following:</p>
 		<ol>
 			<li>The first one will be to add a new <code>&lt;div&gt;</code> to wrap all the footer content with an ID of “def-footer”. This <code>&lt;div&gt;</code> will start immediately after your <code>&lt;/main&gt;</code> element has been closed.</li>
@@ -851,7 +851,7 @@
 			<script>
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
-					"dateModified": "2019-03-14",
+					"dateModified": "2019-03-15",
 					"showShare": false,
 					"showFeedback": false
 				});
