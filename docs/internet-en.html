@@ -95,24 +95,23 @@
 				<li>The "version" variant means you will NOT automatically receive any new WET updates. You must implement a "version" in your web asset and add a mechanism to keep this updated as you do your testing for each new WET version. We suggest you use your web.config to store your version variable. At ESDC updating the web.config file in production is much easier than doing a full release. It allows web assets to stay up to date quicker by simply updating the web.config file when the web asset has been tested and confirmed to work with the new WET version. Examples are provided in our <a href="./templates-en.html">.NET and JAVA samples projects</a>.</li>
 				<li>The "run" variant means that you will automatically receive all new WET releases with no intervertion on your part using the "run" version.</li>
 			</ul>
-			<p>Please note that whichever decision you make you will ALWAYS receive updates to the GCWeb theme related to the mega menu or to the GoC activities and initiatives section. Any common changes to the header/footer will be automatically pushed to your web asset. You need to have implemented the latest or two previous versions of the CDTS to obtain updates.</p>
+			<p>Please note that whichever decision you make you will ALWAYS receive updates to the GCWeb theme related to the mega menu. Any common changes to the header/footer will be automatically pushed to your web asset. You need to have implemented the latest or two previous versions of the CDTS to obtain updates.</p>
 		</section>
 		<section>
 			<h3 id="Application_templates">Application templates</h3>
-			<p>Will you need a custom header/footer? Keep in mind this is different than removing or adding certain elements that are allowed as per the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">C&amp;IA specifications document</a>. Any element that can be implemented using the C&amp;IA specifications document does not require a custom header/footer and is available in the default version of the CDTS. Currently it is advisable to not implement a custom header/footer unless you have permission to do so from your department, TBS or Principal Publisher. If you have permission to do so then follow the instructions for the "Application templates" in the menu on the right.</p>
+			<p>Will you need a custom header/footer? Keep in mind this is different than removing or adding certain elements that are allowed as per the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">C&amp;IA specifications document</a>. Any element that can be implemented using the C&amp;IA specifications document does not require a custom header/footer and is available in the default version of the CDTS. Currently it is advisable to not implement a custom header/footer unless you have permission to do so from your department, TBS or Principal Publisher. If you have permission to do so then follow the instructions for the "Application templates" in the "CDTS implementation" menu.</p>
 		</section>
 	</section>
 </div>
 <section>
 	<h2 id="What_will_the_CDTS_manage_and_how_it_will_affect_my_web_asset">What will the CDTS manage and how it will affect my web asset</h2>
-	<p>The CDTS is meant to remove the presentation layer from your web asset and instead have it rendered from a central location. Wait I need to change things! The CDTS allows for all customizations that are available in the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">C&amp;IA specifications document</a>. For example you can still control the language toggle and search or remove the activities and initiatives section through CDTS variables, these are explained in each section below. The CDTS will manage:</p>
+	<p>The CDTS is meant to remove the presentation layer from your web asset and instead have it rendered from a central location. Wait I need to change things! The CDTS allows for all customizations that are available in the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">C&amp;IA specifications document</a>. For example you can still control the language toggle and search through CDTS variables, these are explained in each section below. The CDTS will manage:</p>
 	<ul>
 		<li>GCWeb / WET files (CSS, JS and other applicable files)</li>
 		<li>GCWeb Site icon</li>
 		<li>GCWeb header (menu, images, links, search, etc...)</li>
 		<li>Pre-content space (for global wide announcements)</li>
 		<li>Post-content space (for global wide announcements)</li>
-		<li>Government of Canada activities and initiatives section</li>
 		<li>GCWeb footer (menu, links, images, etc...)</li>
 	</ul>
 </section>
@@ -147,8 +146,8 @@
 			<li>Footer section</li>
 			<li>Footer file references</li>
 		</ul>
+		<img class="img-responsive mrgn-bttm-md" alt="" src="../img/Cdts-page-template.png">
 		<p>All fall-back static files can be found on our main GCPedia page. Whenever you must go through a release cycle you must always grab the latest fall-back static files. These ensure that a basic template is available for users who have Javascript disabled.</p>
-		<img class="img-responsive mrgn-bttm-md" alt="CDTS page template" src="../img/Cdts-page-template.png">
 		<p>For all templates and sections the following JavaScript variable is optional:</p>
 		<ul>
 			<li>OPTIONAL - cdnEnv – Use this variable to specify which environment you are currently using.
@@ -168,7 +167,7 @@
 			</li>
 		</ul>
 		<p>Employees at ESDC may contact the WS CoE to obtain other variables that can be used for internal development.</p>
-		<p>For all the screenshots below please update in your own code:</p>
+		<p>For all the code below please update in your own code:</p>
 		<ul>
 			<li>(theme) – Insert the correct theme you are using, either gcweb or gcintranet</li>
 			<li>(version) – Insert the version you will be using (ex: v4_0_30) or use rn for the run variant</li>
@@ -852,7 +851,7 @@
 			<script>
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
-					"dateModified": "2019-03-15",
+					"dateModified": "2019-11-01",
 					"showShare": false,
 					"showFeedback": false
 				});
