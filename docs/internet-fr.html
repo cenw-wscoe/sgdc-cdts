@@ -95,7 +95,7 @@
 				<li>Le contrôle de version signifie que vous ne recevrez PAS de mise à jour automatique de la BOEW. Vous mettrez en place une «&#160;version&#160;» dans votre actif Web et ajouterez un mécanisme pour la garder à jour pendant que vous faites vos essais pour chaque nouvelle version de la BOEW. Nous suggérons que vous utilisiez votre fichier web.config pour stocker votre variable de version. À EDSC, mettre à jour le fichier web.config en production est beaucoup plus simple que de faire une relâche complète. Cela permet aux actifs Web de demeurer à jour plus rapidement en relâchant seulement le fichier web.config lorsque l’actif Web a été testé et qu’il fonctionne avec la nouvelle version de la BOEW. Des exemples sont fournis pour nos <a href="/wiki/Centrally_Deployed_Templates_Solution_(CDTS)/GoC_.NET_template_guide">gabarits .NET et JAVA (en anglais seulement)</a>.</li>
 				<li>En «&#160;run&#160;», vous recevrez automatiquement tous les nouveaux lancements de la BOEW sans aucune intervention de votre part.</li>
 			</ul>
-			<p>Veuillez noter que peu importe votre choix, vous recevrez TOUJOURS des mises à jour du thème GCWeb en lien avec le mega menu et/ou les activités et initiatives du GdC. Tout changement à l’en-tête ou au pied de page sera automatiquement mis à jour pour votre actif Web. Vous devez avoir mis en place la plus récente version ou la version antérieure pour obtenir ces changements.</p>
+			<p>Veuillez noter que peu importe votre choix, vous recevrez TOUJOURS des mises à jour du thème GCWeb en lien avec le mega menu. Tout changement à l’en-tête ou au pied de page sera automatiquement mis à jour pour votre actif Web. Vous devez avoir mis en place la plus récente version ou la version antérieure pour obtenir ces changements.</p>
 		</section>
 		<section>
 			<h3 id="Gabarits_d.E2.80.99applications">Gabarits d’applications</h3>
@@ -105,14 +105,13 @@
 </div>
 <section>
 	<h2 id="Que_permettra_de_g.C3.A9rer_la_SGDC_et_comment_cela_affectera-t-il_mon_actif_Web.3F">Que permettra de gérer la SGDC et comment cela affectera-t-il mon actif Web?</h2>
-	<p>La SGDC a pour but de gérer la couche de présentation de votre actif Web de façon centralisée. Ne vous inquiétez pas, la SGDC vous permet de la personnaliser selon les <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html">Spécifications du contenu et de l’architecture de l’information pour Canada.ca</a>. Par exemple, vous pouvez toujours contrôler le lien pour changer de langue, le champ de recherche ou encore retirer les activités et initiatives à l’aide de variables de la SGDC. Celles-ci sont expliquées dans chacune des sections qui suivent. La SGDC gèrera&#160;:</p>
+	<p>La SGDC a pour but de gérer la couche de présentation de votre actif Web de façon centralisée. Ne vous inquiétez pas, la SGDC vous permet de la personnaliser selon les <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html">Spécifications du contenu et de l’architecture de l’information pour Canada.ca</a>. Par exemple, vous pouvez toujours contrôler le lien pour changer de langue, le champ de recherche à l’aide de variables de la SGDC. Celles-ci sont expliquées dans chacune des sections qui suivent. La SGDC gèrera&#160;:</p>
 	<ul>
 		<li>GCWeb / BOEW (fichiers CSS, JS et autres)</li>
 		<li>Le favicon de GCWeb</li>
 		<li>En-tête GCWeb (menu, images, liens, champ de recherche, etc.)</li>
 		<li>Espace de pré-contenu (pour les annonces à l’échelle du gouvernement)</li>
 		<li>Espace de post-contenu (pour les annonces à l’échelle du gouvernement)</li>
-		<li>Activités et initiatives du gouvernement du Canada</li>
 		<li>Pied de page GCWeb (menu, liens, images, etc.)</li>
 	</ul>
 </section>
@@ -147,10 +146,10 @@
 			<li>Section du pied de page</li>
 			<li>Références de fichier de pied de page</li>
 		</ul>
+		<img class="img-responsive mrgn-bttm-md" lang="en" alt="" src="../img/Cdts-page-template.png">
 		<p>Tous les fichiers statiques de repli se retrouvent sur notre page GCpedia. À chaque fois que vous devez ouvrir votre bien Web pour effectuer des modifications ou que vous devez passer par un processus de relâche, vous devez toujours utiliser les fichiers statiques de repli les plus récents. Ces fichiers permettent l’affichage de base dans la mesure où un utilisateur aurait désactivé le Javascript sur son fureteur.</p>
-		<img class="img-responsive mrgn-bttm-md" lang="en" alt="CDTS page template" src="../img/Cdts-page-template.png">
-		<p>PLes employés d'EDSC peuvent nous contacter pour obtenir d'autres variables pouvant être utilisées à l'interne.</p>
-		<p>Pour toutes les captures d'écran suivantes, veuillez insérer dans votre propre code&#160;:</p>
+		<p>Les employés d'EDSC peuvent nous contacter pour obtenir d'autres variables pouvant être utilisées à l'interne.</p>
+		<p>Pour toutes les codes suivantes, veuillez insérer dans votre propre code&#160;:</p>
 		<ul>
 			<li>(theme) – Le thème que vous désirez utiliser, soit gcweb ou gcintranet</li>
 			<li>(version) – La version que vous utiliserez (par exemple v4_0_30) ou "rn" pour le contrôle de versions</li>
@@ -832,7 +831,7 @@
 			<script>
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
-					"dateModified": "2019-03-15",
+					"dateModified": "2019-11-01",
 					"showShare": false,
 					"showFeedback": false
 				});
