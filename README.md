@@ -17,7 +17,7 @@ La SGDC vous permettra d’atteindre l’objectif du modèle de maturité prése
 
 Pour plus d’information à propos de la SGDC, veuillez consulter le [site de documentation de la SGDC](https://cenw-wscoe.github.io/sgdc-cdts/docs/index-fr.html).
 
-## Contribuer
+## Pour contribuer
 Si vous souhaitez contribuer à la documentation du CDTS, voici une liste de ce dont vous aurez besoin.
 
 Compétences :
