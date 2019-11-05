@@ -6,14 +6,14 @@ L’objectif de la SGDC est de fournir la couche de présentation des thèmes Ca
 
 La SGDC vous permettra d’atteindre l’objectif du modèle de maturité présenté par le Secrétariat du Conseil du trésor (SCT) pour l’Initiative de renouvellement du Web. Vous pouvez facilement mettre en place :
 
-- Demeurer à jour selon la fréquence des mises à jour de Canada.ca :
-- - Mettre en place les mises à jour requises dans de courts délais;
-- - Réduire les coûts de développement et de maintenance;
-- - Assurer que les exigences Canada.ca sont mises en œuvre de façon uniforme;
-- - Permettre la gestion centralisée de la couche de présentation de tous les actifs Web d’ici le 31 décembre 2017 en utilisant des gabarits centralisés.
-- Conforme à l’Initiative du renouvellement du Web;
-- Conforme aux Spécifications du contenu et de l’architecture de l’information pour Canada.ca;
-- Comprend un processus de versions pour les mises à jour de la BOEW;
+* Demeurer à jour selon la fréquence des mises à jour de Canada.ca :
+- Mettre en place les mises à jour requises dans de courts délais;
+- Réduire les coûts de développement et de maintenance;
+- Assurer que les exigences Canada.ca sont mises en œuvre de façon uniforme;
+- Permettre la gestion centralisée de la couche de présentation de tous les actifs Web d’ici le 31 décembre 2017 en utilisant des gabarits centralisés.
+* Conforme à l’Initiative du renouvellement du Web;
+* Conforme aux Spécifications du contenu et de l’architecture de l’information pour Canada.ca;
+* Comprend un processus de versions pour les mises à jour de la BOEW;
 
 Pour plus d’information à propos de la SGDC, veuillez consulter le [site de documentation de la SGDC](https://cenw-wscoe.github.io/sgdc-cdts/docs/index-fr.html).
 
@@ -38,14 +38,14 @@ The purpose of the CDTS is essentially to deliver the presentation layer of the 
 
 The CDTS will help you meet the target option on the maturity model presented by Treasury Board Secretariat (TBS) for the Web Renewal Initiative (WRI). Easily implement the following:
 
-- Keep pace with the frequency of Canada.ca updates:
-- - Implement updates within the required narrow timeframes;
-- - Reduce ongoing development and maintenance costs;
-- - Ensure Canada.ca requirements are implemented consistently;
-- - Enable centralized management of the presentation layer of all web assets by December 31st 2017 with centrally deployed templates.
-- Aligned to Government of Canada (GoC) WRI;
-- Aligned to Canada.ca Look and Feel (Information Architecture standard);
-- Includes “versioning” process for Web Experience Toolkit (WET) updates.
+* Keep pace with the frequency of Canada.ca updates:
+- Implement updates within the required narrow timeframes;
+- Reduce ongoing development and maintenance costs;
+- Ensure Canada.ca requirements are implemented consistently;
+- Enable centralized management of the presentation layer of all web assets by December 31st 2017 with centrally deployed templates.
+* Aligned to Government of Canada (GoC) WRI;
+* Aligned to Canada.ca Look and Feel (Information Architecture standard);
+* Includes “versioning” process for Web Experience Toolkit (WET) updates.
 
 More information about the CDTS is available on the [CDTS's documentation site](https://cenw-wscoe.github.io/sgdc-cdts/docs/index-en.html).
 
