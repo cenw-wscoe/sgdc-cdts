@@ -135,7 +135,7 @@
 	<p>The "CDTS reference URL",
 		"theme",
 		"WET version" and "language" must be the configurable options in your web asset. As indicated above we suggest using your web.config file, XML config file or database to store these variables. Make sure your web asset uses your new configurable file path.</p>
-	<p><strong>IMPORTANT NOTE #1</strong>: When upgrading your web asset to a higher version we suggest that you also update your backup static files to obtain new versions. Otherwise make sure that your backup static files can be updated separately from your main WET CDTS version. It’s acceptable if your main WET CDTS points to v4_0_30 but your backup static files still point to v4_0_29. If you can keep both updated it is highly recommended to do so but not mandatory. Your backup files can fall behind until you perform a full release, we will notify you if your static files need to be updated. It will be indicated in the email you will receive announcing a new version.</p>
+	<p><strong>IMPORTANT NOTE #1</strong>: When upgrading your web asset to a higher version we suggest that you also update your backup static files to obtain new versions. Otherwise make sure that your backup static files can be updated separately from your main WET CDTS version. It’s acceptable if your main WET CDTS points to v4_0_30 but your backup static files still point to v4_0_29. If you can keep both updated it is highly recommended to do so but not <span class="text-uppercase">mandatory</span>. Your backup files can fall behind until you perform a full release, we will notify you if your static files need to be updated. It will be indicated in the email you will receive announcing a new version.</p>
 	<p><strong>IMPORTANT NOTE #2</strong>: The CDTS only updates the latest CDTS version as well as the two previous versions. If you are on an older version of the CDTS you will not receive updates. The purpose of the CDTS is to easily allow you to stay up to date so follow the instructions in this guide carefully. If you fall behind you are negating the main advantage of the CDTS!</p>
 </section>
 <section>
@@ -152,9 +152,9 @@
 		</ul>
 		<p>All fall-back static files can be found on our main GCPedia page. Whenever you must go through a release cycle you must always grab the latest fall-back static files. These ensure that a basic template is available for users who have Javascript disabled.</p>
 		<img class="img-responsive mrgn-bttm-md" alt="CDTS page template" src="../img/Cdts-gci-page-template.png">
-		<p>For all templates and sections the following JavaScript variable is optional:</p>
+		<p>For all templates and sections the following JavaScript variable is <span class="text-uppercase">optional</span>:</p>
 		<ul>
-			<li>OPTIONAL - cdnEnv – Use this variable to specify which environment you are currently using.
+			<li><span class="text-uppercase">optional</span> - cdnEnv – Use this variable to specify which environment you are currently using.
 				<pre>"cdnEnv": "prod"</pre>
 			</li>
 		</ul>
@@ -186,13 +186,13 @@
 			<li>The last change will be to add the actual GCT code to perform the write of the template in the <code>&lt;head&gt;</code> section. The following JavaScript variables can be used in this section:</li>
 		</ol>
 		<ul>
-			<li>OPTIONAL - cdnEnv – Use this variable to specify which environment you are currently using.
+			<li><span class="text-uppercase">optional</span> - cdnEnv – Use this variable to specify which environment you are currently using.
 				<pre>"cdnEnv": "prod"</pre>
 			</li>
-			<li><strong>Removed in v4.0.31</strong> - OPTIONAL - jqueryEnv – Use this variable to specify which environment you want to pull the jQuery files from. By default they are loaded locally from the WET build. Otherwise use the following to load from Google CDN:
+			<li><strong>Removed in v4.0.31</strong> - <span class="text-uppercase">optional</span> - jqueryEnv – Use this variable to specify which environment you want to pull the jQuery files from. By default they are loaded locally from the WET build. Otherwise use the following to load from Google CDN:
 				<pre>"jqueryEnv": "external"</pre>
 			</li>
-			<li>OPTIONAL - subTheme – This variable is used to display a custom theme for your intranet web asset. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
+			<li><span class="text-uppercase">optional</span> - subTheme – This variable is used to display a custom theme for your intranet web asset. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
 				<pre>"subTheme": "esdc"</pre>
 			</li>
 		</ul>
@@ -210,7 +210,7 @@
 	document.write(wet.builder.refTop({
 	}));
 &lt;/script&gt;</pre>
-		<p><strong>NOTE</strong>: Don’t forget to always include in the <code>&lt;noscript&gt;</code> section with the fall-back static file otherwise your page will not degrade gracefully when JavaScript is disabled.</p>
+		<p><strong class="text-uppercase">Note</strong>: Don’t forget to always include in the <code>&lt;noscript&gt;</code> section with the fall-back static file otherwise your page will not degrade gracefully when JavaScript is disabled.</p>
 	</section>
 	<section>
 		<h3 id="Section_top_references">Section top references</h3>
@@ -221,14 +221,14 @@
 			<li>The last change will be to add the actual GCT code to perform the write of the template in the top section to replace the new <code>&lt;div&gt;</code> content once the template is ready. The following JavaScript variables can be used in this section:</li>
 		</ol>
 		<ul>
-			<li>OPTIONAL - lngLinks – Use this variable to specify where the language toggle link will go. Although this is optional it is usually mandatory to provide the language toggle link.
+			<li><span class="text-uppercase">optional</span> - lngLinks – Use this variable to specify where the language toggle link will go. Although this is <span class="text-uppercase">optional</span> it is usually <span class="text-uppercase">mandatory</span> to provide the language toggle link.
 				<pre>"lngLinks": [{
 	"lang": "fr",
 	"href": "content-fr.html",
 	"text": "Français"
 }]</pre>
 			</li>
-			<li>OPTIONAL – breadcrumbs – Use this variable to specify the breadcrumbs in your page. Note that if no breadcrumbs are specified the template will insert a link to the home page of the Canada.ca website.
+			<li><span class="text-uppercase">optional</span> – breadcrumbs – Use this variable to specify the breadcrumbs in your page. Note that if no breadcrumbs are specified the template will insert a link to the home page of the Canada.ca website.
 				<pre>"breadcrumbs": [{
 	"title": "Home",
 	"href": "https://www.canada.ca/en/index.html"
@@ -238,17 +238,17 @@
 	"href": "https://www.canada.ca/en/index.html"
 }]</pre>
 			</li>
-			<li>OPTIONAL – showPreContent – This will be used by Principal Publisher to insert content into the pre content space of your page. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.</li>
-			<li>OPTIONAL – search – By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.
+			<li><span class="text-uppercase">optional</span> – showPreContent – This will be used by Principal Publisher to insert content into the pre content space of your page. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.</li>
+			<li><span class="text-uppercase">optional</span> – search – By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.
 				<pre>"search": false</pre>
 			</li>
-			<li>OPTIONAL – siteMenu – This variable is used to display a custom menu. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
+			<li><span class="text-uppercase">optional</span> – siteMenu – This variable is used to display a custom menu. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
 				<pre>"siteMenu": true</pre>
 			</li>
-			<li>OPTIONAL - subTheme – This variable is used to display a custom theme for your intranet web asset. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
+			<li><span class="text-uppercase">optional</span> - subTheme – This variable is used to display a custom theme for your intranet web asset. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
 				<pre>"subTheme": "esdc"</pre>
 			</li>
-			<li>OPTIONAL – intranetTitle – This variable is used to display a custom intranet title. Before proceeding please ensure you have permission from your department, TBS or Principal Publisher. This variable does not conform to the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">C&amp;IA specifications document</a>.
+			<li><span class="text-uppercase">optional</span> – intranetTitle – This variable is used to display a custom intranet title. Before proceeding please ensure you have permission from your department, TBS or Principal Publisher. This variable does not conform to the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">C&amp;IA specifications document</a>.
 				<pre>"intranetTitle": [{
 	"text": "Custom title",
 	"url": "#"
@@ -272,7 +272,7 @@
 		}]
 	});
 &lt;/script&gt;</pre>
-		<p><strong>NOTE</strong>: Don’t forget the <code>&lt;div&gt;</code> that is wrapped around your fall-back static file is named “def-top” otherwise your page will not display correctly.</p>
+		<p><strong class="text-uppercase">Note</strong>: Don’t forget the <code>&lt;div&gt;</code> that is wrapped around your fall-back static file is named “def-top” otherwise your page will not display correctly.</p>
 	</section>
 	<section>
 		<h3 id="Section_pre-footer_references">Section pre-footer references</h3>
@@ -283,19 +283,19 @@
 			<li>The last change will be to add the actual GCT code to perform the write of the template in the pre-footer section to replace the new <code>&lt;div&gt;</code> content once the template is ready. The following JavaScript variables can be used in this section:</li>
 		</ol>
 		<ul>
-			<li>OPTIONAL – showPostContent – This will be used by the Principal Publisher to insert content into the post content space of your page. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.
+			<li><span class="text-uppercase">optional</span> – showPostContent – This will be used by the Principal Publisher to insert content into the post content space of your page. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.
 				<pre>"showPostContent": false</pre>
 			</li>
-			<li>OPTIONAL – screenIdentifier – Use this variable to specify the screen identifier of the web application.
+			<li><span class="text-uppercase">optional</span> – screenIdentifier – Use this variable to specify the screen identifier of the web application.
 				<pre>"screenIdentifier": "0123456789"</pre>
 			</li>
-			<li>OPTIONAL – dateModified – Use this variable to specify the date modified of your page. If you prefer to use the version identifier technique, use the variable below. Note that you must use one option or the other.
+			<li><span class="text-uppercase">optional</span> – dateModified – Use this variable to specify the date modified of your page. If you prefer to use the version identifier technique, use the variable below. Note that you must use one option or the other.
 				<pre>"dateModified": "2015-10-09"</pre>
 			</li>
-			<li>OPTIONAL – verisonIdentifier – Use this variable to specify the version of the web application instead of dateModified.
+			<li><span class="text-uppercase">optional</span> – verisonIdentifier – Use this variable to specify the version of the web application instead of dateModified.
 				<pre>"versionIdentifier": "0123456789"</pre>
 			</li>
-			<li>OPTIONAL – pagedetails – Use this variable to remove the <code>&lt;div class="pagedetails"&gt;</code> when using the server message page template.
+			<li><span class="text-uppercase">optional</span> – pagedetails – Use this variable to remove the <code>&lt;div class="pagedetails"&gt;</code> when using the server message page template.
 				<pre>"pagedetails": false</pre>
 			</li>
 		</ul>
@@ -312,7 +312,7 @@
 		"dateModified": "2016-05-05"
 	});
 &lt;/script&gt;</pre>
-		<p><strong>NOTE</strong>: Don’t forget the <code>&lt;div&gt;</code> that is wrapped around your fall-back static file is named “def-preFooter” otherwise your page will not display correctly. Also it’s important that you close the <code>&lt;main&gt;</code> element after the pre-footer as shown in the sample code above.</p>
+		<p><strong class="text-uppercase">Note</strong>: Don’t forget the <code>&lt;div&gt;</code> that is wrapped around your fall-back static file is named “def-preFooter” otherwise your page will not display correctly. Also it’s important that you close the <code>&lt;main&gt;</code> element after the pre-footer as shown in the sample code above.</p>
 	</section>
 	<section>
 		<h3 id="Section_footer_references">Section footer references</h3>
@@ -323,15 +323,15 @@
 			<li>The last change will be to add the actual GCT code to perform the write of the template in the footer section to replace the new <code>&lt;div&gt;</code> content once the template is ready. The following JavaScript variables can be used in this section:</li>
 		</ol>
 		<ul>
-			<li>OPTIONAL – contactLinks – This will be used to customize the contact us link located in the footer of the page.
+			<li><span class="text-uppercase">optional</span> – contactLinks – This will be used to customize the contact us link located in the footer of the page.
 				<pre>"contactLinks": [{
 	"href": "#"
 }]</pre>
 			</li>
-			<li>OPTIONAL – showFeatures – This will be used by the Principal Publisher to insert GoC activities and initiatives into your page. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.
+			<li><span class="text-uppercase">optional</span> – showFeatures – This will be used by the Principal Publisher to insert GoC activities and initiatives into your page. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.
 				<pre>"showFeatures": false</pre>
 			</li>
-			<li>OPTIONAL - subTheme – This variable is used to display a custom theme for your intranet web asset. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
+			<li><span class="text-uppercase">optional</span> - subTheme – This variable is used to display a custom theme for your intranet web asset. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
 				<pre>"subTheme": "esdc"</pre>
 			</li>
 		</ul>
@@ -347,7 +347,7 @@
 	defFooter.outerHTML = wet.builder.footer({
 	});
 &lt;/script&gt;</pre>
-		<p><strong>NOTE</strong>: Don’t forget the <code>&lt;div&gt;</code> that is wrapped around your fall-back static file is named “def-footer” otherwise your page will not display correctly.</p>
+		<p><strong class="text-uppercase">Note</strong>: Don’t forget the <code>&lt;div&gt;</code> that is wrapped around your fall-back static file is named “def-footer” otherwise your page will not display correctly.</p>
 	</section>
 	<section>
 		<h3 id="Section_footer_file_references">Section footer file references</h3>
@@ -356,22 +356,22 @@
 			<li>The change will be to add the actual GCT code to perform the write of the template in the footer section to add the file references required for WET. The following JavaScript variables can be used in this section:</li>
 		</ol>
 		<ul>
-			<li>OPTIONAL – exitScript – Use this variable if you want to warn the users they are leaving a secured session.
+			<li><span class="text-uppercase">optional</span> – exitScript – Use this variable if you want to warn the users they are leaving a secured session.
 				<pre>"exitScript": true</pre>
 			</li>
-			<li>OPTIONAL – exitURL – Specify the URL where the users will be redirected to leave their secured session.
+			<li><span class="text-uppercase">optional</span> – exitURL – Specify the URL where the users will be redirected to leave their secured session.
 				<pre>"exitURL": "#"</pre>
 			</li>
-			<li>OPTIONAL – exitMsg – Specify the message the users will get before being redirected and leaving their secured session.
+			<li><span class="text-uppercase">optional</span> – exitMsg – Specify the message the users will get before being redirected and leaving their secured session.
 				<pre>"exitMsg": "You are about to leave a secure site, do you wish to continue?"</pre>
 			</li>
-			<li>OPTIONAL – exitDomains – Specify the additional domains that should not be checked for secure exit.
+			<li><span class="text-uppercase">optional</span> – exitDomains – Specify the additional domains that should not be checked for secure exit.
 				<pre>"exitDomains": "#"</pre>
 			</li>
-			<li>OPTIONAL – displayModal – Use this variable if you want to skip the modal dialog to confirm the exit notice. Keep in mind this will not display the exit notice to the user.
+			<li><span class="text-uppercase">optional</span> – displayModal – Use this variable if you want to skip the modal dialog to confirm the exit notice. Keep in mind this will not display the exit notice to the user.
 				<pre>"displayModal": false</pre>
 			</li>
-			<li>OPTIONAL - jqueryEnv – Use this variable to specify which environment you want to pull the jQuery files from. By default they are loaded locally from the WET build. Otherwise use the following to load from Google CDN:
+			<li><span class="text-uppercase">optional</span> - jqueryEnv – Use this variable to specify which environment you want to pull the jQuery files from. By default they are loaded locally from the WET build. Otherwise use the following to load from Google CDN:
 				<pre>"jqueryEnv": "external"</pre>
 			</li>
 		</ul>
@@ -403,7 +403,7 @@
 	document.write(wet.builder.splashTop({
 	}));
 &lt;/script&gt;</pre>
-		<p><strong>NOTE</strong>: Don’t forget to always include in the <code>&lt;noscript&gt;</code> section with the fall-back static file otherwise your page will not degrade gracefully when JavaScript is disabled.</p>
+		<p><strong class="text-uppercase">Note</strong>: Don’t forget to always include in the <code>&lt;noscript&gt;</code> section with the fall-back static file otherwise your page will not degrade gracefully when JavaScript is disabled.</p>
 		<ul>
 			<li>Please note that for the intranet.canada.ca theme, there is only one splash page with English first, so make sure to use the wet-en.js file.</li>
 		</ul>
@@ -414,22 +414,22 @@
 			<li>The last change will be to add the actual GCT code to perform the write of the template in the body section to replace the new <code>&lt;div&gt;</code> content once the template is ready. The following JavaScript variables can be used in this section:</li>
 		</ol>
 		<ul>
-			<li>MANDATORY – indexEng – This variable indicates what the URL for the home page in English is.
+			<li><span class="text-uppercase">mandatory</span> – indexEng – This variable indicates what the URL for the home page in English is.
 				<pre>"indexEng": "https://www.canada.ca/en/index.html"</pre>
 			</li>
-			<li>MANDATORY – indexFra – This variable indicates what the URL for the home page in French is.
+			<li><span class="text-uppercase">mandatory</span> – indexFra – This variable indicates what the URL for the home page in French is.
 				<pre>"indexFra": "https://www.canada.ca/fr/index.html"</pre>
 			</li>
-			<li>MANDATORY – termsEng – This variable indicates what the URL for the terms and conditions page in English is.
+			<li><span class="text-uppercase">mandatory</span> – termsEng – This variable indicates what the URL for the terms and conditions page in English is.
 				<pre>"termsEng": "https://www.canada.ca/en/transparency/terms.html"</pre>
 			</li>
-			<li>MANDATORY – termsFra – This variable indicates what the URL for the terms and conditions page in French is.
+			<li><span class="text-uppercase">mandatory</span> – termsFra – This variable indicates what the URL for the terms and conditions page in French is.
 				<pre>"termsFra": "https://www.canada.ca/fr/transparence/avis.html"</pre>
 			</li>
-			<li>OPTIONAL – nameEng – This variable is used to brand the splash page with the web asset’s name (in English). If not used, the default “Government of Canada” will appear.
+			<li><span class="text-uppercase">optional</span> – nameEng – This variable is used to brand the splash page with the web asset’s name (in English). If not used, the default “Government of Canada” will appear.
 				<pre>"nameEng": "My web asset"</pre>
 			</li>
-			<li>OPTIONAL – nameFra – This variable is used to brand the splash page with the web asset’s name (in French). If not used, the default “Gouvernement du Canada” will appear.
+			<li><span class="text-uppercase">optional</span> – nameFra – This variable is used to brand the splash page with the web asset’s name (in French). If not used, the default “Gouvernement du Canada” will appear.
 				<pre>"nameFra": "Mon actif Web"</pre>
 			</li>
 		</ul>
@@ -462,19 +462,19 @@
 		<p>The <a href="#Section_.3Chead.3E_references">Section <code>&lt;head&gt;</code> references</a> don't change.</p>
 		<p>The <a href="#Section_top_references">Section top references</a> are the same except for the following modifications:</p>
 		<ul>
-			<li>MANDATORY – search – This variable is used to hide the search.
+			<li><span class="text-uppercase">mandatory</span> – search – This variable is used to hide the search.
 				<pre>"search": false</pre>
 			</li>
-			<li>MANDATORY – siteMenu – This variable is used to hide the site menu.
+			<li><span class="text-uppercase">mandatory</span> – siteMenu – This variable is used to hide the site menu.
 				<pre>"siteMenu": false</pre>
 			</li>
-			<li>MANDATORY – breadcrumbs – Note that in a transactional scenario, the breadcrumbs are replaced with a link to exit the transaction that directs users to a safe point where they can abandon the current transaction and restart it should they wish.
+			<li><span class="text-uppercase">mandatory</span> – breadcrumbs – Note that in a transactional scenario, the breadcrumbs are replaced with a link to exit the transaction that directs users to a safe point where they can abandon the current transaction and restart it should they wish.
 				<pre>"breadcrumbs": [{
 	"title": "Exit secure transaction",
 	"href": "https://www.canada.ca/en/index.html"
 }]</pre>
 			</li>
-			<li>MANDATORY – showPreContent – This variable is used to hide the content inserted into the pre content space of your page.
+			<li><span class="text-uppercase">mandatory</span> – showPreContent – This variable is used to hide the content inserted into the pre content space of your page.
 				<pre>"showPreContent": false</pre>
 			</li>
 		</ul>
@@ -500,7 +500,7 @@
 &lt;/script&gt;</pre>
 		<p>The <a href="#Section_pre-footer_references">Section pre-footer references</a> are the same except for the following modifications:</p>
 		<ul>
-			<li>MANDATORY – showPostContent – This variable is used to hide the content inserted into the post content space of your page.
+			<li><span class="text-uppercase">mandatory</span> – showPostContent – This variable is used to hide the content inserted into the post content space of your page.
 				<ul>
 					<li>"showPostContent": false</li>
 				</ul>
@@ -522,24 +522,24 @@
 &lt;/script&gt;</pre>
 		<p>The <a href="#Section_footer_references">Section footer references</a> are the same except for the following modifications:</p>
 		<ul>
-			<li>MANDATORY – showFooter – This variable is used to hide the content inside the footer.
+			<li><span class="text-uppercase">mandatory</span> – showFooter – This variable is used to hide the content inside the footer.
 				<pre>"showFooter": false</pre>
 			</li>
-			<li>MANDATORY – showFeatures – This variable is used to hide GoC activities and initiatives.
+			<li><span class="text-uppercase">mandatory</span> – showFeatures – This variable is used to hide GoC activities and initiatives.
 				<pre>"showFeatures": false</pre>
 			</li>
-			<li>OPTIONAL – contactLinks – This variable will override the default contact link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom contact us link.
+			<li><span class="text-uppercase">optional</span> – contactLinks – This variable will override the default contact link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom contact us link.
 				<pre>"contactLinks": [{
 	"href": "#"
 }]</pre>
 			</li>
-			<li>OPTIONAL – termsLink – This variable will override the “Terms &amp; conditions” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link.
+			<li><span class="text-uppercase">optional</span> – termsLink – This variable will override the “Terms &amp; conditions” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link.
 				<pre>"termsLink": "https://www.canada.ca/en/transparency/terms.html"</pre>
 			</li>
-			<li>OPTIONAL – privacyLink – This variable will override the “Privacy” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link.
+			<li><span class="text-uppercase">optional</span> – privacyLink – This variable will override the “Privacy” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link.
 				<pre>"privacyLink": "https://www.canada.ca/en/transparency/privacy.html"</pre>
 			</li>
-			<li>OPTIONAL - subTheme – This variable is used to display a custom theme for your intranet web asset. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
+			<li><span class="text-uppercase">optional</span> - subTheme – This variable is used to display a custom theme for your intranet web asset. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
 				<pre>"subTheme": "esdc"</pre>
 			</li>
 		</ul>
@@ -559,7 +559,7 @@
 		<p>The <a href="#Section_.3Chead.3E_references">Section <code>&lt;head&gt;</code> references</a> don't change.</p>
 		<p>The <a href="#Section_top_references">Section top references</a> are the same except for the following modifications:</p>
 		<ul>
-			<li>MANDATORY – topSecMenu – Variable used to add the bypass block
+			<li><span class="text-uppercase">mandatory</span> – topSecMenu – Variable used to add the bypass block
 				<pre>"topSecMenu": true</pre>
 			</li>
 			<li>Add two unclosed <code>&lt;div&gt;</code> after the GCT code above and immediately before the opening <code>&lt;main&gt;</code> element.
@@ -596,16 +596,16 @@
 			<li>The last change will be to close the two <code>&lt;div&gt;</code> you previously opened.</li>
 		</ol>
 		<ul>
-			<li>MANDATORY – sectionName – This variable will be used to display the heading(s) of the section menu(s).
+			<li><span class="text-uppercase">mandatory</span> – sectionName – This variable will be used to display the heading(s) of the section menu(s).
 				<pre>"sectionName": "Section name"</pre>
 			</li>
-			<li>MANDATORY – menuLinks – This variable will be used to display the links in the menu.
+			<li><span class="text-uppercase">mandatory</span> – menuLinks – This variable will be used to display the links in the menu.
 				<pre>"menuLinks": [{
 	"href": "#",
 	"text": "Link 1"
 }]</pre>
 			</li>
-			<li>OPTIONAL – subLinks – This variable will be used to display the sub-links in the menu. You can also add "newWindow": true if you want the link to open in a new window.
+			<li><span class="text-uppercase">optional</span> – subLinks – This variable will be used to display the sub-links in the menu. You can also add "newWindow": true if you want the link to open in a new window.
 				<pre>"subLinks": [{
 	"subhref": "#",
 	"subtext": "Link 1",
@@ -669,49 +669,61 @@
 			<li>The last change will be to add the actual GCT code to perform the write of the template in the top section to replace the new <code>&lt;div&gt;</code> content once the template is ready. The following JavaScript variables can be used in this section:</li>
 		</ol>
 		<ul>
-			<li>MANDATORY - appName – Use this variable to specify the application name.
+			<li><span class="text-uppercase">mandatory</span> - appName – Use this variable to specify the application name.
 				<pre>"appName": "Application Name"</pre>
 			</li>
-			<li>OPTIONAL – appUrl – Use this variable to provide a link on your appName.
+			<li><span class="text-uppercase">optional</span> – appUrl – Use this variable to provide a link on your appName.
 				<pre>"appUrl": "#"</pre>
 			</li>
-			<li>OPTIONAL - lngLinks – Use this variable to specify where the language toggle link will go.
+			<li><span class="text-uppercase">optional</span> - lngLinks – Use this variable to specify where the language toggle link will go.
 				<pre>"lngLinks": [{
 	"lang": "fr",
 	"href": "content-fr.html",
 	"text": "Français"
 }]</pre>
 			</li>
-			<li>OPTIONAL - secure – Use this variable to display the lock icon beside the application name
+			<li><span class="text-uppercase">optional</span> - secure – Use this variable to display the lock icon beside the application name
 				<pre>"secure": true</pre>
 			</li>
-			<li>OPTIONAL - signIn – Use this variable to add a link for the sign in button
+			<li><span class="text-uppercase">optional</span> - signIn – Use this variable to add a link for the sign in button
 				<pre>"signIn": [{
 	"href": "#"
 }]</pre>
 			</li>
-			<li>OPTIONAL - signOut – Use this variable to add a link for the sign out button
+			<li><span class="text-uppercase">optional</span> - signOut – Use this variable to add a link for the sign out button
 				<pre>"signOut": [{
 	"href": "#"
 }]</pre>
 			</li>
-			<li>OPTIONAL – search – This variable is used to hide the search.
+			<li><span class="text-uppercase">optional</span> – search – This variable is used to hide the search.
 				<pre>"search": false</pre>
 			</li>
-			<li>OPTIONAL – customSearch – This variable is used to display a custom search. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
+			<li><span class="text-uppercase">optional</span> – customSearch – This variable is used to display a custom search. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
 				<pre>"customSearch": "customSearch"</pre>
 			</li>
-			<li>OPTIONAL – siteMenu – This variable is used to hide the site menu.
+			<li><span class="text-uppercase">optional</span> – siteMenu – This variable is used to hide the site menu.
 				<pre>"siteMenu": false</pre>
 			</li>
-			<li>OPTIONAL – menuPath – This variable is used to display a custom menu. Although you don't need to we suggest you <a href="./contact-en.html">contact the CDTS team</a> to enable this option. If you have done this before then simply provide the URL to your valid menu file to enable this option. You can copy the format in the sample custom menu file provided below in our sample.
+			<li><span class="text-uppercase">optional</span> – menuPath – This variable is used to display a custom menu. Although you don't need to we suggest you <a href="./contact-en.html">contact the CDTS team</a> to enable this option. If you have done this before then simply provide the URL to your valid menu file to enable this option. You can copy the format in the sample custom menu file provided below in our sample.
 				<pre>"menuPath": "https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/(version)/cdts/ajax/custommenu-eng.html"</pre>
 			</li>
-			<li>OPTIONAL – menuLinks – This variable will be used to create a top navigation menu, it will override the menuPath variable if provided. You can also create submenu items.
+			<li><span class="text-uppercase">optional</span> – menuLinks – This variable will be used to create a top navigation menu, it will override the menuPath variable if provided. You can also create submenu items.
 				<pre>"menuLinks": [{
-	"href": "#",
-	"text": "Link 1",
-	"subLinks": [{
+	"href": "https://canada.ca/link1.html",
+	"text": "Link 1"
+}, {
+	"href": "https://canada.ca/link2.html",
+	"text": "Link 2"
+}]</pre>
+			</li>
+			<li><span class="text-uppercase">optional</span> - subLinks - This variable is used with <code>menuLinks</code> to create a sub-menu in the main menu. The <code>id</code> value is <span class="text-uppercase">manditory</span> when using a the <code>subLinks</code> array.
+				<pre>"menuLinks": [{
+	"href": "https://canada.ca/link1.html",
+	"text": "Link 1"
+}, {
+	"href": "https://canada.ca/link2.html",
+	"id": "submenu1",
+	"subLinks":  [{
 		"subhref": "#",
 		"subtext": "SubLink 1"
 	},{
@@ -719,17 +731,14 @@
 		"subtext": "SubLink 2"
 	}]
 },{
-	"href": "#",
-	"text": "Link 2"
-},{
-	"href": "#",
+	"href": "https://canada.ca/link3.html",
 	"text": "Link 3"
 }]</pre>
 			</li>
-			<li>OPTIONAL – showPreContent – This will be used by Principal Publisher to insert content into the pre content space of your page. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.
+			<li><span class="text-uppercase">optional</span> – showPreContent – This will be used by Principal Publisher to insert content into the pre content space of your page. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.
 				<pre>"showPreContent": false</pre>
 			</li>
-			<li>OPTIONAL – breadcrumbs – Use this variable to specify the breadcrumbs in your page. Note that if no breadcrumbs are specified the application template will <strong>NOT</strong> insert a default link.
+			<li><span class="text-uppercase">optional</span> – breadcrumbs – Use this variable to specify the breadcrumbs in your page. Note that if no breadcrumbs are specified the application template will <strong class="text-uppercase">not</strong> insert a default link.
 				<pre>"breadcrumbs": [{
 	"title": "Home",
 	"href": "https://www.canada.ca/en/index.html"
@@ -739,13 +748,13 @@
 	"href": "https://www.canada.ca/en/index.html"
 }]</pre>
 			</li>
-			<li>OPTIONAL - subTheme – This variable is used to display a custom theme for your intranet web asset. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
+			<li><span class="text-uppercase">optional</span> - subTheme – This variable is used to display a custom theme for your intranet web asset. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
 				<pre>"subTheme": "esdc"</pre>
 			</li>
-			<li>OPTIONAL – topSecMenu – This variable is used to add the bypass block to skip to the section menu. It must be set to true when you have a section menu.
+			<li><span class="text-uppercase">optional</span> – topSecMenu – This variable is used to add the bypass block to skip to the section menu. It must be set to true when you have a section menu.
 				<pre>"topSecMenu": true</pre>
 			</li>
-			<li>OPTIONAL – intranetTitle – This variable is used to display a custom intranet title. Before proceeding please ensure you have permission from your department, TBS or Principal Publisher. This variable does not conform to the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">C&amp;IA specifications document</a>.
+			<li><span class="text-uppercase">optional</span> – intranetTitle – This variable is used to display a custom intranet title. Before proceeding please ensure you have permission from your department, TBS or Principal Publisher. This variable does not conform to the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">C&amp;IA specifications document</a>.
 				<pre>"intranetTitle": [{
 	"text": "Custom title",
 	"url": "#"
@@ -753,7 +762,7 @@
 			</li>
 		</ul>
 		<p>We have not provided sample code images for the application templates as there are too many options. Instead please see our <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_30/cdts/appTop/apptop-en.shtml">application template sample pages</a> that we keep updated. It has all the different scenarios listed above.</p>
-		<p><strong>NOTE</strong>: Don’t forget the <code>&lt;div&gt;</code> that is wrapped around your fall-back static file is named “def-top” otherwise your page will not display correctly. Also note that when using the application templates you will use <code>wet.builder.appTop</code> instead of <code>wet.builder.top</code> in your JavaScript code.</p>
+		<p><strong class="text-uppercase">Note</strong>: Don’t forget the <code>&lt;div&gt;</code> that is wrapped around your fall-back static file is named “def-top” otherwise your page will not display correctly. Also note that when using the application templates you will use <code>wet.builder.appTop</code> instead of <code>wet.builder.top</code> in your JavaScript code.</p>
 	</section>
 	<section>
 		<h3 id="Section_appFooter_references">Section appFooter references</h3>
@@ -765,12 +774,12 @@
 			<li>The last change will be to add the actual GCT code to perform the write of the template in the footer section to replace the new <code>&lt;div&gt;</code> content once the template is ready. The following JavaScript variables can be used in this section:</li>
 		</ol>
 		<ul>
-			<li>OPTIONAL – globalNav – This variable will override the default footer and display the global navigation menu for Canada.ca in the footer as a list of links. See sample URL below for an example.
+			<li><span class="text-uppercase">optional</span> – globalNav – This variable will override the default footer and display the global navigation menu for Canada.ca in the footer as a list of links. See sample URL below for an example.
 				<ul>
 					<li>"globalNav": true</li>
 				</ul>
 			</li>
-			<li>OPTIONAL – footerSections – This variable will create a custom set of columns for your footer links. See sample URL below for an example.
+			<li><span class="text-uppercase">optional</span> – footerSections – This variable will create a custom set of columns for your footer links. See sample URL below for an example.
 				<pre>"footerSections": [{
 	"href": "#",
 	"text": "Link 1"
@@ -779,27 +788,27 @@
 	"text": "Link 2"
 }]</pre>
 			</li>
-			<li>OPTIONAL – contactLinks – This variable will override the default contact link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom contact us link.
+			<li><span class="text-uppercase">optional</span> – contactLinks – This variable will override the default contact link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom contact us link.
 				<pre>"contactLinks": [{
 	"href": "#"
 }]</pre>
 			</li>
-			<li>OPTIONAL – termsLink – This variable will override the “Terms &amp; conditions” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link.
+			<li><span class="text-uppercase">optional</span> – termsLink – This variable will override the “Terms &amp; conditions” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link.
 				<pre>"termsLink": "https://www.canada.ca/en/transparency/terms.html"</pre>
 			</li>
-			<li>OPTIONAL – privacyLink – This variable will override the “Privacy” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link.
+			<li><span class="text-uppercase">optional</span> – privacyLink – This variable will override the “Privacy” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link.
 				<pre>"privacyLink": "https://www.canada.ca/en/transparency/privacy.html"</pre>
 			</li>
-			<li>OPTIONAL - subTheme – This variable is used to display a custom theme for your intranet web asset. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
+			<li><span class="text-uppercase">optional</span> - subTheme – This variable is used to display a custom theme for your intranet web asset. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
 				<pre>"subTheme": "esdc"</pre>
 			</li>
-			<li>OPTIONAL – showFeatures – This will be used by the Principal Publisher to insert GoC activities and initiatives into your page. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.
+			<li><span class="text-uppercase">optional</span> – showFeatures – This will be used by the Principal Publisher to insert GoC activities and initiatives into your page. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.
 				<pre>"showFeatures": false</pre>
 			</li>
 		</ul>
 		<p><strong>IMPORTANT</strong>: You can only use one variable for the footer appearance. The <code>globalNav</code> variable will overwrite the <code>footerSections</code> variable if both are provided. If you don't provide <code>globalNav</code> or <code>footerSections</code> then the default footer from the <a href="#Transactional_page_references">transactional template</a> will be displayed.</p>
 		<p>We have not provided sample code images for the application templates as there are too many options. Instead please see our <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_30/cdts/appTop/apptop-en.shtml">application template sample pages</a> that we keep updated. It has all the different scenarios listed above.</p>
-		<p><strong>NOTE</strong>: Don’t forget the <code>&lt;div&gt;</code> that is wrapped around your fall-back static file is named “def-footer” otherwise your page will not display correctly. Also note that when using the application templates you will use <code>wet.builder.appFooter</code> instead of <code>wet.builder.footer</code> in your JavaScript code.</p>
+		<p><strong class="text-uppercase">Note</strong>: Don’t forget the <code>&lt;div&gt;</code> that is wrapped around your fall-back static file is named “def-footer” otherwise your page will not display correctly. Also note that when using the application templates you will use <code>wet.builder.appFooter</code> instead of <code>wet.builder.footer</code> in your JavaScript code.</p>
 	</section>
 </section>
 			<div id="def-preFooter">
