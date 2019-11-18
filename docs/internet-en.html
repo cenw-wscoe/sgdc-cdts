@@ -190,6 +190,16 @@
 			<li><span class="text-uppercase">Optional</span> - isApplication – Use this variable to include web application specific CSS file.
 				<pre>"isApplication": true</pre>
 			</li>
+			<li><span class="text-uppercase">Optional</span> - webAnalytics – Use this variable to include Adobe Analytics (AA).
+				<ul>
+					<li><span class="text-uppercase">Mandatory</span> - environment – Use this value to state if the AA running is either <em>staging</em> or <em>production</em>.</li>
+					<li><span class="text-uppercase">Mandatory</span> - version – Use this value to state which version of AA your application / site uses. Presently only versions 1 or 2 are available.</li>
+				</ul>
+				<pre>webAnalytics" : [{
+	"environment" : "staging", // OR "production"
+	"version" : 1 // OR 2
+}]"</pre>
+			</li>
 		</ul>
 		<p>Sample:</p>
 		<pre>&lt;!-- Load closure template scripts --&gt;
@@ -203,6 +213,10 @@
 &lt;!-- Write closure template --&gt;
 &lt;script&gt;
 	document.write(wet.builder.refTop({
+		"webAnalytics" : [{
+			"environment" : "staging",
+			"version" : 1
+		}]
 	}));
 &lt;/script&gt;</pre>
 		<p><strong class="text-uppercase">Note</strong>: Don’t forget to always include in the <code>&lt;noscript&gt;</code> section with the fall-back static file otherwise your page will not degrade gracefully when JavaScript is disabled.</p>
@@ -358,11 +372,15 @@
 			<li><span class="text-uppercase">Optional</span> - jqueryEnv – Use this variable to specify which environment you want to pull the jQuery files from. By default they are loaded locally from the WET build. Otherwise use the following to load from Google CDN:
 				<pre>"jqueryEnv": external</pre>
 			</li>
+			<li><span class="text-uppercase">Optional</span> - Use this variable when you are using the webAnalytics in the <code>head</code> section. Default is <em>false</em>, no need to mark <em>false</em> if you are <strong>not</strong> using Adobe Analytics.
+				<pre>"webAnalytics": true</pre>
+			</li>
 		</ul>
 		<p>Sample:</p>
 		<pre>&lt;!-- Write closure template --&gt;
 &lt;script&gt;
 	document.write(wet.builder.refFooter({
+		"webAnalytics": true
 	}));
 &lt;/script&gt;</pre>
 	</section>
