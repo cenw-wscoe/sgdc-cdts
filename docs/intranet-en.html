@@ -254,6 +254,9 @@
 	"url": "#"
 }]</pre>
 			</li>
+			<li><span class="text-uppercase">Optional</span> - GCToolsModal - This variable is used to make the GC Tools links in the header into a modal dialogue box. The default it set to false.
+				<pre>"GCToolsModal": true</pre>
+			</li>
 		</ul>
 		<p>Sample:</p>
 		<pre>&lt;div id="def-top"&gt;
@@ -269,7 +272,8 @@
 			"lang": "fr",
 			"href": "content-fr.shtml",
 			"text": "Français"
-		}]
+		}],
+		"GCToolsModal": true
 	});
 &lt;/script&gt;</pre>
 		<p><strong class="text-uppercase">Note</strong>: Don’t forget the <code>&lt;div&gt;</code> that is wrapped around your fall-back static file is named “def-top” otherwise your page will not display correctly.</p>
