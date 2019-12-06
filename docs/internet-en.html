@@ -350,10 +350,8 @@
 	</section>
 	<section>
 		<h3 id="Section_footer_file_references">Section footer file references</h3>
-		<p>In the footer section of your page you will need to perform only one change.</p>
-		<ol>
-			<li>The change will be to add the actual GCT code to perform the write of the template in the footer section to add the file references required for WET. The following JavaScript variables can be used in this section:</li>
-		</ol>
+		<p>The following JavaScript variables can be used in this section:</p>
+		<h4>Exit script</h4>
 		<ul>
 			<li><span class="text-uppercase">Optional</span> – exitScript – Use this variable if you want to warn the users they are leaving a secured session.
 				<pre>"exitScript": true</pre>
@@ -364,12 +362,21 @@
 			<li><span class="text-uppercase">Optional</span> – exitMsg – Specify the message the users will get before being redirected and leaving their secured session.
 				<pre>"exitMsg": "You are about to leave a secure site, do you wish to continue?"</pre>
 			</li>
+			<li><span class="text-uppercase">Optional</span> – cancelMsg – Specify the text for the button (Cancel) the users will get if they want to close the exitMsg window.
+				<pre>"cancelMsg": "cancel"</pre>
+			</li>
+			<li><span class="text-uppercase">Optional</span> – yesMsg– Specify the text for the button (Yes) the users will get if they want to close the exitMsg window.
+				<pre>"yesMsg": "yes"</pre>
+			</li>
 			<li><span class="text-uppercase">Optional</span> – exitDomains – Specify the additional domains that should not be checked for secure exit.
 				<pre>"exitDomains": "#"</pre>
 			</li>
 			<li><span class="text-uppercase">Optional</span> – displayModal – Use this variable if you want to skip the modal dialog to confirm the exit notice. Keep in mind this will not display the exit notice to the user.
 				<pre>"displayModal": false</pre>
 			</li>
+		</ul>
+		<h4>Other variables</h4>
+		<ul>
 			<li><span class="text-uppercase">Optional</span> - jqueryEnv – Use this variable to specify which environment you want to pull the jQuery files from. By default they are loaded locally from the WET build. Otherwise use the following to load from Google CDN:
 				<pre>"jqueryEnv": external</pre>
 			</li>

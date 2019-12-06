@@ -317,10 +317,8 @@
 	</section>
 	<section>
 		<h3 id="R.C3.A9f.C3.A9rences_de_fichier_de_la_section_du_pied_de_page_2">Références de fichier de la section du pied de page</h3>
-		<p>Dans la section du pied de page de votre page, vous ne devrez apporter qu’un changement.</p>
-		<ol>
-			<li>Ce changement consistera à ajouter le code GCT pour exécuter l’écriture du modèle dans la section du pied de page afin d’ajouter les références de fichier nécessaires à la BOEW. Les variables JavaScript qui suivent peuvent être utilisées dans cette section&#160;:</li>
-		</ol>
+		<p>Les variables JavaScript qui suivent peuvent être utilisées dans cette section&#160;:</p>
+		<h4>Quitter</h4>
 		<ul>
 			<li>FACULTATIF – exitScript – Utilisez cette variable pour avertir l’utilisateur qu’il s’apprête à quitter une session sécurisée.
 				<pre>"exitScript": true</pre>
@@ -331,12 +329,21 @@
 			<li>FACULTATIF – exitMsg – Le message que l’utilisateur recevra avant de le rediriger vers une page qui mettra fin à sa session.
 				<pre>"exitMsg": "Vous êtes sur le point de quitter un site sécurisé. Voulez-vous continuer?"</pre>
 			</li>
+			<li>FACULTATIF – cancelMsg– Spécifie le texte pour le bouton (annuler) qui apparaîtra dans la fenêtre exitMsg si l'utilisateur désire fermer la fenêtre.
+				<pre>"cancelMsg": "annuler"</pre>
+			</li>
+			<li>FACULTATIF – yesMsg– Spécifie le texte pour le bouton (oui) qui apparaîtra dans la fenêtre exitMsg si l'utilisateur désire continuer sur la page désirée.
+				<pre>"yesMsg": "oui"</pre>
+			</li>
 			<li>FACULTATIF – exitDomains – Précisez les domaines additionnels qui font partie de la session sécurisée
 				<pre>"exitDomains": "#"</pre>
 			</li>
-			<li>FACULTATIF – displayModal – Utilisez cette variable pour sauter la boîte de dialogue qui confirme la sortie de la session. Prenez note que l'utilisateur ne sera pas averti qu'il sort de la session sécurisée.
+				<li>FACULTATIF – displayModal – Utilisez cette variable pour sauter la boîte de dialogue qui confirme la sortie de la session. Prenez note que l'utilisateur ne sera pas averti qu'il sort de la session sécurisée.
 				<pre>"displayModal": false</pre>
 			</li>
+		</ul>
+		<h4>Autres</h4>
+		<ul>
 			<li>FACULTATIF - jqueryEnv – Utilisez cette variable pour spécifier à partir de quel environnement vous voulez récupérer les fichiers jQuery. Par défaut, ils sont chargés localement de la BOEW. Sinon, utilisez ce qui suit pour charger à partir de Google CDN&#160;:
 				<pre>"jqueryEnv": "external"</pre>
 			</li>
