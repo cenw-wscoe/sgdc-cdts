@@ -19,7 +19,6 @@
 		<!-- Write closure template -->
 		<script>
 			document.write(wet.builder.refTop({
-				"cdnEnv": "prod"
 			}));
 		</script>
 	</head>
@@ -32,7 +31,6 @@
 		<script>
 			var defTop = document.getElementById("def-top");
 			defTop.outerHTML = wet.builder.top({
-				"cdnEnv": "prod",
 				"breadcrumbs": false,
 				"lngLinks": [{
 					"lang": "fr",
@@ -66,8 +64,7 @@
 			<script>
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
-					"cdnEnv": "prod",
-					"pagedetails": false
+						"pagedetails": false
 				});
 			</script>
 		</main>
@@ -79,14 +76,12 @@
 		<script>
 			var defFooter = document.getElementById("def-footer");
 			defFooter.outerHTML = wet.builder.footer({
-				"cdnEnv": "prod",
 				"showFeatures": false
 			});
 		</script>
 		<!-- Write closure template -->
 		<script>
 			document.write(wet.builder.refFooter({
-				"cdnEnv": "prod"
 			}));
 		</script>
 	</body>

@@ -19,7 +19,6 @@
 		<!-- Write closure template -->
 		<script>
 			document.write(wet.builder.refTop({
-				"cdnEnv": "prod"
 			}));
 		</script>
 	</head>
@@ -32,7 +31,6 @@
 		<script>
 			var defTop = document.getElementById("def-top");
 			defTop.outerHTML = wet.builder.top({
-				"cdnEnv": "prod",
 				"lngLinks": [{
 					"lang": "en",
 					"href": "exitscript-en.html",
@@ -160,8 +158,7 @@
 			<script>
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
-					"cdnEnv": "prod",
-					"dateModified": "2019-03-08"
+						"dateModified": "2019-03-08"
 				});
 			</script>
 		</main>
@@ -173,13 +170,11 @@
 		<script>
 			var defFooter = document.getElementById("def-footer");
 			defFooter.outerHTML = wet.builder.footer({
-				"cdnEnv": "prod"
 			});
 		</script>
 		<!-- Write closure template -->
 		<script>
 			document.write(wet.builder.refFooter({
-				"cdnEnv": "prod",
 				"exitScript": true,
 				"exitURL": "exiturl-fr.html",
 				"exitMsg": "Vous êtes sur le point de quitter un site sécurisé. Voulez-vous continuer?",

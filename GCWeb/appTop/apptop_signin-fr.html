@@ -19,7 +19,6 @@
 		<!-- Write closure template -->
 		<script>
 			document.write(wet.builder.refTop({
-				"cdnEnv": "prod",
 				"isApplication": true
 			}));
 		</script>
@@ -33,7 +32,6 @@
 		<script>
 			var defTop = document.getElementById("def-top");
 			defTop.outerHTML = wet.builder.appTop({
-				"cdnEnv": "prod",
 				"appName": [{"text": "Nom de l'application", "href": "#"}],
 				"signIn": [{"href": "#"}],
 				"lngLinks": [{"lang": "en", "href": "apptop_signin-en.html", "text": "English"}]
@@ -49,8 +47,7 @@
 			<script>
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
-					"cdnEnv": "prod",
-					"dateModified": "2019-03-08"
+						"dateModified": "2019-03-08"
 				});
 			</script>
 		</main>
@@ -62,14 +59,12 @@
 		<script>
 			var defFooter = document.getElementById("def-footer");
 			defFooter.outerHTML = wet.builder.appFooter({
-				"cdnEnv": "prod",
 				"showFeatures": false
 			});
 		</script>
 		<!-- Write closure template -->
 		<script>
 			document.write(wet.builder.refFooter({
-				"cdnEnv": "prod",
 				"isApplication": true
 			}));
 		</script>

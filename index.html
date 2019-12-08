@@ -28,7 +28,6 @@
 		<!-- Write closure template -->
 		<script>
 			document.write(wet.builder.splashTop({
-				"cdnEnv": "prod"
 			}));
 		</script>
 	</head>
@@ -40,8 +39,7 @@
 			<script>
 				var contentSplash = document.getElementById("splashContent");
 				contentSplash.innerHTML = wet.builder.splash({
-					"cdnEnv": "prod",
-					"indexEng": "./docs/index-en.html",
+						"indexEng": "./docs/index-en.html",
 					"indexFra": "./docs/index-fr.html",
 					"termsEng": "https://www.canada.ca/en/transparency/terms.html",
 					"termsFra": "https://www.canada.ca/fr/transparence/avis.html",

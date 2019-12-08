@@ -126,7 +126,6 @@
 		<script>
 			var defFooter = document.getElementById("def-footer");
 			defFooter.outerHTML = wet.builder.serverBottom({
-				"cdnEnv": "<!--#if expr = "$vrSrvr = canada" -->prod<!--#else--><!--#echo encoding="none" var="vrSrvr"--><!--#endif-->"
 			});
 		</script>
 		<!-- Write closure template -->
