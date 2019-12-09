@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-		<title>Content page - Centrally Deployed Templates Solution (CDTS)</title>
+		<title>Redirected page - Centrally Deployed Templates Solution (CDTS)</title>
 		<meta content="width=device-width,initial-scale=1" name="viewport">
 		<!-- Meta data -->
 		<meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
@@ -38,9 +38,61 @@
 				}]
 			});
 		</script>
-		<main role="main" property="mainContentOfPage" class="container">
-			<h1 property="name" id="wb-cont">Content page</h1>
-			<p>You just got redirected here using our exit link script.</p>
+		<main role="main" property="mainContentOfPage" class="container wb-prettify all-pre">
+			<h1 property="name" id="wb-cont">Redirected page</h1>
+			<div class="alert alert-info">
+				<p>You just got redirected here using our exit link script.</p>
+			</div>
+			<div data-ajax-replace="../../ajax/samples/description-en.html">Description of page</div>
+			<section>
+			<div data-ajax-replace="../../ajax/samples/refTop-en.html"></div>
+<pre><code>&lt;script&gt;
+	document.write(wet.builder.refTop({
+	}));
+&lt;/script&gt;
+</code></pre>
+			</section>
+			<section>
+					<div data-ajax-replace="../../ajax/samples/top-en.html"></div>
+<pre><code>&lt;script&gt;
+	var defTop = document.getElementById("def-top");
+	defTop.outerHTML = wet.builder.top({
+		"lngLinks": [{
+			"lang": "fr",
+			"href": "exiturl-fr.html",
+			"text": "Français"
+		}]
+	});
+&lt;/script&gt;
+</code></pre>
+			</section>
+			<section>
+				<div data-ajax-replace="../../ajax/samples/preFooter-en.html"></div>
+<pre><code>&lt;script&gt;
+	var defPreFooter = document.getElementById("def-preFooter");
+	defPreFooter.outerHTML = wet.builder.preFooter({
+		"dateModified": "2019-03-08"
+	});
+&lt;/script&gt;
+</code></pre>
+			</section>
+			<section>
+				<div data-ajax-replace="../../ajax/samples/footer-en.html"></div>
+<pre><code>&lt;script&gt;
+	var defFooter = document.getElementById("def-footer");
+	defFooter.outerHTML = wet.builder.footer({
+	});
+&lt;/script&gt;
+</code></pre>
+			</section>
+			<section>
+				<div data-ajax-replace="../../ajax/samples/refFooter-en.html"></div>
+<pre><code>&lt;script&gt;
+	document.write(wet.builder.refFooter({
+	}));
+&lt;/script&gt;
+</code></pre>
+			</section>
 			<div id="def-preFooter">
 				<!-- Write closure fall-back static file -->
 				<!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/static/preFooter-en.html -->
@@ -49,7 +101,7 @@
 			<script>
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
-						"dateModified": "2019-03-08"
+					"dateModified": "2019-03-08"
 				});
 			</script>
 		</main>

@@ -43,24 +43,17 @@
 			<div class="row">
 				<main role="main" property="mainContentOfPage" class="col-md-9 col-md-push-3 wb-prettify all-pre">
 					<h1 property="name" id="wb-cont">Section menu</h1>
-					<p>Description of page: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi sed obcaecati tempore maxime illo nesciunt doloribus debitis vero placeat, exercitationem et. Explicabo ipsum iste dolores sunt placeat corporis culpa et!</p>
-					<section>
-						<h2>refTop</h2>
-						<p>Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempore excepturi at ad aperiam molestias laboriosam! Omnis, corrupti. Accusamus iste doloribus dolor molestias placeat voluptates qui incidunt consequuntur necessitatibus minima.</p>
-<details>
-	<summary>Code for refTop</summary>
+					<div data-ajax-replace="../../ajax/samples/description-en.html">Description of page</div>
+			<section>
+			<div data-ajax-replace="../../ajax/samples/refTop-en.html"></div>
 <pre><code>&lt;script&gt;
 	document.write(wet.builder.refTop({
 	}));
 &lt;/script&gt;
 </code></pre>
-</details>
-					</section>
-					<section>
-						<h2>def-top</h2>
-						<p>Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempore excepturi at ad aperiam molestias laboriosam! Omnis, corrupti. Accusamus iste doloribus dolor molestias placeat voluptates qui incidunt consequuntur necessitatibus minima.</p>
-<details>
-	<summary>Code for def-top</summary>
+			</section>
+			<section>
+					<div data-ajax-replace="../../ajax/samples/top-en.html"></div>
 <pre><code>&lt;script&gt;
 	var defTop = document.getElementById("def-top");
 	defTop.outerHTML = wet.builder.top({
@@ -73,150 +66,132 @@
 	});
 &lt;/script&gt;
 </code></pre>
-</details>
-					</section>
-					<section>
-						<h2>def-preFooter</h2>
-						<p>Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempore excepturi at ad aperiam molestias laboriosam! Omnis, corrupti. Accusamus iste doloribus dolor molestias placeat voluptates qui incidunt consequuntur necessitatibus minima.</p>
-<details>
-	<summary>code for preFooter</summary>
+			</section>
+			<section>
+				<div data-ajax-replace="../../ajax/samples/preFooter-en.html"></div>
 <pre><code>&lt;script&gt;
 	var defPreFooter = document.getElementById("def-preFooter");
 	defPreFooter.outerHTML = wet.builder.preFooter({
-		"dateModified": "2017-06-05"
+		"dateModified": "2019-03-08"
 	});
 &lt;/script&gt;
 </code></pre>
-</details>
-					</section>
-					<section>
-						<h2>wb-sec</h2>
-						<p>Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempore excepturi at ad aperiam molestias laboriosam! Omnis, corrupti. Accusamus iste doloribus dolor molestias placeat voluptates qui incidunt consequuntur necessitatibus minima.</p>
-						<details>
-							<summary>
-								Code for wb-sec
-							</summary>
+			</section>
+			<section>
+				<h2 id="section-secmenu">Section menu references</h2>
 <pre><code>&lt;script&gt;
-	var secondarymenu = document.getElementById("wb-sec");
-	secondarymenu.innerHTML = wet.builder.secmenu({
-		"sections": [{
-			"sectionName": "[Topic - Local navigation]",
-			"menuLinks": [{
-				"href": "#",
-				"text": "Link 1",
-				"subLinks": [{
-					"subhref": "#11a",
-					"subtext": "Link 1.1 a)"
-				}, {
-					"subhref": "#11b",
-					"subtext": "Link 1.1 b)"
-				}, {
-					"subhref": "#11c",
-					"subtext": "Opens in a new window",
-					"newWindow": true
-				}, {
-					"subhref": "#11d",
-					"subtext": "Link 1.1 d)"
-				}]
+var secondarymenu = document.getElementById("wb-sec");
+secondarymenu.innerHTML = wet.builder.secmenu({
+	"sections": [{
+		"sectionName": "[Topic - Local navigation]",
+		"menuLinks": [{
+			"href": "./sectionmenu-en.html",
+			"text": "Section menu",
+			"subLinks": [{
+				"subhref": "#11a",
+				"subtext": "Link 1.1 a)"
 			}, {
-				"href": "#",
-				"text": "Link 2"
+				"subhref": "#11b",
+				"subtext": "Link 1.1 b)"
 			}, {
-				"href": "#",
-				"text": "Opens in a new window",
+				"subhref": "#11c",
+				"subtext": "Opens in a new window",
 				"newWindow": true
 			}, {
-				"href": "#",
-				"text": "Link 4"
+				"subhref": "#11d",
+				"subtext": "Link 1.1 d)"
 			}]
-		},{
-			"sectionName": "Opens in a new window",
-			"sectionLink": "#",
-			"newWindow": true,
-			"menuLinks": [{
-				"href": "#",
-				"text": "Link 1"
-			}, {
-				"href": "#",
-				"text": "Link 2"
-			}, {
-				"href": "#",
-				"text": "Link 3"
-			}, {
-				"href": "#",
-				"text": "Link 4"
-			}]
-		},{
-			// Rinse and repeat
-			"sectionName": "Section name 3",
-			"menuLinks": [{
-				"href": "#",
-				"text": "Link 1"
-			}, {
-				"href": "#",
-				"text": "Link 2"
-			}, {
-				"href": "#",
-				"text": "Link 3"
-			}, {
-				"href": "#",
-				"text": "Link 4"
-			}]
-		},{
-			// Rinse and repeat
-			"sectionName": "Section name ... 27",
-			"menuLinks": [{
-				"href": "#",
-				"text": "Link 1"
-			}, {
-				"href": "#",
-				"text": "Link 2"
-			}, {
-				"href": "#",
-				"text": "Link 3"
-			}, {
-				"href": "#",
-				"text": "Link 4"
-			}]
+		}, {
+			"href": "#",
+			"text": "Link 2"
+		}, {
+			"href": "#",
+			"text": "Opens in a new window",
+			"newWindow": true
+		}, {
+			"href": "#",
+			"text": "Link 4"
 		}]
-	});
-&lt;/script&gt;</code></pre>
-</details>
-					</section>
-					<section>
-						<h2>def-footer</h2>
-						<p>Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempore excepturi at ad aperiam molestias laboriosam! Omnis, corrupti. Accusamus iste doloribus dolor molestias placeat voluptates qui incidunt consequuntur necessitatibus minima.</p>
-<details>
-	<summary>Code for def-footer</summary>
+	},{
+		"sectionName": "Opens in a new window",
+		"sectionLink": "#",
+		"newWindow": true,
+		"menuLinks": [{
+			"href": "#",
+			"text": "Link 1"
+		}, {
+			"href": "#",
+			"text": "Link 2"
+		}, {
+			"href": "#",
+			"text": "Link 3"
+		}, {
+			"href": "#",
+			"text": "Link 4"
+		}]
+	},{
+		// Rinse and repeat
+		"sectionName": "Section name 3",
+		"menuLinks": [{
+			"href": "#",
+			"text": "Link 1"
+		}, {
+			"href": "#",
+			"text": "Link 2"
+		}, {
+			"href": "#",
+			"text": "Link 3"
+		}, {
+			"href": "#",
+			"text": "Link 4"
+		}]
+	},{
+		// Rinse and repeat
+		"sectionName": "Section name ... 27",
+		"menuLinks": [{
+			"href": "#",
+			"text": "Link 1"
+		}, {
+			"href": "#",
+			"text": "Link 2"
+		}, {
+			"href": "#",
+			"text": "Link 3"
+		}, {
+			"href": "#",
+			"text": "Link 4"
+		}]
+	}]
+});
+&lt;/script&gt;
+</code></pre>
+			</section>
+			<section>
+				<div data-ajax-replace="../../ajax/samples/footer-en.html"></div>
 <pre><code>&lt;script&gt;
 	var defFooter = document.getElementById("def-footer");
 	defFooter.outerHTML = wet.builder.footer({
 	});
 &lt;/script&gt;
 </code></pre>
-</details>
-					</section>
-					<section>
-						<h2>refFooter</h2>
-						<p>Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempore excepturi at ad aperiam molestias laboriosam! Omnis, corrupti. Accusamus iste doloribus dolor molestias placeat voluptates qui incidunt consequuntur necessitatibus minima.</p>
-<details>
-	<summary>Code for refFooter</summary>
+			</section>
+			<section>
+				<div data-ajax-replace="../../ajax/samples/refFooter-en.html"></div>
 <pre><code>&lt;script&gt;
 	document.write(wet.builder.refFooter({
 	}));
 &lt;/script&gt;
 </code></pre>
-</details>
-					</section>
+			</section>
 					<div id="def-preFooter">
 						<!-- Write closure fall-back static file -->
 						<!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/static/preFooter-en.html -->
-								</div>
+					</div>
 					<!-- Write closure template -->
 					<script>
 						var defPreFooter = document.getElementById("def-preFooter");
 						defPreFooter.outerHTML = wet.builder.preFooter({
-										"dateModified": "2019-03-08"
+							"dateModified": "2019-03-08"
 						});
 					</script>
 				</main>
