@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-		<title>Page de contenu - Canada.ca</title>
+		<title>Page de contenu - Solution de gabarits à déploiement centralisé (SGDC)</title>
 		<meta content="width=device-width,initial-scale=1" name="viewport">
 		<!-- Meta data -->
 		<meta name="description" content="La Boîte à outils de l’expérience Web (BOEW) rassemble différents composants réutilisables et prêts-à-utiliser pour la conception et la mise à jour de sites Web innovateurs qui sont à la fois accessibles, conviviaux et interopérables. Tous ces composants réutilisables sont des logiciels libres mis à la disposition des ministères et des collectivités Web externes.">
@@ -15,12 +15,10 @@
 		<noscript>
 			<!-- Write closure fall-back static file -->
 			<!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/refTop.html -->
-			<!--#include virtual="/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/static/refTop.html" -->
 		</noscript>
 		<!-- Write closure template -->
 		<script>
 			document.write(wet.builder.refTop({
-				"cdnEnv": "prod",
 				"isApplication": true
 			}));
 		</script>
@@ -29,13 +27,11 @@
 		<div id="def-top">
 			<!-- Write closure fall-back static file -->
 			<!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/appTop-fr.html -->
-			<!--#include virtual="/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/static/appTop-fr.html" -->
 		</div>
 		<!-- Write closure template -->
 		<script>
 			var defTop = document.getElementById("def-top");
 			defTop.outerHTML = wet.builder.appTop({
-				"cdnEnv": "prod",
 				"appName": [{"text": "Nom de l'application", "href": "#"}],
 				"lngLinks": [{"lang": "en", "href": "apptop_search-en.html", "text": "English"}],
 				"customSearch": "test"
@@ -46,34 +42,29 @@
 			<div id="def-preFooter">
 				<!-- Write closure fall-back static file -->
 				<!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/preFooter-fr.html -->
-				<!--#include virtual="/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/static/preFooter-fr.html" -->
-			</div>
+				</div>
 			<!-- Write closure template -->
 			<script>
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
-					"cdnEnv": "prod",
-					"dateModified": "2019-03-08"
+						"dateModified": "2019-03-08"
 				});
 			</script>
 		</main>
 		<div id="def-footer">
 			<!-- Write closure fall-back static file -->
 			<!-- /ROOT/app/cls/WET/gcweb/v4_0_28/cdts/static/appFooter-fr.html -->
-			<!--#include virtual="/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/static/appFooter-fr.html" -->
 		</div>
 		<!-- Write closure template -->
 		<script>
 			var defFooter = document.getElementById("def-footer");
 			defFooter.outerHTML = wet.builder.appFooter({
-				"cdnEnv": "prod",
 				"showFeatures": false
 			});
 		</script>
 		<!-- Write closure template -->
 		<script>
 			document.write(wet.builder.refFooter({
-				"cdnEnv": "prod",
 				"isApplication": true
 			}));
 		</script>
