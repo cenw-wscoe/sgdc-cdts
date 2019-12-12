@@ -616,7 +616,7 @@
 	"text": "Link 1"
 }]</pre>
 			</li>
-			<li><span class="text-uppercase">optional</span> – subLinks – This variable will be used to display the sub-links in the menu. You can also add "newWindow": true if you want the link to open in a new window.
+			<li><span class="text-uppercase">optional</span> – subLinks – This variable will be used to display the sub-links in the menu. You can also add <code>"newWindow": true</code> if you want the link to open in a new window.
 				<pre>"subLinks": [{
 	"subhref": "#",
 	"subtext": "Link 1",
@@ -720,11 +720,21 @@
 			</li>
 			<li><span class="text-uppercase">optional</span> – menuLinks – This variable will be used to create a top navigation menu, it will override the menuPath variable if provided. You can also create submenu items.
 				<pre>"menuLinks": [{
-	"href": "https://canada.ca/link1.html",
-	"text": "Link 1"
-}, {
-	"href": "https://canada.ca/link2.html",
+	"href": "#",
+	"text": "Link 1",
+	"subLinks": [{
+		"subhref": "#",
+		"subtext": "SubLink 1"
+	},{
+		"subhref": "#",
+		"subtext": "SubLink 2"
+	}]
+},{
+	"href": "#",
 	"text": "Link 2"
+},{
+	"href": "#",
+	"text": "Link 3"
 }]</pre>
 			</li>
 			<li><span class="text-uppercase">optional</span> - subLinks - This variable is used with <code>menuLinks</code> to create a sub-menu in the main menu. The <code>id</code> value is <span class="text-uppercase">manditory</span> when using a the <code>subLinks</code> array.

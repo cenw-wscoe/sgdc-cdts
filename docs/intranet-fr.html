@@ -559,7 +559,7 @@
 			<li>OBLIGATOIRE - appName – Utilisez cette variable pour spécifier le nom de l'application et le URL.
 				<pre>"appName": "Nom de l'application"</pre>
 			</li>
-			<li>OPTIONAL – appUrl – Utilisez cette variable pour spécifier le URL sur le nom de l'application.
+			<li>FACULTATIF – appUrl – Utilisez cette variable pour spécifier le URL sur le nom de l'application.
 				<pre>"appUrl": "#"</pre>
 			</li>
 			<li>FACULTATIF - lngLinks – Utilisez cette variable pour préciser l’emplacement du lien permettant de passer d’une langue à l’autre.
@@ -569,7 +569,7 @@
 	"text": "Français"
 }]</pre>
 			</li>
-			<li>OPTIONAL - secure – Utilisez cette variable pour afficher l'icône de cadenas à côté du nom de l'application.
+			<li>FACULTATIF - secure – Utilisez cette variable pour afficher l'icône de cadenas à côté du nom de l'application.
 				<pre>"secure": true</pre>
 			</li>
 			<li>FACULTATIF - signIn – Utilisez cette variable pour ajouter un bouton de connexion.
@@ -582,16 +582,16 @@
 	"href": "#"
 }]</pre>
 			</li>
-			<li>OPTIONAL – search – Cette variable est utilisée pour cacher la recherche.
+			<li>FACULTATIF – search – Cette variable est utilisée pour cacher la recherche.
 				<pre>"search": false</pre>
 			</li>
-			<li>FACULTATIF – customSearch – Utilisez cette variable pour afficher un champ de recherche personnalisé. Vous devez <a href="./contact-en.html">nous contacter</a> pour obtenir cette option.
+			<li>FACULTATIF – customSearch – Utilisez cette variable pour afficher un champ de recherche personnalisé. Vous devez <a href="./contact-fr.html">contacter l'équipe de la SGDC</a> pour obtenir cette option.
 				<pre>"customSearch": "customSearch"</pre>
 			</li>
-			<li>OPTIONAL – siteMenu – This variable is used to hide the site menu.
+			<li>FACULTATIF – siteMenu – This variable is used to hide the site menu.
 				<pre>"siteMenu": false</pre>
 			</li>
-			<li>FACULTATIF – menuPath – Utilisez cette variable pour afficher un menu personnalisé. Quoique vous n'êtes pas obligés, nous vous suggérons de <a href="./contact-fr.html">nous contacter</a> pour obtenir cette option. Si vous avez déjà fait ça par le passé, veuillez simplement fournir le URL vers un fichier valide avec votre menu. Vous pouvez copier le format du fichier de menu personnalisé fourni ci-bas en exemple.
+			<li>FACULTATIF – menuPath – Utilisez cette variable pour afficher un menu personnalisé. Quoique vous n'êtes pas obligés, nous vous suggérons de <a href="./contact-fr.html">contacter l'équipe de la SGDC</a> pour obtenir cette option. Si vous avez déjà fait ça par le passé, veuillez simplement fournir le URL vers un fichier valide avec votre menu. Vous pouvez copier le format du fichier de menu personnalisé fourni ci-bas en exemple.
 				<pre>"menuPath": "https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/(version)/cdts/ajax/custommenu-fra.html"</pre>
 			</li>
 			<li>FACULTATIF – menuLinks – Utilisez cette variable pour créer un menu. Ce dernier remplacera la variable menuPath si celle-ci est déclarée. Vous pouvez également créer un sous-menu.
@@ -600,16 +600,35 @@
 	"text": "Lien 1",
 	"subLinks": [{
 		"subhref": "#",
-		"subtext": "SubLien 1"
+		"subtext": "SousLien 1"
 	},{
 		"subhref": "#",
-		"subtext": "SubLien 2"
+		"subtext": "SousLien 2"
 	}]
 },{
 	"href": "#",
 	"text": "Lien 2"
 },{
 	"href": "#",
+	"text": "Lien 3"
+}]</pre>
+			</li>
+			<li><span class="text-uppercase">FACULTATIF</span> - subLinks - Cette variable est utilisée avec <code>menuLinks</code> pour créer un sous-menu dans le menu principal. La value du <code>id</code> est <span class="text-uppercase">obligatoire</span> lorsque <code>subLinks</code> est utilisé.
+				<pre>"menuLinks": [{
+	"href": "https://canada.ca/lien1.html",
+	"text": "Lien 1"
+}, {
+	"href": "https://canada.ca/lien2.html",
+	"id": "submenu1",
+	"subLinks":  [{
+		"subhref": "#",
+		"subtext": "SousLien 1"
+	},{
+		"subhref": "#",
+		"subtext": "SousLien 2"
+	}]
+},{
+	"href": "https://canada.ca/lien3.html",
 	"text": "Lien 3"
 }]</pre>
 			</li>
@@ -626,13 +645,13 @@
 	"href": "https://www.canada.ca/fr/index.html"
 }]</pre>
 			</li>
-			<li>OPTIONAL - subTheme – Utilisez cette variable pour afficher un thème personnalisé pour vos actifs Web intranet. Vous devez <a href="./contact-fr.html">nous contacter</a> pour active cette option.
+			<li>FACULTATIF - subTheme – Utilisez cette variable pour afficher un thème personnalisé pour vos actifs Web intranet. Vous devez <a href="./contact-fr.html">nous contacter</a> pour active cette option.
 				<pre>"subTheme": "esdc"</pre>
 			</li>
-			<li>OPTIONAL – topSecMenu – Utilisez cette variable pour ajouter un passe-droit sur la section menu. Elle doit être assignée à true quand vous avez une section menu.
+			<li>FACULTATIF – topSecMenu – Utilisez cette variable pour ajouter un passe-droit sur la section menu. Elle doit être assignée à true quand vous avez une section menu.
 				<pre>"topSecMenu": true</pre>
 			</li>
-			<li>OPTIONAL – intranetTitle – Utilisez cette variable pour afficher un titre intranet personnalisé. Avant d'aller de l'avant, assurez-vous d'avoir la permission de votre département, du SCT ou de l'Éditeur principal. Cette variable ne se conforme pas à<a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html">[1]</a>.
+			<li>FACULTATIF – intranetTitle – Utilisez cette variable pour afficher un titre intranet personnalisé. Avant d'aller de l'avant, assurez-vous d'avoir la permission de votre département, du SCT ou de l'Éditeur principal. Cette variable ne se conforme pas à<a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html">[1]</a>.
 				<pre>"intranetTitle": [{
 	"text": "Custom title",
 	"url": "#"
@@ -652,7 +671,7 @@
 			<li>Le troisième changement consistera à ajouter le code GCT pour exécuter l’écriture du modèle dans la section du pied de page afin de remplacer le nouveau contenu <code>&lt;div&gt;</code> une fois que le modèle sera prêt. Les variables JavaScript qui suivent peuvent être utilisées dans cette section&#160;:</li>
 		</ol>
 		<ul>
-			<li>OPTIONAL – globalNav – Cette variable remplacera le pied de page par défaut et affichera le menu de navigation globale pour Canada.ca in dans le pied de page sous la forme d'une liste de liens. Voyez l'URL ci-dessous pour un exemple.
+			<li>FACULTATIF – globalNav – Cette variable remplacera le pied de page par défaut et affichera le menu de navigation globale pour Canada.ca in dans le pied de page sous la forme d'une liste de liens. Voyez l'URL ci-dessous pour un exemple.
 				<pre>"globalNav": true</pre>
 			</li>
 		</ul>
@@ -693,7 +712,7 @@
 			<li>FACULTATIF – subTheme – Utilisez cette variable pour afficher un thème personnalisé pour vos actifs Web intranet. Vous devez <a href="./contact-fr.html">nous contacter</a> pour activer cette option.
 				<pre>"subTheme": "esdc"</pre>
 			</li>
-			<li>OPTIONAL – showFeatures – Cette option sera utilisée par l'éditeur principal pour insérer les activités et les initiatives GoC dans votre page. Par défaut cette option est toujours activée sur toutes les pages. Vous devrez obtenir l’autorisation de l’Éditeur principal pour ne pas inclure ce contenu dans votre bien Web. Si vous obtenez cette autorisation, vous pouvez insérer le code qui suit.
+			<li>FACULTATIF – showFeatures – Cette option sera utilisée par l'éditeur principal pour insérer les activités et les initiatives GoC dans votre page. Par défaut cette option est toujours activée sur toutes les pages. Vous devrez obtenir l’autorisation de l’Éditeur principal pour ne pas inclure ce contenu dans votre bien Web. Si vous obtenez cette autorisation, vous pouvez insérer le code qui suit.
 				<pre>"showFeatures": false</pre>
 			</li>
 		</ul>
