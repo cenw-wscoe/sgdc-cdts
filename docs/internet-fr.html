@@ -172,6 +172,17 @@
 			<li>FACULTATIF - isApplication – Utilisez cette variable pour inclure le fichier CSS pour les applications web.
 				<pre>"isApplication": true</pre>
 			</li>
+			<li><span class="text-uppercase">FACULTATIF</span> - webAnalytics – Utilisez cette variable pour utiliser Adobe Analytics (AA).
+				<ul>
+					<li><span class="text-uppercase">obligatoire</span> - environment – Utilisez cette valeur pour déclarer si AA est en <em>staging</em> ou en <em>production</em>.</li>
+					<li><span class="text-uppercase">obligatoire</span> - version – Utiliser cette valeur pour déclarer quelle version d'AA votre application / site Web utilise. Uniquement les versions 1 et 2 sont disponibles pour le moment.</li>
+					<li><span class="text-uppercase">REMARQUE</span> - Vous aurez également à ajouter la variable <code>webAnalytics</code> dans les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_du_pied_de_page">références de fichier de la section du pied de page</a>.</li>
+				</ul>
+				<pre>webAnalytics" : [{
+	"environment" : "staging", // OU "production"
+	"version" : 1 // OU 2
+}]"</pre>
+			</li>
 		</ul>
 		<p>Exemple&#160;:</p>
 		<pre>&lt;!-- Load closure template scripts --&gt;
@@ -825,7 +836,7 @@
 			</ul>
 			<p><strong>IMPORTANT</strong>&#160;: Vous ne pouvez utiliser qu'une variable pour contrôler l'affichage du pied de page. Si vous ne déclarez pas <code>footerSections</code>, le pied de page par défaut d'un <a href="#R.C3.A9f.C3.A9rences_pour_une_page_en_sc.C3.A9nario_d.27op.C3.A9rations">scénario d'opération</a> sera affiché.</p>
 			<p>Il n'y a pas d'images avec des exemples de code pour les gabarits d'application parce qu'il y a trop de possibilités. À la place, veuillez consulter notre <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_30/cdts/appTop/apptop-fr.shtml">page d'exemple de gabarit d'application</a> que nous maintenons à jour. Vous y trouverez tous les scénarios ci-dessus.</p>
-			<p><strong>NOTE</strong>&#160;: N’oubliez pas que la balise <code>&lt;div&gt;</code> qui encapsule votre fichier statique de repli doit se nommer «&#160;def-footer», faute de quoi votre page ne s’affichera pas correctement. N'oubliez pas aussi d'utiliser <code>wet.builder.appFooter</code> au lieu de <code>wet.builder.footer</code> dans votre code JavaScript.</p>
+			<p><strong>REMARQUE</strong>&#160;: N’oubliez pas que la balise <code>&lt;div&gt;</code> qui encapsule votre fichier statique de repli doit se nommer «&#160;def-footer», faute de quoi votre page ne s’affichera pas correctement. N'oubliez pas aussi d'utiliser <code>wet.builder.appFooter</code> au lieu de <code>wet.builder.footer</code> dans votre code JavaScript.</p>
 		</section>
 	</section>
 </section>
