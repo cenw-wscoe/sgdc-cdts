@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-		<title>Message title - Canada.ca theme</title>
+		<title>Message - Centrally Deployed Templates Solution (CDTS) / Solution de gabarits à déploiement centralisé (SGDC)</title>
 		<meta content="width=device-width,initial-scale=1" name="viewport">
 		<!-- Meta data -->
 		<meta name="robots" content="noindex, nofollow, noarchive">
@@ -15,12 +15,10 @@
 		<noscript>
 			<!-- Write closure fall-back static file -->
 			<!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/static/serverRefTop.html -->
-			<!--#include virtual="/app/cls/WET/gcweb/v4_0_28/cdts/static/serverRefTop.html" -->
 		</noscript>
 		<!-- Write closure template -->
 		<script>
 			document.write(wet.builder.serverRefTop({
-				"cdnEnv": "prod"
 			}));
 		</script>
 	</head>
@@ -28,13 +26,11 @@
 		<div id="def-top">
 			<!-- Write closure fall-back static file -->
 			<!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/static/serverTop.html -->
-			<!--#include virtual="/app/cls/WET/gcweb/v4_0_28/cdts/static/serverTop.html" -->
 		</div>
 		<!-- Write closure template -->
 		<script>
 			var defTop = document.getElementById("def-top");
 			defTop.outerHTML = wet.builder.serverTop({
-				"cdnEnv": "prod"
 			});
 		</script>
 		<main role="main" property="mainContentOfPage" class="container">
@@ -125,19 +121,16 @@
 		<div id="def-footer">
 			<!-- Write closure fall-back static file -->
 			<!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/static/serverBottom.html -->
-			<!--#include virtual="/app/cls/WET/gcweb/v4_0_28/cdts/static/serverBottom.html" -->
 		</div>
 		<!-- Write closure template -->
 		<script>
 			var defFooter = document.getElementById("def-footer");
 			defFooter.outerHTML = wet.builder.serverBottom({
-				"cdnEnv": "prod"
 			});
 		</script>
 		<!-- Write closure template -->
 		<script>
 			document.write(wet.builder.refFooter({
-				"cdnEnv": "prod"
 			}));
 		</script>
 	</body>

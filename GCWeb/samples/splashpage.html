@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
-		<title>Canada.ca</title>
+		<title>Centrally Deployed Templates Solution (CDTS) / Solution de gabarits à déploiement centralisé (SGDC)</title>
 		<meta content="width=device-width,initial-scale=1" name="viewport">
 		<meta name="description" content="">
 		<meta name="description" lang="fr" content="">
@@ -24,12 +24,10 @@
 		<noscript>
 			<!-- Write closure fall-back static file -->
 			<!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/static/splashTop.html -->
-			<!--#include virtual="/app/cls/WET/gcweb/v4_0_28/cdts/static/splashTop.html" -->
 		</noscript>
 		<!-- Write closure template -->
 		<script>
 			document.write(wet.builder.splashTop({
-				"cdnEnv": "prod"
 			}));
 		</script>
 	</head>
@@ -37,13 +35,11 @@
 		<div id="splashContent">
 			<!-- Write closure fall-back static file -->
 			<!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/static/splash.html -->
-			<!--#include virtual="/app/cls/WET/gcweb/v4_0_28/cdts/static/splash.html" -->
 			<!-- Write closure template -->
 			<script>
 				var contentSplash = document.getElementById("splashContent");
 				contentSplash.innerHTML = wet.builder.splash({
-					"cdnEnv": "prod",
-					"indexEng": "https://www.canada.ca/en/index.html",
+						"indexEng": "https://www.canada.ca/en/index.html",
 					"indexFra": "https://www.canada.ca/fr/index.html",
 					"termsEng": "https://www.canada.ca/en/transparency/terms.html",
 					"termsFra": "https://www.canada.ca/fr/transparence/avis.html",

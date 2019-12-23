@@ -15,12 +15,10 @@
 		<noscript>
 			<!-- Write closure fall-back static file -->
 			<!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/static/refTop.html -->
-			<!--#include virtual="/app/cls/WET/gcweb/v4_0_28/cdts/static/refTop.html" -->
 		</noscript>
 		<!-- Write closure template -->
 		<script>
 			document.write(wet.builder.refTop({
-				"cdnEnv": "prod"
 			}));
 		</script>
 	</head>
@@ -28,13 +26,11 @@
 		<div id="def-top">
 			<!-- Write closure fall-back static file -->
 			<!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/static/top-en.html -->
-			<!--#include virtual="/app/cls/WET/gcweb/v4_0_28/cdts/static/top-en.html" -->
 		</div>
 		<!-- Write closure template -->
 		<script>
 			var defTop = document.getElementById("def-top");
 			defTop.outerHTML = wet.builder.top({
-				"cdnEnv": "prod",
 				"breadcrumbs": [{"title": "Centrally Deployed Templates Solution (CDTS)", "href": "../index.html"}],
 			});
 		</script>
@@ -102,33 +98,28 @@
 			<div id="def-preFooter">
 				<!-- Write closure fall-back static file -->
 				<!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/static/preFooter-en.html -->
-				<!--#include virtual="/app/cls/WET/gcweb/v4_0_28/cdts/static/preFooter-en.html" -->
-			</div>
+				</div>
 			<!-- Write closure template -->
 			<script>
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
-					"cdnEnv": "prod",
-					"dateModified": "2019-03-08"
+						"dateModified": "2019-03-08"
 				});
 			</script>
 		</main>
 		<div id="def-footer">
 			<!-- Write closure fall-back static file -->
 			<!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/static/footer-en.html -->
-			<!--#include virtual="/app/cls/WET/gcweb/v4_0_28/cdts/static/footer-en.html" -->
 		</div>
 		<!-- Write closure template -->
 		<script>
 			var defFooter = document.getElementById("def-footer");
 			defFooter.outerHTML = wet.builder.footer({
-				"cdnEnv": "prod"
 			});
 		</script>
 		<!-- Write closure template -->
 		<script>
 			document.write(wet.builder.refFooter({
-				"cdnEnv": "prod"
 			}));
 		</script>
 	</body>
