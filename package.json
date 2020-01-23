@@ -1,0 +1,22 @@
+{
+  "name": "cdts-sgdc",
+  "version": "1.0.0",
+  "description": "SGDC : Solution de gabarits à déploiement centralisé, Prix de reconnaissance de la DGIIT : Excellence en transformation de nos activités et de nos opérations, GTEC : Prix de distinction.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cenw-wscoe/sgdc-cdts.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cenw-wscoe/sgdc-cdts/issues"
+  },
+  "homepage": "https://github.com/cenw-wscoe/sgdc-cdts#readme"
+}
