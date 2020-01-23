@@ -1,7 +1,7 @@
 {
   "name": "cdts-sgdc",
   "version": "1.0.0",
-  "description": "SGDC : Solution de gabarits à déploiement centralisé, Prix de reconnaissance de la DGIIT : Excellence en transformation de nos activités et de nos opérations, GTEC : Prix de distinction.",
+  "description": "Solution de gabarits à déploiement centralisé (SGDC) / Centrally Deployed Templates Solution (CDTS)",
   "main": "index.js",
   "directories": {
     "doc": "docs"
