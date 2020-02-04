@@ -1,6 +1,8 @@
 # Documentation pour la solution de gabarits à déploiement centralisé (SGDC)
 SGDC : Solution de gabarits à déploiement centralisé, Prix de reconnaissance de la DGIIT : Excellence en transformation de nos activités et de nos opérations, GTEC : Prix de distinction.
 
+Veuillez visiter le dépôt [wet-boew/cdts-sgdc](https://github.com/wet-boew/cdts-sgdc) pour le code source de SGDC.
+
 ## Qu’est-ce que la solution de gabarits à déploiement centralisé (SGDC)?
 L’objectif de la SGDC est de fournir la couche de présentation des thèmes Canada.ca et intranet.canada.ca aux actifs Web. Elle sépare la couche de présentation du traitement des données d’un site Web statique ou d’une application Web et permet les mises à jour rapides à travers plusieurs réseaux.
 
@@ -32,6 +34,8 @@ Préparation :
 
 # Documentation for the Centrally Deployed Templates Solution (CDTS)
 CDTS: Centrally Deployed Templates Solution, IITB Branch Award: Excellence in Transforming our Business/Operations, GTEC: Distinction Awards
+
+Please visit the [wet-boew/cdts-sgdc](https://github.com/wet-boew/cdts-sgdc) repository for the source code of CDTS.
 
 ## What is the Centrally Deployed Templates Solution (CDTS)?
 The purpose of the CDTS is essentially to deliver the presentation layer of the Canada.ca theme or Intranet.canada.ca theme to web assets. It decouples the presentation layer from the business logic of a static website or web application and allows rapid updates across multiple networks.
