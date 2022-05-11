@@ -54,7 +54,6 @@
 						<li><a href="#Section_top_references">Section top references</a></li>
 						<li><a href="#Section_pre-footer_references">Section pre-footer references</a></li>
 						<li><a href="#Section_footer_references">Section footer references</a></li>
-						<li><a href="#Section_footer_file_references">Section footer file references</a></li>
 					</ul>
 				</section>
 				<section>
@@ -76,11 +75,15 @@
 					</ul>
 				</section>
 				<section>
-					<h3 class="h5">Application templates</h3>
+					<h3 class="h5"><a href="#Section_application_references">Application templates</a></h3>
 					<ul>
+						<li><a href="#Section_appRefTop_references">Section &lt;head&gt; references</a></li>
 						<li><a href="#Section_appTop_references">Section appTop references</a></li>
 						<li><a href="#Section_appFooter_references">Section appFooter references</a></li>
 					</ul>
+				</section>
+				<section>
+					<h3 class="h5"><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_44/cdts/samples/">GCIntranet Sample Pages</a></h3>
 				</section>
 			</div>
 		</section>
@@ -173,7 +176,7 @@
 			<li>Add the <code>script</code> element referencing the CDTS Javascript file (<code>wet-[language].js</code> where [language] is either "en" or "fr"). CDTS is activated either by specifying a `data-cdts-setup` attribute containing the CDTS configuration JSON object or altenatively by calling the `wet.builder.setup` function explicitely.</li>
 			<li>Create a <code>&lt;noscript&gt;</code> section which will make your page look good if JavaScript is disabled. You will need to load a fall-back static file in the <code>&lt;noscript&gt;</code> section.</li>
 		</ol>
-		<p>The <strong>CDTS configuration object</strong> that is passed in the <code>data-cdts-setup</code> attribute or when calling the <code>wet.builder.setup</code> function should include the following properties:</p>
+		<p id="cdts_configuration_object">The <strong>CDTS configuration object</strong> that is passed in the <code>data-cdts-setup</code> attribute or when calling the <code>wet.builder.setup</code> function should include the following properties:</p>
 		<ul>
 			<li><code>cdnEnv</code> (OPTIONAL, defaults to "prod") - A string specifying the CDTS environment from which to load resources. One of:
 				<ul>
@@ -183,10 +186,10 @@
 			</li>
 			<li><code>mode</code> (OPTIONAL, defaults to "common") - A string specifying which template mode to use. One of:
 				<ul>
-					<li>The GCWeb basic template<pre>"mode": "common"</pre></li>
-					<li>The GCWeb <em>application</em> template (also must make sure the corresponding CSS <code>cdts-app-styles.css</code> is used)<pre>"mode": "app"</pre></li>
-					<li>The GCWeb <em>server</em> template (typically used for error pages)<pre>"mode": "server"</pre></li>
-					<li>The GCWeb <em>splash</em> template (also must make sure the corresponding CSS <code>cdts-splash-styles.css</code> is used)<pre>"mode": "splash"</pre></li>
+					<li>The GCIntranet basic template<pre>"mode": "common"</pre></li>
+					<li>The GCIntranet <em>application</em> template (also must make sure the corresponding CSS <code>cdts-app-styles.css</code> is used)<pre>"mode": "app"</pre></li>
+					<li>The GCIntranet <em>server</em> template (typically used for error pages)<pre>"mode": "server"</pre></li>
+					<li>The GCIntranet <em>splash</em> template (also must make sure the corresponding CSS <code>cdts-splash-styles.css</code> is used)<pre>"mode": "splash"</pre></li>
 				</ul>
 			</li>
 			<li><code>base</code> (OPTIONAL) - An object specifying the configuration of the generation of file references in head section and end of page. Properties:
@@ -227,8 +230,8 @@
         }'&gt;&lt;/script&gt;
     &lt;noscript&gt;
         &lt;!-- Write closure fall-back static file --&gt;
-        &lt;!-- /ROOT/app/cls/WET/gcintranet/v4_0_29/cdts/static/refTop.html --&gt;
-        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_45/cdts/static/refTop.html" --&gt;
+        &lt;!-- /ROOT/app/cls/WET/gcintranet/v4_0_45/cdts/static/refTop.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcintranet/v4_0_45/cdts/static/refTop.html" --&gt;
     &lt;/noscript&gt;
     ...
 &lt;/head&gt;</pre>
@@ -283,7 +286,7 @@
 	"href": "https://www.canada.ca/en/index.html"
 }]</pre>
 					</li>
-					<li><code>customSearch</code> (OPTIONAL) - An object specifying the configuration for a customized search feature. Refer to the corresponding <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_44/cdts/samples/custom-search-en.html">sample page</a> for details.</li>
+					<li><code>customSearch</code> (OPTIONAL) - An object specifying the configuration for a customized search feature. Refer to the corresponding <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_44/cdts/samples/custom-search-en.html">sample page</a> for details.</li>
 					<li><code>GCToolsModal</code> (OPTIONAL, defaults to false) - A boolean used to make the GC Tools links in the header into a modal dialogue box.</li>
 					<li><code>intranetTitle</code> (OPTIONAL) – Array+single object specifying a customized intranet title. Before proceeding please ensure you have permission from your department, TBS or Principal Publisher.
 						<pre>"intranetTitle": [{
@@ -312,6 +315,7 @@
 		<pre>&lt;html&gt;
 &lt;head&gt;
     ...
+    &lt;link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
     &lt;script
         src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-en.js"
         data-cdts-setup='{
@@ -365,6 +369,7 @@
 		<pre>&lt;html&gt;
 &lt;head&gt;
     ...
+    &lt;link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
     &lt;script
         src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-en.js"
         data-cdts-setup='{
@@ -409,6 +414,7 @@
 		<pre>&lt;html&gt;
 &lt;head&gt;
     ...
+    &lt;link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
     &lt;script
         src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-en.js"
         data-cdts-setup='{
@@ -567,6 +573,7 @@
 		<pre>&lt;html&gt;
 &lt;head&gt;
     ...
+    &lt;link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
     &lt;script
         src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-en.js"
         data-cdts-setup='{
@@ -669,6 +676,7 @@
 		<pre>&lt;html&gt;
 &lt;head&gt;
     ...
+    &lt;link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
     &lt;script
         src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-en.js"
         data-cdts-setup='{
@@ -749,99 +757,30 @@
 &lt;/html&gt;</pre>
 	</section>
 	<h2 id="Section_application_references">Application page references</h2>
+	<p>The CDTS can be used by dynamic web applications that need a custom header and/or footer. Before proceeding please ensure you have permission from your department, TBS or Principal Publisher before proceeding. The changes below <strong>DO NOT</strong> follow the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">C&amp;IA specifications document</a>. All sections documented above apply with the following changes:</p>
+	<section>
+		<h3 id="Section_appRefTop_references">Section <code>&lt;head&gt;</code> references</h3>
+		<p>The <a href="#Section_.3Chead.3E_references">Section <code>&lt;head&gt;</code> references</a> are the same except for the following modifications:</p>
+		<ul>
+			<li>The <code>mode</code> property of the <a href="#cdts_configuration_object">CDTS configuration object</a> must be set to "app".</li>
+		</ul>
+	</section>
 	<section>
 		<h3 id="Section_appTop_references">Section appTop references</h3>
-		<p>You will replace the <a href="#Section_top_references">Section top references</a> with the following:</p>
+		<p>The <a href="#Section_top_references">Section top references</a> is <strong>replaced</strong> with the following:</p>
 		<ol>
-			<li>The first one will be to add a new <code>&lt;div&gt;</code> to wrap the entire top content with an ID of “def-top”. This <code>&lt;div&gt;</code> will start at the top of your page all the way down to the opening <code>&lt;main&gt;</code> element.</li>
-			<li>The second change will be to include the reference to the fall-back static file in the new <code>&lt;div&gt;</code> you have created. <strong>IMPORTANT</strong>: The appTop-(language).html file contains instructions, please carefully review the comments to ensure you have the proper look when JavaScript is disabled.</li>
-			<li>The last change will be to add the actual GCT code to perform the write of the template in the top section to replace the new <code>&lt;div&gt;</code> content once the template is ready. The following JavaScript variables can be used in this section:</li>
-		</ol>
-		<ul>
-			<li><span class="text-uppercase">mandatory</span> - appName – Use this variable to specify the application name.
-				<pre>"appName": [{
+			<li>Add a new <code>&lt;div&gt;</code> element <strong>with an ID of</strong> <code>cdts-def-top</code>. It should be located before the <code>&lt;main&gt;</code> element on the page.</li>
+			<li>Insert/include fall-back static content in the new <code>&lt;div&gt;</code> you have created.</li>
+			<li>For configuration, add a <code>top</code> property to the CDTS configuration object in the &lt;head&gt;  It can include the following properties:
+				<ul>
+					<li><code>appName</code> (MANDATORY) – Array+single object specifying the application name and URL.
+						<pre>"appName": [{
 	"text": "Application name",
 	"href": "#"
 }]</pre>
-			</li>
-			<li><span class="text-uppercase">optional</span> – appUrl – Use this variable to provide a link on your appName.
-				<pre>"appUrl": "#"</pre>
-			</li>
-			<li><span class="text-uppercase">optional</span> - lngLinks – Use this variable to specify where the language toggle link will go.
-				<pre>"lngLinks": [{
-	"lang": "fr",
-	"href": "content-fr.html",
-	"text": "Français"
-}]</pre>
-			</li>
-			<li><span class="text-uppercase">optional</span> - secure – Use this variable to display the lock icon beside the application name
-				<pre>"secure": true</pre>
-			</li>
-			<li><span class="text-uppercase">optional</span> - signIn – Use this variable to add a link for the sign in button
-				<pre>"signIn": [{
-	"href": "#"
-}]</pre>
-			</li>
-			<li><span class="text-uppercase">optional</span> - signOut – Use this variable to add a link for the sign out button
-				<pre>"signOut": [{
-	"href": "#"
-}]</pre>
-			</li>
-			<li><span class="text-uppercase">optional</span> – search – This variable is used to hide the search.
-				<pre>"search": false</pre>
-			</li>
-			<li><span class="text-uppercase">optional</span> – customSearch – This variable is used to display a custom search. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
-				<pre>"customSearch": "customSearch"</pre>
-			</li>
-			<li><span class="text-uppercase">optional</span> – siteMenu – This variable is used to hide the site menu.
-				<pre>"siteMenu": false</pre>
-			</li>
-			<li><span class="text-uppercase">optional</span> – menuPath – This variable is used to display a custom menu. Although you don't need to we suggest you <a href="./contact-en.html">contact the CDTS team</a> to enable this option. If you have done this before then simply provide the URL to your valid menu file to enable this option. You can copy the format in the sample custom menu file provided below in our sample.
-				<pre>"menuPath": "https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/(version)/cdts/ajax/custommenu-eng.html"</pre>
-			</li>
-			<li><span class="text-uppercase">optional</span> – menuLinks – This variable will be used to create a top navigation menu, it will override the menuPath variable if provided. You can also create submenu items.
-				<pre>"menuLinks": [{
-	"href": "#",
-	"text": "Link 1",
-	"subLinks": [{
-		"subhref": "#",
-		"subtext": "SubLink 1"
-	},{
-		"subhref": "#",
-		"subtext": "SubLink 2"
-	}]
-},{
-	"href": "#",
-	"text": "Link 2"
-},{
-	"href": "#",
-	"text": "Link 3"
-}]</pre>
-			</li>
-			<li><span class="text-uppercase">optional</span> - subLinks - This variable is used with <code>menuLinks</code> to create a sub-menu in the main menu. The <code>id</code> value is <span class="text-uppercase">manditory</span> when using a <code>subLinks</code> array.
-				<pre>"menuLinks": [{
-	"href": "https://canada.ca/link1.html",
-	"text": "Link 1"
-}, {
-	"href": "https://canada.ca/link2.html",
-	"id": "submenu1",
-	"subLinks":  [{
-		"subhref": "#",
-		"subtext": "SubLink 1"
-	},{
-		"subhref": "#",
-		"subtext": "SubLink 2"
-	}]
-},{
-	"href": "https://canada.ca/link3.html",
-	"text": "Link 3"
-}]</pre>
-			</li>
-			<li><span class="text-uppercase">optional</span> – showPreContent – This will be used by Principal Publisher to insert content into the pre content space of your page. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.
-				<pre>"showPreContent": false</pre>
-			</li>
-			<li><span class="text-uppercase">optional</span> – breadcrumbs – Use this variable to specify the breadcrumbs in your page. Note that if no breadcrumbs are specified the application template will <strong class="text-uppercase">not</strong> insert a default link.
-				<pre>"breadcrumbs": [{
+					</li>
+					<li><code>breadcrumbs</code> (OPTIONAL) – An object specifying custom breadcrumbs. (If none are specified, NO breadcrumb will be generated)
+						<pre>"breadcrumbs": [{
 	"title": "Home",
 	"href": "https://www.canada.ca/en/index.html"
 },{
@@ -849,79 +788,158 @@
 	"acronym": "Centrally Deployed Templates Solution",
 	"href": "https://www.canada.ca/en/index.html"
 }]</pre>
-			</li>
-			<li><span class="text-uppercase">optional</span> - subTheme – This variable is used to display a custom theme for your intranet web asset. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
-				<pre>"subTheme": "esdc"</pre>
-			</li>
-			<li><span class="text-uppercase">optional</span> – topSecMenu – This variable is used to add the bypass block to skip to the section menu. It must be set to true when you have a section menu.
-				<pre>"topSecMenu": true</pre>
-			</li>
-			<li><span class="text-uppercase">optional</span> – intranetTitle – This variable is used to display a custom intranet title. Before proceeding please ensure you have permission from your department, TBS or Principal Publisher. This variable does not conform to the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">C&amp;IA specifications document</a>.
-				<pre>"intranetTitle": [{
-	"text": "Custom title",
-	"url": "#"
+					</li>
+					<li><code>customSearch</code> (OPTIONAL) - An object specifying the configuration for a customized search feature. Refer to the corresponding <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_44/cdts/samples/custom-search-en.html">sample page</a> for details.</li>
+					<li><code>GCToolsModal</code> (OPTIONAL, defaults to false) - A boolean used to make the GC Tools links in the header into a modal dialogue box.</li>
+					<li><code>intranetTitle</code> (OPTIONAL) – Array+single object specifying a customized intranet title. Before proceeding please ensure you have permission from your department, TBS or Principal Publisher.
+						<pre>"intranetTitle": [{
+	"href": "http://esdc.prv/en/index.shtml",
+	"text": " IntraWeb",
+	"boldText" : "ESDC/SC",
+	"acronym": "Employment and Social Development Canada / Service Canada"
 }]</pre>
+					</li>
+					<li><code>menuLinks </code> (OPTIONAL) – Array+single object used to create a top navigation menu. It will override the <code>menuPath</code> property if provided. You can also create submenu items. Refer to the corresponding <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_44/cdts/samples/custom-menu-en.html">sample page</a> for details.</li>
+					<li><code>menuPath</code> (OPTIONAL) – A string specifying the URL to a file to be used to display a custom menu. Refer to the corresponding <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_44/cdts/samples/custom-menu-en.html">sample page</a> for details.</li>
+					<li><code>lngLinks</code> (OPTIONAL) – Array+single object specifying the language toggle link. Although this is optional it is usually mandatory to provide the language toggle link.
+						<pre>"lngLinks": [{
+	"lang": "fr",
+	"href": "content-fr.html",
+	"text": "Français"
+}]</pre>
+					</li>
+					<li><code>search</code> (OPTIONAL, defaults to true) - A boolean used to determine whether to display the search area.</li>
+					<li><code>secure</code> (OPTIONAL, defaults to false) - A boolean used to determine whether to display the lock icon beside the application name.</li>
+					<li><code>showPreContent</code> (OPTIONAL, defaults to true) - A boolean used to determine whether to display the global "pre content" area. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to turn it off.</li>
+					<li><code>signIn</code> (OPTIONAL) – Array+single object specifying the URL for the sign in button.
+						<pre>"signIn": [{
+	"href": "#"
+}]</pre>
+					</li>
+					<li><code>signOut</code> (OPTIONAL) – Array+single object specifying the URL for the sign out button.
+						<pre>"signOut": [{
+	"href": "#"
+}]</pre>
+					</li>
+					<li><code>subTheme</code> (OPTIONAL, defaults to null/base theme) - A string specifying which sub-theme to use. If specified, possible values are <code>esdc</code>, <code>eccc</code> or <code>labour</code> (also must make sure the corresponding CSS <code>cdts-[subTheme]-styles.css</code> is used).</li>
+					<li><code>topSecMenu</code> (OPTIONAL, defaults to false) - A boolean used to indicate whether a secondary navigation menu will be present on the page. (See <a href="#Section_menu_references">Section menu references</a>)</li>
+				</ul>
 			</li>
-		</ul>
-		<p>We have not provided sample code images for the application templates as there are too many options. Instead please see our <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_30/cdts/appTop/apptop-en.shtml">application template sample pages</a> that we keep updated. It has all the different scenarios listed above.</p>
-		<p><strong class="text-uppercase">Note</strong>: Don’t forget the <code>&lt;div&gt;</code> that is wrapped around your fall-back static file is named “def-top” otherwise your page will not display correctly. Also note that when using the application templates you will use <code>wet.builder.appTop</code> instead of <code>wet.builder.top</code> in your JavaScript code.</p>
+		</ol>
+		<p><strong>Sample:</strong></p>
+		<pre>&lt;html&gt;
+&lt;head&gt;
+    ...
+    &lt;link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
+    &lt;script
+        src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-en.js"
+        data-cdts-setup='{
+            ...
+            "mode": "app",
+            "top": {
+                "appName": [{
+                    "text": "Application name",
+                    "href": "#"
+                }],
+                "lngLinks": [{
+                    "lang": "fr",
+                    "href": "content-fr.html",
+                    "text": "Français"
+                }],
+                "GCToolsModal": true
+            }
+            ...
+        }'&gt;&lt;/script&gt;
+    ...
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="cdts-def-top"&gt;
+        &lt;!-- Write closure fall-back static file --&gt;
+        &lt;!-- /ROOT/app/cls/WET/gcintranet/v4_0_45/cdts/static/appTop-en.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcintranet/v4_0_45/cdts/static/appTop-en.html" --&gt;
+    &lt;/div&gt;
+    &lt;main property="mainContentOfPage" typeof="WebPageElement" class="container"&gt;
+        ...
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 	</section>
 	<section>
 		<h3 id="Section_appFooter_references">Section appFooter references</h3>
-		<p>So you want a custom footer? Before proceeding please ensure you have permission from your department, TBS or Principal Publisher. The changes below <strong>DO NOT</strong> follow the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">C&amp;IA specifications document</a>. Still want to continue? Sounds good, follow these steps:</p>
-		<p>You will replace the <a href="#Section_footer_references">Section footer references</a> with the following:</p>
+		<p>The <a href="#Section_footer_references">Section footer references</a> is <strong>replaced</strong> with the following:</p>
 		<ol>
-			<li>The first one will be to add a new <code>&lt;div&gt;</code> to wrap all the footer content with an ID of “def-footer”. This <code>&lt;div&gt;</code> will start immediately after your <code>&lt;/main&gt;</code> element has been closed.</li>
-			<li>The second change will be to include the reference to the fall-back static file in the new <code>&lt;div&gt;</code> you have created. <strong>IMPORTANT</strong>: The appFooter-(language).html file contains instructions, please carefully review the comments to ensure you have the proper look when JavaScript is disabled.</li>
-			<li>The last change will be to add the actual GCT code to perform the write of the template in the footer section to replace the new <code>&lt;div&gt;</code> content once the template is ready. The following JavaScript variables can be used in this section:</li>
-		</ol>
-		<ul>
-			<li><span class="text-uppercase">optional</span> – globalNav – This variable will override the default footer and display the global navigation menu for Canada.ca in the footer as a list of links. See sample URL below for an example.
+			<li>Add a new <code>&lt;div&gt;</code> element <strong>with an ID of</strong> <code>cdts-def-footer</code>. It should be located after the closing of the <code>&lt;/main&gt;</code> element on the page.</li>
+			<li>Insert/include fall-back static content in the new <code>&lt;div&gt;</code> you have created.</li>
+			<li>For configuration, add a <code>footer</code> property to the CDTS configuration object in the &lt;head&gt;.  It can include the following properties:
 				<ul>
-					<li>"globalNav": true</li>
+					<li><code>footerPath</code> (OPTIONAL) – A string specifying the URL to a file to be used to display a custom footer. (esdc theme only, footerSections takes precedence)</li>
+					<li><code>footerSections</code> (OPTIONAL) – Array of footerSection objects to create a custom set of columns for your footer links.
+					<pre>"footerSections": [{
+    "sectionName": "Section 1",
+    "customFooterLinks": [{
+        "href": "#",
+        "text": "Link 1",
+        "newWindow": true
+      },{
+        "href": "#",
+        "text": "Link 2"
+    }]
+}]</pre>
+					</li>
+					<li><code>globalNav</code> (OPTIONAL, defaults to false) - A boolean used to determine whether to display the global navigation menu (footerSections takes precedence).</li>
+					<li><code>showFeatures</code> (OPTIONAL, defaults to false) - A boolean used to determine whether to display the global "activities" area.</li>
+					<li><code>subTheme</code> (OPTIONAL, defaults to null/base theme) - A string specifying which sub-theme to use. If specified, possible values are <code>esdc</code>, <code>eccc</code> or <code>labour</code> (also must make sure the corresponding CSS <code>cdts-[subTheme]-styles.css</code> is used).</li>
 				</ul>
 			</li>
-			<li><span class="text-uppercase">optional</span> – footerSections – This variable will create a custom set of columns for your footer links. See sample URL below for an example.
-				<pre>"footerSections": [{
-	"href": "#",
-	"text": "Link 1"
-},{
-	"href": "#",
-	"text": "Link 2"
-}]</pre>
-			</li>
-			<li><span class="text-uppercase">optional</span> – contactLinks – This variable will override the default contact link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom contact us link.
-				<pre>"contactLinks": [{
-	"href": "#"
-}]</pre>
-			</li>
-			<li><span class="text-uppercase">optional</span> – termsLink – This variable will override the “Terms &amp; conditions” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link.
-				<pre>"termsLink": "https://www.canada.ca/en/transparency/terms.html"</pre>
-			</li>
-			<li><span class="text-uppercase">optional</span> – privacyLink – This variable will override the “Privacy” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link.
-				<pre>"privacyLink": "https://www.canada.ca/en/transparency/privacy.html"</pre>
-			</li>
-			<li><span class="text-uppercase">optional</span> - subTheme – This variable is used to display a custom theme for your intranet web asset. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
-				<pre>"subTheme": "esdc"</pre>
-			</li>
-			<li><span class="text-uppercase">optional</span> – showFeatures – This will be used by the Principal Publisher to insert GoC activities and initiatives into your page. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.
-				<pre>"showFeatures": false</pre>
-			</li>
-		</ul>
-		<p><strong>IMPORTANT</strong>: You can only use one variable for the footer appearance. The <code>globalNav</code> variable will overwrite the <code>footerSections</code> variable if both are provided. If you don't provide <code>globalNav</code> or <code>footerSections</code> then the default footer from the <a href="#Transactional_page_references">transactional template</a> will be displayed.</p>
-		<p>We have not provided sample code images for the application templates as there are too many options. Instead please see our <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_30/cdts/appTop/apptop-en.shtml">application template sample pages</a> that we keep updated. It has all the different scenarios listed above.</p>
-		<p><strong class="text-uppercase">Note</strong>: Don’t forget the <code>&lt;div&gt;</code> that is wrapped around your fall-back static file is named “def-footer” otherwise your page will not display correctly. Also note that when using the application templates you will use <code>wet.builder.appFooter</code> instead of <code>wet.builder.footer</code> in your JavaScript code.</p>
+		</ol>
+		<p><strong>Sample:</strong></p>
+		<pre>&lt;html&gt;
+&lt;head&gt;
+    ...
+    &lt;link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
+    &lt;script
+        src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-en.js"
+        data-cdts-setup='{
+            "mode": "app",
+            ...
+            "footer": {
+                "contactLinks": [{"href": "mycontact-us-en.html"}],
+                "showFeatures": true,
+                "footerSections": [{
+                    "sectionName": "Section 1",
+                    "customFooterLinks": [{
+                        "href": "#",
+                        "text": "Link 1",
+                        "newWindow": true
+                    },{
+                        "href": "#",
+                        "text": "Link 2"
+                    }]
+                }]
+            }
+            ...
+        }'&gt;&lt;/script&gt;
+    ...
+&lt;/head&gt;
+&lt;body&gt;
+    ...
+    &lt;/main&gt;
+    &lt;div id="cdts-def-footer"&gt;
+        &lt;!-- Write closure fall-back static file --&gt;
+        &lt;!-- /ROOT/app/cls/WET/gcintranet/v4_0_45/cdts/static/appFooter-en.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcintranet/v4_0_45/cdts/static/appFooter-en.html" --&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
 	</section>
-</section>
 			<div id="def-preFooter">
 				<!-- Write closure fall-back static file -->
-				<!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/static/preFooter-en.html -->
+				<!-- /ROOT/etc/designs/canada/cdts/gcintranet/v4_0_45/cdts/static/preFooter-en.html -->
 				</div>
 			<!-- Write closure template -->
 			<script>
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
-					"dateModified": "2019-03-15",
+					"dateModified": "2022-05-01",
 					"showShare": false,
 					"showFeedback": false
 				});
