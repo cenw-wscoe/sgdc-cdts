@@ -76,7 +76,7 @@
 					</ul>
 				</section>
 				<section>
-					<h3 class="h5"><a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_44/cdts/samples/index-fr.html">Pages d'exemples GCIntranet</a></h3>
+					<h3 class="h5"><a href="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_44/cdts/samples/index-fr.html">Pages d'exemples GCIntranet</a></h3>
 				</section>
 			</div>
 		</section>
@@ -122,7 +122,7 @@
 	</ul>
 	<p>Pas exemple, pour la version 4.0.45 en français avec le thème GCintranet, le URL est&#160;:</p>
 	<ul>
-		<li><a href="https://ssl-templates.services.gc.ca/app/cls/wet/gcintranet/v4_0_45/cdts/compiled/wet-fr.js">https://ssl-templates.services.gc.ca/app/cls/wet/gcintranet/v4_0_45/cdts/compiled/wet-fr.js</a></li>
+		<li><a href="https://cdts.service.canada.ca/app/cls/wet/gcintranet/v4_0_45/cdts/compiled/wet-fr.js">https://cdts.service.canada.ca/app/cls/wet/gcintranet/v4_0_45/cdts/compiled/wet-fr.js</a></li>
 	</ul>
 	<p>Le «&#160;URL de la SGDC&#160;», le «&#160;thème&#160;», la «&#160;version de la BOEW&#160;» et le «&#160;langage&#160;» doivent être les options de configuration dans votre actif Web. Tel que préalablement suggéré, utilisez un fichier web.config, XML config ou une base de données pour stocker ces variables. Assurez-vous que votre site Web utilise votre nouveau chemin de fichier configurable.</p>
 	<p><strong>NOTE IMPORTANTE #1</strong>: Lorsque vous mettez à jour votre actif Web à une version supérieure, nous vous suggérons d’aussi mettre à jour vos fichiers statiques de repli. Sinon, assurez-vous que vos fichiers statiques de repli puissent être mis à jour indépendamment de votre version WET de la SGDC. Avoir la SGDC à la version 4.0.45 et les fichiers statiques de repli à la version 4.0.55 est acceptable, quoiqu’il est recommandé d’avoir les deux à jour. Vos fichiers statiques de repli peuvent être une version ou deux en retard jusqu’à temps que vous effectuez une relâche complète. Nous vous informerons si vos fichiers doivent être mis à jour. Ce sera indiqué dans le courriel qui annonce une nouvelle version.</p>
@@ -167,7 +167,7 @@
 		<ul>
 			<li><code>cdnEnv</code> (FACULTATIF, par défaut "prod") - Chaîne de caractères indiquant l'environnement SGDC à utiliser pour télécharger les ressources. Valeurs possibles:
 				<ul>
-					<li>Environnement hôte: https://ssl-templates.services.gc.ca<pre>"cdnEnv": "prod"</pre></li>
+					<li>Environnement hôte: https://cdts.service.canada.ca<pre>"cdnEnv": "prod"</pre></li>
 					<li>Environnement hôte: https://templates.service.gc.ca<pre>"cdnEnv": "esdcprod"</pre></li>
 				</ul>
 			</li>
@@ -185,8 +185,8 @@
 					<li><code>jqueryEnv</code> (FACULTATIF) - Si spécifié et a la valeur "external", jQuery sera inclus à partir de ajax.googleapis.com à la place de l'environnement hôte de SGDC.
 						<pre>"jqueryEnv": "external"</pre>
 					</li>
-					<li><code>exitSecureSite</code> (FACULTATIF) - Un objet indiquant la configuration de l'option "Quitter un site sécurisé" de SGDC. Se référer à la <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_44/cdts/samples/exitscript-fr.html">page d'exemple</a> correspondante pour les détails.</li>
-					<li><code>webAnalytics</code> (FACULTATIF) - Un objet indiquant la configuration de l'option Adobe Analytics (AA). Se référer à la <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_44/cdts/samples/adobe-analytics-fr.html">page d'exemple</a> correspondante pour les détails.</li>
+					<li><code>exitSecureSite</code> (FACULTATIF) - Un objet indiquant la configuration de l'option "Quitter un site sécurisé" de SGDC. Se référer à la <a href="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_44/cdts/samples/exitscript-fr.html">page d'exemple</a> correspondante pour les détails.</li>
+					<li><code>webAnalytics</code> (FACULTATIF) - Un objet indiquant la configuration de l'option Adobe Analytics (AA). Se référer à la <a href="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_44/cdts/samples/adobe-analytics-fr.html">page d'exemple</a> correspondante pour les détails.</li>
 				</ul>
 			</li>
 			<li><code>top</code>, <code>preFooter</code>, <code>footer</code>, <code>secmenu</code>, <code>splash</code> (OPTIONAL) - Objets indiquant la configuration de chaque section, au besoin. Se référer à la section de documentation correspondante ci-bas pour les détails.</li>
@@ -196,10 +196,10 @@
 		<pre>&lt;head&gt;
     ...
     &lt;!-- Load stylesheet --&gt;
-    &lt;link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
     &lt;!-- Load/activate closure template scripts --&gt;
     &lt;script
-        src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-fr.js"
+        src="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-fr.js"
         data-cdts-setup='{
             "cdnEnv": "prod",
             "base": {
@@ -226,9 +226,9 @@
 		<pre>&lt;head&gt;
     ...
     &lt;!-- Load stylesheet --&gt;
-    &lt;link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
     &lt;!-- Load/activate closure template scripts --&gt;
-    &lt;script src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-fr.js"&gt;&lt;/script&gt;
+    &lt;script src="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-fr.js"&gt;&lt;/script&gt;
     &lt;noscript&gt;
         &lt;!-- Write closure fall-back static file --&gt;
         &lt;!-- /ROOT/etc/designs/canada/cdts/gcintranet/v4_0_45/cdts/static/refTop.html --&gt;
@@ -273,7 +273,7 @@
 	"href": "https://www.canada.ca/fr/index.html"
 }]</pre>
 					</li>
-					<li><code>customSearch</code> (FACULTATIF) - Un objet indiquant l'utilisation d'un engin de recherche personalisé. Se référer à la <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_44/cdts/samples/custom-search-fr.html">page d'exemple</a> correspondante pour les détails.</li>
+					<li><code>customSearch</code> (FACULTATIF) - Un objet indiquant l'utilisation d'un engin de recherche personalisé. Se référer à la <a href="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_44/cdts/samples/custom-search-fr.html">page d'exemple</a> correspondante pour les détails.</li>
 					<li><code>GCToolsModal</code> (FACULTATIF, par défaut false) - Une valeur booléenne utilisée pour rendre les liens GC Tools dans l'en-tête en une boîte de dialogue modale.</li>
 					<li><code>intranetTitle</code> (FACULTATIF) – Tableau+objet singulier indiquant un titre intranet personalisé. Avant de procéder, veuillez vous assurer d'avoir l'autorisation de votre ministère, du SCT ou de l'Éditeur principal.
 						<pre>"intranetTitle": [{
@@ -302,9 +302,9 @@
 		<pre>&lt;html&gt;
 &lt;head&gt;
     ...
-    &lt;link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
     &lt;script
-        src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-fr.js"
+        src="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-fr.js"
         data-cdts-setup='{
             ...
             "top": {
@@ -356,9 +356,9 @@
 		<pre>&lt;html&gt;
 &lt;head&gt;
     ...
-    &lt;link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
     &lt;script
-        src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-fr.js"
+        src="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-fr.js"
         data-cdts-setup='{
             ...
             "preFooter": {
@@ -401,9 +401,9 @@
 		<pre>&lt;html&gt;
 &lt;head&gt;
     ...
-    &lt;link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
     &lt;script
-        src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-fr.js"
+        src="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-fr.js"
         data-cdts-setup='{
             ...
             "footer": {
@@ -464,10 +464,10 @@
 &lt;head&gt;
     ...
     &lt;!-- Load stylesheet --&gt;
-    &lt;link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-splash-styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-splash-styles.css"&gt;
     &lt;!-- Load/activate closure template scripts --&gt;
     &lt;script
-        src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-en.js"
+        src="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-en.js"
         data-cdts-setup='{
             "cdnEnv": "prod",
             "mode": "splash",
@@ -560,9 +560,9 @@
 		<pre>&lt;html&gt;
 &lt;head&gt;
     ...
-    &lt;link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
     &lt;script
-        src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-fr.js"
+        src="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-fr.js"
         data-cdts-setup='{
             ...
             "top": {
@@ -661,9 +661,9 @@
 		<pre>&lt;html&gt;
 &lt;head&gt;
     ...
-    &lt;link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
     &lt;script
-        src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-fr.js"
+        src="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-fr.js"
         data-cdts-setup='{
             ...
             "top": {
@@ -774,7 +774,7 @@
 	"href": "https://www.canada.ca/fr/index.html"
 }]</pre>
 					</li>
-					<li><code>customSearch</code> (FACULTATIF) - Un objet indiquant l'utilisation d'un engin de recherche personalisé. Se référer à la <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_44/cdts/samples/custom-search-fr.html">page d'exemple</a> correspondante pour les détails.</li>
+					<li><code>customSearch</code> (FACULTATIF) - Un objet indiquant l'utilisation d'un engin de recherche personalisé. Se référer à la <a href="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_44/cdts/samples/custom-search-fr.html">page d'exemple</a> correspondante pour les détails.</li>
 					<li><code>GCToolsModal</code> (FACULTATIF, par défaut false) - Une valeur booléenne utilisée pour rendre les liens GC Tools dans l'en-tête en une boîte de dialogue modale.</li>
 					<li><code>intranetTitle</code> (FACULTATIF) – Tableau+objet singulier indiquant un titre intranet personalisé. Avant de procéder, veuillez vous assurer d'avoir l'autorisation de votre ministère, du SCT ou de l'Éditeur principal.
 						<pre>"intranetTitle": [{
@@ -784,8 +784,8 @@
 	"acronym": "Employment and Social Development Canada / Service Canada"
 }]</pre>
 					</li>
-					<li><code>menuLinks </code> (FACULTATIF) – Tableau+objet singulier utilisé pour créer le menu de navigation supérieur. It remplacera la propriété <code>menuPath</code> si elle est spécifiée. Vous pouvez également créer des sous-menus. Se référer à la <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_44/cdts/samples/custom-menu-fr.html">page d'exemple</a> correspondante pour les détails.</li>
-					<li><code>menuPath</code> (FACULTATIF) – Une chaîne de caractères indiquant l'emplacement du fichier qui serivira pour créer le menu personalisé. Se référer à la <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_44/cdts/samples/custom-menu-fr.html">page d'exemple</a> correspondante pour les détails.</li>
+					<li><code>menuLinks </code> (FACULTATIF) – Tableau+objet singulier utilisé pour créer le menu de navigation supérieur. It remplacera la propriété <code>menuPath</code> si elle est spécifiée. Vous pouvez également créer des sous-menus. Se référer à la <a href="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_44/cdts/samples/custom-menu-fr.html">page d'exemple</a> correspondante pour les détails.</li>
+					<li><code>menuPath</code> (FACULTATIF) – Une chaîne de caractères indiquant l'emplacement du fichier qui serivira pour créer le menu personalisé. Se référer à la <a href="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_44/cdts/samples/custom-menu-fr.html">page d'exemple</a> correspondante pour les détails.</li>
 					<li><code>lngLinks</code> (FACULTATIF) – Tableau+objet singulier indiquant le lien permettant de passer d’une langue à l’autre. Bien que ce soit facultatif, il est normalement obligatoire de fournir un lien pour changer la langue.
 						<pre>"lngLinks": [{
 	"lang": "en",
@@ -815,9 +815,9 @@
 		<pre>&lt;html&gt;
 &lt;head&gt;
     ...
-    &lt;link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
     &lt;script
-        src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-fr.js"
+        src="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-fr.js"
         data-cdts-setup='{
             ...
             "mode": "app",
@@ -880,9 +880,9 @@
 		<pre>&lt;html&gt;
 &lt;head&gt;
     ...
-    &lt;link rel="stylesheet" href="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_45/cdts/cdts-styles.css"&gt;
     &lt;script
-        src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-fr.js"
+        src="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_45/cdts/compiled/wet-fr.js"
         data-cdts-setup='{
             "mode": "app",
             ...
