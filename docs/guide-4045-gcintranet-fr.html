@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="fr" dir="ltr"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+		<title>Liste de vérification d'implémentation GCIntranet - Solution de gabarits à déploiement centralisé (SGDC)</title>
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<!-- Meta data -->
+		<meta name="description" content="Solution de gabarits à déploiement centralisé (SGDC)">
+		<!-- Meta data-->
+		<!-- Load closure template scripts -->
+		<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/soyutils.js"></script>
+		<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/wet-fr.js"></script>
+		<!-- Write closure template -->
+		<script>
+			document.write(wet.builder.refTop({
+				"isApplication": true
+			}));
+		</script>
+	</head>
+	<body vocab="https://schema.org/" typeof="WebPage">
+		<div id="def-top">
+		</div>
+		<!-- Write closure template -->
+		<script>
+			var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.appTop({
+				"breadcrumbs": [{"title": "Accueil", "href": "./index-fr.html"}],
+				"appName": [{"text": "Solution de gabarits à déploiement centralisé (SGDC)", "href": "./index-fr.html"}],
+				"lngLinks": [{"lang": "fr", "href": "guide-gcintranet-en.html", "text": "English"}],
+				"menuPath": "../ajax/cdtsMenu-fr.html"
+			});
+		</script>
+		<main role="main" property="mainContentOfPage" class="container">
+<h1 property="name" id="wb-cont" lang="fr">Liste de vérification d'implémentation GCIntranet</h1>
+<p data-json-replace="../ajax/data.json#/sloganFr">Slogan</p>
+<div class="alert alert-info">
+	<p data-json-replace="../ajax/data.json#/noteFr">Note</p>
+</div>
+<div class="alert alert-info">
+	<p><strong>Etes-vous à la bonne place?</strong> Ce guide est conçu pour trouver rapidement les sections nécessaires pour implémenter le SGDC. Si vous n'êtes pas familiés avec les SGDC il est recommendé de lire le <a href="./intranet-fr.html">Guide d'implementation GCWeb</a> pour des instruction plus détaillées.</p>
+</div>
+<div lang="fr">
+<div class="row">
+	<div class="col-md-4 pull-right">
+		<section class="panel panel-default mrgn-tp-lg">
+			<header class="panel-heading">
+				<h2 id="CDTS_implementation" class="panel-title">Implementation SGDC</h2>
+			</header>
+			<div class="panel-body">
+				<section>
+					<h3 class="h5 mrgn-tp-0">Liste de vérification GCIntranet normal</h3>
+					<ul>
+						<li><a href="#GCIntranet_.2F_version_.2F_default">Version</a></li>
+						<li><a href="#GCIntranet_.2F_version_.2F_default">run</a></li>
+					</ul>
+				</section>
+				<section>
+					<h3 class="h5 mrgn-tp-0">Liste de vérification GCIntranet application</h3>
+					<ul>
+						<li><a href="#GCIntranet_.2F_version_.2F_application">Version</a></li>
+						<li><a href="#GCIntranet_.2F_run_.2F_application">run</a></li>
+					</ul>
+				</section>
+			</div>
+		</section>
+	</div>
+	<div class="col-md-8">
+		<section>
+			<h2 id="GCIntranet_.2F_version_.2F_default">GCIntranet / version / normal</h2>
+			<section>
+				<h3 id="Section_.3Chead.3E_references">Références de la section <code>&lt;head&gt;</code></h3>
+				<ul>
+					<li>Avez-vous ajouté les deux références aux fichiers du SGDC (<code>cdts[-esdc]-styles.css</code> / <code>wet-[language].js</code>)?</li>
+					<li>Avez-vous implémenté un méchanisme de version (web.config, fichier XML, conifguration en base de données, etc...) pour contrôler le <a href="intranet-fr.html#Information_.C3.A0_propos_du_contr.C3.B4le_de_versions">URL, thème et version</a> du SGDC?</li>
+					<li>Avez-vous ajouté la section <code>&lt;noscript&gt;</code>?</li>
+					<li>Avez-vous inséré le contenu statique de repli dans cette section <code>&lt;noscript&gt;</code>?</li>
+					<li>Avez-vous ajouté l'attribut <code>data-cdts-setup</code> pour spécifier <strong>l'objet de configuration SGDC</strong> OU appelé la fonction <code>wet.builder.setup</code>?</li>
+					<li>Pour plus de détails, référez-vous au <a href="intranet-fr.html#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_.3Chead.3E">guide d'implémentation.</a></li>
+				</ul>
+			</section>
+			<section>
+				<h3 id="Section_top_references">Références de la section "top"</h3>
+				<ul>
+					<li>Avez-vous ajouté le nouvel element <code>&lt;div id="cdts-def-top"&gt;</code>&#160;?</li>
+					<li>Avez-vous inséré le fichier statique de repli dans l'élément <code>&lt;div id="cdts-def-top"&gt;</code>?</li>
+					<li>Avez-vous ajouté un objet <code>top</code> dans l'objet de configuration SGDC pour personalisation, incluant le sous-thème selon le cas?</li>
+					<li>Pour plus de détails, référez-vous au <a href="intranet-fr.html#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_sup.C3.A9rieure">guide d'implémentation.</a></li>
+				</ul>
+			</section>
+			<section>
+				<h3 id="Section_pre-footer_references">Références de la section "prefooter"</h3>
+				<ul>
+					<li>Avez-vous ajouté le nouvel element <code>&lt;div id="cdts-def-prefooter"&gt;</code>&#160;?</li>
+					<li>Avez-vous inséré le fichier statique de repli dans l'élément <code>&lt;div id="cdts-def-prefooter"&gt;</code>?</li>
+					<li>Avez-vous ajouté un objet <code>prefooter</code> dans l'objet de configuration SGDC pour personalisation?</li>
+					<li>Pour plus de détails, référez-vous au <a href="intranet-fr.html#R.C3.A9f.C3.A9rences_de_fichiers_de_la_section_qui_pr.C3.A9c.C3.A8de_le_pied_de_page">guide d'implémentation.</a></li>
+				</ul>
+			</section>
+			<section>
+				<h3 id="Section_footer_references">Section footer references</h3>
+				<ul>
+					<li>Did you add the new <code>&lt;div id="def-footer"&gt;</code>?</li>
+					<li>Did you insert the correct backup static file into the <code>&lt;div id="def-footer"&gt;</code> you created?</li>
+					<li>Did you add <code>wet.builder.footer</code>?
+						<ul>
+							<li>Available options are cdnEnv, subTheme, contactLinks and showFeatures</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h3 id="Section_footer_file_references">Section footer file references</h3>
+				<ul>
+					<li>Did you add <code>wet.builder.refFooter</code>?
+						<ul>
+							<li>Available options are cdnEnv, exitScript, exitURL, exitMsg, exitDomains, displayModal and jqueryEnv</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+		</section>
+		<section>
+			<h2 id="GCIntranet_.2F_run_.2F_default">GCIntranet / run / default</h2>
+			<section>
+				<h3 id="Section_.3Chead.3E_references_2">Références de la section <code>&lt;head&gt;</code></h3>
+				<ul>
+					<li>Avez-vous ajouté les deux références aux fichiers du SGDC (<code>cdts[-esdc]-styles.css</code> / <code>wet-[language].js</code>)?</li>
+					<li>Avez-vous référencé les fichiers "run" (le URL de SGDC contiendra "rn")?</li>
+					<li>Avez-vous ajouté la section <code>&lt;noscript&gt;</code>?</li>
+					<li>Avez-vous inséré le contenu statique de repli dans cette section <code>&lt;noscript&gt;</code>?</li>
+					<li>Avez-vous ajouté l'attribut <code>data-cdts-setup</code> pour spécifier <strong>l'objet de configuration SGDC</strong> OU appelé la fonction <code>wet.builder.setup</code>?</li>
+					<li>Pour plus de détails, référez-vous au <a href="intranet-fr.html#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_.3Chead.3E">guide d'implémentation.</a></li>
+				</ul>
+			</section>
+			<section>
+				<h3 id="Section_top_references_2">Références de la section "top"</h3>
+				<ul>
+					<li>Avez-vous ajouté le nouvel element <code>&lt;div id="cdts-def-top"&gt;</code>&#160;?</li>
+					<li>Avez-vous inséré le fichier statique de repli dans l'élément <code>&lt;div id="cdts-def-top"&gt;</code>?</li>
+					<li>Avez-vous ajouté un objet <code>top</code> dans l'objet de configuration SGDC pour personalisation, incluant le sous-thème selon le cas?</li>
+					<li>Pour plus de détails, référez-vous au <a href="intranet-fr.html#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_sup.C3.A9rieure">guide d'implémentation.</a></li>
+				</ul>
+			</section>
+			<section>
+				<h3 id="Section_pre-footer_references_2">Références de la section "prefooter"</h3>
+				<ul>
+					<li>Avez-vous ajouté le nouvel element <code>&lt;div id="cdts-def-prefooter"&gt;</code>&#160;?</li>
+					<li>Avez-vous inséré le fichier statique de repli dans l'élément <code>&lt;div id="cdts-def-prefooter"&gt;</code>?</li>
+					<li>Avez-vous ajouté un objet <code>prefooter</code> dans l'objet de configuration SGDC pour personalisation?</li>
+					<li>Pour plus de détails, référez-vous au <a href="intranet-fr.html#R.C3.A9f.C3.A9rences_de_fichiers_de_la_section_qui_pr.C3.A9c.C3.A8de_le_pied_de_page">guide d'implémentation.</a></li>
+				</ul>
+			</section>
+			<section>
+				<h3 id="Section_footer_references_2">Section footer references</h3>
+				<ul>
+					<li>Did you add the new <code>&lt;div id="def-footer"&gt;</code>?</li>
+					<li>Did you insert the correct backup static file into the <code>&lt;div id="def-footer"&gt;</code> you created?</li>
+					<li>Did you add <code>wet.builder.footer</code>?
+						<ul>
+							<li>Available options are cdnEnv, subTheme, contactLinks and showFeatures</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h3 id="Section_footer_file_references_2">Section footer file references</h3>
+				<ul>
+					<li>Did you add <code>wet.builder.refFooter</code>?
+						<ul>
+							<li>Available options are cdnEnv, exitScript, exitURL, exitMsg, exitDomains, displayModal and jqueryEnv</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+		</section>
+		<section>
+			<h2 id="Important_note_for_application_version">Note importante pour gabarit pour applications</h2>
+			<p>Les deux sections suivantes sont pour le gebarit pour applications. Rappelez-vous qu'utiliser le gabarit pour applications est différent que seulement enlever ou ajouter certains éléments qui sont permis par la <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html">Spécifications du contenu et de l’architecture de l’information pour Canada.ca</a>. Tout élément qui peut être implémenté selon la spécifications Canada.ca ne nécéssite pas une entête/pied de page personalisés et est disponible dans la gabarit normal de SGDC (voir ci-haut). Avant d'aller de l'avant, assurez-vous d'avoir la permission de votre département, du SCT ou de l'Éditeur principal.</p>
+		</section>
+		<section>
+			<h2 id="GCIntranet_.2F_version_.2F_application">GCIntranet / version / application</h2>
+			<section>
+				<h3 id="Section_.3Chead.3E_references_3">Références de la section <code>&lt;head&gt;</code></h3>
+				<ul>
+					<li>Avez-vous ajouté les deux références aux fichiers du SGDC (<code>cdts[-esdc]-styles.css</code> / <code>wet-[language].js</code>)?</li>
+					<li>Avez-vous implémenté un méchanisme de version (web.config, fichier XML, conifguration en base de données, etc...) pour contrôler le <a href="internet-fr.html#Information_.C3.A0_propos_du_contr.C3.B4le_de_versions">URL, thème et version</a> du SGDC?</li>
+					<li>Avez-vous ajouté la section <code>&lt;noscript&gt;</code>?</li>
+					<li>Avez-vous inséré le contenu statique de repli dans cette section <code>&lt;noscript&gt;</code>?</li>
+					<li>Avez-vous ajouté l'attribut <code>data-cdts-setup</code> pour spécifier <strong>l'objet de configuration SGDC</strong> OU appelé la fonction <code>wet.builder.setup</code>?
+						<ul>
+							<li>Avez-vous spécifié <code>"mode": "app"</code> dans l'objet de configuration SGDC?</li>
+						</ul>
+					</li>
+					<li>Pour plus de détails, référez-vous au <a href="internet-fr.html#Section_application_references">guide d'implémentation.</a></li>
+				</ul>
+			</section>
+			<section>
+				<h3 id="Section_appTop_references">Références de la section "appTop"</h3>
+				<ul>
+					<li>Avez-vous ajouté le nouvel element <code>&lt;div id="cdts-def-top"&gt;</code>&#160;?</li>
+					<li>Avez-vous inséré le fichier statique de repli dans l'élément <code>&lt;div id="cdts-def-top"&gt;</code>?</li>
+					<li>Avez-vous ajouté un objet <code>top</code> dans l'objet de configuration SGDC pour personalisation, incluant le sous-thème selon le cas?</li>
+					<li>Pour plus de détails, référez-vous au <a href="intranet-fr.html#R.C3.A9f.C3.A9rences_de_la_section_appTop">guide d'implémentation.</a></li>
+				</ul>
+			</section>
+			<section>
+				<h3 id="Section_pre-footer_references_3">Références de la section "prefooter"</h3>
+				<ul>
+					<li>Avez-vous ajouté le nouvel element <code>&lt;div id="cdts-def-prefooter"&gt;</code>&#160;?</li>
+					<li>Avez-vous inséré le fichier statique de repli dans l'élément <code>&lt;div id="cdts-def-prefooter"&gt;</code>?</li>
+					<li>Avez-vous ajouté un objet <code>prefooter</code> dans l'objet de configuration SGDC pour personalisation?</li>
+					<li>Pour plus de détails, référez-vous au <a href="intranet-fr.html#R.C3.A9f.C3.A9rences_de_fichiers_de_la_section_qui_pr.C3.A9c.C3.A8de_le_pied_de_page">guide d'implémentation.</a></li>
+				</ul>
+			</section>
+			<section>
+				<h3 id="Section_appFooter_references">Section appFooter references</h3>
+				<ul>
+					<li>Did you add the new <code>&lt;div id="def-footer"&gt;</code>?</li>
+					<li>Did you insert the correct backup static file into the <code>&lt;div id="def-footer"&gt;</code> you created?</li>
+					<li>Did you add <code>wet.builder.appFooter</code>?
+						<ul>
+							<li>Available options are cdnEnv, subTheme, globalNav, footerSections, contactLinks, termsLink, privacyLink and showFeatures</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h3 id="Section_footer_file_references_3">Section footer file references</h3>
+				<ul>
+					<li>Did you add <code>wet.builder.refFooter</code>?
+						<ul>
+							<li>Available options are cdnEnv, exitScript, exitURL, exitMsg, exitDomains, displayModal and jqueryEnv</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+		</section>
+		<section>
+			<h2 id="GCIntranet_.2F_run_.2F_application">GCIntranet / run / application</h2>
+			<section>
+				<h3 id="Section_.3Chead.3E_references_4">Références de la section <code>&lt;head&gt;</code></h3>
+				<ul>
+					<li>Avez-vous ajouté les deux références aux fichiers du SGDC (<code>cdts[-esdc]-styles.css</code> / <code>wet-[language].js</code>)?</li>
+					<li>Avez-vous référencé les fichiers "run" (le URL de SGDC contiendra "rn")?</li>
+					<li>Avez-vous ajouté la section <code>&lt;noscript&gt;</code>?</li>
+					<li>Avez-vous inséré le contenu statique de repli dans cette section <code>&lt;noscript&gt;</code>?</li>
+					<li>Avez-vous ajouté l'attribut <code>data-cdts-setup</code> pour spécifier <strong>l'objet de configuration SGDC</strong> OU appelé la fonction <code>wet.builder.setup</code>?
+						<ul>
+							<li>Avez-vous spécifié <code>"mode": "app"</code> dans l'objet de configuration SGDC?</li>
+						</ul>
+					</li>
+					<li>Pour plus de détails, référez-vous au <a href="internet-fr.html#Section_application_references">guide d'implémentation.</a></li>
+				</ul>
+			</section>
+			<section>
+				<h3 id="Section_appTop_references_2">Références de la section "appTop"</h3>
+				<ul>
+					<li>Avez-vous ajouté le nouvel element <code>&lt;div id="cdts-def-top"&gt;</code>&#160;?</li>
+					<li>Avez-vous inséré le fichier statique de repli dans l'élément <code>&lt;div id="cdts-def-top"&gt;</code>?</li>
+					<li>Avez-vous ajouté un objet <code>top</code> dans l'objet de configuration SGDC pour personalisation, incluant le sous-thème selon le cas?</li>
+					<li>Pour plus de détails, référez-vous au <a href="intranet-fr.html#R.C3.A9f.C3.A9rences_de_la_section_appTop">guide d'implémentation.</a></li>
+				</ul>
+			</section>
+			<section>
+				<h3 id="Section_pre-footer_references_4">Références de la section "prefooter"</h3>
+				<ul>
+					<li>Avez-vous ajouté le nouvel element <code>&lt;div id="cdts-def-prefooter"&gt;</code>&#160;?</li>
+					<li>Avez-vous inséré le fichier statique de repli dans l'élément <code>&lt;div id="cdts-def-prefooter"&gt;</code>?</li>
+					<li>Avez-vous ajouté un objet <code>prefooter</code> dans l'objet de configuration SGDC pour personalisation?</li>
+					<li>Pour plus de détails, référez-vous au <a href="intranet-fr.html#R.C3.A9f.C3.A9rences_de_fichiers_de_la_section_qui_pr.C3.A9c.C3.A8de_le_pied_de_page">guide d'implémentation.</a></li>
+				</ul>
+			</section>
+			<section>
+				<h3 id="Section_appFooter_references_2">Section appFooter references</h3>
+				<ul>
+					<li>Did you add the new <code>&lt;div id="def-footer"&gt;</code>?</li>
+					<li>Did you insert the correct backup static file into the <code>&lt;div id="def-footer"&gt;</code> you created?</li>
+					<li>Did you add <code>wet.builder.appFooter</code>?
+						<ul>
+							<li>Available options are cdnEnv, subTheme, globalNav, footerSections, contactLinks, termsLink, privacyLink and showFeatures</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h3 id="Section_footer_file_references_4">Section footer file references</h3>
+				<ul>
+					<li>Did you add <code>wet.builder.refFooter</code>?
+						<ul>
+							<li>Available options are cdnEnv, exitScript, exitURL, exitMsg, exitDomains, displayModal and jqueryEnv</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+		</section>
+	</div>
+</div>
+</div>
+			<div id="def-preFooter">
+				<!-- Write closure fall-back static file -->
+				<!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_28/cdts/static/preFooter-fr.html -->
+				</div>
+			<!-- Write closure template -->
+			<script>
+				var defPreFooter = document.getElementById("def-preFooter");
+				defPreFooter.outerHTML = wet.builder.preFooter({
+					"dateModified": "2022-05-15",
+					"showShare": false,
+					"showFeedback": false
+				});
+			</script>
+		</main>
+		<div id="def-footer">
+		</div>
+		<!-- Write closure template -->
+		<script>
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.appFooter({
+				"contactLink": "./contact-fr.html"
+			});
+		</script>
+		<!-- Write closure template -->
+		<script>
+			document.write(wet.builder.refFooter({
+				"isApplication": true
+			}));
+		</script>
+	</body>
+</html>
