@@ -39,104 +39,104 @@
 	<p data-json-replace="../ajax/data.json#/noteFr">Note</p>
 </div>
 <div lang="en">
-<p>Le dernier CHANGELOG peut être trouvé sur notre référentiel GitHub <a href="https://github.com/wet-boew/cdts-sgdc/blob/master/CHANGELOG.md">ici</a>.</p>
+<p>Le dernier CHANGELOG peut être trouvé sur notre référentiel GitHub <a href="https://github.com/wet-boew/cdts-sgdc/blob/master/CHANGELOG-fr.md">ici</a>.</p>
 <!--<p><strong>Needs translation</strong></p>
 <p>All notable changes to this project will be documented in this file.</p>
 <p>The format is based on <a href="https://keepachangelog.com/">Keep a Changelog</a> and this project adheres to <a href="https://semver.org/">Semantic Versioning</a>. Some small modifications made so that we can easily copy/paste to GCPedia.</p>-->
 <section>
 	<h2 id="Announcements">Annonces (obsolètes)</h2>
 	<ul>
-		<li>If you previously implemented the application templates you will NOT be able to upgrade without updating your code. A mandatory update of the backup static files will also be required. Please see GCPedia for updated code and static files. * RL</li>
-		<li>In both themes the /rn/ version is now a copy of the /app/ version. This reduces development time and ensures greater consistency between both versions. * RL</li>
-		<li>All /rn/ static files (GCintranet and GCweb) must be updated before WET v4.1.0. * RL</li>
-		<li>All GCWeb implementations on ssl-templates.services.gc.ca will stop working shortly, make sure you are using the Akamai URLs. * RL</li>
-		<li>Akamai servers for CDTS are now serving up static HTML files, please make sure to grab files from Akamai and not ssl-templates.services.gc.ca. * RL</li>
-		<li>In v4.0.24 – v4.0.25 the HTML for the top menu in the application templates has changed (GCIntranet only), since we’re not aware of anyone except ESDC EI ORT web asset using the application templates on the GCIntranet theme we’ve updated this automatically. If you were impacted don’t forget that you need to let the ESDC WS CoE team know you are using it so we can warn you ahead of time of any changes to the application templates. * RL</li>
+		<li>Si vous avez précédemment implémenté les gabarits d'application, vous ne pourrez PAS mettre à niveau sans mettre à jour votre code. Une mise à jour obligatoire des fichiers statiques de sauvegarde sera également requise. Veuillez consulter GCpédia pour le code mis à jour et les fichiers statiques. * RL</li>
+		<li>Dans les deux thèmes, la version /rn/ est maintenant une copie de la version /app/. Cela réduit le temps de développement et assure une plus grande cohérence entre les deux versions. * RL</li>
+		<li>Tous les fichiers /rn/ statiques (GCintranet et GCweb) doivent être mis à jour avant BEOW v4.1.0. * RL</li>
+		<li>Toutes les implémentations de GCWeb sur ssl-templates.services.gc.ca cesseront de fonctionner sous peu, assurez-vous que vous utilisez les URL d'Akamai. * RL</li>
+		<li>Les serveurs Akamai pour CDTS proposent désormais des fichiers HTML statiques. Assurez-vous de récupérer les fichiers auprès d'Akamai et non de ssl-templates.services.gc.ca. * RL</li>
+		<li>Dans v4.0.24 - v4.0.25, le code HTML du menu supérieur dans les gabarits d'application a changé (GCIntranet uniquement), car nous ne connaissons personne à l'exception de ESDC EI ORT web asset utilisant les gabarits d'application sur le thème GCIntranet que nous avons mis à jour automatiquement. Si vous avez été concerné, n'oubliez pas que vous devez informer l'équipe EDSC WS CoE que vous l'utilisez afin que nous puissions vous avertir à l'avance de toute modification des gabarits d'application. * RL</li>
 	</ul>
 </section>
 <section>
-	<h2 id=".5BUnreleased.5D">[Unreleased]</h2>
+	<h2 id=".5BUnreleased.5D">[Inédit]</h2>
 	<section>
-		<h3 id="Changed">Changed</h3>
+		<h3 id="Changed">Modifié</h3>
 		<ul>
-			<li>Web application templates for GCWeb have been updated with PP / TBS approved templates. An automatic upgrade is NOT possible to v4.0.26! A mandatory update of your code and backup static files will be required. Please see GCPedia for updated code and static files. * RL</li>
-			<li>In the GCWeb application templates, the application name was there twice when in print. Fixed in v4.0.23, 4.0.24, 4.0.25. * NR</li>
-			<li>Template.js file was re-added (along with all v4.0.26dev /css/ and /js/ folders) to fix an issue in v4.0.25 * NR</li>
-			<li>Fixed a font issue in v4.0.23. The path was corrected. * NR</li>
-			<li>All login buttons are removed in print preview in both themes, last 3 versions. * NR</li>
-			<li>Added spaces to fix the search button and the inline footer navigation. Both themes. * NR</li>
-			<li>Screen Identifier is now in a <code>&lt;dl&gt;</code>. Both themes. * NR</li>
+			<li>Les gabarits d'application Web pour GCWeb ont été mis à jour avec les gabarits approuvés par PP / SCT. Une mise à jour automatique n'est PAS possible vers la v4.0.26 ! Une mise à jour obligatoire de votre code et des fichiers statiques de sauvegarde seront nécessaires. Veuillez consulter GCpédia pour le code mis à jour et les fichiers statiques. * RL</li>
+			<li>Dans les gabarits d'application GCWeb, le nom de l'application figurait deux fois lorsqu'il était imprimé. Corrigé dans v4.0.23, 4.0.24, 4.0.25. * NR</li>
+			<li>Le fichier Template.js a été rajouté (avec tous les dossiers v4.0.26dev /css/ et /js/) pour résoudre un problème dans la v4.0.25 * NR</li>
+			<li>Correction d'un problème de police dans la v4.0.23. Le chemin a été corrigé. * NR</li>
+			<li>Tous les boutons de connexion sont supprimés de l'aperçu avant impression dans les deux thèmes, les 3 dernières versions. * NR</li>
+			<li>Ajout d'espaces pour corriger le bouton de recherche et la navigation de pied de page en ligne. Les deux thèmes. * NR</li>
+			<li>L'identifiant d'écran est maintenant dans un <code>&lt;dl&gt;</code>. Les deux thèmes. * NR</li>
 		</ul>
 	</section>
 </section>
 <section>
 	<h2 id=".5B4.0.25.5D_.2A_2017-06-14">[4.0.25] * 2017-06-14</h2>
 	<section>
-		<h3 id="Changed_2">Changed</h3>
+		<h3 id="Changed_2">Modifié</h3>
 		<ul>
-			<li>Added "appUrl" and "intranetTitle" variables in wet.builder.appTop for new GCIntranet application templates. * RL</li>
-			<li>The SOY files on GCIntranet have been updated with a new ESDC only internal server for CDTS assets. * RL</li>
-			<li>The plugins-(language).js files will be deprecated in v4.1.0 of the CDTS. If you are impacted by this change please contact the CDTS team. * RL</li>
-			<li>The plugins-(language).js files are still there, but I removed everything in them to avoid creating a 404 * NR</li>
-			<li>Local sitemenu-(language).html are updated to reflect the latest changes * NR</li>
-			<li>Exit script updated to prompt message on internal links with on them * RL</li>
+			<li>Ajout des variables "appUrl" et "intranetTitle" dans wet.builder.appTop pour les nouveaux gabarits d'application GCIntranet. * RL</li>
+			<li>Les fichiers SOY sur GCIntranet ont été mis à jour avec un nouveau serveur interne réservé à EDSC pour les actifs SGDC. * RL</li>
+			<li>Les fichiers plugins-(language).js seront obsolètes dans la v4.1.0 du SGDC. Si vous êtes concerné par ce changement, veuillez contacter l'équipe du SGDC. * RL</li>
+			<li>Les fichiers plugins-(language).js sont toujours là, mais tout a été supprimé pour éviter de créer un 404. * NR</li>
+			<li>Local sitemenu-(language).html sont mis à jour pour refléter les dernières modifications. * NR</li>
+			<li>Script de sortie mis à jour pour afficher un message contenant des liens internes. * RL</li>
 		</ul>
 	</section>
 </section>
 <section>
 	<h2 id=".5B4.0.24.2.5D_.2A_2017-03-23">[4.0.24.2] * 2017-03-23</h2>
 	<section>
-		<h3 id="Changed_3">Changed</h3>
+		<h3 id="Changed_3">Modifié</h3>
 		<ul>
-			<li>Bug with WET video player media controls, changed files ie8-wet-boew2.js (line 7068) / ie8-wet-boew2.min.js, wet-boew.js (line 7626) / wet-boew.min.js. This can be reverted when Akamai begins serving up HTML files in AEM v1.19. * RL</li>
-			<li>GCIntranet: Fixed missing ID for label in search. * RL</li>
+			<li>Bogue avec les commandes multimédias du lecteur vidéo BOEW, fichiers modifiés ie8-wet-boew2.js (ligne 7068) / ie8-wet-boew2.min.js, wet-boew.js (ligne 7626) / wet-boew.min.js. Cela peut être annulé lorsqu'Akamai diffuse des fichiers HTML dans AEM v1.19. * RL</li>
+			<li>GCIntranet : Correction de l'ID manquant pour l'étiquette dans la recherche. * RL</li>
 		</ul>
 	</section>
 	<section>
 		<h2 id=".5B4.0.24.5D_.2A_2017-03-15">[4.0.24] * 2017-03-15</h2>
 		<section>
-			<h3 id="Added">Added</h3>
+			<h3 id="Added">Ajouté</h3>
 			<ul>
-				<li>New application templates (appTop/appFooter) are now available for both GCWeb and GCIntranet. Please ensure you have permission to use these. Details are available on the implementation guide pages. * RL</li>
+				<li>De nouveaux gabarits d'application (appTop/appFooter) sont désormais disponibles pour GCWeb et GCIntranet. Veuillez vous assurer que vous avez la permission de les utiliser. Les détails sont disponibles sur les pages du guide de mise en œuvre. * RL</li>
 			</ul>
 		</section>
 		<section>
-			<h3 id="Changed_4">Changed</h3>
+			<h3 id="Changed_4">Modifié</h3>
 			<ul>
-				<li>Transactional layout in both themes: removed the menu and search in mobile. * NR</li>
-				<li>Print preview: removed section menu from both themes. * NR</li>
-				<li>Copied GCWeb/GCIntranet v4.0.23 SOY to /rn/. * RL</li>
-				<li>Transactional scenario: "Contact us" in footer changed to "Contact information". * RL</li>
+				<li>Disposition transactionnelle dans les deux thèmes : suppression du menu et de la recherche dans le mobile. * NR</li>
+				<li>Aperçu avant impression : suppression du menu de section des deux thèmes. * NR</li>
+				<li>Copie de GCWeb/GCIntranet v4.0.23 SOY vers /rn/. * RL</li>
+				<li>Scénario transactionnel : "Contactez-nous" dans le pied de page remplacé par "Coordonnées". * RL</li>
 			</ul>
 		</section>
 	</section>
 	<section>
 		<h2 id=".5B4.0.23.5D_.2A_2016-12-21">[4.0.23] * 2016-12-21</h2>
 		<section>
-			<h3 id="Added_2">Added</h3>
+			<h3 id="Added_2">Ajouté</h3>
 			<ul>
-				<li>Added displayModal in GCWeb to skip modal dialog and go straight to exitURL * RL</li>
-				<li>Updated exitScript.js for new displayModal variable * RL</li>
-				<li>Updated exitScript.js to ignore links with target="_blank" * RL</li>
-				<li>GCIntranet theme and subthemes updated in app/run for intranetTitle variable * RL</li>
-				<li>In /app/ for GCintranet added js/compiled with copy from cdts/compiled to support .NET/JAVA template updates * RL</li>
-				<li>Added samples for screenidentifier-(lang).shtml in samples folder * RL</li>
-				<li>GCIntranet: GCdirectory in the GCintranet red bar (includes a new directory_icon.png in /cdts/) * NR</li>
-				<li>GCWeb &amp; GCIntranet: new variable for the section menu permits target _blank * NR</li>
-				<li>Data integrity added to jquery pulls from Google</li>
-				<li>GCIntranet: New 'labour' subTheme added to soy files</li>
+				<li>Ajout de displayModal dans GCWeb pour ignorer la boîte de dialogue modale et aller directement à exitURL. * RL</li>
+				<li>Mise à jour de exitScript.js pour la nouvelle variable displayModal. * RL</li>
+				<li>Mise à jour de exitScript.js pour ignorer les liens avec target="_blank". * RL</li>
+				<li>Thème et sous-thèmes GCIntranet mis à jour dans app/run pour la variable intranetTitle. * RL</li>
+				<li>Dans /app/ pour GCintranet ajouté js/compiled avec copie de cdts/compiled pour prendre en charge les mises à jour de modèles .NET/JAVA. * RL</li>
+				<li>Ajout d'exemples pour screenidentifier-(lang).shtml dans le dossier des exemples. * RL</li>
+				<li>GCIntranet : GCdirectory dans la barre rouge GCintranet (inclut un nouveau répertoire_icon.png dans /cdts/). * NR</li>
+				<li>GCWeb &amp; GCIntranet: une nouvelle variable pour le menu de la section permet la cible _blank. * NR</li>
+				<li>Intégrité des données ajoutée aux pulls jquery de Google.</li>
+				<li>GCIntranet : nouveau sous-thème "travail" ajouté aux fichiers de SOY.</li>
 			</ul>
 		</section>
 		<section>
-			<h3 id="Changed_5">Changed</h3>
+			<h3 id="Changed_5">Modifié</h3>
 			<ul>
-				<li>Changed SOY files in GCWeb app/run to remove inline styles for screen identifier and CSS class (screenIdent) * RL</li>
-				<li>cdtsfixes.css updated in app/run to add class "screenIdent" for screen identifier * RL</li>
-				<li>Updated cdtsfixes.css for the URL print issue, removed the Chrome print in landscape plus other fluff CSS from EC * RL</li>
-				<li>GCIntranet: placeholder in search (soy) and removed italic from placeholder in cdtsfixes.css * NR</li>
-				<li>GCWeb: there was a 404 in IE8. Fixed the path from /wet-boew/js/ to /js/ * NR</li>
-				<li>GCWeb: mega menu links updated as per Principal Publisher's request. Changes reflected in static files top-en.html and secMenuTop-en.html and their French counterparts * NR</li>
-				<li>GCWeb: "Feedback" link in mini-footer (inline) was removed as per the new C&amp;IA doc (<a href="https://github.com/wet-boew/GCWeb/issues/1206">https://github.com/wet-boew/GCWeb/issues/1206</a>) * NR</li>
+				<li>Modification des fichiers SOY dans l'application/exécution GCWeb pour supprimer les styles en ligne pour l'identifiant d'écran et la classe CSS (screenIdent). * RL</li>
+				<li>cdtsfixes.css mis à jour dans app/run pour ajouter la classe "screenIdent" pour l'identifiant d'écran. * RL</li>
+				<li>Mise à jour de cdtsfixes.css pour le problème d'impression d'URL, suppression de l'impression Chrome en paysage et d'autres bagatelles CSS d'EC. * RL</li>
+				<li>GCIntranet : espace réservé dans la recherche (SOY) et italique supprimé de l'espace réservé dans cdtsfixes.css. * NR</li>
+				<li>GCWeb : il y avait un 404 dans IE8. Correction du chemin d'accès de /wet-boew/js/ à /js/. * NR</li>
+				<li>GCWeb : liens du méga menu mis à jour à la demande de l'éditeur principal. Changements reflétés dans les fichiers statiques top-en.html et secMenuTop-en.html et leurs homologues français. * NR</li>
+				<li>GCWeb : le lien "Feedback" dans le mini-pied de page (inline) a été supprimé conformément au nouveau document C&amp;IA (<a href="https://github.com/wet-boew/GCWeb/issues/1206">https://github.com/wet-boew/GCWeb/issues/1206</a>) * NR</li>
 			</ul>
 		</section>
 	</section>
@@ -144,66 +144,66 @@
 <section>
 	<h2 id=".5B4.0.22_.2A_4.0.23_.2A_rn.5D_.2A_2016-12-13">[4.0.22 * 4.0.23 * rn] * 2016-12-13</h2>
 	<section>
-		<h3 id="Changed_6">Changed</h3>
+		<h3 id="Changed_6">Modifié</h3>
 		<ul>
-			<li>GCWeb: "Feedback" link in mini-footer (inline) was removed as per the new C&amp;IA doc (<a href="https://github.com/wet-boew/GCWeb/issues/1206">https://github.com/wet-boew/GCWeb/issues/1206</a>) * NR</li>
+			<li>GCWeb : le lien "Commentaires" dans le mini-pied de page (en ligne) a été supprimé conformément au nouveau document (<a href="https://github.com/wet-boew/GCWeb/issues/1206">https://github.com/wet-boew/GCWeb/issues/1206</a>) * NR</li>
 		</ul>
 	</section>
 </section>
 <section>
 	<h2 id=".5B4.0.21_.2A_4.0.22_.2A_rn.5D_.2A_2016-12-02">[4.0.21 * 4.0.22 * rn] * 2016-12-02</h2>
 	<section>
-		<h3 id="Changed_7">Changed</h3>
+		<h3 id="Changed_7">Modifié</h3>
 		<ul>
-			<li>GCWeb: mega menu links updated as per Principal Publisher's request. Changes reflected in static files top-en.html and secMenuTop-en.html and their French counterparts * NR</li>
+			<li>GCWeb : liens du méga menu mis à jour à la demande de l'éditeur principal. Changements reflétés dans les fichiers statiques top-en.html et secMenuTop-en.html et leurs homologues français. * NR</li>
 		</ul>
 	</section>
 </section>
 <section>
 	<h2 id="2016-11-17">2016-11-17</h2>
 	<section>
-		<h3 id="Added_3">Added</h3>
+		<h3 id="Added_3">Ajouté</h3>
 		<ul>
-			<li>GCWeb &amp; GCIntranet: new variable for the section menu permits target _blank</li>
+			<li>GCWeb &amp; GCIntranet: nouvelle variable pour le menu de la section permet la cible _blank.</li>
 		</ul>
 	</section>
 	<section>
-		<h3 id="Changed_8">Changed</h3>
+		<h3 id="Changed_8">Ajouté</h3>
 		<ul>
-			<li>GCWeb: Link in the footer to GC News changed</li>
+			<li>GCWeb : le lien dans le pied de page vers GC News a été modifié.</li>
 		</ul>
 	</section>
 </section>
 <section>
 	<h2 id="2016-11-01">2016-11-01</h2>
 	<section>
-		<h3 id="Added_4">Added</h3>
+		<h3 id="Added_4">Ajouté</h3>
 		<ul>
-			<li>GCIntranet: GCdirectory in the GCintranet red bar (includes a new directory_icon.png in /cdts/)</li>
+			<li>GCIntranet : GCdirectory dans la barre rouge GCintranet (inclut un nouveau répertoire_icon.png dans /cdts/)</li>
 		</ul>
 	</section>
 	<section>
-		<h3 id="Changed_9">Changed</h3>
+		<h3 id="Changed_9">Modifié</h3>
 		<ul>
-			<li>GCIntranet: placeholder in search (soy) and removed italic from placeholder in cdtsfixes.css</li>
-			<li>GCWeb: there was a 404 in IE8. Fixed the path from /wet-boew/js/ to /js/</li>
+			<li>GCIntranet : espace réservé dans la recherche (SOY) et italique supprimé de l'espace réservé dans cdtsfixes.css</li>
+			<li>GCWeb : il y avait un 404 dans IE8. Correction du chemin d'accès de /wet-boew/js/ à /js/</li>
 		</ul>
 	</section>
 </section>
 <section>
 	<h2 id=".5B4.0.22.5D_.2A_2015-12-03">[4.0.22] * 2015-12-03</h2>
 	<section>
-		<h3 id="Added_5">Added</h3>
+		<h3 id="Added_5">Ajouté</h3>
 		<ul>
-			<li>Support for Canada.ca in SOY files for GCWeb</li>
-			<li>Add variable jqueryEnv: external to SOY files</li>
-			<li>Modified CSS in cdtsfixes.css for Github issue 7643 in wet-boew</li>
+			<li>Prise en charge de Canada.ca dans les fichiers SOY pour GCWeb</li>
+			<li>Ajouter la variable jqueryEnv : externe aux fichiers SOY</li>
+			<li>CSS modifié dans cdtsfixes.css pour le problème Github 7643 dans wet-boew</li>
 		</ul>
 		<section>
-			<h3 id="Changed_10">Changed</h3>
+			<h3 id="Changed_10">Modifié</h3>
 			<ul>
-				<li>Modified SOY files to pull from Canada.ca instead of ssl-templates.gc.ca</li>
-				<li>cdnEnv variable switched to Canada.ca for all variables except (esdcprod, esdcqat, esdcnonprod)</li>
+				<li>Fichiers SOY modifiés à extraire de Canada.ca au lieu de ssl-templates.gc.ca</li>
+				<li>La variable cdnEnv est passée à Canada.ca pour toutes les variables sauf (esdcprod, esdcqat, esdcnonprod)</li>
 			</ul>
 		</section>
 	</section>
@@ -217,7 +217,7 @@
 			<script>
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
-					"dateModified": "2022-02-22",
+					"dateModified": "2022-06-30",
 					"showShare": false,
 					"showFeedback": false
 				});
