@@ -38,7 +38,7 @@
 <div class="alert alert-info">
 	<p data-json-replace="../ajax/data.json#/noteFr">Note</p>
 </div>
-<p><strong>Êtes-vous au bon endroit?</strong> Ce guide est conçu pour trouver rapidement les sections et les variables dont vous avez besoin pour la mise en œuvre ! Si vous n'êtes pas familier avec le SGDC, nous vous suggérons de lire d'abord le <a href="./intranet-fr.html">Guide de mise en œuvre GCIntranet</a> qui contient des instructions plus détaillées.</p>
+<p><strong>Êtes-vous au bon endroit ?</strong> Ce guide est conçu pour trouver rapidement les sections et les variables dont vous avez besoin pour la mise en œuvre ! Si vous n'êtes pas familier avec le SGDC, nous vous suggérons de lire d'abord le <a href="./intranet-fr.html">Guide de mise en œuvre GCIntranet</a> qui contient des instructions plus détaillées.</p>
 <div class="row">
 	<div class="col-md-4 pull-right">
 		<section class="panel panel-default mrgn-tp-lg">
@@ -128,12 +128,12 @@
 			</section>
 		</section>
 		<section>
-			<h2 id="GCIntranet_.2F_run_.2F_default">GCIntranet / « run » / par défaut</h2>
+			<h2 id="GCIntranet_.2F_run_.2F_default">GCIntranet / run / par défaut</h2>
 			<section>
 				<h3 id="Section_.3Chead.3E_references_2">Références de la section <code>&lt;head&gt;</code></h3>
 				<ul>
 					<li>Avez-vous ajouté les deux références aux fichiers GCT (soyutils.js / wet-(language).js) ?</li>
-					<li>Vous êtes-vous assuré que vous extrayez les fichiers « run » (le chemin vers SGDC contiendra « rn ») ?</li>
+					<li>Vous êtes-vous assuré que vous extrayez les fichiers « run » (le chemin vers SGDC contiendra "rn") ?</li>
 					<li>Avez-vous ajouté la section <code>&lt;noscript&gt;</code> ?</li>
 					<li>Avez-vous inséré le bon fichier statique de sauvegarde dans le <code>&lt;noscript&gt;</code> que vous avez créé ?</li>
 					<li>Avez-vous ajouté <code>wet.builder.refTop</code> ?
@@ -192,54 +192,54 @@
 		</section>
 		<section>
 			<h2 id="Important_note_for_application_version">Note importante pour la version de l'application</h2>
-			<p>Les deux sections suivantes concernent les versions de l'application. Gardez à l'esprit que cela est différent de la suppression ou de l'ajout de certains éléments autorisés conformément au <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">document de spécifications du C et de l'AI</a>. Tout élément pouvant être implémenté à l'aide du document de spécifications du C et de l'AI ne nécessite pas un « header/footer » personnalisé et est disponible dans la version par défaut du SGDC (voir ci-dessus). Actuellement, il est conseillé de ne pas implémenter un « header/footer » personnalisé à moins que vous n'ayez la permission de le faire de votre département, du SCT ou de l'éditeur principal.</p>
+			<p>Les deux sections suivantes concernent les versions de l'application. Gardez à l'esprit que cela est différent de la suppression ou de l'ajout de certains éléments autorisés conformément au <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html">document de spécifications du C et de l'AI</a>. Tout élément pouvant être implémenté à l'aide du document de spécifications du C et de l'AI ne nécessite pas un header/footer personnalisé et est disponible dans la version par défaut du SGDC (voir ci-dessus). Actuellement, il est conseillé de ne pas implémenter un header/footer personnalisé à moins que vous n'ayez la permission de le faire de votre département, du SCT ou de l'éditeur principal.</p>
 		</section>
 		<section>
 			<h2 id="GCIntranet_.2F_version_.2F_application">GCIntranet / version / application</h2>
 			<section>
-				<h3 id="Section_.3Chead.3E_references_3">Section <code>&lt;head&gt;</code> references</h3>
+				<h3 id="Section_.3Chead.3E_references_3">Références de la section <code>&lt;head&gt;</code></h3>
 				<ul>
-					<li>Did you add the two references to the GCT files (soyutils.js / wet-(language).js)?</li>
-					<li>Did you implement a version mechanism (web.config, XML file, database configuration, etc...) to control the URL, theme and version of the CDTS?</li>
-					<li>Did you add the <code>&lt;noscript&gt;</code> section?</li>
-					<li>Did you insert the correct backup static file into the <code>&lt;noscript&gt;</code> you created?</li>
-					<li>Did you add <code>wet.builder.refTop</code>?
+					<li>Avez-vous ajouté les deux références aux fichiers GCT (soyutils.js / wet-(language).js) ?</li>
+					<li>Avez-vous implémenté un mécanisme de version (web.config, fichier XML, configuration de la base de données, etc...) pour contrôler l'URL, le thème et la version du SGDC ?</li>
+					<li>Avez-vous ajouté la section <code>&lt;noscript&gt;</code> ?</li>
+					<li>Avez-vous inséré le bon fichier statique de sauvegarde dans le <code>&lt;noscript&gt;</code> que vous avez créé ?</li>
+					<li>Avez-vous ajouté <code>wet.builder.refTop</code> ?
 						<ul>
-							<li>Available options are cdnEnv, subTheme and jqueryEnv</li>
+							<li>Les options disponibles sont cdnEnv, subTheme et jqueryEnv</li>
 						</ul>
 					</li>
 				</ul>
 			</section>
 			<section>
-				<h3 id="Section_appTop_references">Section appTop references</h3>
+				<h3 id="Section_appTop_references">Références de la section « appTop »</h3>
 				<ul>
 					<li>Avez-vous ajouté le nouveau <code>&lt;div id="def-top"&gt;</code>?</li>
-					<li>Did you insert the correct backup static file into the <code>&lt;div id="def-top"&gt;</code> you created?</li>
-					<li>Did you add <code>wet.builder.appTop</code>?
+					<li>Avez-vous inséré le bon fichier statique de sauvegarde dans le <code>&lt;div id="def-top"&gt;</code> que vous avez créé ?</li>
+					<li>Avez-vous ajouté <code>wet.builder.appTop</code> ?
 						<ul>
-							<li>Available options are cdnEnv, subTheme, appName, lngLinks, secure, signIn, signOut, search, customSearch, siteMenu, menuPath, showPreContent and breadcrumbs</li>
+							<li>Les options disponibles sont cdnEnv, subTheme, appName, lngLinks, secure, signIn, signOut, search, customSearch, siteMenu, menuPath, showPreContent et breadcrumbs</li>
 						</ul>
 					</li>
 				</ul>
 			</section>
 			<section>
-				<h3 id="Section_pre-footer_references_3">Section pre-footer references</h3>
+				<h3 id="Section_pre-footer_references_3">Références de la section « pre-footer »</h3>
 				<ul>
-					<li>Avez-vous ajouté le nouveau <code>&lt;div id="def-prefooter"&gt;</code>?</li>
-					<li>Did you insert the correct backup static file into the <code>&lt;div id="def-prefooter"&gt;</code> you created?</li>
-					<li>Did you add <code>wet.builder.preFooter</code>?
+					<li>Avez-vous ajouté le nouveau <code>&lt;div id="def-prefooter"&gt;</code> ?</li>
+					<li>Avez-vous inséré le bon fichier statique de sauvegarde dans le <code>&lt;div id="def-prefooter"&gt;</code> que vous avez créé ?</li>
+					<li>Avez-vous ajouté <code>wet.builder.preFooter</code> ?
 						<ul>
-							<li>Available options are cdnEnv, showPostContent, screenIdentifier, verisonIdentifier and dateModified</li>
+							<li>Les options disponibles sont cdnEnv, showPostContent, screenIdentifier, verisonIdentifier et dateModified</li>
 						</ul>
 					</li>
 				</ul>
 			</section>
 			<section>
-				<h3 id="Section_appFooter_references">Section appFooter references</h3>
+				<h3 id="Section_appFooter_references">Références de la section « appFooter »</h3>
 				<ul>
-					<li>Did you add the new <code>&lt;div id="def-footer"&gt;</code>?</li>
-					<li>Did you insert the correct backup static file into the <code>&lt;div id="def-footer"&gt;</code> you created?</li>
-					<li>Did you add <code>wet.builder.appFooter</code>?
+					<li>Avez-vous ajouté le nouveau <code>&lt;div id="def-footer"&gt;</code> ?</li>
+					<li>Avez-vous inséré le bon fichier statique de sauvegarde dans le <code>&lt;div id="def-footer"&gt;</code> que vous avez créé ?</li>
+					<li> Avez-vous ajouté <code>wet.builder.appFooter</code> ?
 						<ul>
 							<li>Available options are cdnEnv, subTheme, globalNav, footerSections, contactLinks, termsLink, privacyLink and showFeatures</li>
 						</ul>
@@ -247,11 +247,11 @@
 				</ul>
 			</section>
 			<section>
-				<h3 id="Section_footer_file_references_3">Section footer file references</h3>
+				<h3 id="Section_footer_file_references_3">Références de fichiers de la section « footer »</h3>
 				<ul>
-					<li>Did you add <code>wet.builder.refFooter</code>?
+					<li> Avez-vous ajouté <code>wet.builder.refFooter</code> ?
 						<ul>
-							<li>Available options are cdnEnv, exitScript, exitURL, exitMsg, exitDomains, displayModal and jqueryEnv</li>
+							<li>Les options disponibles sont cdnEnv, exitScript, exitURL, exitMsg, exitDomains, displayModal et jqueryEnv</li>
 						</ul>
 					</li>
 				</ul>
@@ -260,61 +260,61 @@
 		<section>
 			<h2 id="GCIntranet_.2F_run_.2F_application">GCIntranet / run / application</h2>
 			<section>
-				<h3 id="Section_.3Chead.3E_references_4">Section <code>&lt;head&gt;</code> references</h3>
+				<h3 id="Section_.3Chead.3E_references_4">Références de la section <code>&lt;head&gt;</code></h3>
 				<ul>
-					<li>Did you add the two references to the GCT files (soyutils.js / wet-(language).js)?</li>
-					<li>Did you ensure that you are pulling the "run" files (path to CDTS will contain "rn")?</li>
-					<li>Did you add the <code>&lt;noscript&gt;</code> section?</li>
-					<li>Did you insert the correct backup static file into the <code>&lt;noscript&gt;</code> you created?</li>
-					<li>Did you add <code>wet.builder.refTop</code>?
+					<li>Avez-vous ajouté les deux références aux fichiers GCT (soyutils.js / wet-(language).js) ?</li>
+					<li>Vous êtes-vous assuré que vous extrayez les fichiers run (le chemin vers SGDC contiendra "rn") ?</li>
+					<li>Avez-vous ajouté la section <code>&lt;noscript&gt;</code> ?</li>
+					<li>Avez-vous inséré le bon fichier statique de sauvegarde dans le <code>&lt;noscript&gt;</code> que vous avez créé  ?</li>
+					<li>Avez-vous ajouté <code>wet.builder.refTop</code> ?
 						<ul>
-							<li>Available options are cdnEnv, subTheme and jqueryEnv</li>
+							<li>Les options disponibles sont cdnEnv, subTheme et jqueryEnv</li>
 						</ul>
 					</li>
 				</ul>
 			</section>
 			<section>
-				<h3 id="Section_appTop_references_2">Section appTop references</h3>
+				<h3 id="Section_appTop_references_2">Références de la section « appTop »</h3>
 				<ul>
-					<li>Did you add the new <code>&lt;div id="def-top"&gt;</code>?</li>
-					<li>Did you insert the correct backup static file into the <code>&lt;div id="def-top"&gt;</code> you created?</li>
-					<li>Did you add <code>wet.builder.appTop</code>?
+					<li>Avez-vous ajouté le nouveau <code>&lt;div id="def-top"&gt;</code> ?</li>
+					<li>Avez-vous inséré le bon fichier statique de sauvegarde dans le <code>&lt;div id="def-top"&gt;</code> que vous avez créé  ?</li>
+					<li>Avez-vous ajouté <code>wet.builder.appTop</code> ?
 						<ul>
-							<li>Available options are cdnEnv, subTheme, appName, lngLinks, secure, signIn, signOut, search, customSearch, siteMenu, menuPath, showPreContent and breadcrumbs</li>
+							<li>Les options disponibles sont cdnEnv, subTheme, appName, lngLinks, secure, signIn, signOut, search, customSearch, siteMenu, menuPath, showPreContent et breadcrumbs</li>
 						</ul>
 					</li>
 				</ul>
 			</section>
 			<section>
-				<h3 id="Section_pre-footer_references_4">Section pre-footer references</h3>
+				<h3 id="Section_pre-footer_references_4">Références de la section « pre-footer »</h3>
 				<ul>
-					<li>Did you add the new <code>&lt;div id="def-prefooter"&gt;</code>?</li>
-					<li>Did you insert the correct backup static file into the <code>&lt;div id="def-prefooter"&gt;</code> you created?</li>
-					<li>Did you add <code>wet.builder.preFooter</code>?
+					<li>Avez-vous ajouté le nouveau <code>&lt;div id="def-prefooter"&gt;</code> ?</li>
+					<li>Avez-vous inséré le bon fichier statique de sauvegarde dans le <code>&lt;div id="def-prefooter"&gt;</code> que vous avez créé ?</li>
+					<li>Avez-vous ajouté <code>wet.builder.preFooter</code> ?
 						<ul>
-							<li>Available options are cdnEnv, showPostContent, screenIdentifier, verisonIdentifier and dateModified</li>
+							<li>Les options disponibles sont cdnEnv, showPostContent, screenIdentifier, verisonIdentifier et dateModified</li>
 						</ul>
 					</li>
 				</ul>
 			</section>
 			<section>
-				<h3 id="Section_appFooter_references_2">Section appFooter references</h3>
+				<h3 id="Section_appFooter_references_2">Références de la section « appFooter »</h3>
 				<ul>
-					<li>Did you add the new <code>&lt;div id="def-footer"&gt;</code>?</li>
-					<li>Did you insert the correct backup static file into the <code>&lt;div id="def-footer"&gt;</code> you created?</li>
-					<li>Did you add <code>wet.builder.appFooter</code>?
+					<li>Avez-vous ajouté le nouveau <code>&lt;div id="def-footer"&gt;</code> ?</li>
+					<li>Avez-vous inséré le bon fichier statique de sauvegarde dans le <code>&lt;div id="def-footer"&gt;</code> que vous avez créé ?</li>
+					<li>Avez-vous ajouté <code>wet.builder.appFooter</code> ?
 						<ul>
-							<li>Available options are cdnEnv, subTheme, globalNav, footerSections, contactLinks, termsLink, privacyLink and showFeatures</li>
+							<li>Les options disponibles sont cdnEnv, subTheme, globalNav, footerSections, contactLinks, TermsLink, privacyLink et showFeatures</li>
 						</ul>
 					</li>
 				</ul>
 			</section>
 			<section>
-				<h3 id="Section_footer_file_references_4">Section footer file references</h3>
+				<h3 id="Section_footer_file_references_4">Références de fichiers de la section « footer »</h3>
 				<ul>
-					<li>Did you add <code>wet.builder.refFooter</code>?
+					<li>Avez-vous ajouté <code>wet.builder.refFooter</code> ?
 						<ul>
-							<li>Available options are cdnEnv, exitScript, exitURL, exitMsg, exitDomains, displayModal and jqueryEnv</li>
+							<li>Les options disponibles sont cdnEnv, exitScript, exitURL, exitMsg, exitDomains, displayModal et jqueryEnv</li>
 						</ul>
 					</li>
 				</ul>
@@ -331,7 +331,7 @@
 			<script>
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
-					"dateModified": "2019-03-15",
+					"dateModified": "2022-07-05",
 					"showShare": false,
 					"showFeedback": false
 				});
