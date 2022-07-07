@@ -11,7 +11,7 @@
 		<!-- Meta data-->
 		<!-- Load closure template scripts -->
 		<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/soyutils.js"></script>
-		<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/wet-en.js"></script>
+		<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/wet-fr.js"></script>
 		<!-- Write closure template -->
 		<script>
 			document.write(wet.builder.refTop({
@@ -54,7 +54,7 @@
 						<li><a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_sup.C3.A9rieure">Références de la section supérieure</a></li>
 						<li><a href="#R.C3.A9f.C3.A9rences_de_fichiers_de_la_section_qui_pr.C3.A9c.C3.A8de_le_pied_de_page">Références de la section qui précède le pied de page</a></li>
 						<li><a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_du_pied_de_page">Références de la section de pied de page</a></li>
-						<li><a href="#R.C3.A9f.C3.A9rences_de_fichiers_de_la_section_qui_pr.C3.A9c.C3.A8de_le_pied_de_page">Références de fichiers de la section de pied de page</a></li>
+						<li><a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_du_pied_de_page_2">Références de fichiers de la section de pied de page</a></li>
 					</ul>
 				</section>
 				<section>
@@ -319,7 +319,7 @@
 		<h3 id="R.C3.A9f.C3.A9rences_de_fichier_de_la_section_du_pied_de_page">Références de la section de pied de page</h3>
 		<p>Dans la section de pied de page, vous devrez apporter trois changements.</p>
 		<ol>
-			<li>Le premier changement consistera à ajouter une nouvelle balise <code>&lt;div&gt;</code> avec ID «&#160;def-footer&#160;» pour encapsuler l’ensemble du contenu du pied de page. Cette balise <code>&lt;div&gt;</code> commencera immédiatement après l’élément <code>&lt;/main&gt;</code> de fermeture.</li>
+			<li>Le premier changement consistera à ajouter une nouvelle balise <code>&lt;div&gt;</code> avec ID «&#160;def-footer&#160;» pour encapsuler l’ensemble du contenu de pied de page. Cette balise <code>&lt;div&gt;</code> commencera immédiatement après l’élément <code>&lt;/main&gt;</code> de fermeture.</li>
 			<li>Le deuxième changement consistera à inclure la référence du fichier statique de repli dans la nouvelle balise <code>&lt;div&gt;</code> que vous avez créée.</li>
 			<li>Le troisième changement consistera à ajouter le code GCT pour exécuter l’écriture du modèle dans la section du pied de page afin de remplacer le nouveau contenu <code>&lt;div&gt;</code> une fois que le modèle sera prêt. Les variables JavaScript qui suivent peuvent être utilisées dans cette section&#160;:</li>
 		</ol>
@@ -351,7 +351,7 @@
 		<p><strong>REMARQUE</strong>&#160;: N’oubliez pas que la balise <code>&lt;div&gt;</code> qui encapsule votre fichier statique de repli s’appelle «&#160;def-footer&#160;», faute de quoi votre page ne s’affichera pas correctement.</p>
 	</section>
 	<section>
-		<h3 id="#R.C3.A9f.C3.A9rences_de_fichiers_de_la_section_qui_pr.C3.A9c.C3.A8de_le_pied_de_page">Références de fichiers de la section de pied de page</h3>
+		<h3 id="R.C3.A9f.C3.A9rences_de_fichier_de_la_section_du_pied_de_page_2">Références de fichiers de la section de pied de page</h3>
 		<p>Les variables JavaScript qui suivent peuvent être utilisées dans cette section&#160;:</p>
 		<h4>Quitter</h4>
 		<ul>
@@ -559,7 +559,7 @@
 		"showFeatures": false
 	});
 &lt;/script&gt;</pre>
-<p>Les <a href="#R.C3.A9f.C3.A9rences_de_fichiers_de_la_section_qui_pr.C3.A9c.C3.A8de_le_pied_de_page">références de fichiers de pied de page</a> ne changent pas.</p>
+<p>Les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_du_pied_de_page_2">références de fichiers de pied de page</a> ne changent pas.</p>
 	</section>
 	<section>
 		<h3 id="R.C3.A9f.C3.A9rences_du_menu_de_la_section">Références du menu de la section</h3>
@@ -666,7 +666,7 @@
 	});
 &lt;/script&gt;</pre>
 		<p>Les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_du_pied_de_page">références de la section de pied de page</a> ne changent pas.</p>
-		<p>Les <a href="#R.C3.A9f.C3.A9rences_de_fichiers_de_la_section_qui_pr.C3.A9c.C3.A8de_le_pied_de_page">références de fichiers de la section de pied de page</a> ne changent pas.</p>
+		<p>Les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_du_pied_de_page_2">références de fichiers de la section de pied de page</a> ne changent pas.</p>
 	</section>
 	<section>
 		<h3 id="R.C3.A9f.C3.A9rences_de_la_section_appTop">Références de la section « appTop »</h3>
@@ -786,7 +786,7 @@
 		<p><strong>REMARQUE</strong>&#160;: n'oubliez pas que la balise <code>&lt;div&gt;</code> qui entoure votre fichier statique de repli est nommé « def-top » sinon votre page ne s'affichera pas correctement. Notez également que lors de l'utilisation des modèles d'application, vous utiliserez <code>wet.builder.appTop</code> au lieu de <code>wet.builder.top</code> dans votre code JavaScript.</p>
 	</section>
 	<section>
-		<h3 id="R.C3.A9f.C3.A9rences_de_fichier_de_la_section_du_pied_de_page">Références de la section de pied de page</h3>
+		<h3 id="R.C3.A9f.C3.A9rences_de_la_section_appFooter">Références de la section « appFooter »</h3>
 		<p>Vous aimeriez obtenir un pied de page personnalisé? Avant d'aller de l'avant, assurez-vous d'avoir la permission de votre département, du SCT ou de l'Éditeur principal. Les changements qui suivent ne réflètent <strong>PAS</strong> <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html">document de spécifications C et IA</a>. Vous dérirez quand même continuer? Suivez ces étapes&#160;:</p>
 		<p>Vous pouvez remplacer les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_du_pied_de_page">références de la section de pied de page</a> par ce qui suit&#160;:</p>
 		<ol>
@@ -809,28 +809,29 @@
 	"text": "Link 2"
 }]</pre>
 			</li>
-			<li><span class="text-uppercase">optional</span> – contactLinks – This variable will override the default contact link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom contact us link.
+			<li>FACULTATIF – contactLink – Utilisez cette variable pour remplacer le lien «&#160;Coordonnées&#160;» situé dans le pied de page. Si vous n'utilisez pas cette variable, le lien par défaut apparaîtra. Dans le cas contraire, vous pouvez utiliser le code ci-dessous
 				<pre>"contactLinks": [{
 	"href": "#"
 }]</pre>
 			</li>
-			<li><span class="text-uppercase">optional</span> – termsLink – This variable will override the “Terms &amp; conditions” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link.
-				<pre>"termsLink": "https://www.canada.ca/en/transparency/terms.html"</pre>
+			<li>FACULTATIF – termsLink – Utilisez cette variable pour contrôler le lien «&#160;Avis&#160;». Si vous n'utilisez pas cette variable, le lien par défaut apparaîtra. Dans le cas contraire, vous pouvez utiliser le code ci-dessous
+				<pre>"termsLink": "https://www.canada.ca/fr/transparence/avis.html"</pre>
 			</li>
-			<li><span class="text-uppercase">optional</span> – privacyLink – This variable will override the “Privacy” link located in the footer section of your page. If no variable is specified then the default link will be displayed. Otherwise you can use the following code to include your custom link.
-				<pre>"privacyLink": "https://www.canada.ca/en/transparency/privacy.html"</pre>
+		</ul>
+		<ul>
+			<li>FACULTATIF – privacyLink – Utilisez cette variable pour contrôler le lien «&#160;Confidentialité&#160;». Si vous n'utilisez pas cette variable, le lien par défaut apparaîtra. Dans le cas contraire, vous pouvez utiliser le code ci-dessous
+				<pre>"privacyLink": "https://www.canada.ca/fr/transparence/confidentialite.html"</pre>
 			</li>
-			<li><span class="text-uppercase">optional</span> - subTheme – This variable is used to display a custom theme for your intranet web asset. You need to <a href="./contact-en.html">contact the CDTS team</a> to enable this option.
+			<li>FACULTATIF – subTheme – Utilisez cette variable pour afficher un thème personnalisé pour vos actifs Web intranet. Vous devez <a href="./contact-fr.html">nous contacter</a> pour activer cette option.
 				<pre>"subTheme": "esdc"</pre>
 			</li>
-			<li><span class="text-uppercase">optional</span> – showFeatures – This will be used by the Principal Publisher to insert GoC activities and initiatives into your page. By default this is ALWAYS shown on all pages. You will need authorization from the Principal Publisher to not include this content in your web asset. If you receive such authorization then you can insert the following code.
+			<li>FACULTATIF – showFeatures – Cette option sera utilisée par l'éditeur principal pour insérer les activités et les initiatives GoC dans votre page. Par défaut cette option est toujours activée sur toutes les pages. Vous devrez obtenir l’autorisation de l’Éditeur principal pour ne pas inclure ce contenu dans votre bien Web. Si vous obtenez cette autorisation, vous pouvez insérer le code qui suit.
 				<pre>"showFeatures": false</pre>
 			</li>
 		</ul>
-		<p><strong>IMPORTANT</strong>: You can only use one variable for the footer appearance. The <code>globalNav</code> variable will overwrite the <code>footerSections</code> variable if both are provided. If you don't provide <code>globalNav</code> or <code>footerSections</code> then the default footer from the <a href="#Transactional_page_references">transactional template</a> will be displayed.</p>
-		<p>We have not provided sample code images for the application templates as there are too many options. Instead please see our <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_30/cdts/appTop/apptop-en.shtml">application template sample pages</a> that we keep updated. It has all the different scenarios listed above.</p>
-		<p><strong class="text-uppercase">Note</strong>: Don’t forget the <code>&lt;div&gt;</code> that is wrapped around your fall-back static file is named “def-footer” otherwise your page will not display correctly. Also note that when using the application templates you will use <code>wet.builder.appFooter</code> instead of <code>wet.builder.footer</code> in your JavaScript code.</p>
-
+		<p><strong>IMPORTANT</strong>&#160;: Vous ne pouvez utiliser qu'une variable pour contrôler l'affichage du pied de page. La variable <code>globalNav</code> remplacera la variable <code>footerSections</code> si les deux sont fournies. Si vous ne fournissez pas <code>globalNav</code> ou <code>footerSections</code> alors le pied de page par défaut sera <a href="#R.C3.A9f.C3.A9rences_pour_une_page_en_sc.C3.A9nario_d.27op.C3.A9rations">Modèle de page en scénario d'opérations</a> sera affiché.</p>
+		<p>Il n'y a pas d'images avec des exemples de code pour les gabarits d'application parce qu'il y a trop de possibilités. À la place, veuillez consulter notre <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_30/cdts/appTop/apptop-fr.shtml">page d'exemple de gabarit d'application</a> que nous maintenons à jour. Vous y trouverez tous les scénarios ci-dessus.</p>
+		<p><strong>NOTE</strong>&#160;: N’oubliez pas que la balise <code>&lt;div&gt;</code> qui encapsule votre fichier statique de repli doit se nommer «&#160;def-footer», faute de quoi votre page ne s’affichera pas correctement. N'oubliez pas aussi d'utiliser <code>wet.builder.appFooter</code> au lieu de <code>wet.builder.footer</code> dans votre code JavaScript.</p>
 	</section>
 </section>
 			<div id="def-preFooter">
@@ -841,7 +842,7 @@
 			<script>
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
-					"dateModified": "2019-03-15",
+					"dateModified": "2022-07-07",
 					"showShare": false,
 					"showFeedback": false
 				});
@@ -853,7 +854,8 @@
 		<script>
 			var defFooter = document.getElementById("def-footer");
 			defFooter.outerHTML = wet.builder.appFooter({
-				"showFeatures": false
+				"showFeatures": false,
+				"contactLink": [{href:"./contact-fr.html"}]
 			});
 		</script>
 		<!-- Write closure template -->
