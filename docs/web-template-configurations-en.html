@@ -196,8 +196,8 @@
 					<li>GoC.WebTemplate.loadJQueryFromGoogle</li>
 					<li>Values:
 						<ul>
-							<li>true: will retreive the files from google</li>
-							<li>false: will retreive the files from the CDTS specified in the Environment setting.</li>
+							<li>true: will retrieve the files from google</li>
+							<li>false: will retrieve the files from the CDTS specified in the Environment setting</li>
 						</ul>
 					</li>
 				</ul>
@@ -251,7 +251,7 @@
 				<ul>
 					<li>GoC.WebTemplate.Version</li>
 					<li>ex: v4_0_17</li>
-					<li>leave empty to use the latest CDTS files and not the versioned files. You will also need to supply the "run" static fallback files. [<a href="./templates-en.html#Static_Fallback_Files">see fallback section for details</a>].</li>
+					<li>leave empty to use the latest CDTS files and not the versioned files. You will also need to supply the "run" static fallback files. [<a href="https://gccode.ssc-spc.gc.ca/iitb-dgiit/sds/GOCWebTemplates/DotNetTemplates/-/wikis/Documentation/Configurations">see the configurations section in the DotNetTemplates wiki for details.</a>].</li>
 				</ul>
 			</li>
 			<li>Can also be set programmatically via the property "WebTemplateVersion" of the Web Template</li>
@@ -274,9 +274,9 @@
 		<ul>
 			<li>Set programmatically by populating the "Breadcrumbs" collection of the Web Template. The "Breadcrumbs" has 3 properties:
 				<ul>
-					<li>"href": the url of the link. If left empty, the item will be displayed as text and not as a hyperlink;</li>
-					<li>"title": the text displayed on screen;</li>
-					<li>"acronym": if your title has an acronym, you can use this property to provide the full text of the title. It will be displayed when the user hovers over the link.</li>
+					<li>"href": the url of the link. If left empty, the item will be displayed as text and not as a hyperlink</li>
+					<li>"title": the text displayed on screen</li>
+					<li>"acronym": if your title has an acronym, you can use this property to provide the full text of the title. It will be displayed when the user hovers over the link</li>
 				</ul>
 			</li>
 		</ul>
@@ -305,8 +305,8 @@
 					<li>GoC.WebTemplate.ShowPreContent:</li>
 					<li>Values
 						<ul>
-							<li>true (displayed);</li>
-							<li>false (not displayed);</li>
+							<li>true (displayed)</li>
+							<li>false (not displayed)</li>
 						</ul>
 					</li>
 				</ul>
@@ -323,8 +323,8 @@
 					<li>GoC.WebTemplate.ShowFeatures:</li>
 					<li>Values:
 						<ul>
-							<li>true (displayed);</li>
-							<li>false (not displayed).</li>
+							<li>true (displayed)</li>
+							<li>false (not displayed)</li>
 						</ul>
 					</li>
 				</ul>
@@ -342,8 +342,8 @@
 				<ul>
 					<li>Link: the link of the header of the menu section</li>
 					<li>Name: the name of the header of the menu section</li>
-					<li>OpenInNewWindow: default is false, but if set to true the link will open in a new window.</li>
-					<li>List of Link: represents the links for the menu section.</li>
+					<li>OpenInNewWindow: default is false, but if set to true the link will open in a new window</li>
+					<li>List of Link: represents the links for the menu section</li>
 				</ul>
 			</li>
 			<li>When "OpenInNewWindow" is set to true, a span tag will be included for accessibility and to notify the user that the link will open a new window.</li>
@@ -359,8 +359,8 @@
 		<ul>
 			<li>Set programmatically by populating the "AboutLinks" collection of the Web Template. This collection is of type "Link", which has 2 properties:
 				<ul>
-					<li>"href": the url of the link;</li>
-					<li>"text": the text displayed on screen;</li>
+					<li>"href": the url of the link</li>
+					<li>"text": the text displayed on screen</li>
 				</ul>
 			</li>
 		</ul>
@@ -372,8 +372,8 @@
 		<ul>
 			<li>Set programmatically by populating the "ContactLinks" collection of the Web Template. This collection is of type "Link", which has 2 properties:
 				<ul>
-					<li>"href": the url of the link;</li>
-					<li>"text": the text displayed on screen.</li>
+					<li>"href": the url of the link</li>
+					<li>"text": the text displayed on screen</li>
 				</ul>
 			</li>
 		</ul>
@@ -392,8 +392,8 @@
 					<li>GoC.WebTemplate.ShowFeatures:</li>
 					<li>Values:
 						<ul>
-							<li>true (displayed);</li>
-							<li>false (not displayed).</li>
+							<li>true (displayed)</li>
+							<li>false (not displayed)</li>
 						</ul>
 					</li>
 				</ul>
@@ -409,8 +409,8 @@
 					<li>GoC.WebTemplate.ShowPostContent:</li>
 					<li>Values:
 						<ul>
-							<li>true (displayed);</li>
-							<li>false (not displayed);</li>
+							<li>true (displayed)</li>
+							<li>false (not displayed)</li>
 						</ul>
 					</li>
 				</ul>
@@ -461,8 +461,8 @@
 					<li>GoC.WebTemplate.ShowFeedbackLink:</li>
 					<li>Values:
 						<ul>
-							<li>true (displayed);</li>
-							<li>false (not displayed);</li>
+							<li>true (displayed)</li>
+							<li>false (not displayed)</li>
 						</ul>
 					</li>
 				</ul>
@@ -480,8 +480,8 @@
 					<li>GoC.WebTemplate.ShowSharePageLink:</li>
 					<li>Values:
 						<ul>
-							<li>true (displayed);</li>
-							<li>false (not displayed);</li>
+							<li>true (displayed)</li>
+							<li>false (not displayed)</li>
 						</ul>
 					</li>
 				</ul>
@@ -499,7 +499,7 @@
 			<script>
 				var defPreFooter = document.getElementById("def-preFooter");
 				defPreFooter.outerHTML = wet.builder.preFooter({
-					"dateModified": "2019-03-15",
+					"dateModified": "2022-07-12",
 					"showShare": false,
 					"showFeedback": false
 				});
