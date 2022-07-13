@@ -189,7 +189,7 @@
 					<li><code>webAnalytics</code> (FACULTATIF) - Un objet indiquant la configuration de l'option Adobe Analytics (AA). Se référer à la <a href="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_44/cdts/samples/adobe-analytics-fr.html">page d'exemple</a> correspondante pour les détails.</li>
 				</ul>
 			</li>
-			<li><code>top</code>, <code>preFooter</code>, <code>footer</code>, <code>secmenu</code>, <code>splash</code> (OPTIONAL) - Objets indiquant la configuration de chaque section, au besoin. Se référer à la section de documentation correspondante ci-bas pour les détails.</li>
+			<li><code>top</code>, <code>preFooter</code>, <code>footer</code>, <code>secmenu</code>, <code>splash</code> (FACULTATIF) - Objets indiquant la configuration de chaque section, au besoin. Se référer à la section de documentation correspondante ci-bas pour les détails.</li>
 		</ul>
 		<p><strong>Exemple</strong> (En utilisant l'attribut <code>data-cdts-setup</code>):</p>
 		<p><strong class="text-uppercase">REMARQUE</strong>: Pour la valeur JSON, utiliser des apostrophes (<code>&apos;</code>) pour spécifier l'attribut et s'assurer que les apostrophes dans la valeur elle-même sont encodés (<code>&amp;apos;</code>)</p>
@@ -857,7 +857,7 @@
 			<li>Pour la configuration, ajouter une propriété <code>footer</code> a l'objet de configuration SGDC dans l'élément &lt;head&gt;  L'objet peut inclure les propriétés suivantes:
 				<ul>
 					<li><code>footerPath</code> (FACULTATIF) – Une chaîne de caractères indiquant l'emplacement du fichier qui serivira pour créer le pied de page personalisé. (Thème esdc seulement, footerSections a la priorité)</li>
-					<li><code>footerSections</code> (OPTIONAL) – Tableau d'objets footerSection pour créer des colonnes de lien de pied de page.
+					<li><code>footerSections</code> (FACULTATIF) – Tableau d'objets footerSection pour créer des colonnes de lien de pied de page.
 					<pre>"footerSections": [{
     "sectionName": "Section 1",
     "customFooterLinks": [{
