@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="fr" dir="ltr"><!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+		<title>Internet - Solution de gabarits à déploiement centralisé (SGDC)</title>
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<!-- Meta data -->
+		<meta name="description" content="Solution de gabarits à déploiement centralisé (SGDC)">
+		<!-- Meta data-->
+		<!-- Load closure template scripts -->
+		<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/soyutils.js"></script>
+		<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/wet-fr.js"></script>
+		<!-- Write closure template -->
+		<script>
+			document.write(wet.builder.refTop({
+				"isApplication": true
+			}));
+		</script>
+	</head>
+	<body vocab="https://schema.org/" typeof="WebPage">
+		<div id="def-top">
+		</div>
+		<!-- Write closure template -->
+		<script>
+			var defTop = document.getElementById("def-top");
+			defTop.outerHTML = wet.builder.appTop({
+				"breadcrumbs": [{"title": "Accueil", "href": "./index-fr.html"}],
+				"appName": [{"text": "Solution de gabarits à déploiement centralisé (SGDC)", "href": "./index-fr.html"}],
+				"lngLinks": [{"lang": "fr", "href": "internet-decl-en.html", "text": "English"}],
+				"menuPath": "../ajax/cdtsMenu-fr.html"
+			});
+		</script>
+		<main role="main" property="mainContentOfPage" class="container wb-prettify all-pre">
+<h1 property="name" id="wb-cont">Internet</h1>
+<p data-json-replace="../ajax/data.json#/sloganFr">Slogan</p>
+<div class="alert alert-info">
+	<p data-json-replace="../ajax/data.json#/noteFr">Note</p>
+</div>
+<div class="row">
+	<div class="col-md-4 pull-right">
+		<section class="panel panel-default mrgn-tp-lg">
+			<header class="panel-heading">
+				<h2 class="panel-title"><span id="Mise_en_oeuvre_de_la_SGDC">Mise en oeuvre de la SGDC</span></h2>
+			</header>
+			<div class="panel-body">
+				<section>
+					<h3 class="h5 mrgn-tp-0">Modèle de page défaut</h3>
+					<ul>
+						<li><a href="#Mod.C3.A8le_de_page_de_la_SGDC">Modèle de page de la SGDC</a></li>
+						<li><a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_.3Chead.3E">Références de fichier de la section <code>&lt;head&gt;</code></a></li>
+						<li><a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_sup.C3.A9rieure">Références de fichier de la section supérieure</a></li>
+						<li><a href="#R.C3.A9f.C3.A9rences_de_fichiers_de_la_section_qui_pr.C3.A9c.C3.A8de_le_pied_de_page">Références de fichiers de la section qui précède le pied de page</a></li>
+						<li><a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_du_pied_de_page">Références de fichier de la section du pied de page</a></li>
+					</ul>
+				</section>
+				<section>
+					<h3 class="h5">Page d'entrée</h3>
+					<ul>
+						<li><a href="#R.C3.A9f.C3.A9rences_pour_la_page_d.27entr.C3.A9e">Références pour la page d'entrée</a></li>
+					</ul>
+				</section>
+				<section>
+					<h3 class="h5">Page en scénario d'opérations</h3>
+					<ul>
+						<li><a href="#R.C3.A9f.C3.A9rences_pour_une_page_en_sc.C3.A9nario_d.27op.C3.A9rations">Références pour une page en scénario d'opérations </a></li>
+					</ul>
+				</section>
+				<section>
+					<h3 class="h5">Menu de la section</h3>
+					<ul>
+						<li><a href="#R.C3.A9f.C3.A9rences_du_menu_de_la_section">Références du menu de la section</a></li>
+					</ul>
+				</section>
+				<section>
+					<h3 class="h5"><a href="#Section_application_references">Gabarits d’application</a></h3>
+					<ul>
+						<li><a href="#Section_appRefTop_references">Références de la section &lt;head&gt;</a></li>
+						<li><a href="#R.C3.A9f.C3.A9rences_de_la_section_appTop">Références de la section appTop</a></li>
+						<li><a href="#R.C3.A9f.C3.A9rences_de_la_section_appFooter">Références de la section appFooter</a></li>
+					</ul>
+				</section>
+				<section>
+					<h3 class="h5"><a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_44/cdts/samples/index-fr.html">Pages d'exemples GCWeb</a></h3>
+				</section>
+			</div>
+		</section>
+	</div>
+	<section class="col-md-8">
+		<h2 id="Mise_en_oeuvre_du_th.C3.A8me_GCWeb_.C3.A0_l.E2.80.99aide_de_la_SGDC">Mise en oeuvre du thème GCWeb à l’aide de la SGDC</h2>
+		<p>Bienvenue au guide de mise en oeuvre du thème GCWeb. Vous trouverez plus bas des directives sur comment mettre en oeuvre le thème GCWeb à l’aide de la SGDC. Vous trouverez également différents scénarios possibles selon les exigences que vous rencontrerez. SVP lire les sections suivantes attentivement avant de débuter.</p>
+		<p>Si vous prévoyez développer votre actif Web en .NET ou JAVA, vous pouvez suivre ce guide. Le plus gros de la mise en oeuvre des gabarits a déjà été fait.</p>
+		<section>
+			<h3 id="Contr.C3.B4le_de_versions_ou_.C2.AB_run_.C2.BB">Contrôle de versions ou «&#160;run&#160;»</h3>
+			<p>À plusieurs endroits dans ce guide, vous aurez deux options&#160;: avec contrôle de versions ou «&#160;run&#160;».</p>
+			<ul>
+				<li>Le contrôle de version signifie que vous ne recevrez PAS de mise à jour automatique de la BOEW. Vous mettrez en place une «&#160;version&#160;» dans votre actif Web et ajouterez un mécanisme pour la garder à jour pendant que vous faites vos essais pour chaque nouvelle version de la BOEW. Nous suggérons que vous utilisiez votre fichier web.config pour stocker votre variable de version. À EDSC, mettre à jour le fichier web.config en production est beaucoup plus simple que de faire une relâche complète. Cela permet aux actifs Web de demeurer à jour plus rapidement en relâchant seulement le fichier web.config lorsque l’actif Web a été testé et qu’il fonctionne avec la nouvelle version de la BOEW. Des exemples sont fournis pour nos <a href="./templates-fr.html">gabarits .NET et JAVA (en anglais seulement)</a>.</li>
+				<li>En «&#160;run&#160;», vous recevrez automatiquement tous les nouveaux lancements de la BOEW sans aucune intervention de votre part.</li>
+			</ul>
+			<p>Veuillez noter que peu importe votre choix, vous recevrez TOUJOURS des mises à jour du thème GCWeb en lien avec le mega menu. Tout changement à l’en-tête ou au pied de page sera automatiquement mis à jour pour votre actif Web. Vous devez avoir mis en place la plus récente version ou la version antérieure pour obtenir ces changements.</p>
+		</section>
+		<section>
+			<h3 id="Gabarits_d.E2.80.99applications">Gabarits d’applications</h3>
+			<p>Aurez-vous besoin d’un en-tête ou d’un pied de page personnalisé? Veuillez prendre note que ceci est différent de l’ajout ou du retrait de certains éléments qui sont permis selon les <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html">Spécifications du contenu et de l’architecture de l’information pour Canada.ca</a>. Les éléments qui figurent dans ce document ne nécessitent pas un en-tête ou un pied de page personnalisé et sont présents par défaut dans la version de base de la SGDC. Il n’est pas conseillé d’utiliser un en-tête ou un pied de page personnalisé à moins de recevoir l’autorisation de votre département, du SCT ou de l’Éditeur principal. Si vous êtes autorisés, suivez les directives suivantes [link].</p>
+		</section>
+	</section>
+</div>
+<section>
+	<h2 id="Que_permettra_de_g.C3.A9rer_la_SGDC_et_comment_cela_affectera-t-il_mon_actif_Web.3F">Que permettra de gérer la SGDC et comment cela affectera-t-il mon actif Web?</h2>
+	<p>La SGDC a pour but de gérer la couche de présentation de votre actif Web de façon centralisée. Ne vous inquiétez pas, la SGDC vous permet de la personnaliser selon les <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html">Spécifications du contenu et de l’architecture de l’information pour Canada.ca</a>. Par exemple, vous pouvez toujours contrôler le lien pour changer de langue, le champ de recherche à l’aide de variables de la SGDC. Celles-ci sont expliquées dans chacune des sections qui suivent. La SGDC gèrera&#160;:</p>
+	<ul>
+		<li>GCWeb / BOEW (fichiers CSS, JS et autres)</li>
+		<li>Le favicon de GCWeb</li>
+		<li>En-tête GCWeb (menu, images, liens, champ de recherche, etc.)</li>
+		<li>Espace de pré-contenu (pour les annonces à l’échelle du gouvernement)</li>
+		<li>Espace de post-contenu (pour les annonces à l’échelle du gouvernement)</li>
+		<li>Pied de page GCWeb (menu, liens, images, etc.)</li>
+	</ul>
+</section>
+<section>
+	<h2 id="Information_.C3.A0_propos_du_contr.C3.B4le_de_versions">Information à propos du contrôle de versions</h2>
+	<p>Si vous décidez de mettre en oeuvre un contrôle de versions, veuillez noter que vous devez également mettre en place un mécanisme vous permettant de mettre à jour les numéros de versions à l’aide d’un fichier web.config ou d’une base de données. Des exemples sont fournis pour les <a href="/wiki/Centrally_Deployed_Templates_Solution_(CDTS)/GoC_.NET_template_guide">gabarits .NET et JAVA</a>. Nous vous conseillons aussi de garder le numéro de la version en tant que variable différente de l’URL de la SGDC au cas où il y aurait des modifications dans le futur. Voici quelques raisons d’utiliser le contrôle de versions&#160;:</p>
+	<ul>
+		<li>Il permet de déployer les derniers fichiers sans impact sur l'application et / ou sur les fichiers qu'elle utilise.</li>
+		<li>Il permet à l'application de sélectionner la version des fichiers sous le dossier parent pour le thème qui a été testé et qui n’affecte pas l’application.</li>
+	</ul>
+	<p>Comme vous le verrez plus loin dans ce guide, les différentes sections (ou gabarits) de votre page contiennent un chemin vers les fichiers de la SGDC et le thème que vous avez choisi. Garder ces chemins et URL dans votre fichier de configuration vous permettra d’utiliser la version de la SGDC que vous aurez testée et approuvée. Voici un exemple d’URL à utiliser dans votre application&#160;:</p>
+	<ul>
+		<li>[URL de la SGDC]/[thème]/[version de la BOEW]/[nom du fichier-[langage].extension]</li>
+	</ul>
+	<p>Par exemple, pour la version 4.0.45 en français avec le thème GCWeb, le URL est&#160;:</p>
+	<ul>
+		<li><a href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/compiled/wet-fr.js">https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/compiled/wet-fr.js</a></li>
+	</ul>
+	<p>Le «&#160;URL de la SGDC&#160;», le «&#160;thème&#160;», la «&#160;version de la BOEW&#160;» et le «&#160;langage&#160;» doivent être les options de configuration dans votre actif Web. Tel que préalablement suggéré, utilisez un fichier web.config, XML config ou une base de données pour stocker ces variables. Assurez-vous que votre site Web utilise votre nouveau chemin de fichier configurable.</p>
+	<p><strong>NOTE IMPORTANTE #1</strong>: Lorsque vous mettez à jour votre actif Web à une version supérieure, nous vous suggérons d’aussi mettre à jour vos fichiers statiques de repli. Sinon, assurez-vous que vos fichiers statiques de repli puissent être mis à jour indépendamment de votre version WET de la SGDC. Avoir la SGDC à la version 4.0.45 et les fichiers statiques de repli à la version 4.0.44 est acceptable, quoiqu’il est recommandé d’avoir les deux à jour. Vos fichiers statiques de repli peuvent être une version ou deux en retard jusqu’à temps que vous effectuez une relâche complète. Nous vous informerons si vos fichiers doivent être mis à jour. Ce sera indiqué dans le courriel qui annonce une nouvelle version.</p>
+	<p><strong>NOTE IMPORTANTE #2</strong>: La SGDC ne garde à jour que la plus récente version ainsi que les deux versions antérieures. Si vous utilisez une version antérieure, vous ne recevrez pas de mises à jour. L’objectif de la SGDC est de demeurer à jour facilement alors suivez les directives de ce guide attentivement. Si vous êtes en retard, vous négligez l’avantage principal de la SGDC.</p>
+</section>
+<section>
+	<h2 id="Directives_sur_la_mise_en_oeuvre_de_la_SGDC">Directives sur la mise en oeuvre de la SGDC</h2>
+	<section>
+		<h3 id="Mod.C3.A8le_de_page_de_la_SGDC">Modèle de page de la SGDC</h3>
+		<p>Dans la section qui suit, vous trouverez le modèle de base sur lequel s’appuiera votre bien Web. La page est constituée de quatre sections qui utiliseront des fichiers statiques de repli au cas où JavaScript serait désactivé. Lorsque JavaScript se charge, les GCT remplaceront les fichiers statiques de repli. Voici les sections de votre page&#160;:</p>
+		<ul>
+			<li>Références de fichiers de la section <code>&lt;head&gt;</code> et activation de SGDC</li>
+			<li>Section supérieure de votre page</li>
+			<li>Section qui précède le pied de page</li>
+			<li>Section du pied de page</li>
+		</ul>
+		<img class="img-responsive mrgn-bttm-md" lang="en" alt="" src="../img/Cdts-page-template.png">
+		<p>Tous les fichiers statiques de repli se retrouvent sur notre page GCpedia. À chaque fois que vous devez ouvrir votre bien Web pour effectuer des modifications ou que vous devez passer par un processus de relâche, vous devez toujours utiliser les fichiers statiques de repli les plus récents. Ces fichiers permettent l’affichage de base dans la mesure où un utilisateur aurait désactivé le Javascript sur son fureteur.</p>
+		<p>Les employés d'EDSC peuvent nous contacter pour obtenir d'autres variables pouvant être utilisées à l'interne.</p>
+	</section>
+	<section>
+		<h3 id="R.C3.A9f.C3.A9rences_de_fichier_de_la_section_.3Chead.3E">Références de fichier de la section <code>&lt;head&gt;</code></h3>
+		<p>Dans la section <code>&lt;head&gt;</code> de votre page, vous devrez faire ce qui suit:</p>
+		<ol>
+			<li>
+				Ajouter un <code>link</code> vers la feuille de style de SGDC appropriée pour votre cas. Une des suivantes:
+				<ul>
+					<li><code>cdts-styles.css</code>: Le gabarit GCWeb de base</li>
+					<li><code>cdts-app-styles.css</code>: Le gabarit GCWeb <a href="#Section_application_references"><em>application</em></a></li>
+					<li><code>cdts-splash-styles.css</code>: Le gabarit GCWeb <a href="#R.C3.A9f.C3.A9rences_pour_la_page_d.27entr.C3.A9e"><em>page d'entrée</em></a></li>
+				</ul>
+			</li>
+			<li>Ajouter l'élément <code>script</code> référençant le fichier Javascript de SGDC (<code>wet-[langage].js</code> où [langage] est soit "en" ou "fr"). Le SGDC est activé soit en spécifiant un attribut <code>data-cdts-setup</code> contenant l'objet JSON de configuration de SGDC ou en appelant la fonction <code>wet.builder.setup</code> explicitement.</li>
+			<li>Créer une section <code>&lt;noscript&gt;</code>, ce qui permettra à votre page d’avoir la présentation voulue si JavaScript est désactivé. Vous devrez charger un fichier statique de repli dans la section <code>&lt;noscript&gt;</code>.</li>
+		</ol>
+		<p id="cdts_configuration_object"><strong>L'objet the configuration SGDC</strong> qui est passé dans l'attribut <code>data-cdts-setup</code> ou dans l'appel de la fonction <code>wet.builder.setup</code> doit inclure les propriétés suivantes:</p>
+		<ul>
+			<li><code>cdnEnv</code> (FACULTATIF, par défaut "prod") - Chaîne de caractères indiquant l'environnement SGDC à utiliser pour télécharger les ressources. Valeurs possibles:
+				<ul>
+					<li>Environnement hôte: https://www.canada.ca<pre>"cdnEnv": "prod"</pre></li>
+					<li>Environnement hôte: https://cdts.service.canada.ca<pre>"cdnEnv": "esdcprod"</pre></li>
+				</ul>
+			</li>
+			<li><code>mode</code> (FACULTATIF, par défaut "common") - Chaîne de caractères indiquant quel mode de gabarit à utiliser. Valeurs possibles:
+				<ul>
+					<li>Le gabarit GCWeb de base<pre>"mode": "common"</pre></li>
+					<li>Le gabarit GCWeb <em>application</em> (doit aussi s'assurer que le fichier CSS correspondant <code>cdts-app-styles.css</code> est utilisé)<pre>"mode": "app"</pre></li>
+					<li>Le gabarit GCWeb <em>server</em> (utilisé typiquement pour les pages d'erreur)<pre>"mode": "server"</pre></li>
+					<li>Le gabarit GCWeb <em>splash</em> (doit aussi s'assurer que le fichier CSS correspondant <code>cdts-splash-styles.css</code> est utilisé)<pre>"mode": "splash"</pre></li>
+				</ul>
+			</li>
+			<li><code>base</code> (FACULTATIF) - Un objet indiquant la configuration pour la génération des référence de fichiers dans la section head et le bas de la page. Propriétés:
+				<ul>
+					<li><code>jqueryEnv</code> (FACULTATIF) - Si spécifié et a la valeur "external", jQuery sera inclus à partir de ajax.googleapis.com à la place de l'environnement hôte de SGDC.
+						<pre>"jqueryEnv": "external"</pre>
+					</li>
+					<li><code>exitSecureSite</code> (FACULTATIF) - Un objet indiquant la configuration de l'option "Quitter un site sécurisé" de SGDC. Se référer à la <a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_44/cdts/samples/exitscript-fr.html">page d'exemple</a> correspondante pour les détails.</li>
+					<li><code>webAnalytics</code> (FACULTATIF) - Un objet indiquant la configuration de l'option Adobe Analytics (AA). Se référer à la <a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_44/cdts/samples/adobe-analytics-fr.html">page d'exemple</a> correspondante pour les détails.</li>
+				</ul>
+			</li>
+			<li><code>top</code>, <code>preFooter</code>, <code>footer</code>, <code>secmenu</code>, <code>splash</code> (FACULTATIF) - Objets indiquant la configuration de chaque section, au besoin. Se référer à la section de documentation correspondante ci-bas pour les détails.</li>
+		</ul>
+		<p><strong>Exemple</strong> (En utilisant l'attribut <code>data-cdts-setup</code>):</p>
+		<p><strong class="text-uppercase">REMARQUE</strong>: Pour la valeur JSON, utiliser des apostrophes (<code>&apos;</code>) pour spécifier l'attribut et s'assurer que les apostrophes dans la valeur elle-même sont encodés (<code>&amp;apos;</code>)</p>
+		<pre>&lt;head&gt;
+    ...
+    &lt;!-- Load stylesheet --&gt;
+    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/cdts-styles.css"&gt;
+    &lt;!-- Load/activate closure template scripts --&gt;
+    &lt;script
+        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/compiled/wet-fr.js"
+        data-cdts-setup='{
+            "cdnEnv": "prod",
+            "base": {
+                "exitSecureSite" : {"exitScript": true, "displayModal": true, "exitMsg": "Il faut déjà s&amp;apos;en aller?"}
+            },
+            "top": {
+                "breadcrumbs": [
+                    {"title": "Canada.ca", "acronym": "Canada.ca", "href": "https://www.canada.ca/fr.html"},
+                    {"title": "SGDC", "acronym": "Solution de gabarits à déploiement centralisé"}
+                ]
+            },
+            "preFooter": {
+                "dateModified": "2022-05-25"
+            }
+        }'&gt;&lt;/script&gt;
+    &lt;noscript&gt;
+        &lt;!-- Write closure fall-back static file --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/static/refTop.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_45/cdts/static/refTop.html" --&gt;
+    &lt;/noscript&gt;
+    ...
+&lt;/head&gt;</pre>
+		<p><strong>Exemple</strong> (alternativement, la fonction <code>wet.builder.setup</code> peut être appelée explicitement):</p>
+		<pre>&lt;head&gt;
+    ...
+    &lt;!-- Load stylesheet --&gt;
+    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/cdts-styles.css"&gt;
+    &lt;!-- Load/activate closure template scripts --&gt;
+    &lt;script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/compiled/wet-fr.js"&gt;&lt;/script&gt;
+    &lt;noscript&gt;
+        &lt;!-- Write closure fall-back static file --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/static/refTop.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_45/cdts/static/refTop.html" --&gt;
+    &lt;/noscript&gt;
+    &lt;!-- Write closure template --&gt;
+    &lt;script&gt;
+        wet.builder.setup({
+            cdnEnv: "prod",
+            base: {
+                exitSecureSite : {exitScript: true, displayModal: true, exitMsg: "Il faut déjà s'en aller?"}
+            },
+            top: {
+                breadcrumbs: [
+                    {title: "Canada.ca", acronym: "Canada.ca", href: "https://www.canada.ca/fr.html"},
+                    {title: "SGDC", acronym: "Solution de gabarits à déploiement centralisé"}
+                ]
+            },
+            preFooter: {
+                dateModified: "2022-05-25"
+            }
+        });
+    &lt;/script&gt;
+&lt;/head&gt;</pre>
+		<p><strong>REMARQUE</strong>&#160;: N’oubliez pas de toujours indiquer dans la section <code>&lt;noscript&gt;</code> le fichier statique de repli, faute de quoi votre page ne s’adaptera pas sans heurt lorsque JavaScript est désactivé.</p>
+	</section>
+	<section>
+		<h3 id="R.C3.A9f.C3.A9rences_de_fichier_de_la_section_sup.C3.A9rieure">Références de fichier de la section supérieure ("top")</h3>
+		<p>Dans la section supérieure de votre page, vous devrez faire ce qui suit:</p>
+		<ol>
+			<li>Ajouter un nouvel élément <code>&lt;div&gt;</code> <strong>avec un ID</strong> <code>cdts-def-top</code>. Il devrait être situé avant l'élément <code>&lt;main&gt;</code> sur la page.</li>
+			<li>Insérer/inclure le contenu de repli statique dans ce nouveau <code>&lt;div&gt;</code>.</li>
+			<li>Pour la configuration, ajouter une propriété <code>top</code> a l'objet de configuration SGDC dans l'élément &lt;head&gt;  L'objet peut inclure les propriétés suivantes:
+				<ul>
+					<li><code>breadcrumbs</code> (FACULTATIF) – Un objet indiquant le fil d’Ariane personalisé de votre page. (Si rien n'est spécifié, une configuration par défaut sera utilisée)
+						<pre>"breadcrumbs": [{
+	"title": "Accueil",
+	"href": "https://www.canada.ca/fr/index.html"
+},{
+	"title": "SGDC",
+	"acronym": "Solution de gabarits à déploiement centralisé",
+	"href": "https://www.canada.ca/fr/index.html"
+}]</pre>
+					</li>
+					<li><code>customSearch</code> (FACULTATIF) - Un objet indiquant l'utilisation d'un engin de recherche personalisé. Se référer à la <a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_44/cdts/samples/custom-search-fr.html">page d'exemple</a> correspondante pour les détails.</li>
+					<li><code>lngLinks</code> (FACULTATIF) – Tableau+objet singulier indiquant le lien permettant de passer d’une langue à l’autre. Bien que ce soit facultatif, il est normalement obligatoire de fournir un lien pour changer la langue.
+						<pre>"lngLinks": [{
+	"lang": "en",
+	"href": "content-en.html",
+	"text": "English"
+}]</pre>
+					</li>
+					<li><code>search</code> (FACULTATIF, par défaut true) - Une valeur booléenne qui determine si la zone de recherche sera affichée.</li>
+					<li><code>showPreContent</code> (FACULTATIF, par défaut true) - Une valeur booléenne qui determine si la zone globale "pré-contenu" sera affichée. Ce contenu figure TOUJOURS par défaut sur toutes les pages. Vous devrez obtenir l’autorisation de l’Éditeur principal pour ne pas l'inclure.</li>
+					<li><code>siteMenu</code> (FACULTATIF, par défaut true) - Une valeur booléenne qui determine si la zone de menu global sera affichée.</li>
+					<li><code>topSecMenu</code> (FACULTATIF, par défaut false) - Une valeur booléenne qui indique si un menu de navigation secondaire sera présent sur la page. (Voir <a href="#R.C3.A9f.C3.A9rences_du_menu_de_la_section">Références du menu de la section</a>)</li>
+				</ul>
+			</li>
+		</ol>
+		<p><strong>Exemple&#160;:</strong></p>
+		<pre>&lt;html&gt;
+&lt;head&gt;
+    ...
+    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/cdts-styles.css"&gt;
+    &lt;script
+        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/compiled/wet-fr.js"
+        data-cdts-setup='{
+            ...
+            "top": {
+                "lngLinks": [{
+                    "lang": "fr",
+                    "href": "content-fr.html",
+                    "text": "Français"
+                }]
+            }
+            ...
+        }'&gt;&lt;/script&gt;
+    ...
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="cdts-def-top"&gt;
+        &lt;!-- Write closure fall-back static file --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/static/top-fr.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_45/cdts/static/top-fr.html" --&gt;
+    &lt;/div&gt;
+    &lt;main property="mainContentOfPage" typeof="WebPageElement" class="container"&gt;
+        ...
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+	</section>
+	<section>
+		<h3 id="R.C3.A9f.C3.A9rences_de_fichiers_de_la_section_qui_pr.C3.A9c.C3.A8de_le_pied_de_page">Références de fichiers de la section qui précède le pied de page ("preFooter")</h3>
+		<p>Dans la section qui précède le pied de page de votre page, vous devrez faire ce qui suit:</p>
+		<ol>
+			<li>Ajouter un nouvel élément <code>&lt;div&gt;</code> <strong>avec un ID</strong> <code>cdts-def-preFooter</code>. Il devrait être situé directement avant la fermeture de l'élément <code>&lt;/main&gt;</code> sur la page.</li>
+			<li>Insérer/inclure le contenu de repli statique dans ce nouveau <code>&lt;div&gt;</code>.</li>
+			<li>Pour la configuration, ajouter une propriété <code>preFooter</code> a l'objet de configuration SGDC dans l'élément &lt;head&gt;  L'objet peut inclure les propriétés suivantes:
+				<ul>
+					<li><code>dateModified</code> (FACULTATIF) – Une chaîne de caractères qui contrôle l'affichage de la date the modification de la page. Si vous préférez utiliser la méthode d’indicateur de version, utilisez la propriété "versionIdentifier". Prenez note que vous devez utiliser une méthode ou l’autre.
+						<pre>"dateModified": "2022-10-09"</pre>
+					</li>
+					<li><code>pagedetails</code> (FACULTATIF, par défaut true) - Une valeur booléenne qui determine si la zone de détails sera affichée.  Devrait être désactivé seulement lorsque vous utilisez le gabarit de message d'erreur.</li>
+					<li><code>screenIdentifier</code> (FACULTATIF) – Une chaîne de caractères qui contrôle l'affichage de l’identificateur d’écran de la page.
+						<pre>"screenIdentifier": "ABC0123456789"</pre>
+					</li>
+					<li><code>showFeedback</code> (FACULTATIF, par défaut true) – Une valeur booléenne ou chaîne de caractères qui contrôle l'affichage du bouton "Signaler un problème" sur la page.
+						<pre>"showFeedback": false</pre>
+						<pre>"showFeedback": "Lien URL personnalisé ici"</pre>
+					</li>
+					<li><code>showPostContent</code> (FACULTATIF, par défaut true) - Une valeur booléenne qui determine si la zone globale "post-contenu" sera affichée. Ce contenu figure TOUJOURS par défaut sur toutes les pages. Vous devrez obtenir l’autorisation de l’Éditeur principal pour ne pas l'inclure.</li>
+					<li><code>showShare</code> (FACULTATIF, par défaut true) – Une valeur booléenne ou tableau qui contrôle l'affichage des boutons de rétroaction sur la page.
+						<pre>"showShare": false</pre>
+						<pre>"showShare": ["email", "facebook", "linkedin", "twitter"]</pre>
+					</li>
+					<li><code>versionIdentifier</code> (FACULTATIF) – Une chaîne de caractères qui contrôle l'affichage de la version de la page ou application.
+						<pre>"versionIdentifier": "1.2.3-rc4"</pre>
+					</li>
+				</ul>
+			</li>
+		</ol>
+		<p><strong>Exemple&#160;:</strong></p>
+		<pre>&lt;html&gt;
+&lt;head&gt;
+    ...
+    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/cdts-styles.css"&gt;
+    &lt;script
+        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/compiled/wet-fr.js"
+        data-cdts-setup='{
+            ...
+            "preFooter": {
+                "dateModified": "2022-06-05"
+            }
+            ...
+        }'&gt;&lt;/script&gt;
+    ...
+&lt;/head&gt;
+&lt;body&gt;
+    ...
+        &lt;div id="cdts-def-preFooter"&gt;
+            &lt;!-- Write closure fall-back static file --&gt;
+            &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/static/preFooter-fr.html --&gt;
+            &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_45/cdts/static/preFooter-fr.html" --&gt;
+        &lt;/div&gt;
+    &lt;/main&gt;
+    ...
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+	</section>
+	<section>
+		<h3 id="R.C3.A9f.C3.A9rences_de_fichier_de_la_section_du_pied_de_page">Références de fichier de la section du pied de page ("footer")</h3>
+		<p>Dans la section du pied de page, vous devrez faire ce qui suit:</p>
+		<ol>
+			<li>Ajouter un nouvel élément <code>&lt;div&gt;</code> <strong>avec un ID</strong> <code>cdts-def-footer</code>. Il devrait être situé après la fermeture de l'élément <code>&lt;/main&gt;</code> sur la page.</li>
+			<li>Insérer/inclure le contenu de repli statique dans ce nouveau <code>&lt;div&gt;</code>.</li>
+			<li>Pour la configuration, ajouter une propriété <code>footer</code> a l'objet de configuration SGDC dans l'élément &lt;head&gt;  L'objet peut inclure les propriétés suivantes:
+				<ul>
+					<li><code>contactLinks</code> (FACULTATIF) – Tableau+objet singulier pour personaliser le lien "Contactez nous" situé dans le bas de la page.
+				<pre>"contactLinks": [{
+	"href": "#"
+}]</pre>
+					</li>
+					<li><code>privacyLink</code> (FACULTATIF) – Tableau+objet singulier pour personaliser le lien "Confidentialité" situé dans le bas de la page.
+				<pre>"privacyLink": [{
+	"href": "#"
+}]</pre>
+					</li>
+					<li><code>showFooter</code> (FACULTATIF, par défaut true) - Une valeur booléenne qui determine si la zone de bas de page sera affichée.  Devrait être désactivé seulement lorsque vous utilisez le gabarit de message d'erreur.</li>
+					<li><code>termsLink</code> (FACULTATIF) – Tableau+objet singulier pour personaliser le lien "Avis" situé dans le bas de la page.
+				<pre>"termsLink": [{
+	"href": "#"
+}]</pre>
+					</li>
+				</ul>
+			</li>
+		</ol>
+		<p><strong>Exemple&#160;:</strong></p>
+		<pre>&lt;html&gt;
+&lt;head&gt;
+    ...
+    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/cdts-styles.css"&gt;
+    &lt;script
+        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/compiled/wet-fr.js"
+        data-cdts-setup='{
+            ...
+            "footer": {
+                "contactLinks": [{"href": "mycontact-us-fr.html"}],
+                "showFeatures": true
+            }
+            ...
+        }'&gt;&lt;/script&gt;
+    ...
+&lt;/head&gt;
+&lt;body&gt;
+    ...
+    &lt;/main&gt;
+    &lt;div id="cdts-def-footer"&gt;
+        &lt;!-- Write closure fall-back static file --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/static/footer-fr.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_45/cdts/static/footer-fr.html" --&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+	</section>
+	<section>
+		<h2 id="R.C3.A9f.C3.A9rences_pour_la_page_d.27entr.C3.A9e">Références pour la page d'entrée ("splash")</h2>
+		<p>Dans la section <code>&lt;head&gt;</code> de la page d’entrée, vous devrez faire ce qui suit:</p>
+		<ol>
+			<li>Ajouter un <code>link</code> vers la feuille de style de SGDC pour le gabarit de pages d'entrée: <code>cdts-splash-styles.css</code></li>
+			<li>Ajouter l'élément <code>script</code> référençant le fichier Javascript de SGDC wet-en.js. Dans l'objet de configuration SGDC spécifié dans l'attribut <code>data-cdts-setup</code>, assurez-vous que le <code>mode</code> est <code>splash</code>. Ensuite, une propriété <code>splash</code> devrait être ajoutée comme suit:
+				<ul>
+					<li><code>indexEng</code> (OBLIGATOIRE) – Une chaîne de caractères indiquant l’adresse URL de la page d’accueil en anglais.
+						<pre>"indexEng": "https://www.canada.ca/en/index.html"</pre>
+					</li>
+					<li><code>indexFra</code> (OBLIGATOIRE) – Une chaîne de caractères indiquant l’adresse URL de la page d’accueil en français.
+						<pre>"indexFra": "https://www.canada.ca/fr/index.html"</pre>
+					</li>
+					<li><code>termsEng</code> (OBLIGATOIRE) – Une chaîne de caractères indiquant l’adresse URL de la page d’avis en anglais.
+						<pre>"termsEng": "https://www.canada.ca/en/transparency/terms.html"</pre>
+					</li>
+					<li><code>termsFra</code> (OBLIGATOIRE) – Une chaîne de caractères indiquant l’adresse URL de la page d’avis en français.
+						<pre>"termsFra": "https://www.canada.ca/fr/transparence/avis.html"</pre>
+					</li>
+					<li><code>nameEng</code> (FACULTATIF) – Une chaîne de caractères servant à identifier le nom de votre actif Web (en anglais) sur la page d’entrée. Si vous ne l’utilisez pas, «&#160;Government of Canada&#160;» appraîtra à sa place.
+						<pre>"nameEng": "My web asset"</pre>
+					</li>
+					<li><code>nameFra</code> (FACULTATIF) – Une chaîne de caractères servant à identifier le nom de votre actif Web (en français) sur la page d’entrée. Si vous ne l’utilisez pas, «&#160;Gouvernement du Canada&#160;» appraîtra à sa place.
+						<pre>"nameFra": "Mon actif Web"</pre>
+					</li>
+				</ul>
+			</li>
+			<li>Créer une section <code>&lt;noscript&gt;</code>, ce qui permettra à votre page d’avoir la présentation voulue si JavaScript est désactivé. Vous devrez charger un fichier statique de repli dans la section <code>&lt;noscript&gt;</code>.</li>
+		</ol>
+		<p>Dans la section <code>&lt;body&gt;</code> de votre page, vous devrez faire ce qui suit:</p>
+		<ol>
+			<li>Ajouter un nouvel élément <code>&lt;div&gt;</code> <strong>avec un ID</strong> <code>cdts-splash-content</code>. Il devrait être le seul élément dans le <code>body</code> de la page.</li>
+			<li>Insérer/inclure le contenu de repli statique dans ce nouveau <code>&lt;div&gt;</code>.</li>
+		</ol>
+		<p><strong>Exemple&#160;:</strong></p>
+		<pre>&lt;html&gt;
+&lt;head&gt;
+    ...
+    &lt;!-- Load stylesheet --&gt;
+    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/cdts-splash-styles.css"&gt;
+    &lt;!-- Load/activate closure template scripts --&gt;
+    &lt;script
+        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/compiled/wet-en.js"
+        data-cdts-setup='{
+            "cdnEnv": "prod",
+            "mode": "splash",
+            "splash": {
+                "indexEng": "https://www.canada.ca/en/index.html",
+                "indexFra": "https://www.canada.ca/fr/index.html",
+                "termsEng": "https://www.canada.ca/en/transparency/terms.html",
+                "termsFra": "https://www.canada.ca/fr/transparence/avis.html",
+                "nameEng": "My web asset",
+                "nameFra": "Mon actif web"
+            }
+        }'&gt;&lt;/script&gt;
+    &lt;noscript&gt;
+        &lt;!-- Write closure fall-back static file --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/static/splashTop.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_45/cdts/static/splashTop.html" --&gt;
+    &lt;/noscript&gt;
+&lt;/head&gt;
+&lt;body class="splash" vocab="https://schema.org/" typeof="WebPage"&gt;
+    &lt;div id="cdts-splash-content"&gt;
+        &lt;!-- Write closure fall-back static file --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/static/splash.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_45/cdts/static/splash.html" --&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+	</section>
+	<section>
+		<h2 id="R.C3.A9f.C3.A9rences_pour_une_page_en_sc.C3.A9nario_d.27op.C3.A9rations">Références pour une page en scénario d'opérations</h2>
+		<p>Les pages en scénario d'opérations ne peuvent être utilisées que selon des scénarios spécifiques tel que mentionné dans la section 6.5 des <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html">Spécifications sur le contenu et l'architecture de l'information du site Canada.ca</a>. En voici la définition&#160;:</p>
+		<ul>
+			<li><em>Sur les pages où l’utilisateur effectue une opération – et où lui permettre de quitter la page active interromprait le cheminement souhaité et donnerait lieu à des erreurs, à la perte de données ou à la fin accidentelle de la session.</em></li>
+		</ul>
+		<p>Si votre actif Web correspond à ces critères, vous pouvez suivre les directives suivantes&#160;:</p>
+		<ul>
+			<li>Les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_.3Chead.3E">références de la section <code>&lt;head&gt;</code></a> ne changent pas.</li>
+			<li>Les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_sup.C3.A9rieure">références de la section top</a> restent les mêmes mis à part pour ces modifications&#160;:
+				<ul>
+					<li><code>breadcrumbs</code> (OBLIGATOIRE) – Veuillez noter que dans une page en mode transaction, le fil d’Ariane est remplacé par un lien qui permet de quitter la transaction et de diriger l’utilisateur vers un endroit sécuritaire où il peut abandonner la transaction courante et la recommencer s’il le veut.
+						<pre>"breadcrumbs": [{
+	"title": "Quitter la transaction sécurisée",
+	"href": "https://www.canada.ca/fr/index.html"
+}]</pre>
+					</li>
+					<li><code>search</code> (DOIT ETRE false) - Une valeur booléenne qui determine si la zone de recherche sera affichée.
+						<pre>"search": false</pre>
+					</li>
+					<li><code>showPreContent</code> (DOIT ETRE false) - Une valeur booléenne qui determine si la zone globale "pré-contenu" sera affichée. Ce contenu figure TOUJOURS par défaut sur toutes les pages. Vous devrez obtenir l’autorisation de l’Éditeur principal pour ne pas l'inclure.
+						<pre>"showPreContent": false</pre>
+					</li>
+					<li><code>siteMenu</code> (DOIT ETRE false) - Une valeur booléenne qui determine si la zone de menu global sera affichée.
+						<pre>"siteMenu": false</pre>
+					</li>
+				</ul>
+			</li>
+			<li>Les <a href="#R.C3.A9f.C3.A9rences_de_fichiers_de_la_section_qui_pr.C3.A9c.C3.A8de_le_pied_de_page">références de la section pre-footer</a> restent les mêmes mis à part pour ces modifications&#160;:
+				<ul>
+					<li><code>showFeedback</code> (DOIT ETRE false) – Une valeur booléenne ou chaîne de caractères qui contrôle l'affichage du bouton "Signaler un problème" sur la page.
+						<pre>"showFeedback": false</pre>
+					</li>
+					<li><code>showPostContent</code> (DOIT ETRE false) - Une valeur booléenne qui determine si la zone globale "post-contenu" sera affichée.
+						<pre>"showPostContent": false</pre>
+					</li>
+					<li><code>showShare</code> (DOIT ETRE false) – Une valeur booléenne ou tableau qui contrôle l'affichage des boutons de rétroaction sur la page.
+						<pre>"showShare": false</pre>
+					</li>
+				</ul>
+			</li>
+			<li>Les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_du_pied_de_page">références de la section footer</a> restent les mêmes mis à part pour ces modifications&#160;:
+				<ul>
+					<li><code>contactLinks</code> (FACULTATIF) – Tableau+objet singulier pour personaliser le lien "Contactez nous" situé dans le bas de la page.
+				<pre>"contactLinks": [{
+	"href": "#",
+	"newWindow": true
+}]</pre>
+					</li>
+					<li><code>privacyLink</code> (FACULTATIF) – Tableau+objet singulier pour personaliser le lien "Confidentialité" situé dans le bas de la page.
+				<pre>"privacyLink": [{
+	"href": "#",
+	"newWindow": true
+}]</pre>
+					</li>
+					<li><code>showFooter</code> (DOIT ETRE false) - Une valeur booléenne qui determine si la zone de bas de page sera affichée.
+						<pre>"showFooter": false</pre>
+					</li>
+					<li><code>termsLink</code> (FACULTATIF) – Tableau+objet singulier pour personaliser le lien "Avis" situé dans le bas de la page.
+				<pre>"termsLink": [{
+	"href": "#",
+	"newWindow": true
+}]</pre>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<p><strong>Exemple&#160;:</strong></p>
+		<pre>&lt;html&gt;
+&lt;head&gt;
+    ...
+    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/cdts-styles.css"&gt;
+    &lt;script
+        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/compiled/wet-fr.js"
+        data-cdts-setup='{
+            ...
+            "top": {
+                "lngLinks": [{
+                    "lang": "en",
+                    "href": "content-en.html",
+                    "text": "English"
+                }],
+                "search": false,
+                "siteMenu": false,
+                "showPreContent": false
+            },
+            "preFooter": {
+                "dateModified": "2022-06-05",
+                "showPostContent": false,
+                "showFeedback": false,
+				"showShare": false
+            },
+            "footer": {
+                "showFooter": false,
+                "showFeatures": false
+            }
+        }'&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="cdts-def-top"&gt;
+        &lt;!-- Write closure fall-back static file --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/static/top-fr.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_45/cdts/static/top-fr.html" --&gt;
+    &lt;/div&gt;
+    &lt;main property="mainContentOfPage" typeof="WebPageElement" class="container"&gt;
+        ...
+        &lt;div id="cdts-def-preFooter"&gt;
+            &lt;!-- Write closure fall-back static file --&gt;
+            &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/static/preFooter-fr.html --&gt;
+            &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_45/cdts/static/preFooter-fr.html" --&gt;
+        &lt;/div&gt;
+    &lt;/main&gt;
+    &lt;div id="cdts-def-footer"&gt;
+        &lt;!-- Write closure fall-back static file --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/static/footer-fr.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_45/cdts/static/footer-fr.html" --&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+	</section>
+	<section>
+		<h2 id="R.C3.A9f.C3.A9rences_du_menu_de_la_section">Références du menu de la section ("secmenu")</h2>
+		<p>Si vous prévoyez utiliser le menu de la section sur certaines de vos pages, suivez les étapes suivantes&#160;:</p>
+		<ul>
+			<li>Les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_.3Chead.3E">références de la section <code>&lt;head&gt;</code></a> ne changent pas.</li>
+			<li>Les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_sup.C3.A9rieure">références de la section «&#160;top&#160;»</a> sont identiques, mis à part les modifications suivantes&#160;:
+				<ul>
+					<li><code>topSecMenu</code> (DOIT ETRE true) - Une valeur booléenne qui indique si un menu de navigation secondaire sera présent sur la page.</li>
+				</ul>
+			</li>
+			<li>Immédiatement  avant l'ouverture de l'élément <code>&lt;main&gt;</code>, ajoutez un élément <code>&lt;div&gt;</code> avec comme classe <code>container</code>.
+			    A l'intérieur de ce premier <code>&lt;div&gt;</code>, ajoutez une deuxième élément <code>&lt;div&gt;</code> avec comme classe <code>row</code>.  L'élément <code>&lt;main&gt;</code> doit être placé à l'intérieur de ce deuxième <code>&lt;div&gt;</code>.</li>
+			<li>Les <a href="#R.C3.A9f.C3.A9rences_de_fichiers_de_la_section_qui_pr.C3.A9c.C3.A8de_le_pied_de_page">références de la section qui précède le pied de page</a> ne changent pas.</li>
+			<li><p><strong>Section "secmenu":</strong></p>
+				<p>Pour ajouter un menu de section/secondaire vous devrez faire ce qui suit:</p>
+				<ol>
+					<li>Ajouter un nouvel élément <code>&lt;nav&gt;</code> <strong>avec un ID et classe</strong> <code>wb-sec</code>. Il devrait être situé après la fermeture de l'élément <code>&lt;/main&gt;</code> sur la page.</li>
+					<li>Insérer/inclure le contenu de repli statique dans ce nouveau <code>&lt;nav&gt;</code>.</li>
+					<li>Pour la configuration, ajouter une propriété <code>secmenu</code> a l'objet de configuration SGDC dans l'élément &lt;head&gt;  L'objet peut inclure les propriétés suivantes:
+						<ul>
+							<li><code>sections</code> (OBLIGATOIRE) – Tableau d'objets "section" qui consistent des propriétés suivantes:
+								<ul>
+									<li><code>sectionName</code> (OBLIGATOIRE) – Une chaîne de caractères spécifiant le nom de la section de menu.
+										<pre>"sectionName": "Nom de section"</pre>
+									</li>
+									<li><code>sectionLink</code> (FACULTATIF) – Une chaîne de caractères spécifiant le lien/URL pour cette section.</li>
+									<li><code>newWindow</code> (FACULTATIF, par défaut false) – Une valeur booléenne qui détermine si le lien s'ouvrira dans une nouvelle fenêtre.</li>
+									<li><code>menuLinks</code> (OBLIGATOIRE) – Un tableau d'objets lien qui consistent des propriétés <code>href</code> et <code>text</code> et des propriétés facultatives <code>newWindow</code> and <code>subLinks</code>.  La propriété <code>subLinks</code> est un tableau d'objet sous-lien qui consistent des propriétés <code>subhref</code> et <code>subtext</code> et de la facultative <code>newWindow</code>
+										<pre>"menuLinks": [{
+	"href": "#",
+	"text": "Link 1"
+}]</pre>
+										<pre>"menuLinks": [{
+	"href": "#",
+	"text": "Link 1",
+	"subLinks": [{
+		"subhref": "#",
+		"subtext": "Sub-Link 1",
+		"newWindow": true
+	}]
+}]</pre>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ol>
+			</li>
+			<li>Les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_du_pied_de_page">références du pied de page</a> ne changent pas.</li>
+		</ul>
+		<p><strong>Exemple&#160;:</strong></p>
+		<pre>&lt;html&gt;
+&lt;head&gt;
+    ...
+    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/cdts-styles.css"&gt;
+    &lt;script
+        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/compiled/wet-fr.js"
+        data-cdts-setup='{
+            ...
+            "top": {
+                "lngLinks": [{
+                    "lang": "en",
+                    "href": "content-en.html",
+                    "text": "English"
+                }],
+                "topSecMenu": true
+            },
+            "secmenu": {
+                "sections": [{
+                    "sectionName": "[Sujet - Navigation locale]",
+                    "menuLinks": [
+                        {"href": "#", "text": "Lien 1", "subLinks": [
+                            {"subhref": "#11a", "subtext": "Lien 1.1 a)"},
+                            {"subhref": "#11b", "subtext": "Lien 1.1 b)"},
+                            {"subhref": "#11c", "subtext": "Ouvre dans une nouvelle fenêtre", "newWindow": true},
+                            {"subhref": "#11d", "subtext": "Lien 1.1 d)"}
+                        ]},
+                        {"href": "#", "text": "Lien 2"},
+                        {"href": "#", "text": "Ouvre dans une nouvelle fenêtre", "newWindow": true},
+                        {"href": "#", "text": "Lien 4"}
+                    ]
+                },
+                {
+                    "sectionName": "Ouvre dans une nouvelle fenêtre",
+                    "sectionLink": "#",
+                    "newWindow": true,
+                    "menuLinks": [
+                        {"href": "#", "text": "Lien 1"},
+                        {"href": "#", "text": "Lien 2"},
+                        {"href": "#", "text": "Lien 3"},
+                        {"href": "#", "text": "Lien 4"}
+                    ]
+                },
+                {
+                    "sectionName": "Nom de section 3",
+                    "menuLinks": [{"href": "#", "text": "Lien 1"}]
+                },
+                {
+                    "sectionName": "Nom de section... 27",
+                    "menuLinks": [{"href": "#", "text": "Lien 1"}]
+                }]
+            }
+        }'&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="cdts-def-top"&gt;
+        &lt;!-- Write closure fall-back static file --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/static/top-fr.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_45/cdts/static/top-fr.html" --&gt;
+    &lt;/div&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="row"&gt;
+            &lt;main property="mainContentOfPage" typeof="WebPageElement" class="col-md-9 col-md-push-3"&gt;
+                ...
+                &lt;div id="cdts-def-preFooter"&gt;
+                    &lt;!-- Write closure fall-back static file --&gt;
+                    &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/static/preFooter-fr.html --&gt;
+                    &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_45/cdts/static/preFooter-fr.html" --&gt;
+                &lt;/div&gt;
+            &lt;/main&gt;
+            &lt;nav class="wb-sec col-md-3 col-md-pull-9" typeof="SiteNavigationElement" id="wb-sec"&gt;
+                &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/static/secmenu-fr.html --&gt;
+                &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_45/cdts/static/secmenu-fr.html" --&gt;
+            &lt;/nav&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id="cdts-def-footer"&gt;
+        &lt;!-- Write closure fall-back static file --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/static/footer-fr.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_45/cdts/static/footer-fr.html" --&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+	</section>
+	<h2 id="Section_application_references">Références pour page d'Application</h2>
+	<p>Le SGDC peut être utilisé par des applications web dynamique qui ont besoin d'une en-tête et/ou pied de page personalisés. Avant d'aller de l'avant, assurez-vous d'avoir la permission de votre département, du SCT ou de l'Éditeur principal. Les changements qui suivent ne réflètent <strong>PAS</strong> les <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html">Spécifications du contenu et de l’architecture de l’information pour Canada.ca</a>. Toutes les sections documentées ci-haut s'applicaque avec les changements suivants:</p>
+	<section>
+		<h3 id="Section_appRefTop_references">Références de fichier de la section <code>&lt;head&gt;</code></h3>
+		<p>Les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_.3Chead.3E">références de la section <code>&lt;head&gt;</code></a> sont identiques, mis à part les modifications suivantes&#160;:</p>
+		<ul>
+			<li>Le lien vers la feuille de style de SGDC doit être celui vers le gabarit d'application: <code>cdts-app-styles.css</code></li>
+			<li>La valeur de la propriété <code>mode</code> de <a href="#cdts_configuration_object">l'objet the configuration SGDC</a> doit être "app".</li>
+		</ul>
+	</section>
+	<section>
+		<h3 id="R.C3.A9f.C3.A9rences_de_la_section_appTop">Références de fichier de la section supérieure ("appTop")</h3>
+		<p>Les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_sup.C3.A9rieure">références de fichier de la section supérieure</a> sont <strong>remplacées</strong> par ce qui suit&#160;:</p>
+		<ol>
+			<li>Ajouter un nouvel élément <code>&lt;div&gt;</code> <strong>avec un ID</strong> <code>cdts-def-top</code>. Il devrait être situé avant l'élément <code>&lt;main&gt;</code> sur la page.</li>
+			<li>Insérer/inclure le contenu de repli statique dans ce nouveau <code>&lt;div&gt;</code>.</li>
+			<li>Pour la configuration, ajouter une propriété <code>top</code> a l'objet de configuration SGDC dans l'élément &lt;head&gt;  L'objet peut inclure les propriétés suivantes:
+				<ul>
+					<li><code>appName</code> (OBLIGATOIRE) – Tableau+objet singulier indiquant le nom et URL de l'application.
+						<pre>"appName": [{
+	"text": "Nom de l&amp;apos;application",
+	"href": "#"
+}]</pre>
+					</li>
+					<li><code>appSettings</code> (FACULTATIF) – Tableau+objet singulier indiquant le URL du bouton "Paramètres du compte".
+						<pre>"appSettings": [{
+	"href": "#"
+}]</pre>
+					</li>
+					<li><code>breadcrumbs</code> (FACULTATIF) – Un objet indiquant le fil d’Ariane personalisé de votre page. (Si rien n'est spécifié, aucune configuration par défaut sera utilisée)
+						<pre>"breadcrumbs": [{
+	"title": "Accueil",
+	"href": "https://www.canada.ca/fr/index.html"
+},{
+	"title": "SGDC",
+	"acronym": "Solution de gabarits à déploiement centralisé",
+	"href": "https://www.canada.ca/fr/index.html"
+}]</pre>
+					</li>
+					<li><code>customSearch</code> (FACULTATIF) - Un objet indiquant l'utilisation d'un engin de recherche personalisé. Se référer à la <a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_44/cdts/samples/custom-search-fr.html">page d'exemple</a> correspondante pour les détails.</li>
+					<li><code>menuLinks </code> (FACULTATIF) – Tableau+objet singulier utilisé pour créer le menu de navigation supérieur. It remplacera la propriété <code>menuPath</code> si elle est spécifiée. Vous pouvez également créer des sous-menus. Se référer à la <a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_44/cdts/samples/custom-menu-fr.html">page d'exemple</a> correspondante pour les détails.</li>
+					<li><code>menuPath</code> (FACULTATIF) – Une chaîne de caractères indiquant l'emplacement du fichier qui serivira pour créer le menu personalisé. Se référer à la <a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_44/cdts/samples/custom-menu-fr.html">page d'exemple</a> correspondante pour les détails.</li>
+					<li><code>lngLinks</code> (FACULTATIF) – Tableau+objet singulier indiquant le lien permettant de passer d’une langue à l’autre. Bien que ce soit facultatif, il est normalement obligatoire de fournir un lien pour changer la langue.
+						<pre>"lngLinks": [{
+	"lang": "en",
+	"href": "content-en.html",
+	"text": "English"
+}]</pre>
+					</li>
+					<li><code>showPreContent</code> (FACULTATIF, par défaut true) - Une valeur booléenne qui determine si la zone globale "pré-contenu" sera affichée. Ce contenu figure TOUJOURS par défaut sur toutes les pages. Vous devrez obtenir l’autorisation de l’Éditeur principal pour ne pas l'inclure.</li>
+					<li><code>signIn</code> (FACULTATIF) – Tableau+objet singulier indiquant le URL pour le bouton de connexion.
+						<pre>"signIn": [{
+	"href": "#"
+}]</pre>
+					</li>
+					<li><code>signOut</code> (FACULTATIF) – Tableau+objet singulier indiquant le URL pour le bouton de déconnexion.
+						<pre>"signOut": [{
+	"href": "#"
+}]</pre>
+					</li>
+					<li><code>topCusMenu</code> (FACULTATIF, par défaut false) - Une valeur booléenne qui indique si un pied de page personalisé sera présent sur la page. (See <a href="#R.C3.A9f.C3.A9rences_de_la_section_appFooter">Références de la section appFooter</a>)</li>
+					<li><code>topSecMenu</code> (FACULTATIF, par défaut false) - Une valeur booléenne qui indique si un menu de navigation secondaire sera présent sur la page. (Voir <a href="#R.C3.A9f.C3.A9rences_du_menu_de_la_section">Références du menu de la section</a>)</li>
+				</ul>
+			</li>
+		</ol>
+		<p><strong>Exemple&#160;:</strong></p>
+		<pre>&lt;html&gt;
+&lt;head&gt;
+    ...
+    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/cdts-app-styles.css"&gt;
+    &lt;script
+        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/compiled/wet-fr.js"
+        data-cdts-setup='{
+            ...
+            "mode": "app",
+            "top": {
+                "appName": [{
+                    "text": "Nom de l&amp;apos;application",
+                    "href": "#"
+                }],
+                "lngLinks": [{
+                    "lang": "fr",
+                    "href": "content-fr.html",
+                    "text": "Français"
+                }]
+            }
+            ...
+        }'&gt;&lt;/script&gt;
+    ...
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="cdts-def-top"&gt;
+        &lt;!-- Write closure fall-back static file --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/static/appTop-fr.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_45/cdts/static/appTop-fr.html" --&gt;
+    &lt;/div&gt;
+    &lt;main property="mainContentOfPage" typeof="WebPageElement" class="container"&gt;
+        ...
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+	</section>
+	<section>
+		<h3 id="R.C3.A9f.C3.A9rences_de_la_section_appFooter">Références de fichier de la section du pied de page ("appFooter")</h3>
+		<p>Les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_du_pied_de_page">références de fichier de la section du pied de page</a> sont <strong>remplacées</strong> par ce qui suit&#160;:</p>
+		<ol>
+			<li>Ajouter un nouvel élément <code>&lt;div&gt;</code> <strong>avec un ID</strong> <code>cdts-def-footer</code>. Il devrait être situé après la fermeture de l'élément <code>&lt;/main&gt;</code> sur la page.</li>
+			<li>Insérer/inclure le contenu de repli statique dans ce nouveau <code>&lt;div&gt;</code>.</li>
+			<li>Pour la configuration, ajouter une propriété <code>footer</code> a l'objet de configuration SGDC dans l'élément &lt;head&gt;  L'objet peut inclure les propriétés suivantes:
+				<ul>
+					<li><code>contactLinks</code> (FACULTATIF) – Tableau+objet singulier pour personaliser le lien "Contactez nous" situé dans le bas de la page.
+				<pre>"contactLinks": [{
+	"href": "#",
+	"newWindow": false
+}]</pre>
+					</li>
+					<li><code>footerSections</code> (FACULTATIF) – Tableau d'objets footerSection pour créer des colonnes de lien de pied de page.
+					<pre>"footerSections": [{
+	"href": "#",
+	"text": "Lien 1",
+	"newWindow": true
+},{
+	"href": "#",
+	"text": "Lien 2"
+}]</pre>
+					</li>
+					<li><code>privacyLink</code> (FACULTATIF) – Tableau+objet singulier pour personaliser le lien "Confidentialité" situé dans le bas de la page.
+				<pre>"privacyLink": [{
+	"href": "#",
+	"newWindow": false
+}]</pre>
+					</li>
+					<li><code>termsLink</code> (FACULTATIF) – Tableau+objet singulier pour personaliser le lien "Avis" situé dans le bas de la page.
+				<pre>"termsLink": [{
+	"href": "#",
+	"newWindow": false
+}]</pre>
+					</li>
+				</ul>
+			</li>
+		</ol>
+		<p><strong>Exemple&#160;:</strong></p>
+		<pre>&lt;html&gt;
+&lt;head&gt;
+    ...
+    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/cdts-app-styles.css"&gt;
+    &lt;script
+        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/compiled/wet-fr.js"
+        data-cdts-setup='{
+            "mode": "app",
+            ...
+            "footer": {
+                "contactLinks": [{"href": "mycontact-us-fr.html"}],
+                "footerSections": [{
+                    "href": "#",
+                    "text": "Lien 1",
+                    "newWindow": true
+                },{
+                    "href": "#",
+                    "text": "Lien 2"
+                }]
+            }
+            ...
+        }'&gt;&lt;/script&gt;
+    ...
+&lt;/head&gt;
+&lt;body&gt;
+    ...
+    &lt;/main&gt;
+    &lt;div id="cdts-def-footer"&gt;
+        &lt;!-- Write closure fall-back static file --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/static/appFooter-fr.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_45/cdts/static/appFooter-fr.html" --&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+	</section>
+			<div id="def-preFooter">
+				<!-- Write closure fall-back static file -->
+				<!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_45/cdts/static/preFooter-fr.html -->
+				</div>
+			<!-- Write closure template -->
+			<script>
+				var defPreFooter = document.getElementById("def-preFooter");
+				defPreFooter.outerHTML = wet.builder.preFooter({
+					"dateModified": "2022-05-01",
+					"showShare": false,
+					"showFeedback": false
+				});
+			</script>
+		</main>
+		<div id="def-footer">
+		</div>
+		<!-- Write closure template -->
+		<script>
+			var defFooter = document.getElementById("def-footer");
+			defFooter.outerHTML = wet.builder.appFooter({
+				"contactLink": "./contact-fr.html"
+			});
+		</script>
+		<!-- Write closure template -->
+		<script>
+			document.write(wet.builder.refFooter({
+				"isApplication": true
+			}));
+		</script>
+	</body>
+</html>

@@ -126,7 +126,7 @@
 	</ul>
 	<p>Présentement, pour la version 4.0.30 en français avec le thème GCintranet, le URL est&#160;:</p>
 	<ul>
-		<li><a href="https://ssl-templates.services.gc.ca/app/cls/wet/gcintranet/v4_0_30/cdts/compiled/wet-fr.js">https://ssl-templates.services.gc.ca/app/cls/wet/gcintranet/v4_0_30/cdts/compiled/wet-fr.js</a></li>
+		<li><a href="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_30/cdts/compiled/wet-fr.js">https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_30/cdts/compiled/wet-fr.js</a></li>
 	</ul>
 	<p>Le «&#160;URL de la SGDC&#160;», le «&#160;thème&#160;», la «&#160;version de la BOEW&#160;» et le «&#160;langage&#160;» doivent être les options de configuration dans votre actif Web. Tel que préalablement suggéré, utilisez un fichier web.config, XML config ou une base de données pour stocker ces variables. Assurez-vous que votre site Web utilise votre nouveau chemin de fichier configurable.</p>
 	<p><strong>NOTE IMPORTANTE #1</strong>: Lorsque vous mettez à jour votre actif Web à une version supérieure, nous vous suggérons d’aussi mettre à jour vos fichiers statiques de repli. Sinon, assurez-vous que vos fichiers statiques de repli puissent être mis à jour indépendamment de votre version WET de la SGDC. Avoir la SGDC à la version 4.0.30 et les fichiers statiques de repli à la version 4.0.29 est accepté, quoiqu’il est recommandé d’avoir les deux à jour. Vos fichiers statiques de repli peuvent être une version ou deux en retard jusqu’à temps que vous effectuez une relâche complète. Nous vous informerons si vos fichiers doivent être mis à jour. Ce sera indiqué dans le courriel qui annonce une nouvelle version.</p>
@@ -153,10 +153,6 @@
 			</li>
 		</ul>
 		<p><strong>Les employés d'EDSC</strong> peuvent utiliser les variables suivantes :</p>
-		<p>https://cdn-canada.services.gc.qat</p>
-		<pre>"cdnEnv": "qat"</pre>
-		<p>https://s2tst-cdn-canada.sade-edap.prv</p>
-		<pre>"cdnEnv": "nonprod"</pre>
 		<p>https://templates.service.gc.ca</p>
 		<pre>"cdnEnv": "esdcprod"</pre>
 		<p>Pour toutes les captures d'écran suivantes, veuillez insérer dans votre propre code&#160;:</p>
@@ -192,8 +188,8 @@
 		</ul>
 		<p>Exemple&#160;:</p>
 		<pre>&lt;!-- Load closure template scripts --&gt;
-&lt;script src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_29/cdts/compiled/soyutils.js"&gt;&lt;/script&gt;
-&lt;script src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_29/cdts/compiled/wet-en.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_29/cdts/compiled/soyutils.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_29/cdts/compiled/wet-en.js"&gt;&lt;/script&gt;
 &lt;noscript&gt;
 	&lt;!-- Write closure fall-back static file --&gt;
 	&lt;!-- /ROOT/app/cls/WET/gcintranet/v4_0_29/cdts/static/refTop.html --&gt;
@@ -399,8 +395,8 @@
 		</ol>
 		<p>Exemple&#160;:</p>
 		<pre>&lt;!-- Load closure template scripts --&gt;
-&lt;script src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_29/cdts/compiled/soyutils.js"&gt;&lt;/script&gt;
-&lt;script src="https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/v4_0_29/cdts/compiled/wet-en.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_29/cdts/compiled/soyutils.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_29/cdts/compiled/wet-en.js"&gt;&lt;/script&gt;
 &lt;noscript&gt;
 	&lt;!-- Write closure fall-back static file --&gt;
 	&lt;!-- /ROOT/app/cls/WET/gcintranet/v4_0_29/cdts/static/splashTop.html --&gt;
@@ -716,7 +712,7 @@
 				<pre>"siteMenu": false</pre>
 			</li>
 			<li>FACULTATIF – menuPath – Cette variable est utilisée pour afficher un menu personnalisé. Bien que vous n'en ayez pas besoin, nous vous suggérons de <a href="./contact-fr.html">contacter l'équipe SGDC</a> pour activer cette option. Si vous l'avez déjà fait, fournissez simplement l'URL de votre fichier de menu valide pour activer cette option. Vous pouvez copier le format dans l'exemple de fichier de menu personnalisé fourni ci-dessous dans notre exemple.
-				<pre>"menuPath": "https://ssl-templates.services.gc.ca/app/cls/WET/gcintranet/(version)/cdts/ajax/custommenu-fr.html"</pre>
+				<pre>"menuPath": "https://cdts.service.canada.ca/app/cls/WET/gcintranet/(version)/cdts/ajax/custommenu-fra.html"</pre>
 			</li>
 			<li>FACULTATIF – menuLinks – Cette variable sera utilisée pour créer un menu de navigation supérieur, elle remplacera la variable menuPath si elle est fournie. Vous pouvez également créer des éléments de sous-menu.
 				<pre>"menuLinks": [{
@@ -782,7 +778,7 @@
 }]</pre>
 			</li>
 		</ul>
-		<p>Nous n'avons pas fourni d'exemples d'images de code pour les modèles d'application car il y a trop d'options. Veuillez plutôt consulter nos <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_30/cdts/appTop/apptop-fr.shtml">pages d'exemples de modèles d'application</a> que nous tenons à jour. Il a tous les différents scénarios énumérés ci-dessus.</p>
+		<p>Nous n'avons pas fourni d'exemples d'images de code pour les modèles d'application car il y a trop d'options. Veuillez plutôt consulter nos <a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_30/cdts/appTop/apptop-fr.shtml">pages d'exemples de modèles d'application</a> que nous tenons à jour. Il a tous les différents scénarios énumérés ci-dessus.</p>
 		<p><strong>REMARQUE</strong>&#160;: n'oubliez pas que la balise <code>&lt;div&gt;</code> qui entoure votre fichier statique de repli est nommé « def-top » sinon votre page ne s'affichera pas correctement. Notez également que lors de l'utilisation des modèles d'application, vous utiliserez <code>wet.builder.appTop</code> au lieu de <code>wet.builder.top</code> dans votre code JavaScript.</p>
 	</section>
 	<section>
@@ -830,7 +826,7 @@
 			</li>
 		</ul>
 		<p><strong>IMPORTANT</strong>&#160;: Vous ne pouvez utiliser qu'une variable pour contrôler l'affichage du pied de page. La variable <code>globalNav</code> remplacera la variable <code>footerSections</code> si les deux sont fournies. Si vous ne fournissez pas <code>globalNav</code> ou <code>footerSections</code> alors le pied de page par défaut sera <a href="#R.C3.A9f.C3.A9rences_pour_une_page_en_sc.C3.A9nario_d.27op.C3.A9rations">Modèle de page en scénario d'opérations</a> sera affiché.</p>
-		<p>Il n'y a pas d'images avec des exemples de code pour les gabarits d'application parce qu'il y a trop de possibilités. À la place, veuillez consulter notre <a href="https://ssl-templates.services.gc.ca/app/cls/WET/gcweb/v4_0_30/cdts/appTop/apptop-fr.shtml">page d'exemple de gabarit d'application</a> que nous maintenons à jour. Vous y trouverez tous les scénarios ci-dessus.</p>
+		<p>Il n'y a pas d'images avec des exemples de code pour les gabarits d'application parce qu'il y a trop de possibilités. À la place, veuillez consulter notre <a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_30/cdts/appTop/apptop-fr.shtml">page d'exemple de gabarit d'application</a> que nous maintenons à jour. Vous y trouverez tous les scénarios ci-dessus.</p>
 		<p><strong>NOTE</strong>&#160;: N’oubliez pas que la balise <code>&lt;div&gt;</code> qui encapsule votre fichier statique de repli doit se nommer «&#160;def-footer», faute de quoi votre page ne s’affichera pas correctement. N'oubliez pas aussi d'utiliser <code>wet.builder.appFooter</code> au lieu de <code>wet.builder.footer</code> dans votre code JavaScript.</p>
 	</section>
 </section>
