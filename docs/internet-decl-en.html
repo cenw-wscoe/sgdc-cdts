@@ -82,7 +82,7 @@
 					</ul>
 				</section>
 				<section>
-					<h3 class="h5"><a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_46/cdts/samples/">GCWeb Sample Pages</a></h3>
+					<h3 class="h5"><a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_47/cdts/samples/">GCWeb Sample Pages</a></h3>
 				</section>
 			</div>
 		</section>
@@ -129,12 +129,12 @@
 	<ul>
 		<li>[CDTS reference URL]/[theme]/[WET version]/filename-[language].extension</li>
 	</ul>
-	<p>For example with CDTS v4.0.46 the URL in english for GCWeb would be:</p>
+	<p>For example with CDTS v4.0.47 the URL in english for GCWeb would be:</p>
 	<ul>
-		<li><a href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/compiled/wet-en.js">https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/compiled/wet-en.js</a></li>
+		<li><a href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js">https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js</a></li>
 	</ul>
 	<p>The "CDTS reference URL", "theme", "WET version" and "language" must be the configurable options in your web asset. As indicated above we suggest using your web.config file, XML config file or database to store these variables. Make sure your web asset uses your new configurable file path.</p>
-	<p><strong class="text-uppercase">Important Note #1</strong>: When upgrading your web asset to a higher version we suggest that you also update your backup static files to obtain new versions. Otherwise make sure that your backup static files can be updated separately from your main WET CDTS version. It’s acceptable if your main WET CDTS points to v4_0_46 but your backup static files still point to v4_0_45. If you can keep both updated it is highly recommended to do so but not mandatory. Your backup files can fall behind until you perform a full release, we will notify you if your static files need to be updated. It will be indicated in the email you will receive announcing a new version.</p>
+	<p><strong class="text-uppercase">Important Note #1</strong>: When upgrading your web asset to a higher version we suggest that you also update your backup static files to obtain new versions. Otherwise make sure that your backup static files can be updated separately from your main WET CDTS version. It’s acceptable if your main WET CDTS points to v4_0_47 but your backup static files still point to v4_0_45. If you can keep both updated it is highly recommended to do so but not mandatory. Your backup files can fall behind until you perform a full release, we will notify you if your static files need to be updated. It will be indicated in the email you will receive announcing a new version.</p>
 	<p><strong class="text-uppercase">Important Note #2</strong>: The CDTS only updates the latest CDTS version as well as the two previous versions. If you are on an older version of the CDTS you will not receive updates. The purpose of the CDTS is to easily allow you to stay up to date so follow the instructions in this guide carefully. If you fall behind you are negating the main advantage of the CDTS!</p>
 </section>
 <section>
@@ -187,8 +187,8 @@
 					<li><code>jqueryEnv</code> (OPTIONAL) - If specified and has value "external", jQuery will be pulled in from ajax.googleapis.com instead of the CDTS hosting environment.
 						<pre>"jqueryEnv": "external"</pre>
 					</li>
-					<li><code>exitSecureSite</code> (OPTIONAL) - An object specifying the configuration of the "leaving secure site" CDTS feature. Refer to the corresponding <a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_46/cdts/samples/exitscript-en.html">sample page</a> for details.</li>
-					<li><code>webAnalytics</code> (OPTIONAL) - An object to activate and configuration Adobe Analytics (AA). Refer to the corresponding <a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_46/cdts/samples/adobe-analytics-en.html">sample page</a> for details.</li>
+					<li><code>exitSecureSite</code> (OPTIONAL) - An object specifying the configuration of the "leaving secure site" CDTS feature. Refer to the corresponding <a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_47/cdts/samples/exitscript-en.html">sample page</a> for details.</li>
+					<li><code>webAnalytics</code> (OPTIONAL) - An object to activate and configuration Adobe Analytics (AA). Refer to the corresponding <a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_47/cdts/samples/adobe-analytics-en.html">sample page</a> for details.</li>
 				</ul>
 			</li>
 			<li><code>top</code>, <code>preFooter</code>, <code>footer</code>, <code>secmenu</code>, <code>splash</code> (OPTIONAL) - Objects specifying the configuration of each section as needed. Refer to the corresponding section documentation below for details.</li>
@@ -198,10 +198,10 @@
 		<pre>&lt;head&gt;
     ...
     &lt;!-- Load stylesheet --&gt;
-    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/cdts-styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdts-styles.css"&gt;
     &lt;!-- Load/activate closure template scripts --&gt;
     &lt;script
-        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/compiled/wet-en.js"
+        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"
         data-cdts-setup='{
             "cdnEnv": "prod",
             "base": {
@@ -219,8 +219,8 @@
         }'&gt;&lt;/script&gt;
     &lt;noscript&gt;
         &lt;!-- Write closure fall-back static file --&gt;
-        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/static/refTop.html --&gt;
-        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_46/cdts/static/refTop.html" --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/static/refTop.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_47/cdts/static/refTop.html" --&gt;
     &lt;/noscript&gt;
     ...
 &lt;/head&gt;</pre>
@@ -228,13 +228,13 @@
 		<pre>&lt;head&gt;
     ...
     &lt;!-- Load stylesheet --&gt;
-    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/cdts-styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdts-styles.css"&gt;
     &lt;!-- Load/activate closure template scripts --&gt;
-    &lt;script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/compiled/wet-en.js"&gt;&lt;/script&gt;
+    &lt;script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"&gt;&lt;/script&gt;
     &lt;noscript&gt;
         &lt;!-- Write closure fall-back static file --&gt;
-        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/static/refTop.html --&gt;
-        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_46/cdts/static/refTop.html" --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/static/refTop.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_47/cdts/static/refTop.html" --&gt;
     &lt;/noscript&gt;
     &lt;!-- Write closure template --&gt;
     &lt;script&gt;
@@ -275,7 +275,7 @@
 	"href": "https://www.canada.ca/en/index.html"
 }]</pre>
 					</li>
-					<li><code>customSearch</code> (OPTIONAL) - An object specifying the configuration for a customized search feature. Refer to the corresponding <a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_46/cdts/samples/custom-search-en.html">sample page</a> for details.</li>
+					<li><code>customSearch</code> (OPTIONAL) - An object specifying the configuration for a customized search feature. Refer to the corresponding <a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_47/cdts/samples/custom-search-en.html">sample page</a> for details.</li>
 					<li><code>lngLinks</code> (OPTIONAL) – Array+single object specifying the language toggle link. Although this is optional it is usually mandatory to provide the language toggle link.
 						<pre>"lngLinks": [{
 	"lang": "fr",
@@ -294,9 +294,9 @@
 		<pre>&lt;html&gt;
 &lt;head&gt;
     ...
-    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/cdts-styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdts-styles.css"&gt;
     &lt;script
-        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/compiled/wet-en.js"
+        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"
         data-cdts-setup='{
             ...
             "top": {
@@ -313,8 +313,8 @@
 &lt;body&gt;
     &lt;div id="cdts-def-top"&gt;
         &lt;!-- Write closure fall-back static file --&gt;
-        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/static/top-en.html --&gt;
-        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_46/cdts/static/top-en.html" --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/static/top-en.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_47/cdts/static/top-en.html" --&gt;
     &lt;/div&gt;
     &lt;main property="mainContentOfPage" typeof="WebPageElement" class="container"&gt;
         ...
@@ -355,9 +355,9 @@
 		<pre>&lt;html&gt;
 &lt;head&gt;
     ...
-    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/cdts-styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdts-styles.css"&gt;
     &lt;script
-        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/compiled/wet-en.js"
+        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"
         data-cdts-setup='{
             ...
             "preFooter": {
@@ -371,8 +371,8 @@
     ...
         &lt;div id="cdts-def-preFooter"&gt;
             &lt;!-- Write closure fall-back static file --&gt;
-            &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/static/preFooter-en.html --&gt;
-            &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_46/cdts/static/preFooter-en.html" --&gt;
+            &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/static/preFooter-en.html --&gt;
+            &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_47/cdts/static/preFooter-en.html" --&gt;
         &lt;/div&gt;
     &lt;/main&gt;
     ...
@@ -410,9 +410,9 @@
 		<pre>&lt;html&gt;
 &lt;head&gt;
     ...
-    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/cdts-styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdts-styles.css"&gt;
     &lt;script
-        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/compiled/wet-en.js"
+        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"
         data-cdts-setup='{
             ...
             "footer": {
@@ -428,11 +428,44 @@
     &lt;/main&gt;
     &lt;div id="cdts-def-footer"&gt;
         &lt;!-- Write closure fall-back static file --&gt;
-        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/static/footer-en.html --&gt;
-        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_46/cdts/static/footer-en.html" --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/static/footer-en.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_47/cdts/static/footer-en.html" --&gt;
     &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
+		<p><strong>NOTE: </strong>As of v4.0.47, CDTS is implementing the latest version of the site footer provided by WET.</p>
+		<p>For more infomation, please visit the WET footer documentation <a href="https://wet-boew.github.io/GCWeb/sites/footers/footers-en.html">here.</a></p>
+		<ol>
+			<li>The latest footer will be part of all versions starting from v4.0.47.</li>
+			<li>Here are the additional new properties associated with the latest footer:
+				<ul>
+					<li><code>contextualFooter</code> (OPTIONAL) – Single object to display the contextual footer.
+					<pre>
+"contextualFooter":{
+	"title": "Title",
+	"links": [{
+		"text": "Link 1",
+		"href":"#"
+	},
+	{
+		"text": "Link 2",
+		"href":"#"
+	}]
+}					</pre>
+					</li>
+					<li><code>hideFooterMain</code> (OPTIONAL, defaults to false) – A boolean used to hide the main footer.
+					<pre>
+"hideFooterMain": true
+					</pre>
+					</li>
+					<li><code>hideFooterCorporate</code> (OPTIONAL, defaults to false) - A boolean used to hide the first three links of the sub-footer.</li>
+					<pre>
+"hideFooterCorporate": true
+					</pre>
+					</li>
+				</ul>
+			</li>
+		</ol>
 	</section>
 	<section>
 		<h2 id="Splash_page_references">Splash page references</h2>
@@ -473,10 +506,10 @@
 &lt;head&gt;
     ...
     &lt;!-- Load stylesheet --&gt;
-    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/cdts-splash-styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdts-splash-styles.css"&gt;
     &lt;!-- Load/activate closure template scripts --&gt;
     &lt;script
-        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/compiled/wet-en.js"
+        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"
         data-cdts-setup='{
             "cdnEnv": "prod",
             "mode": "splash",
@@ -491,15 +524,15 @@
         }'&gt;&lt;/script&gt;
     &lt;noscript&gt;
         &lt;!-- Write closure fall-back static file --&gt;
-        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/static/splashTop.html --&gt;
-        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_46/cdts/static/splashTop.html" --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/static/splashTop.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_47/cdts/static/splashTop.html" --&gt;
     &lt;/noscript&gt;
 &lt;/head&gt;
 &lt;body class="splash" vocab="https://schema.org/" typeof="WebPage"&gt;
     &lt;div id="cdts-splash-content"&gt;
         &lt;!-- Write closure fall-back static file --&gt;
-        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/static/splash.html --&gt;
-        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_46/cdts/static/splash.html" --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/static/splash.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_47/cdts/static/splash.html" --&gt;
     &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
@@ -547,12 +580,6 @@
 			</li>
 			<li>The <a href="#Section_footer_references">Section footer references</a> are the same except for the following modifications:
 				<ul>
-					<li><code>contactLinks</code> (OPTIONAL) – Array+single object to customize the "contact us" link located in the footer of the page. You can also add an optional variable to have the link open in a new window with <code>"newWindow": true</code>
-				<pre>"contactLinks": [{
-	"href": "#",
-	"newWindow": true
-}]</pre>
-					</li>
 					<li><code>privacyLink</code> (OPTIONAL) – Array+single object to customize the "Privacy" link located in the footer of the page. You can also add an optional variable to have the link open in a new window with <code>"newWindow": true</code>.
 				<pre>"privacyLink": [{
 	"href": "#",
@@ -575,9 +602,9 @@
 		<pre>&lt;html&gt;
 &lt;head&gt;
     ...
-    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/cdts-styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdts-styles.css"&gt;
     &lt;script
-        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/compiled/wet-en.js"
+        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"
         data-cdts-setup='{
             ...
             "top": {
@@ -604,21 +631,21 @@
 &lt;body&gt;
     &lt;div id="cdts-def-top"&gt;
         &lt;!-- Write closure fall-back static file --&gt;
-        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/static/top-en.html --&gt;
-        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_46/cdts/static/top-en.html" --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/static/top-en.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_47/cdts/static/top-en.html" --&gt;
     &lt;/div&gt;
     &lt;main property="mainContentOfPage" typeof="WebPageElement" class="container"&gt;
         ...
         &lt;div id="cdts-def-preFooter"&gt;
             &lt;!-- Write closure fall-back static file --&gt;
-            &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/static/preFooter-en.html --&gt;
-            &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_46/cdts/static/preFooter-en.html" --&gt;
+            &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/static/preFooter-en.html --&gt;
+            &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_47/cdts/static/preFooter-en.html" --&gt;
         &lt;/div&gt;
     &lt;/main&gt;
     &lt;div id="cdts-def-footer"&gt;
         &lt;!-- Write closure fall-back static file --&gt;
-        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/static/footer-en.html --&gt;
-        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_46/cdts/static/footer-en.html" --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/static/footer-en.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_47/cdts/static/footer-en.html" --&gt;
     &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
@@ -679,9 +706,9 @@
 		<pre>&lt;html&gt;
 &lt;head&gt;
     ...
-    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/cdts-styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdts-styles.css"&gt;
     &lt;script
-        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/compiled/wet-en.js"
+        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"
         data-cdts-setup='{
             ...
             "top": {
@@ -732,8 +759,8 @@
 &lt;body&gt;
     &lt;div id="cdts-def-top"&gt;
         &lt;!-- Write closure fall-back static file --&gt;
-        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/static/top-en.html --&gt;
-        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_46/cdts/static/top-en.html" --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/static/top-en.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_47/cdts/static/top-en.html" --&gt;
     &lt;/div&gt;
     &lt;div class="container"&gt;
         &lt;div class="row"&gt;
@@ -741,20 +768,20 @@
                 ...
                 &lt;div id="cdts-def-preFooter"&gt;
                     &lt;!-- Write closure fall-back static file --&gt;
-                    &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/static/preFooter-en.html --&gt;
-                    &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_46/cdts/static/preFooter-en.html" --&gt;
+                    &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/static/preFooter-en.html --&gt;
+                    &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_47/cdts/static/preFooter-en.html" --&gt;
                 &lt;/div&gt;
             &lt;/main&gt;
             &lt;nav class="wb-sec col-md-3 col-md-pull-9" typeof="SiteNavigationElement" id="wb-sec"&gt;
-                &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/static/secmenu-en.html --&gt;
-                &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_46/cdts/static/secmenu-en.html" --&gt;
+                &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/static/secmenu-en.html --&gt;
+                &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_47/cdts/static/secmenu-en.html" --&gt;
             &lt;/nav&gt;
         &lt;/div&gt;
     &lt;/div&gt;
     &lt;div id="cdts-def-footer"&gt;
         &lt;!-- Write closure fall-back static file --&gt;
-        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/static/footer-en.html --&gt;
-        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_46/cdts/static/footer-en.html" --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/static/footer-en.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_47/cdts/static/footer-en.html" --&gt;
     &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
@@ -798,9 +825,9 @@
 	"href": "https://www.canada.ca/en/index.html"
 }]</pre>
 					</li>
-					<li><code>customSearch</code> (OPTIONAL) - An object specifying the configuration for a customized search feature. Refer to the corresponding <a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_46/cdts/samples/custom-search-en.html">sample page</a> for details.</li>
-					<li><code>menuLinks </code> (OPTIONAL) – Array+single object used to create a top navigation menu. It will override the <code>menuPath</code> property if provided. You can also create submenu items. Refer to the corresponding <a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_46/cdts/samples/custom-menu-en.html">sample page</a> for details.</li>
-					<li><code>menuPath</code> (OPTIONAL) – A string specifying the URL to a file to be used to display a custom menu. Refer to the corresponding <a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_46/cdts/samples/custom-menu-en.html">sample page</a> for details.</li>
+					<li><code>customSearch</code> (OPTIONAL) - An object specifying the configuration for a customized search feature. Refer to the corresponding <a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_47/cdts/samples/custom-search-en.html">sample page</a> for details.</li>
+					<li><code>menuLinks </code> (OPTIONAL) – Array+single object used to create a top navigation menu. It will override the <code>menuPath</code> property if provided. You can also create submenu items. Refer to the corresponding <a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_47/cdts/samples/custom-menu-en.html">sample page</a> for details.</li>
+					<li><code>menuPath</code> (OPTIONAL) – A string specifying the URL to a file to be used to display a custom menu. Refer to the corresponding <a href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v4_0_47/cdts/samples/custom-menu-en.html">sample page</a> for details.</li>
 					<li><code>lngLinks</code> (OPTIONAL) – Array+single object specifying the language toggle link. Although this is optional it is usually mandatory to provide the language toggle link.
 						<pre>"lngLinks": [{
 	"lang": "fr",
@@ -828,9 +855,9 @@
 		<pre>&lt;html&gt;
 &lt;head&gt;
     ...
-    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/cdts-app-styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdts-app-styles.css"&gt;
     &lt;script
-        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/compiled/wet-en.js"
+        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"
         data-cdts-setup='{
             ...
             "mode": "app",
@@ -852,8 +879,8 @@
 &lt;body&gt;
     &lt;div id="cdts-def-top"&gt;
         &lt;!-- Write closure fall-back static file --&gt;
-        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/static/appTop-en.html --&gt;
-        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_46/cdts/static/appTop-en.html" --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/static/appTop-en.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_47/cdts/static/appTop-en.html" --&gt;
     &lt;/div&gt;
     &lt;main property="mainContentOfPage" typeof="WebPageElement" class="container"&gt;
         ...
@@ -903,9 +930,9 @@
 		<pre>&lt;html&gt;
 &lt;head&gt;
     ...
-    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/cdts-app-styles.css"&gt;
+    &lt;link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/cdts-app-styles.css"&gt;
     &lt;script
-        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/compiled/wet-en.js"
+        src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/compiled/wet-en.js"
         data-cdts-setup='{
             "mode": "app",
             ...
@@ -929,15 +956,15 @@
     &lt;/main&gt;
     &lt;div id="cdts-def-footer"&gt;
         &lt;!-- Write closure fall-back static file --&gt;
-        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/static/appFooter-en.html --&gt;
-        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_46/cdts/static/appFooter-en.html" --&gt;
+        &lt;!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/static/appFooter-en.html --&gt;
+        &lt;!--#include virtual="/app/cls/WET/gcweb/v4_0_47/cdts/static/appFooter-en.html" --&gt;
     &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 	</section>
 			<div id="def-preFooter">
 				<!-- Write closure fall-back static file -->
-				<!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_46/cdts/static/preFooter-en.html -->
+				<!-- /ROOT/etc/designs/canada/cdts/gcweb/v4_0_47/cdts/static/preFooter-en.html -->
 				</div>
 			<!-- Write closure template -->
 			<script>
