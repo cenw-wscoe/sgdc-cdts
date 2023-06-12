@@ -77,8 +77,8 @@
 					<h3 class="h5"><a href="#Section_application_references">Application templates</a></h3>
 					<ul>
 						<li><a href="#Section_appRefTop_references">Section &lt;head&gt; references</a></li>
-						<li><a href="#Section_appTop_references">Section appTop references</a></li>
-						<li><a href="#Section_appFooter_references">Section appFooter references</a></li>
+						<li><a href="#Section_appTop_references">Section <code>appTop</code> references</a></li>
+						<li><a href="#Section_appFooter_references">Section <code>appFooter</code> references</a></li>
 					</ul>
 				</section>
 				<section>
@@ -92,11 +92,11 @@
 		<p>Welcome to the GCWeb implementation guide, you will find below instructions on how to implement the GCWeb theme using the CDTS. You will also be presented with different scenarios depending on your particular implementation requirements. Please read the following sections carefully before getting started!</p>
 		<p>If you will be developing your web asset in .NET or JAVA then you can have a look at our <a href="./templates-en.html">sample templates</a> as you follow this guide. Much of the work for implementing the CDTS into the templates has already been done.</p>
 		<section>
-			<h3 id="Version_or_run_variants">Version or run variants</h3>
-			<p>At several points in the implementation page you will be presented with two options for "version" or "run" variants.</p>
+			<h3 id="Version_or_run_variants">Version or <code>run</code> variants</h3>
+			<p>At several points in the implementation page you will be presented with two options for "version" or <code>run</code> variants.</p>
 			<ul>
 				<li>The "version" variant means you will NOT automatically receive any new WET updates. You must implement a "version" in your web asset and add a mechanism to keep this updated as you do your testing for each new WET version. We suggest you use your web.config to store your version variable. At ESDC updating the web.config file in production is much easier than doing a full release. It allows web assets to stay up to date quicker by simply updating the web.config file when the web asset has been tested and confirmed to work with the new WET version. Examples are provided in our <a href="./templates-en.html">.NET and JAVA samples projects</a>.</li>
-				<li>The "run" variant means that you will automatically receive all new WET releases with no intervertion on your part using the "run" version.</li>
+				<li>The <code>run</code> variant means that you will automatically receive all new WET releases with no intervertion on your part using the <code>run</code> version.</li>
 			</ul>
 			<p>Please note that whichever decision you make you will ALWAYS receive updates to the GCWeb theme related to the mega menu. Any common changes to the header/footer will be automatically pushed to your web asset. You need to have implemented the latest or two previous versions of the CDTS to obtain updates.</p>
 		</section>
@@ -797,7 +797,7 @@
 		</ul>
 	</section>
 	<section>
-		<h3 id="Section_appTop_references">Section appTop references</h3>
+		<h3 id="Section_appTop_references">Section <code>appTop</code> references</h3>
 		<p>The <a href="#Section_top_references">Section top references</a> is <strong>replaced</strong> with the following:</p>
 		<ol>
 			<li>Add a new <code>&lt;div&gt;</code> element <strong>with an ID of</strong> <code>cdts-def-top</code>. It should be located before the <code>&lt;main&gt;</code> element on the page.</li>
@@ -846,7 +846,7 @@
 	"href": "#"
 }]</pre>
 					</li>
-					<li><code>topCusMenu</code> (OPTIONAL, defaults to false) - A boolean used to indicate whether a custom footer will be present on the page. (See <a href="#Section_appFooter_references">Section appFooter references</a>)</li>
+					<li><code>topCusMenu</code> (OPTIONAL, defaults to false) - A boolean used to indicate whether a custom footer will be present on the page. (See <a href="#Section_appFooter_references">Section <code>appFooter</code> references</a>)</li>
 					<li><code>topSecMenu</code> (OPTIONAL, defaults to false) - A boolean used to indicate whether a secondary navigation menu will be present on the page. (See <a href="#Section_menu_references">Section menu references</a>)</li>
 				</ul>
 			</li>
@@ -888,7 +888,7 @@
 &lt;/html&gt;</pre>
 	</section>
 	<section>
-		<h3 id="Section_appFooter_references">Section appFooter references</h3>
+		<h3 id="Section_appFooter_references">Section <code>appFooter</code> references</h3>
 		<p>The <a href="#Section_footer_references">Section footer references</a> is <strong>replaced</strong> with the following:</p>
 		<ol>
 			<li>Add a new <code>&lt;div&gt;</code> element <strong>with an ID of</strong> <code>cdts-def-footer</code>. It should be located after the closing of the <code>&lt;/main&gt;</code> element on the page.</li>

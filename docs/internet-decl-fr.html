@@ -77,8 +77,8 @@
 					<h3 class="h5"><a href="#Section_application_references">Gabarits d’application</a></h3>
 					<ul>
 						<li><a href="#Section_appRefTop_references">Références de la section &lt;head&gt;</a></li>
-						<li><a href="#R.C3.A9f.C3.A9rences_de_la_section_appTop">Références de la section appTop</a></li>
-						<li><a href="#R.C3.A9f.C3.A9rences_de_la_section_appFooter">Références de la section appFooter</a></li>
+						<li><a href="#R.C3.A9f.C3.A9rences_de_la_section_appTop">Références de la section <code>appTop</code></a></li>
+						<li><a href="#R.C3.A9f.C3.A9rences_de_la_section_appFooter">Références de la section <code>appFooter</code></a></li>
 					</ul>
 				</section>
 				<section>
@@ -92,11 +92,11 @@
 		<p>Bienvenue au guide de mise en oeuvre du thème GCWeb. Vous trouverez plus bas des directives sur comment mettre en oeuvre le thème GCWeb à l’aide de la SGDC. Vous trouverez également différents scénarios possibles selon les exigences que vous rencontrerez. SVP lire les sections suivantes attentivement avant de débuter.</p>
 		<p>Si vous prévoyez développer votre actif Web en .NET ou JAVA, vous pouvez suivre ce guide. Le plus gros de la mise en oeuvre des gabarits a déjà été fait.</p>
 		<section>
-			<h3 id="Contr.C3.B4le_de_versions_ou_.C2.AB_run_.C2.BB">Contrôle de versions ou «&#160;run&#160;»</h3>
-			<p>À plusieurs endroits dans ce guide, vous aurez deux options&#160;: avec contrôle de versions ou «&#160;run&#160;».</p>
+			<h3 id="Contr.C3.B4le_de_versions_ou_.C2.AB_run_.C2.BB">Contrôle de versions ou <code>run</code></h3>
+			<p>À plusieurs endroits dans ce guide, vous aurez deux options&#160;: avec contrôle de versions ou <code>run</code>.</p>
 			<ul>
 				<li>Le contrôle de version signifie que vous ne recevrez PAS de mise à jour automatique de la BOEW. Vous mettrez en place une «&#160;version&#160;» dans votre actif Web et ajouterez un mécanisme pour la garder à jour pendant que vous faites vos essais pour chaque nouvelle version de la BOEW. Nous suggérons que vous utilisiez votre fichier web.config pour stocker votre variable de version. À EDSC, mettre à jour le fichier web.config en production est beaucoup plus simple que de faire une relâche complète. Cela permet aux actifs Web de demeurer à jour plus rapidement en relâchant seulement le fichier web.config lorsque l’actif Web a été testé et qu’il fonctionne avec la nouvelle version de la BOEW. Des exemples sont fournis pour nos <a href="./templates-fr.html">gabarits .NET et JAVA (en anglais seulement)</a>.</li>
-				<li>En «&#160;run&#160;», vous recevrez automatiquement tous les nouveaux lancements de la BOEW sans aucune intervention de votre part.</li>
+				<li>En <code>run</code>, vous recevrez automatiquement tous les nouveaux lancements de la BOEW sans aucune intervention de votre part.</li>
 			</ul>
 			<p>Veuillez noter que peu importe votre choix, vous recevrez TOUJOURS des mises à jour du thème GCWeb en lien avec le mega menu. Tout changement à l’en-tête ou au pied de page sera automatiquement mis à jour pour votre actif Web. Vous devez avoir mis en place la plus récente version ou la version antérieure pour obtenir ces changements.</p>
 		</section>
@@ -797,7 +797,7 @@
 		</ul>
 	</section>
 	<section>
-		<h3 id="R.C3.A9f.C3.A9rences_de_la_section_appTop">Références de fichier de la section supérieure ("appTop")</h3>
+		<h3 id="R.C3.A9f.C3.A9rences_de_la_section_appTop">Références de fichier de la section supérieure <code>appTop</code></h3>
 		<p>Les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_sup.C3.A9rieure">références de fichier de la section supérieure</a> sont <strong>remplacées</strong> par ce qui suit&#160;:</p>
 		<ol>
 			<li>Ajouter un nouvel élément <code>&lt;div&gt;</code> <strong>avec un ID</strong> <code>cdts-def-top</code>. Il devrait être situé avant l'élément <code>&lt;main&gt;</code> sur la page.</li>
@@ -846,7 +846,7 @@
 	"href": "#"
 }]</pre>
 					</li>
-					<li><code>topCusMenu</code> (FACULTATIF, par défaut false) - Une valeur booléenne qui indique si un pied de page personalisé sera présent sur la page. (See <a href="#R.C3.A9f.C3.A9rences_de_la_section_appFooter">Références de la section appFooter</a>)</li>
+					<li><code>topCusMenu</code> (FACULTATIF, par défaut false) - Une valeur booléenne qui indique si un pied de page personalisé sera présent sur la page. (See <a href="#R.C3.A9f.C3.A9rences_de_la_section_appFooter">Références de la section <code>appFooter</code></a>)</li>
 					<li><code>topSecMenu</code> (FACULTATIF, par défaut false) - Une valeur booléenne qui indique si un menu de navigation secondaire sera présent sur la page. (Voir <a href="#R.C3.A9f.C3.A9rences_du_menu_de_la_section">Références du menu de la section</a>)</li>
 				</ul>
 			</li>
@@ -888,7 +888,7 @@
 &lt;/html&gt;</pre>
 	</section>
 	<section>
-		<h3 id="R.C3.A9f.C3.A9rences_de_la_section_appFooter">Références de fichier de la section du pied de page ("appFooter")</h3>
+		<h3 id="R.C3.A9f.C3.A9rences_de_la_section_appFooter">Références de fichier de la section du pied de page <code>appFooter</code></h3>
 		<p>Les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_du_pied_de_page">références de fichier de la section du pied de page</a> sont <strong>remplacées</strong> par ce qui suit&#160;:</p>
 		<ol>
 			<li>Ajouter un nouvel élément <code>&lt;div&gt;</code> <strong>avec un ID</strong> <code>cdts-def-footer</code>. Il devrait être situé après la fermeture de l'élément <code>&lt;/main&gt;</code> sur la page.</li>

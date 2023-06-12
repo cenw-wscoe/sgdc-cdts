@@ -71,7 +71,7 @@ matrix:
     encoding: utf-8
   pipeline:
   - pyspelling.filters.html:
-      comments: false # We have a lot of paths and other stuff in out HTML comments, truning spell check off
+      comments: false # We have a lot of paths and other stuff in out HTML comments, turning spell check off
       attributes:
       - title
       - alt
@@ -97,7 +97,7 @@ matrix:
     encoding: utf-8
   pipeline:
   - pyspelling.filters.html:
-      comments: false # We have a lot of paths and other stuff in out HTML comments, truning spell check off
+      comments: false # We have a lot of paths and other stuff in out HTML comments, turning spell check off
       attributes:
       - title
       - alt

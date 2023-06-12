@@ -49,7 +49,7 @@
 					<h3 class="h5 mrgn-tp-0">Default templates</h3>
 					<ul>
 						<li><a href="#CDTS_page_template">CDTS page template</a></li>
-						<li><a href="#subTheme_sample_look">subTheme sample look</a></li>
+						<li><a href="#subTheme_sample_look"><code>subTheme</code> sample look</a></li>
 						<li><a href="#Section_.3Chead.3E_references">Section <code>&lt;head&gt;</code> references</a></li>
 						<li><a href="#Section_top_references">Section top references</a></li>
 						<li><a href="#Section_pre-footer_references">Section pre-footer references</a></li>
@@ -78,8 +78,8 @@
 					<h3 class="h5"><a href="#Section_application_references">Application templates</a></h3>
 					<ul>
 						<li><a href="#Section_appRefTop_references">Section &lt;head&gt; references</a></li>
-						<li><a href="#Section_appTop_references">Section appTop references</a></li>
-						<li><a href="#Section_appFooter_references">Section appFooter references</a></li>
+						<li><a href="#Section_appTop_references">Section <code>appTop</code> references</a></li>
+						<li><a href="#Section_appFooter_references">Section <code>appFooter</code> references</a></li>
 					</ul>
 				</section>
 				<section>
@@ -93,11 +93,11 @@
 		<p>Welcome to the GCIntranet (intranet.canada.ca) implementation guide, you will find below instructions on how to implement the GCIntranet theme using the CDTS. You will also be presented with different scenarios depending on your particular implementation requirements. Please read the following sections carefully before getting started!</p>
 		<p>If you will be developing your web asset in .NET or JAVA then you can have a look at our <a href="./templates-en.html">sample templates</a> as you follow this guide. Much of the work for implementing the CDTS into the templates has already been done.</p>
 		<section>
-			<h3 id="Version_or_run_variants">Version or run variants</h3>
-			<p>At several points in the implementation guide you will be presented with two options for "version" or "run" variants.</p>
+			<h3 id="Version_or_run_variants">Version or <code>run</code> variants</h3>
+			<p>At several points in the implementation guide you will be presented with two options for "version" or <code>run</code> variants.</p>
 			<ul>
 				<li>The "version" variant means you will NOT automatically receive any new WET updates. You must implement a "version" in your web asset and add a mechanism to keep this updated as you do your testing for each new WET version. We suggest you use your web.config to store your version variable. At ESDC updating the web.config file in production is much easier than doing a full release. It allows web assets to stay up to date quicker by simply updating the web.config file when the web asset has been tested and confirmed to work with the new WET version. Examples are provided in our <a href="./templates-en.html">.NET and JAVA samples projects</a>.</li>
-				<li>The "run" variant means that you will automatically receive all new WET releases with no intervertion on your part using the "run" version.</li>
+				<li>The <code>run</code> variant means that you will automatically receive all new WET releases with no intervertion on your part using the <code>run</code> version.</li>
 			</ul>
 			<p>Please note that whichever decision you make you will ALWAYS receive updates to the GCIntranet theme related to the mega menu or to the GoC activities and initiatives section. Any common changes to the header/footer will be automatically pushed to your web asset. You need to have implemented the latest or two previous versions of the CDTS to obtain updates.</p>
 		</section>
@@ -156,8 +156,8 @@
 		<img class="img-responsive mrgn-bttm-md" alt="CDTS page template" src="../img/Cdts-gci-page-template.png">
 	</section>
 	<section>
-		<h3 id="subTheme_sample_look">subTheme sample look</h3>
-		<p>The following screenshot is the ESDC intranet homepage using the CDTS. The subTheme variable allows you to have a custom look while still having the benefits of the CDTS and WET. If you'd like to use the CDTS but have a custom look then <a href="./contact-en.html">contact the CDTS team</a> to enable this option.</p>
+		<h3 id="subTheme_sample_look"><code>subTheme</code> sample look</h3>
+		<p>The following screenshot is the ESDC intranet homepage using the CDTS. The <code>subTheme</code> variable allows you to have a custom look while still having the benefits of the CDTS and WET. If you'd like to use the CDTS but have a custom look then <a href="./contact-en.html">contact the CDTS team</a> to enable this option.</p>
 		<img class="img-responsive mrgn-bttm-md" alt="CDTS sub theme example" src="../img/Cdts-subtheme-esdc.png">
 	</section>
 	<section>
@@ -767,7 +767,7 @@
 		</ul>
 	</section>
 	<section>
-		<h3 id="Section_appTop_references">Section appTop references</h3>
+		<h3 id="Section_appTop_references">Section <code>appTop</code> references</h3>
 		<p>The <a href="#Section_top_references">Section top references</a> is <strong>replaced</strong> with the following:</p>
 		<ol>
 			<li>Add a new <code>&lt;div&gt;</code> element <strong>with an ID of</strong> <code>cdts-def-top</code>. It should be located before the <code>&lt;main&gt;</code> element on the page.</li>
@@ -865,7 +865,7 @@
 &lt;/html&gt;</pre>
 	</section>
 	<section>
-		<h3 id="Section_appFooter_references">Section appFooter references</h3>
+		<h3 id="Section_appFooter_references">Section <code>appFooter</code> references</h3>
 		<p>The <a href="#Section_footer_references">Section footer references</a> is <strong>replaced</strong> with the following:</p>
 		<ol>
 			<li>Add a new <code>&lt;div&gt;</code> element <strong>with an ID of</strong> <code>cdts-def-footer</code>. It should be located after the closing of the <code>&lt;/main&gt;</code> element on the page.</li>
