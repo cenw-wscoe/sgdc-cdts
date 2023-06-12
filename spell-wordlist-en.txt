@@ -53,10 +53,12 @@ PeopleSoft
 pre
 Publicentre
 RNS
+SDS
 th
 transactional
 unclosed
 url
 WCAG
 WET-BOEW
+WRI
 www

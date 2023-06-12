@@ -25,6 +25,7 @@ cybersécurité
 d'Ariane
 d'EDSC
 d'implémentation
+d’Emploi
 DEC
 developer.mozilla.org
 DMs
@@ -104,6 +105,7 @@ RVD
 SC
 schools.com
 SCT
+SDS
 sécure
 SGDC
 SM
