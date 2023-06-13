@@ -25,7 +25,7 @@ cybersécurité
 d'Ariane
 d'EDSC
 d'implémentation
-d’Emploi
+d’emploi
 DEC
 developer.mozilla.org
 DMs
@@ -144,7 +144,7 @@ BOEW
 Voulez-vous
 utiliserez-vous
 mega
-l’Éditeur
+l’éditeur
 CDTS
 Êtes-vous
 recommendé
