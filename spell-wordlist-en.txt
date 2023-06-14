@@ -5,7 +5,6 @@ canada
 CDN
 CDTS
 collab
-config
 connex
 CPP
 cyber
@@ -62,7 +61,6 @@ WCAG
 WET-BOEW
 WRI
 www
-timeframes
 SGDC
 gc
 hrsdc
@@ -70,4 +68,3 @@ rhdcc
 CoE
 WS
 BOEW
-prefooter

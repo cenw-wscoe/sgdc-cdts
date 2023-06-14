@@ -157,10 +157,4 @@ decision
 selection
 tree
 l’initiative
-devrais-je
-ci-bas
 svp
-Rappelez-vous
-nécéssite
-personnalisée
-personnalisé

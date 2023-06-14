@@ -189,7 +189,7 @@
 					<li><code>webAnalytics</code> (FACULTATIF) - Un objet indiquant la configuration de l'option Adobe Analytics (AA). Se référer à la <a href="https://cdts.service.canada.ca/app/cls/WET/gcintranet/v4_0_47/cdts/samples/adobe-analytics-fr.html">page d'exemple</a> correspondante pour les détails.</li>
 				</ul>
 			</li>
-			<li><code>top</code>, <code>preFooter</code>, <code>footer</code>, <code>secmenu</code>, <code>splash</code> (FACULTATIF) - Objets indiquant la configuration de chaque section, au besoin. Se référer à la section de documentation correspondante ci-bas pour les détails.</li>
+			<li><code>top</code>, <code>preFooter</code>, <code>footer</code>, <code>secmenu</code>, <code>splash</code> (FACULTATIF) - Objets indiquant la configuration de chaque section, au besoin. Se référer à la section de documentation correspondante ci-dessous pour les détails.</li>
 		</ul>
 		<p><strong>Exemple</strong> (En utilisant l'attribut <code>data-cdts-setup</code>):</p>
 		<p><strong class="text-uppercase">REMARQUE</strong>: Pour la valeur JSON, utiliser des apostrophes (<code>&apos;</code>) pour spécifier l'attribut et s'assurer que les apostrophes dans la valeur elle-même sont encodés (<code>&amp;apos;</code>)</p>
@@ -256,7 +256,7 @@
 		<p><strong>REMARQUE</strong>&#160;: N’oubliez pas de toujours indiquer dans la section <code>&lt;noscript&gt;</code> le fichier statique de repli, faute de quoi votre page ne s’adaptera pas sans heurt lorsque JavaScript est désactivé.</p>
 	</section>
 	<section>
-		<h3 id="R.C3.A9f.C3.A9rences_de_fichier_de_la_section_sup.C3.A9rieure">Références de fichier de la section supérieure ("top")</h3>
+		<h3 id="R.C3.A9f.C3.A9rences_de_fichier_de_la_section_sup.C3.A9rieure">Références de fichier de la section supérieure (<code>top</code>)</h3>
 		<p>Dans la section supérieure de votre page, vous devrez faire ce qui suit:</p>
 		<ol>
 			<li>Ajouter un nouvel élément <code>&lt;div&gt;</code> <strong>avec un ID</strong> <code>cdts-def-top</code>. Il devrait être situé avant l'élément <code>&lt;main&gt;</code> sur la page.</li>
@@ -505,7 +505,7 @@
 		<p>Si votre actif Web correspond à ces critères, vous pouvez suivre les directives suivantes&#160;:</p>
 		<ul>
 			<li>Les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_.3Chead.3E">références de la section <code>&lt;head&gt;</code></a> ne changent pas.</li>
-			<li>Les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_sup.C3.A9rieure">références de la section top</a> restent les mêmes mis à part pour ces modifications&#160;:
+			<li>Les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_sup.C3.A9rieure">références de la section <code>top</code></a> restent les mêmes mis à part pour ces modifications&#160;:
 				<ul>
 					<li><code>breadcrumbs</code> (OBLIGATOIRE) – Veuillez noter que dans une page en mode transaction, le fil d’Ariane est remplacé par un lien qui permet de quitter la transaction et de diriger l’utilisateur vers un endroit sécuritaire où il peut abandonner la transaction courante et la recommencer s’il le veut.
 						<pre>"breadcrumbs": [{
@@ -613,7 +613,7 @@
 		<p>Si vous prévoyez utiliser le menu de la section sur certaines de vos pages, suivez les étapes suivantes&#160;:</p>
 		<ul>
 			<li>Les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_.3Chead.3E">références de la section <code>&lt;head&gt;</code></a> ne changent pas.</li>
-			<li>Les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_sup.C3.A9rieure">références de la section «&#160;top&#160;»</a> sont identiques, mis à part les modifications suivantes&#160;:
+			<li>Les <a href="#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_sup.C3.A9rieure">références de la section <code>top</code></a> sont identiques, mis à part les modifications suivantes&#160;:
 				<ul>
 					<li><code>topSecMenu</code> (DOIT ETRE true) - Une valeur booléenne qui indique si un menu de navigation secondaire sera présent sur la page.</li>
 				</ul>

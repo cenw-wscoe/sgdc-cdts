@@ -51,7 +51,7 @@
 						<li><a href="#CDTS_page_template">CDTS page template</a></li>
 						<li><a href="#subTheme_sample_look"><code>subTheme</code> sample look</a></li>
 						<li><a href="#Section_.3Chead.3E_references">Section <code>&lt;head&gt;</code> references</a></li>
-						<li><a href="#Section_top_references">Section top references</a></li>
+						<li><a href="#Section_top_references">Section <code>top</code> references</a></li>
 						<li><a href="#Section_pre-footer_references">Section <code>preFooter</code> references</a></li>
 						<li><a href="#Section_footer_references">Section <code>footer</code> references</a></li>
 					</ul>
@@ -99,11 +99,11 @@
 				<li>The "version" variant means you will NOT automatically receive any new WET updates. You must implement a "version" in your web asset and add a mechanism to keep this updated as you do your testing for each new WET version. We suggest you use your web.config to store your version variable. At ESDC updating the web.config file in production is much easier than doing a full release. It allows web assets to stay up to date quicker by simply updating the web.config file when the web asset has been tested and confirmed to work with the new WET version. Examples are provided in our <a href="./templates-en.html">.NET and JAVA samples projects</a>.</li>
 				<li>The <code>run</code> variant means that you will automatically receive all new WET releases with no intervention on your part using the <code>run</code> version.</li>
 			</ul>
-			<p>Please note that whichever decision you make you will ALWAYS receive updates to the GCIntranet theme related to the mega menu or to the GoC activities and initiatives section. Any common changes to the header/<code>footer</code> will be automatically pushed to your web asset. You need to have implemented the latest or two previous versions of the CDTS to obtain updates.</p>
+			<p>Please note that whichever decision you make you will ALWAYS receive updates to the GCIntranet theme related to the mega menu or to the GoC activities and initiatives section. Any common changes to the header/footer will be automatically pushed to your web asset. You need to have implemented the latest or two previous versions of the CDTS to obtain updates.</p>
 		</section>
 		<section>
 			<h3 id="Application_templates">Application templates</h3>
-			<p>Will you need a custom header/<code>footer</code>? Keep in mind this is different than removing or adding certain elements that are allowed as per the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">C&amp;IA specifications document</a>. Any element that can be implemented using the C&amp;IA specifications document does not require a custom header/<code>footer</code> and is available in the default version of the CDTS. Currently it is advisable to not implement a custom header/<code>footer</code> unless you have permission to do so from your department, TBS or Principal Publisher. If you have permission to do so then follow the instructions for the "Application templates" in the menu on the right.</p>
+			<p>Will you need a custom header/footer? Keep in mind this is different than removing or adding certain elements that are allowed as per the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">C&amp;IA specifications document</a>. Any element that can be implemented using the C&amp;IA specifications document does not require a custom header/footer and is available in the default version of the CDTS. Currently it is advisable to not implement a custom header/footer unless you have permission to do so from your department, TBS or Principal Publisher. If you have permission to do so then follow the instructions for the "Application templates" in the menu on the right.</p>
 		</section>
 	</section>
 </div>
@@ -117,7 +117,7 @@
 		<li>Pre-content space (for global wide announcements)</li>
 		<li>Post-content space (for global wide announcements)</li>
 		<li>Government of Canada activities and initiatives section</li>
-		<li>GCIntranet <code>footer</code> (menu, links, images, etc...)</li>
+		<li>GCIntranet footer (menu, links, images, etc...)</li>
 	</ul>
 </section>
 <section>
@@ -150,7 +150,7 @@
 			<li>Section <code>&lt;head&gt;</code> for file references and CDTS activation</li>
 			<li>Top section of your page</li>
 			<li>Pre-footer section</li>
-			<li><code>footer</code> section</li>
+			<li>Footer section</li>
 		</ul>
 		<p>All fall-back static files can be found on our main GCPedia page. Whenever you must go through a release cycle you must always grab the latest fall-back static files. These ensure that a basic template is available for users who have Javascript disabled.</p>
 		<img class="img-responsive mrgn-bttm-md" alt="CDTS page template" src="../img/Cdts-gci-page-template.png">
@@ -269,7 +269,7 @@
 		<p><strong class="text-uppercase">Note</strong>: Don’t forget to always include in the <code>&lt;noscript&gt;</code> section with the fall-back static file otherwise your page will not degrade gracefully when JavaScript is disabled.</p>
 	</section>
 	<section>
-		<h3 id="Section_top_references">Section top references</h3>
+		<h3 id="Section_top_references">Section <code>top</code> references</h3>
 		<p>In the top section of your page you will need to perform the following:</p>
 		<ol>
 			<li>Add a new <code>&lt;div&gt;</code> element <strong>with an ID of</strong> <code>cdts-def-top</code>. It should be located before the <code>&lt;main&gt;</code> element on the page.</li>
@@ -396,13 +396,13 @@
 	</section>
 	<section>
 		<h3 id="Section_footer_references">Section <code>footer</code> references</h3>
-		<p>In the <code>footer</code> section of your page you will need to perform the following:</p>
+		<p>In the footer section of your page you will need to perform the following:</p>
 		<ol>
 			<li>Add a new <code>&lt;div&gt;</code> element <strong>with an ID of</strong> <code>cdts-def-footer</code>. It should be located after the closing of the <code>&lt;/main&gt;</code> element on the page.</li>
 			<li>Insert/include fall-back static content in the new <code>&lt;div&gt;</code> you have created.</li>
 			<li>For configuration, add a <code>footer</code> property to the CDTS configuration object in the &lt;head&gt;.  It can include the following properties:
 				<ul>
-					<li><code>contactLinks</code> (OPTIONAL) – Array+single object to customize the "contact us" link located in the <code>footer</code> of the page.
+					<li><code>contactLinks</code> (OPTIONAL) – Array+single object to customize the "contact us" link located in the footer of the page.
 				<pre>"contactLinks": [{
 	"href": "#"
 }]</pre>
@@ -518,7 +518,7 @@
 		<p>If your web asset meets those requirements then you can apply the following steps:</p>
 		<ul>
 			<li>The <a href="#Section_.3Chead.3E_references">Section <code>&lt;head&gt;</code> references</a> don't change.</li>
-			<li>The <a href="#Section_top_references">Section top references</a> are the same except for the following modifications:
+			<li>The <a href="#Section_top_references">Section <code>top</code> references</a> are the same except for the following modifications:
 				<ul>
 					<li><code>breadcrumbs</code> (MANDATORY) – Note that in a transactional scenario, the breadcrumbs are replaced with a link to exit the transaction that directs users to a safe point where they can abandon the current transaction and restart it should they wish.
 						<pre>"breadcrumbs": [{
@@ -546,22 +546,22 @@
 			</li>
 			<li>The <a href="#Section_footer_references">Section <code>footer</code> references</a> are the same except for the following modifications:
 				<ul>
-					<li><code>contactLinks</code> (OPTIONAL) – Array+single object to customize the "contact us" link located in the <code>footer</code> of the page. You can also add an optional variable to have the link open in a new window with <code>"newWindow": true</code>
+					<li><code>contactLinks</code> (OPTIONAL) – Array+single object to customize the "contact us" link located in the footer of the page. You can also add an optional variable to have the link open in a new window with <code>"newWindow": true</code>
 				<pre>"contactLinks": [{
 	"href": "#",
 	"newWindow": true
 }]</pre>
 					</li>
-					<li><code>privacyLink</code> (OPTIONAL) – Array+single object to customize the "Privacy" link located in the <code>footer</code> of the page. You can also add an optional variable to have the link open in a new window with <code>"newWindow": true</code>.
+					<li><code>privacyLink</code> (OPTIONAL) – Array+single object to customize the "Privacy" link located in the footer of the page. You can also add an optional variable to have the link open in a new window with <code>"newWindow": true</code>.
 				<pre>"privacyLink": [{
 	"href": "#",
 	"newWindow": true
 }]</pre>
 					</li>
-					<li><code>showFooter</code> (MUST BE SET TO false) - A boolean used to determine whether to display the page <code>footer</code> area.
+					<li><code>showFooter</code> (MUST BE SET TO false) - A boolean used to determine whether to display the page footer area.
 						<pre>"showFooter": false</pre>
 					</li>
-					<li><code>termsLink</code> (OPTIONAL) – Array+single object to customize the "Terms and conditions" link located in the <code>footer</code> of the page. You can also add an optional variable to have the link open in a new window with <code>"newWindow": true</code>.
+					<li><code>termsLink</code> (OPTIONAL) – Array+single object to customize the "Terms and conditions" link located in the footer of the page. You can also add an optional variable to have the link open in a new window with <code>"newWindow": true</code>.
 				<pre>"termsLink": [{
 	"href": "#",
 	"newWindow": true
@@ -626,7 +626,7 @@
 		<p>If you plan on using the section menu on some of your pages, follow these steps:</p>
 		<ul>
 			<li>The <a href="#Section_.3Chead.3E_references">Section <code>&lt;head&gt;</code> references</a> don't change.</li>
-			<li>The <a href="#Section_top_references">Section top references</a> are the same except for the following modifications:
+			<li>The <a href="#Section_top_references">Section <code>top</code> references</a> are the same except for the following modifications:
 				<ul>
 					<li><code>topSecMenu</code> (MUST BE SET TO true) - A boolean used to indicate whether a secondary navigation menu will be present on the page.
 						<pre>"topSecMenu": true</pre>
@@ -758,7 +758,7 @@
 &lt;/html&gt;</pre>
 	</section>
 	<h2 id="Section_application_references">Application page references</h2>
-	<p>The CDTS can be used by dynamic web applications that need a custom header and/or <code>footer</code>. Before proceeding please ensure you have permission from your department, TBS or Principal Publisher before proceeding. The changes below <strong>DO NOT</strong> follow the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">C&amp;IA specifications document</a>. All sections documented above apply with the following changes:</p>
+	<p>The CDTS can be used by dynamic web applications that need a custom header and/or footer. Before proceeding please ensure you have permission from your department, TBS or Principal Publisher before proceeding. The changes below <strong>DO NOT</strong> follow the <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-information-architecture-specification.html">C&amp;IA specifications document</a>. All sections documented above apply with the following changes:</p>
 	<section>
 		<h3 id="Section_appRefTop_references">Section <code>&lt;head&gt;</code> references</h3>
 		<p>The <a href="#Section_.3Chead.3E_references">Section <code>&lt;head&gt;</code> references</a> are the same except for the following modifications:</p>
@@ -768,7 +768,7 @@
 	</section>
 	<section>
 		<h3 id="Section_appTop_references">Section <code>appTop</code> references</h3>
-		<p>The <a href="#Section_top_references">Section top references</a> is <strong>replaced</strong> with the following:</p>
+		<p>The <a href="#Section_top_references">Section <code>top</code> references</a> is <strong>replaced</strong> with the following:</p>
 		<ol>
 			<li>Add a new <code>&lt;div&gt;</code> element <strong>with an ID of</strong> <code>cdts-def-top</code>. It should be located before the <code>&lt;main&gt;</code> element on the page.</li>
 			<li>Insert/include fall-back static content in the new <code>&lt;div&gt;</code> you have created.</li>
@@ -872,8 +872,8 @@
 			<li>Insert/include fall-back static content in the new <code>&lt;div&gt;</code> you have created.</li>
 			<li>For configuration, add a <code>footer</code> property to the CDTS configuration object in the &lt;head&gt;.  It can include the following properties:
 				<ul>
-					<li><code>footerPath</code> (OPTIONAL) – A string specifying the URL to a file to be used to display a custom <code>footer</code>. (esdc theme only, footerSections takes precedence)</li>
-					<li><code>footerSections</code> (OPTIONAL) – Array of footerSection objects to create a custom set of columns for your <code>footer</code> links.
+					<li><code>footerPath</code> (OPTIONAL) – A string specifying the URL to a file to be used to display a custom footer. (esdc theme only, footerSections takes precedence)</li>
+					<li><code>footerSections</code> (OPTIONAL) – Array of footerSection objects to create a custom set of columns for your footer links.
 					<pre>"footerSections": [{
     "sectionName": "Section 1",
     "customFooterLinks": [{
