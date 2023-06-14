@@ -91,6 +91,7 @@ l'URL
 l’éditeur
 MaPayeGC
 maSGE
+méga
 mozilla
 NAS
 NC-SGDC-CDTS-GD
