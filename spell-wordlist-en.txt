@@ -1,10 +1,13 @@
 analytics
 ASMT
 ATIP
+BOEW
 canada
 CDN
 CDTS
+CoE
 collab
+config
 connex
 CPP
 cyber
@@ -17,6 +20,7 @@ EI
 eng
 EnviroTel
 ESDC
+gc
 GC
 GCcampus
 GCintranet
@@ -28,6 +32,7 @@ GEDS
 GoC
 Gouvernement
 GST
+hrsdc
 hrsdc-rhdcc.gc.ca
 HST
 html
@@ -51,8 +56,10 @@ pedia
 PeopleSoft
 pre
 Publicentre
+rhdcc
 RNS
 SDS
+SGDC
 th
 transactional
 unclosed
@@ -60,12 +67,5 @@ url
 WCAG
 WET-BOEW
 WRI
-www
-SGDC
-gc
-hrsdc
-rhdcc
-CoE
 WS
-BOEW
-config
+www
