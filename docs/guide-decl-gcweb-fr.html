@@ -39,28 +39,28 @@
 	<p data-json-replace="../ajax/data.json#/noteFr">Note</p>
 </div>
 <div class="alert alert-info">
-	<p><strong>Etes-vous à la bonne place?</strong> Ce guide est conçu pour trouver rapidement les sections nécessaires pour implémenter le SGDC. Si vous n'êtes pas familiés avec les SGDC il est recommendé de lire le <a href="./internet-decl-fr.html">Guide d'implementation GCWeb</a> pour des instruction plus détaillées.</p>
+	<p><strong>Êtes-vous à la bonne place?</strong> Ce guide est conçu pour trouver rapidement les sections nécessaires pour implémenter le SGDC. Si vous n'êtes pas familier avec les SGDC il est recommandé de lire le <a href="./intranet-decl-fr.html">Guide de mise en œuvre du site GCWeb</a> pour obtenir des instructions détaillées.</p>
 </div>
 <div lang="fr">
 <div class="row">
 	<div class="col-md-4 pull-right">
 		<section class="panel panel-default mrgn-tp-lg">
 			<header class="panel-heading">
-				<h2 id="CDTS_implementation" class="panel-title">Implementation SGDC</h2>
+				<h2 id="CDTS_implementation" class="panel-title">Mise en œuvre SGDC</h2>
 			</header>
 			<div class="panel-body">
 				<section>
 					<h3 class="h5 mrgn-tp-0">Liste de vérification GCWeb normal</h3>
 					<ul>
 						<li><a href="#GCWeb_.2F_version_.2F_default">Version</a></li>
-						<li><a href="#GCWeb_.2F_run_.2F_default">run</a></li>
+						<li><a href="#GCWeb_.2F_run_.2F_default"><code>run</code></a></li>
 					</ul>
 				</section>
 				<section>
 					<h3 class="h5 mrgn-tp-0">Liste de vérification GCWeb application</h3>
 					<ul>
 						<li><a href="#GCWeb_.2F_version_.2F_application">Version</a></li>
-						<li><a href="#GCWeb_.2F_run_.2F_application">run</a></li>
+						<li><a href="#GCWeb_.2F_run_.2F_application"><code>run</code></a></li>
 					</ul>
 				</section>
 			</div>
@@ -73,85 +73,85 @@
 				<h3 id="Section_.3Chead.3E_references">Références de la section <code>&lt;head&gt;</code></h3>
 				<ul>
 					<li>Avez-vous ajouté les deux références aux fichiers du SGDC (<code>cdts-styles.css</code> / <code>wet-[language].js</code>)?</li>
-					<li>Avez-vous implémenté un méchanisme de version (web.config, fichier XML, conifguration en base de données, etc...) pour contrôler le <a href="internet-decl-fr.html#Information_.C3.A0_propos_du_contr.C3.B4le_de_versions">URL, thème et version</a> du SGDC?</li>
+					<li>Avez-vous implémenté un mécanisme de version (web.config, fichier XML, configuration en base de données, etc...) pour contrôler le <a href="internet-decl-fr.html#Information_.C3.A0_propos_du_contr.C3.B4le_de_versions">URL, thème et version</a> du SGDC?</li>
 					<li>Avez-vous ajouté la section <code>&lt;noscript&gt;</code>?</li>
 					<li>Avez-vous inséré le contenu statique de repli dans cette section <code>&lt;noscript&gt;</code>?</li>
 					<li>Avez-vous ajouté l'attribut <code>data-cdts-setup</code> pour spécifier <strong>l'objet de configuration SGDC</strong> OU appelé la fonction <code>wet.builder.setup</code>?</li>
-					<li>Pour plus de détails, référez-vous au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_.3Chead.3E">guide d'implémentation.</a></li>
+					<li>Pour plus de détails, se référer au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_.3Chead.3E">guide de mise en œuvre.</a></li>
 				</ul>
 			</section>
 			<section>
-				<h3 id="Section_top_references">Références de la section "top"</h3>
+				<h3 id="Section_top_references">Références de la section <code>top</code></h3>
 				<ul>
-					<li>Avez-vous ajouté le nouvel element <code>&lt;div id="cdts-def-top"&gt;</code>&#160;?</li>
+					<li>Avez-vous ajouté le nouvel élément <code>&lt;div id="cdts-def-top"&gt;</code>&#160;?</li>
 					<li>Avez-vous inséré le fichier statique de repli dans l'élément <code>&lt;div id="cdts-def-top"&gt;</code>?</li>
-					<li>Avez-vous ajouté un objet <code>top</code> dans l'objet de configuration SGDC pour personalisation?</li>
-					<li>Pour plus de détails, référez-vous au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_sup.C3.A9rieure">guide d'implémentation.</a></li>
+					<li>Avez-vous ajouté un objet <code>top</code> dans l'objet de configuration SGDC pour personnalisation?</li>
+					<li>Pour plus de détails, se référer au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_sup.C3.A9rieure">guide de mise en œuvre.</a></li>
 				</ul>
 			</section>
 			<section>
-				<h3 id="Section_pre-footer_references">Références de la section "prefooter"</h3>
+				<h3 id="Section_pre-footer_references">Références de la section <code>preFooter</code></h3>
 				<ul>
-					<li>Avez-vous ajouté le nouvel element <code>&lt;div id="cdts-def-prefooter"&gt;</code>&#160;?</li>
+					<li>Avez-vous ajouté le nouvel élément <code>&lt;div id="cdts-def-prefooter"&gt;</code>&#160;?</li>
 					<li>Avez-vous inséré le fichier statique de repli dans l'élément <code>&lt;div id="cdts-def-prefooter"&gt;</code>?</li>
-					<li>Avez-vous ajouté un objet <code>prefooter</code> dans l'objet de configuration SGDC pour personalisation?</li>
-					<li>Pour plus de détails, référez-vous au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_fichiers_de_la_section_qui_pr.C3.A9c.C3.A8de_le_pied_de_page">guide d'implémentation.</a></li>
+					<li>Avez-vous ajouté un objet <code>preFooter</code> dans l'objet de configuration SGDC pour personnalisation?</li>
+					<li>Pour plus de détails, se référer au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_fichiers_de_la_section_qui_pr.C3.A9c.C3.A8de_le_pied_de_page">guide de mise en œuvre.</a></li>
 				</ul>
 			</section>
 			<section>
-				<h3 id="Section_footer_references">Références de la section "footer"</h3>
+				<h3 id="Section_footer_references">Références de la section <code>footer</code></h3>
 				<ul>
-					<li>Avez-vous ajouté le nouvel element <code>&lt;div id="cdts-def-footer"&gt;</code>&#160;?</li>
+					<li>Avez-vous ajouté le nouvel élément <code>&lt;div id="cdts-def-footer"&gt;</code>&#160;?</li>
 					<li>Avez-vous inséré le fichier statique de repli dans l'élément <code>&lt;div id="cdts-def-footer"&gt;</code>?</li>
-					<li>Avez-vous ajouté un objet <code>footer</code> dans l'objet de configuration SGDC pour personalisation?</li>
-					<li>Pour plus de détails, référez-vous au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_du_pied_de_page">guide d'implémentation.</a></li>
+					<li>Avez-vous ajouté un objet <code>footer</code> dans l'objet de configuration SGDC pour personnalisation?</li>
+					<li>Pour plus de détails, se référer au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_du_pied_de_page">guide de mise en œuvre.</a></li>
 				</ul>
 			</section>
 		</section>
 		<section>
-			<h2 id="GCWeb_.2F_run_.2F_default">GCWeb / run / default</h2>
+			<h2 id="GCWeb_.2F_run_.2F_default">GCWeb / <code>run</code> / défaut</h2>
 			<section>
 				<h3 id="Section_.3Chead.3E_references_2">Références de la section <code>&lt;head&gt;</code></h3>
 				<ul>
 					<li>Avez-vous ajouté les deux références aux fichiers du SGDC (<code>cdts-styles.css</code> / <code>wet-[language].js</code>)?</li>
-					<li>Avez-vous référencé les fichiers "run" (le URL de SGDC contiendra "rn")?</li>
+					<li>Avez-vous référencé les fichiers <code>run</code> (le URL de SGDC contiendra <code>rn</code>)?</li>
 					<li>Avez-vous ajouté la section <code>&lt;noscript&gt;</code>?</li>
 					<li>Avez-vous inséré le contenu statique de repli dans cette section <code>&lt;noscript&gt;</code>?</li>
 					<li>Avez-vous ajouté l'attribut <code>data-cdts-setup</code> pour spécifier <strong>l'objet de configuration SGDC</strong> OU appelé la fonction <code>wet.builder.setup</code>?</li>
-					<li>Pour plus de détails, référez-vous au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_.3Chead.3E">guide d'implémentation.</a></li>
+					<li>Pour plus de détails, se référer au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_.3Chead.3E">guide de mise en œuvre.</a></li>
 				</ul>
 			</section>
 			<section>
-				<h3 id="Section_top_references_2">Références de la section "top"</h3>
+				<h3 id="Section_top_references_2">Références de la section <code>top</code></h3>
 				<ul>
-					<li>Avez-vous ajouté le nouvel element <code>&lt;div id="cdts-def-top"&gt;</code>&#160;?</li>
+					<li>Avez-vous ajouté le nouvel élément <code>&lt;div id="cdts-def-top"&gt;</code>&#160;?</li>
 					<li>Avez-vous inséré le fichier statique de repli dans l'élément <code>&lt;div id="cdts-def-top"&gt;</code>?</li>
-					<li>Avez-vous ajouté un objet <code>top</code> dans l'objet de configuration SGDC pour personalisation?</li>
-					<li>Pour plus de détails, référez-vous au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_sup.C3.A9rieure">guide d'implémentation.</a></li>
+					<li>Avez-vous ajouté un objet <code>top</code> dans l'objet de configuration SGDC pour personnalisation?</li>
+					<li>Pour plus de détails, se référer au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_sup.C3.A9rieure">guide de mise en œuvre.</a></li>
 				</ul>
 			</section>
 			<section>
-				<h3 id="Section_pre-footer_references_2">Références de la section "prefooter"</h3>
+				<h3 id="Section_pre-footer_references_2">Références de la section <code>preFooter</code></h3>
 				<ul>
-					<li>Avez-vous ajouté le nouvel element <code>&lt;div id="cdts-def-prefooter"&gt;</code>&#160;?</li>
+					<li>Avez-vous ajouté le nouvel élément <code>&lt;div id="cdts-def-prefooter"&gt;</code>&#160;?</li>
 					<li>Avez-vous inséré le fichier statique de repli dans l'élément <code>&lt;div id="cdts-def-prefooter"&gt;</code>?</li>
-					<li>Avez-vous ajouté un objet <code>prefooter</code> dans l'objet de configuration SGDC pour personalisation?</li>
-					<li>Pour plus de détails, référez-vous au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_fichiers_de_la_section_qui_pr.C3.A9c.C3.A8de_le_pied_de_page">guide d'implémentation.</a></li>
+					<li>Avez-vous ajouté un objet <code>preFooter</code> dans l'objet de configuration SGDC pour personnalisation?</li>
+					<li>Pour plus de détails, se référer au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_fichiers_de_la_section_qui_pr.C3.A9c.C3.A8de_le_pied_de_page">guide de mise en œuvre.</a></li>
 				</ul>
 			</section>
 			<section>
-				<h3 id="Section_footer_references_2">Références de la section "footer"</h3>
+				<h3 id="Section_footer_references_2">Références de la section <code>footer</code></h3>
 				<ul>
-					<li>Avez-vous ajouté le nouvel element <code>&lt;div id="cdts-def-footer"&gt;</code>&#160;?</li>
+					<li>Avez-vous ajouté le nouvel élément <code>&lt;div id="cdts-def-footer"&gt;</code>&#160;?</li>
 					<li>Avez-vous inséré le fichier statique de repli dans l'élément <code>&lt;div id="cdts-def-footer"&gt;</code>?</li>
-					<li>Avez-vous ajouté un objet <code>footer</code> dans l'objet de configuration SGDC pour personalisation?</li>
-					<li>Pour plus de détails, référez-vous au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_du_pied_de_page">guide d'implémentation.</a></li>
+					<li>Avez-vous ajouté un objet <code>footer</code> dans l'objet de configuration SGDC pour personnalisation?</li>
+					<li>Pour plus de détails, se référer au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_fichier_de_la_section_du_pied_de_page">guide de mise en œuvre.</a></li>
 				</ul>
 			</section>
 		</section>
 		<section>
 			<h2 id="Important_note_for_application_version">Note importante pour gabarit pour applications</h2>
-			<p>Les deux sections suivantes sont pour le gebarit pour applications. Rappelez-vous qu'utiliser le gabarit pour applications est différent que seulement enlever ou ajouter certains éléments qui sont permis par la <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html">Spécifications du contenu et de l’architecture de l’information pour Canada.ca</a>. Tout élément qui peut être implémenté selon la spécifications Canada.ca ne nécéssite pas une entête/pied de page personalisés et est disponible dans la gabarit normal de SGDC (voir ci-haut). Avant d'aller de l'avant, assurez-vous d'avoir la permission de votre département, du SCT ou de l'Éditeur principal.</p>
+			<p>Les deux sections suivantes sont pour le gabarit pour applications. N'oubliez pas que l'utilisation du gabarit d'application est différente de la simple suppression ou de l'ajout de certains éléments permis par les <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/specifications-contenu-architecture-information-canada.html">Spécifications du contenu et de l’architecture de l’information pour Canada.ca</a>. Tout élément qui peut être mis en œuvre conformément aux spécifications de Canada.ca n'a pas besoin d'en-tête/pied de page personnalisé et est disponible dans le gabarit normal du SGDC (voir ci-dessus). Avant d'aller de l'avant, assurez-vous d'avoir la permission de votre département, du SCT ou de l’éditeur principal.</p>
 		</section>
 		<section>
 			<h2 id="GCWeb_.2F_version_.2F_application">GCWeb / version / application</h2>
@@ -159,7 +159,7 @@
 				<h3 id="Section_.3Chead.3E_references_3">Références de la section <code>&lt;head&gt;</code></h3>
 				<ul>
 					<li>Avez-vous ajouté les deux références aux fichiers du SGDC (<code>cdts-app-styles.css</code> / <code>wet-[language].js</code>)?</li>
-					<li>Avez-vous implémenté un méchanisme de version (web.config, fichier XML, conifguration en base de données, etc...) pour contrôler le <a href="internet-decl-fr.html#Information_.C3.A0_propos_du_contr.C3.B4le_de_versions">URL, thème et version</a> du SGDC?</li>
+					<li>Avez-vous implémenté un mécanisme de version (web.config, fichier XML, configuration en base de données, etc...) pour contrôler le <a href="internet-decl-fr.html#Information_.C3.A0_propos_du_contr.C3.B4le_de_versions">URL, thème et version</a> du SGDC?</li>
 					<li>Avez-vous ajouté la section <code>&lt;noscript&gt;</code>?</li>
 					<li>Avez-vous inséré le contenu statique de repli dans cette section <code>&lt;noscript&gt;</code>?</li>
 					<li>Avez-vous ajouté l'attribut <code>data-cdts-setup</code> pour spécifier <strong>l'objet de configuration SGDC</strong> OU appelé la fonction <code>wet.builder.setup</code>?
@@ -167,44 +167,44 @@
 							<li>Avez-vous spécifié <code>"mode": "app"</code> dans l'objet de configuration SGDC?</li>
 						</ul>
 					</li>
-					<li>Pour plus de détails, référez-vous au <a href="internet-decl-fr.html#Section_application_references">guide d'implémentation.</a></li>
+					<li>Pour plus de détails, se référer au <a href="internet-decl-fr.html#Section_application_references">guide de mise en œuvre.</a></li>
 				</ul>
 			</section>
 			<section>
-				<h3 id="Section_appTop_references">Références de la section "appTop"</h3>
+				<h3 id="Section_appTop_references">Références de la section <code>appTop</code></h3>
 				<ul>
-					<li>Avez-vous ajouté le nouvel element <code>&lt;div id="cdts-def-top"&gt;</code>&#160;?</li>
+					<li>Avez-vous ajouté le nouvel élément <code>&lt;div id="cdts-def-top"&gt;</code>&#160;?</li>
 					<li>Avez-vous inséré le fichier statique de repli dans l'élément <code>&lt;div id="cdts-def-top"&gt;</code>?</li>
-					<li>Avez-vous ajouté un objet <code>top</code> dans l'objet de configuration SGDC pour personalisation?</li>
-					<li>Pour plus de détails, référez-vous au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_la_section_appTop">guide d'implémentation.</a></li>
+					<li>Avez-vous ajouté un objet <code>top</code> dans l'objet de configuration SGDC pour personnalisation?</li>
+					<li>Pour plus de détails, se référer au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_la_section_appTop">guide de mise en œuvre.</a></li>
 				</ul>
 			</section>
 			<section>
-				<h3 id="Section_pre-footer_references_3">Références de la section "prefooter"</h3>
+				<h3 id="Section_pre-footer_references_3">Références de la section <code>preFooter</code></h3>
 				<ul>
-					<li>Avez-vous ajouté le nouvel element <code>&lt;div id="cdts-def-prefooter"&gt;</code>&#160;?</li>
+					<li>Avez-vous ajouté le nouvel élément <code>&lt;div id="cdts-def-prefooter"&gt;</code>&#160;?</li>
 					<li>Avez-vous inséré le fichier statique de repli dans l'élément <code>&lt;div id="cdts-def-prefooter"&gt;</code>?</li>
-					<li>Avez-vous ajouté un objet <code>prefooter</code> dans l'objet de configuration SGDC pour personalisation?</li>
-					<li>Pour plus de détails, référez-vous au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_fichiers_de_la_section_qui_pr.C3.A9c.C3.A8de_le_pied_de_page">guide d'implémentation.</a></li>
+					<li>Avez-vous ajouté un objet <code>preFooter</code> dans l'objet de configuration SGDC pour personnalisation?</li>
+					<li>Pour plus de détails, se référer au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_fichiers_de_la_section_qui_pr.C3.A9c.C3.A8de_le_pied_de_page">guide de mise en œuvre.</a></li>
 				</ul>
 			</section>
 			<section>
-				<h3 id="Section_appFooter_references">Références de la section "appFooter"</h3>
+				<h3 id="Section_appFooter_references">Références de la section <code>appFooter</code></h3>
 				<ul>
-					<li>Avez-vous ajouté le nouvel element <code>&lt;div id="cdts-def-footer"&gt;</code>&#160;?</li>
+					<li>Avez-vous ajouté le nouvel élément <code>&lt;div id="cdts-def-footer"&gt;</code>&#160;?</li>
 					<li>Avez-vous inséré le fichier statique de repli dans l'élément <code>&lt;div id="cdts-def-footer"&gt;</code>?</li>
-					<li>Avez-vous ajouté un objet <code>footer</code> dans l'objet de configuration SGDC pour personalisation?</li>
-					<li>Pour plus de détails, référez-vous au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_la_section_appFooter">guide d'implémentation.</a></li>
+					<li>Avez-vous ajouté un objet <code>footer</code> dans l'objet de configuration SGDC pour personnalisation?</li>
+					<li>Pour plus de détails, se référer au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_la_section_appFooter">guide de mise en œuvre.</a></li>
 				</ul>
 			</section>
 		</section>
 		<section>
-			<h2 id="GCWeb_.2F_run_.2F_application">GCWeb / run / application</h2>
+			<h2 id="GCWeb_.2F_run_.2F_application">GCWeb / <code>run</code> / application</h2>
 			<section>
 				<h3 id="Section_.3Chead.3E_references_4">Références de la section <code>&lt;head&gt;</code></h3>
 				<ul>
 					<li>Avez-vous ajouté les deux références aux fichiers du SGDC (<code>cdts-app-styles.css</code> / <code>wet-[language].js</code>)?</li>
-					<li>Avez-vous référencé les fichiers "run" (le URL de SGDC contiendra "rn")?</li>
+					<li>Avez-vous référencé les fichiers <code>run</code> (le URL de SGDC contiendra <code>rn</code>)?</li>
 					<li>Avez-vous ajouté la section <code>&lt;noscript&gt;</code>?</li>
 					<li>Avez-vous inséré le contenu statique de repli dans cette section <code>&lt;noscript&gt;</code>?</li>
 					<li>Avez-vous ajouté l'attribut <code>data-cdts-setup</code> pour spécifier <strong>l'objet de configuration SGDC</strong> OU appelé la fonction <code>wet.builder.setup</code>?
@@ -212,34 +212,34 @@
 							<li>Avez-vous spécifié <code>"mode": "app"</code> dans l'objet de configuration SGDC?</li>
 						</ul>
 					</li>
-					<li>Pour plus de détails, référez-vous au <a href="internet-decl-fr.html#Section_application_references">guide d'implémentation.</a></li>
+					<li>Pour plus de détails, se référer au <a href="internet-decl-fr.html#Section_application_references">guide de mise en œuvre.</a></li>
 				</ul>
 			</section>
 			<section>
-				<h3 id="Section_appTop_references_2">Références de la section "appTop"</h3>
+				<h3 id="Section_appTop_references_2">Références de la section <code>appTop</code></h3>
 				<ul>
-					<li>Avez-vous ajouté le nouvel element <code>&lt;div id="cdts-def-top"&gt;</code>&#160;?</li>
+					<li>Avez-vous ajouté le nouvel élément <code>&lt;div id="cdts-def-top"&gt;</code>&#160;?</li>
 					<li>Avez-vous inséré le fichier statique de repli dans l'élément <code>&lt;div id="cdts-def-top"&gt;</code>?</li>
-					<li>Avez-vous ajouté un objet <code>top</code> dans l'objet de configuration SGDC pour personalisation?</li>
-					<li>Pour plus de détails, référez-vous au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_la_section_appTop">guide d'implémentation.</a></li>
+					<li>Avez-vous ajouté un objet <code>top</code> dans l'objet de configuration SGDC pour personnalisation?</li>
+					<li>Pour plus de détails, se référer au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_la_section_appTop">guide de mise en œuvre.</a></li>
 				</ul>
 			</section>
 			<section>
-				<h3 id="Section_pre-footer_references_4">Références de la section "prefooter"</h3>
+				<h3 id="Section_pre-footer_references_4">Références de la section <code>preFooter</code></h3>
 				<ul>
-					<li>Avez-vous ajouté le nouvel element <code>&lt;div id="cdts-def-prefooter"&gt;</code>&#160;?</li>
+					<li>Avez-vous ajouté le nouvel élément <code>&lt;div id="cdts-def-prefooter"&gt;</code>&#160;?</li>
 					<li>Avez-vous inséré le fichier statique de repli dans l'élément <code>&lt;div id="cdts-def-prefooter"&gt;</code>?</li>
-					<li>Avez-vous ajouté un objet <code>prefooter</code> dans l'objet de configuration SGDC pour personalisation?</li>
-					<li>Pour plus de détails, référez-vous au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_fichiers_de_la_section_qui_pr.C3.A9c.C3.A8de_le_pied_de_page">guide d'implémentation.</a></li>
+					<li>Avez-vous ajouté un objet <code>preFooter</code> dans l'objet de configuration SGDC pour personnalisation?</li>
+					<li>Pour plus de détails, se référer au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_fichiers_de_la_section_qui_pr.C3.A9c.C3.A8de_le_pied_de_page">guide de mise en œuvre.</a></li>
 				</ul>
 			</section>
 			<section>
-				<h3 id="Section_appFooter_references_2">Références de la section "appFooter"</h3>
+				<h3 id="Section_appFooter_references_2">Références de la section <code>appFooter</code></h3>
 				<ul>
-					<li>Avez-vous ajouté le nouvel element <code>&lt;div id="cdts-def-footer"&gt;</code>&#160;?</li>
+					<li>Avez-vous ajouté le nouvel élément <code>&lt;div id="cdts-def-footer"&gt;</code>&#160;?</li>
 					<li>Avez-vous inséré le fichier statique de repli dans l'élément <code>&lt;div id="cdts-def-footer"&gt;</code>?</li>
-					<li>Avez-vous ajouté un objet <code>footer</code> dans l'objet de configuration SGDC pour personalisation?</li>
-					<li>Pour plus de détails, référez-vous au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_la_section_appFooter">guide d'implémentation.</a></li>
+					<li>Avez-vous ajouté un objet <code>footer</code> dans l'objet de configuration SGDC pour personnalisation?</li>
+					<li>Pour plus de détails, se référer au <a href="internet-decl-fr.html#R.C3.A9f.C3.A9rences_de_la_section_appFooter">guide de mise en œuvre.</a></li>
 				</ul>
 			</section>
 		</section>
