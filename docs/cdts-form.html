@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif] -->
+<!--[if gt IE 8]><! -->
+<html class="no-js" lang="en" dir="ltr"><!--<![endif] -->
+    <head>
+        <meta charset="utf-8">
+            <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web 
+                (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+            <title>Sample for CDTS to review
+            </title>
+            <meta content="width=device-width,initial-scale=1" name="viewport">
+
+                <script type="text/javascript"
+                    src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/wet-en.js"></script>
+
+
+                <!-- Write closure template -->
+                <script type="text/javascript">
+                    document.write(wet.builder.refTop({
+                    cdnEnv: "prod"
+
+                    }));
+                </script>
+				
+        <div id="def-top">
+            
+        </div>
+        <!-- Write closure template -->
+        <script type="text/javascript">
+            var defTop = document.getElementById("def-top");
+            defTop.outerHTML =
+            wet.builder.top({
+            cdnEnv: "prod",
+            showPreContent: false,
+            lngLinks: [{lang:  'fr',href: 'https://www.sac-isc.gc.ca/fra/1585664064807/1585678941114',text: 'Français'},],
+            customSearch: [{"action":"https://www.canada.ca/en/indigenous-services-canada/search.html"}],
+            breadcrumbs: [{title: "Canada.ca", href: "https://www.canada.ca/en.html"},{title: "Indigenous Services Canada", href: "/eng/1518196579110/1520997240623"}]
+            });
+        </script>
+        <main role="main" property="mainContentOfPage" class="container">
+		<h1 property="name" id="wb-cont">Sample for CDTS to review</h1>
+					
+
+		<div class="wb-frmvld">
+			<form action="#" id="cdts-form" role="form" method="post">	
+				<h2>Your information</h2>		
+				<div class="form-group">
+					<label for="fullname" class="required"><span class="field-name">First and last name </span> <strong class="required">(required)</strong></label>
+					<input required="required" type="text" class="form-control" name="fullname" id="fullname" autocomplete="name" />
+				</div>				
+				<div class="form-group">
+					<label for="owneremail"  class="required">OWNER EMAIL</label>
+					<input type="text" class="form-control" id="owneremail" name="owneremail" required="required" />
+				</div>	
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+            <div id="def-preFooter">
+                
+            </div>
+            <!-- Write closure template -->
+            <script type="text/javascript">
+                var defPreFooter = document.getElementById("def-preFooter");
+                defPreFooter.outerHTML = wet.builder.preFooter({
+                cdnEnv: "prod",
+                dateModified: "2020-03-31",
+                showPostContent: true,
+                showFeedback: false,
+                showShare: false
+                });
+            </script>
+        </main>
+        <div id="def-footer">
+		
+	</div>
+	<!-- Write closure template -->
+	<script type="text/javascript">
+	var defFooter = document.getElementById("def-footer");
+	defFooter.outerHTML = wet.builder.footer({
+		cdnEnv: "prod",
+		"contextualFooter": {
+			"title": "Indigenous Services Canada",
+			"links": [{
+				"text": "Contact us",
+				"href": "/eng/1291132820288"
+			},
+			{
+				"text": "News",
+				"href": "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1583265230614&dprtmnt=indigenousservicescanada&start=&end="
+			}]
+		}
+	});
+	</script>
+	<!-- Write closure template -->
+	<script type="text/javascript">
+		document.write(wet.builder.refFooter({
+			cdnEnv: "prod",
+		}));
+	</script>
+    </body>
+</html>

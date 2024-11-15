@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+        <title>CDTS Sample - CDTS without document.write</title>
+        <meta content="width=device-width,initial-scale=1" name="viewport">
+        <!-- Meta data -->
+        <meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
+        <!-- Meta data-->
+        <!-- Load closure template scripts -->
+        <!--
+            Note: a relative path is being used in this sample. In order to incorporate the script tags in your code, use the following absolute path (depending on the choice of domain).
+            This path can be used for the following three file names: soyutils.js, wet-en.js, and wet-fr.js.
+
+            canada.ca: https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_2/cdts/compiled/[file name]
+            cdts.service.canada.ca: https://cdts.service.canada.ca/app/cls/WET/gcweb/v5_0_2/cdts/compiled/[file name]
+            templates.service.gc.ca: https://templates.service.gc.ca/app/cls/WET/gcweb/v5_0_2/cdts/compiled/[file name]
+
+            To point to the run version:
+
+            canada.ca: https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/[file name]
+            cdts.service.canada.ca: https://cdts.service.canada.ca/rn/cls/WET/gcweb/cdts/compiled/[file name]
+            templates.service.gc.ca: https://templates.service.gc.ca/rn/cls/WET/gcweb/cdts/compiled/[file name]
+        -->
+        <link rel="stylesheet" href="https://cdts.service.canada.ca/app/cls/WET/gcweb/v5_0_2/cdts/cdts-styles.css">
+        <script type="text/javascript" src="https://cdts.service.canada.ca/app/cls/WET/gcweb/v5_0_2/cdts/compiled/wet-en.js" data-cdts-setup='{"cdnEnv": "esdcprod","base":{"exitSecureSite":{"exitScript":true,"displayModal":true,"exitURL":"https://www.google.ca","exitDomains":"www.esdc.gc.ca, www.jobbank.gc.ca, www.redseal.ca","displayModalForNewWindow":true}},"top":{"lngLinks":[{"href":"nodoc-write-fr.html","lang":"fr","text":"Français"}]},"preFooter":{},"footer":{},"onCDTSPageFinalized":[]}'></script>
+    </head>
+    <body vocab="https://schema.org/" typeof="WebPage">
+        <div id="cdts-def-top"></div>
+        <main property="mainContentOfPage" typeof="WebPageElement" class="container">
+            <div class="wb-frmvld">
+			<form action="#" id="cdts-form" role="form" method="post">	
+				<h2>Your information</h2>		
+				<div class="form-group">
+					<label for="fullname" class="required"><span class="field-name">First and last name </span> <strong class="required">(required)</strong></label>
+					<input required="required" type="text" class="form-control" name="fullname" id="fullname" autocomplete="name" />
+				</div>				
+				<div class="form-group">
+					<label for="owneremail"  class="required">OWNER EMAIL</label>
+					<input type="text" class="form-control" id="owneremail" name="owneremail" required="required" />
+				</div>	
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+            <div id="cdts-def-preFooter"></div>
+        </main>
+        <div id="cdts-def-footer"></div>
+    </body>
+</html>

@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif] -->
+<!--[if gt IE 8]><! -->
+<html class="no-js" lang="en" dir="ltr"><!--<![endif] -->
+    <head>
+        <meta charset="utf-8">
+            <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web 
+                (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+            <title>Sample for CDTS to review
+            </title>
+            <meta content="width=device-width,initial-scale=1" name="viewport">
+
+               <!-- Load closure template scripts -->
+                  <script type="text/javascript"
+                    src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/soyutils.js"></script>
+                <script type="text/javascript"
+                    src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/rn/cdts/compiled/wet-en.js"></script>
+
+
+                <!-- Write closure template -->
+                <script type="text/javascript">
+                    document.write(wet.builder.refTop({
+                    cdnEnv: "prod"
+
+                    }));
+                </script>
+				
+        <div id="def-top">
+            
+        </div>
+        <!-- Write closure template -->
+        <script type="text/javascript">
+            var defTop = document.getElementById("def-top");
+            defTop.outerHTML =
+            wet.builder.top({
+            cdnEnv: "prod",
+            showPreContent: false,
+            lngLinks: [{lang:  'fr',href: 'https://www.sac-isc.gc.ca/fra/1585664064807/1585678941114',text: 'Français'},],
+            customSearch: [{"action":"https://www.canada.ca/en/indigenous-services-canada/search.html"}],
+            breadcrumbs: [{title: "Canada.ca", href: "https://www.canada.ca/en.html"},{title: "Indigenous Services Canada", href: "/eng/1518196579110/1520997240623"}]
+            });
+        </script>
+        <main role="main" property="mainContentOfPage" class="container">
+		<h1 property="name" id="wb-cont">Sample for CDTS to review</h1>
+					
+
+		<div class="wb-frmvld">
+																			<form action="#" method="get" id="validation-example">
+																				<fieldset>
+																					<legend>Contact information</legend>
+																					<div class="form-group">
+																						<label for="title1" class="required">
+																							<span class="field-name">Title</span>
+																							<strong class="required">(required)</strong>
+																						</label>
+																						<select class="form-control" id="title1" name="title1" autocomplete="honorific-prefix" required="required">
+																							<option label="Select a title"/>
+																							<option value="dr">Dr.</option>
+																							<option value="esq">Esq.</option>
+																							<option value="mr">Mr.</option>
+																							<option value="ms">Ms.</option>
+																						</select>
+																					</div>
+																					<details class="mrgn-bttm-md">
+																						<summary>View code</summary>
+																						<div class="alert alert-info">
+																							<p>Consider adding an <code>aria-hidden="true"</code> attribute to <code>&lt;strong class="required"&gt;</code> (i.e. <code>&lt;strong class="required" aria-hidden="true"&gt;</code>) in required field labels. Hardcoding it will prevent screen readers from announcing "required" twice in the noscript and basic HTML versions of the page. The form validation plugin automatically adds the attribute to the JavaScript version. Don't use the attribute in required <code>&lt;legend&gt;</code> elements.</p>
+																						</div>
+																						<pre>
+																							<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+		&lt;div class="form-group"&gt;
+			&lt;label for="title1" class="required"&gt;&lt;span class="field-name"&gt;Title&lt;/span&gt; &lt;strong class="required"&gt;(required)&lt;/strong&gt;&lt;/label&gt;
+			&lt;select class="form-control" id="title1" name="title1" autocomplete="honorific-prefix" required="required"&gt;
+				&lt;option label="Select a title"&gt;&lt;/option&gt;
+				&lt;option value="dr"&gt;Dr.&lt;/option&gt;
+				&lt;option value="esq"&gt;Esq.&lt;/option&gt;
+				&lt;option value="mr"&gt;Mr.&lt;/option&gt;
+				&lt;option value="ms"&gt;Ms.&lt;/option&gt;
+			&lt;/select&gt;
+		&lt;/div&gt;</code>
+																						</pre>
+																					</details>
+																					<div class="form-group">
+																						<label for="fname1" class="required">
+																							<span class="field-name">First name</span>
+																							<strong class="required">(required)</strong>
+																						</label>
+																						<input class="form-control" id="fname1" name="fname1" type="text" autocomplete="given-name" required="required" data-rule-minlength="2">
+</div>
+																						<details class="mrgn-bttm-md">
+																							<summary>View code</summary>
+																							<div class="alert alert-info">
+																								<p>Consider adding an <code>aria-hidden="true"</code> attribute to <code>&lt;strong class="required"&gt;</code> (i.e. <code>&lt;strong class="required" aria-hidden="true"&gt;</code>) in required field labels. Hardcoding it will prevent screen readers from announcing "required" twice in the noscript and basic HTML versions of the page. The form validation plugin automatically adds the attribute to the JavaScript version. Don't use the attribute in required <code>&lt;legend&gt;</code> elements.</p>
+																							</div>
+																							<pre>
+																								<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+		&lt;div class="form-group"&gt;
+			&lt;label for="fname1" class="required"&gt;&lt;span class="field-name"&gt;First name&lt;/span&gt; &lt;strong class="required"&gt;(required)&lt;/strong&gt;&lt;/label&gt;
+			&lt;input class="form-control" id="fname1" name="fname1" type="text" autocomplete="given-name" required="required" data-rule-minlength="2" /&gt;
+		&lt;/div&gt;</code>
+																							</pre>
+																						</details>
+																						<div class="form-group">
+																							<label for="lname1" class="required">
+																								<span class="field-name">Last name</span>
+																								<strong class="required">(required)</strong>
+																							</label>
+																							<input class="form-control" id="lname1" name="lname1" type="text" autocomplete="family-name" required="required" data-rule-minlength="2">
+</div>
+																							<details class="mrgn-bttm-md">
+																								<summary>View code</summary>
+																								<div class="alert alert-info">
+																									<p>Consider adding an <code>aria-hidden="true"</code> attribute to <code>&lt;strong class="required"&gt;</code> (i.e. <code>&lt;strong class="required" aria-hidden="true"&gt;</code>) in required field labels. Hardcoding it will prevent screen readers from announcing "required" twice in the noscript and basic HTML versions of the page. The form validation plugin automatically adds the attribute to the JavaScript version. Don't use the attribute in required <code>&lt;legend&gt;</code> elements.</p>
+																								</div>
+																								<pre>
+																									<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+		&lt;div class="form-group"&gt;
+			&lt;label for="lname1" class="required"&gt;&lt;span class="field-name"&gt;Last name&lt;/span&gt; &lt;strong class="required"&gt;(required)&lt;/strong&gt;&lt;/label&gt;
+			&lt;input class="form-control" id="lname1" name="lname1" type="text" autocomplete="family-name" required="required" data-rule-minlength="2" /&gt;
+		&lt;/div&gt;</code>
+																								</pre>
+																							</details>
+																							<div class="form-group">
+																								<label for="tel1" class="required">
+																									<span class="field-name">Telephone number (including area code)</span>
+																									<strong class="required">(required)</strong>
+																								</label>
+																								<input class="form-control" id="tel1" name="tel1" type="tel" autocomplete="tel" required="required" data-rule-phoneus="true">
+</div>
+																								<details class="mrgn-bttm-md">
+																									<summary>View code</summary>
+																									<div class="alert alert-info">
+																										<p>Consider adding an <code>aria-hidden="true"</code> attribute to <code>&lt;strong class="required"&gt;</code> (i.e. <code>&lt;strong class="required" aria-hidden="true"&gt;</code>) in required field labels. Hardcoding it will prevent screen readers from announcing "required" twice in the noscript and basic HTML versions of the page. The form validation plugin automatically adds the attribute to the JavaScript version. Don't use the attribute in required <code>&lt;legend&gt;</code> elements.</p>
+																									</div>
+																									<pre>
+																										<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+		&lt;div class="form-group"&gt;
+			&lt;label for="tel1" class="required"&gt;&lt;span class="field-name"&gt;Telephone number (including area code)&lt;/span&gt; &lt;strong class="required"&gt;(required)&lt;/strong&gt;&lt;/label&gt;
+			&lt;input class="form-control" id="tel1" name="tel1" type="tel" autocomplete="tel" required="required" data-rule-phoneUS="true" /&gt;
+		&lt;/div&gt;</code>
+																									</pre>
+																								</details>
+																								<div class="form-group">
+																									<label for="pcodeca1" class="required">
+																										<span class="field-name">Postal code (Canada)</span>
+																										<strong class="required">(required)</strong>
+																									</label>
+																									<input class="form-control" id="pcodeca1" name="pcodeca1" type="text" autocomplete="postal-code" size="7" maxlength="7" required="required" data-rule-postalcodeca="true">
+</div>
+																									<details class="mrgn-bttm-md">
+																										<summary>View code</summary>
+																										<div class="alert alert-info">
+																											<p>Consider adding an <code>aria-hidden="true"</code> attribute to <code>&lt;strong class="required"&gt;</code> (i.e. <code>&lt;strong class="required" aria-hidden="true"&gt;</code>) in required field labels. Hardcoding it will prevent screen readers from announcing "required" twice in the noscript and basic HTML versions of the page. The form validation plugin automatically adds the attribute to the JavaScript version. Don't use the attribute in required <code>&lt;legend&gt;</code> elements.</p>
+																										</div>
+																										<pre>
+																											<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+		&lt;div class="form-group"&gt;
+			&lt;label for="pcodeca1" class="required"&gt;&lt;span class="field-name"&gt;Postal code&lt;/span&gt; &lt;strong class="required"&gt;(required)&lt;/strong&gt;&lt;/label&gt;
+			&lt;input class="form-control" id="pcodeca1" name="pcodeca1" type="text" autocomplete="postal-code" size="7" maxlength="7" required="required" data-rule-postalCodeCA="true" /&gt;
+		&lt;/div&gt;</code>
+																										</pre>
+																									</details>
+																									<div class="form-group">
+																										<label for="email1">
+																											<span class="field-name">Email address</span> (yourname@domain.com)</label>
+																										<input class="form-control" id="email1" name="email1" type="email" autocomplete="email">
+</div>
+																										<details class="mrgn-bttm-md">
+																											<summary>View code</summary>
+																											<pre>
+																												<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+		&lt;div class="form-group"&gt;
+			&lt;label for="email1"&gt;&lt;span class="field-name"&gt;Email address&lt;/span&gt; (yourname@domain.com)&lt;/label&gt;
+			&lt;input class="form-control" id="email1" name="email1" type="email" autocomplete="email" /&gt;
+		&lt;/div&gt;</code>
+																											</pre>
+																										</details>
+																										<div class="form-group">
+																											<label for="url1">
+																												<span class="field-name">Website URL (https://www.url.com)</span>
+																											</label>
+																											<input class="form-control" id="url1" name="url1" type="url" autocomplete="url">
+</div>
+																											<details class="mrgn-bttm-md">
+																												<summary>View code</summary>
+																												<pre>
+																													<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+		&lt;div class="form-group"&gt;
+			&lt;label for="url1"&gt;&lt;span class="field-name"&gt;Website URL (https://www.url.com)&lt;/span&gt;&lt;/label&gt;
+			&lt;input class="form-control" id="url1" name="url1" type="url" autocomplete="url" /&gt;
+		&lt;/div&gt;</code>
+																												</pre>
+																											</details>
+																											<div class="form-group">
+																												<label for="file1" class="required">
+																													<span class="field-name">File</span>
+																													<strong class="required">(required)</strong>
+																												</label>
+																												<input id="file1" name="file1" type="file" required="required">
+</div>
+																												<details class="mrgn-bttm-md">
+																													<summary>View code</summary>
+																													<div class="alert alert-info">
+																														<p>Consider adding an <code>aria-hidden="true"</code> attribute to <code>&lt;strong class="required"&gt;</code> (i.e. <code>&lt;strong class="required" aria-hidden="true"&gt;</code>) in required field labels. Hardcoding it will prevent screen readers from announcing "required" twice in the noscript and basic HTML versions of the page. The form validation plugin automatically adds the attribute to the JavaScript version. Don't use the attribute in required <code>&lt;legend&gt;</code> elements.</p>
+																													</div>
+																													<pre>
+																														<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+		&lt;div class="form-group"&gt;
+			&lt;label for="file1" class="required"&gt;&lt;span class="field-name"&gt;File&lt;/span&gt; &lt;strong class="required"&gt;(required)&lt;/strong&gt;&lt;/label&gt;
+			&lt;input id="file1" name="file1" type="file" required="required" /&gt;
+		&lt;/div&gt;</code>
+																													</pre>
+																												</details>
+																											</fieldset>
+																											<fieldset>
+																												<legend>Other examples</legend>
+																												<div class="form-group">
+																													<label for="date1">
+																														<span class="field-name">Date</span>
+																														<span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span>
+																													</label>
+																													<input class="form-control" id="date1" name="date1" type="date" data-rule-dateiso="true">
+</div>
+																													<details class="mrgn-bttm-md">
+																														<summary>View code</summary>
+																														<pre>
+																															<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+		&lt;div class="form-group"&gt;
+			&lt;label for="date1"&gt;&lt;span class="field-name"&gt;Date&lt;/span&gt;&lt;span class="datepicker-format"&gt; (&lt;abbr title="Four digits year, dash, two digits month, dash, two digits day"&gt;YYYY-MM-DD&lt;/abbr&gt;)&lt;/span&gt;&lt;/label&gt;
+			&lt;input class="form-control" id="date1" name="date1" type="date" data-rule-dateISO="true" /&gt;
+		&lt;/div&gt;</code>
+																														</pre>
+																													</details>
+																													<div class="form-group">
+																														<label for="time1">
+																															<span class="field-name">Time</span> (hh:mm)</label>
+																														<input class="form-control" id="time1" name="time1" type="time">
+</div>
+																														<details class="mrgn-bttm-md">
+																															<summary>View code</summary>
+																															<pre>
+																																<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+		&lt;div class="form-group"&gt;
+			&lt;label for="time1"&gt;&lt;span class="field-name"&gt;Time&lt;/span&gt; (hh:mm)&lt;/label&gt;
+			&lt;input class="form-control" id="time1" name="time1" type="time" /&gt;
+		&lt;/div&gt;</code>
+																															</pre>
+																														</details>
+																														<div class="form-group">
+																															<label for="number1">
+																																<span class="field-name">Number</span> (between -1 and 1 by step 0.1)</label>
+																															<input class="form-control" id="number1" name="number1" type="number" min="-1" max="1" step="0.1">
+</div>
+																															<details class="mrgn-bttm-md">
+																																<summary>View code</summary>
+																																<pre>
+																																	<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+	...
+	&lt;div class="form-group"&gt;
+		&lt;label for="number1"&gt;&lt;span class="field-name"&gt;Number&lt;/span&gt; (between -a and 1 by step 0.1)&lt;/label&gt;
+		&lt;input class="form-control" id="number1" name="number1" type="number" min="-1" max="1" step="0.1" /&gt;
+	&lt;/div&gt;</code>
+																																</pre>
+																															</details>
+																															<div class="form-group">
+																																<label for="an1">
+																																	<span class="field-name">Alphanumeric</span> (at least 4 characters)</label>
+																																<input class="form-control" id="an1" name="an1" type="text" data-rule-alphanumeric="true" data-rule-minlength="4">
+</div>
+																																<details class="mrgn-bttm-md">
+																																	<summary>View code</summary>
+																																	<pre>
+																																		<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+		&lt;div class="form-group"&gt;
+			&lt;label for="an1"&gt;&lt;span class="field-name"&gt;Alphanumeric&lt;/span&gt; (at least 4 characters)&lt;/label&gt;
+			&lt;input class="form-control" id="an1" name="an1" type="text" data-rule-alphanumeric="true" data-rule-minlength="4" /&gt;
+		&lt;/div&gt;</code>
+																																	</pre>
+																																</details>
+																																<div class="form-group">
+																																	<label for="numeric1">
+																																		<span class="field-name">Numeric</span> (digits only)</label>
+																																	<input class="form-control" id="numeric1" name="numeric1" type="number" data-rule-digits="true">
+</div>
+																																	<details class="mrgn-bttm-md">
+																																		<summary>View code</summary>
+																																		<pre>
+																																			<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+		&lt;div class="form-group"&gt;
+			&lt;label for="numeric1"&gt;&lt;span class="field-name"&gt;Numeric&lt;/span&gt; (digits only)&lt;/label&gt;
+			&lt;input class="form-control" id="numeric1" name="numeric1" type="number" data-rule-digits="true" /&gt;
+		&lt;/div&gt;</code>
+																																		</pre>
+																																	</details>
+																																	<div class="form-group">
+																																		<label for="letters1">
+																																			<span class="field-name">Letters only</span> (maximum of 5 characters)</label>
+																																		<input class="form-control" id="letters1" name="letters1" type="text" size="5" maxlength="5" data-rule-lettersonly="true">
+</div>
+																																		<details class="mrgn-bttm-md">
+																																			<summary>View code</summary>
+																																			<pre>
+																																				<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+		&lt;div class="form-group"&gt;
+			&lt;label for="letters1"&gt;&lt;span class="field-name"&gt;Letters only&lt;/span&gt; (maximum of 5 characters)&lt;/label&gt;
+			&lt;input class="form-control" id="letters1" name="letters1" type="text" size="5" maxlength="5" data-rule-lettersonly="true" /&gt;
+		&lt;/div&gt;</code>
+																																			</pre>
+																																		</details>
+																																		<div class="form-group">
+																																			<label for="text1">
+																																				<span class="field-name">Letters and punctuation only</span> (allowed punctuation: [. , ( ) "])</label>
+																																			<input class="form-control" id="text1" name="text1" type="text" data-rule-letterswithbasicpunc="true">
+</div>
+																																			<details class="mrgn-bttm-md">
+																																				<summary>View code</summary>
+																																				<pre>
+																																					<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+		&lt;div class="form-group"&gt;
+			&lt;label for="text1"&gt;&lt;span class="field-name"&gt;Letters and punctuation only&lt;/span&gt; (allowed punctuation: [. , ( ) "])&lt;/label&gt;
+			&lt;input class="form-control" id="text1" name="text1" type="text" data-rule-letterswithbasicpunc="true" /&gt;
+		&lt;/div&gt;</code>
+																																				</pre>
+																																			</details>
+																																			<div class="form-group">
+																																				<label for="word1">
+																																					<span class="field-name">Maximum of 10 words</span>
+																																				</label>
+																																				<input class="form-control" id="word1" name="word1" type="text" data-rule-maxwords="10">
+</div>
+																																				<details class="mrgn-bttm-md">
+																																					<summary>View code</summary>
+																																					<pre>
+																																						<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+		&lt;div class="form-group"&gt;
+			&lt;label for="word1"&gt;&lt;span class="field-name"&gt;Maximum of 10 words&lt;/span&gt;&lt;/label&gt;
+			&lt;input class="form-control" id="word1" name="word1" type="text" data-rule-maxWords="10" /&gt;
+		&lt;/div&gt;</code>
+																																					</pre>
+																																				</details>
+																																				<div class="form-group">
+																																					<label for="word2">
+																																						<span class="field-name">Minimum of 2 words</span>
+																																					</label>
+																																					<input class="form-control" id="word2" name="word2" type="text" data-rule-minwords="2">
+</div>
+																																					<details class="mrgn-bttm-md">
+																																						<summary>View code</summary>
+																																						<pre>
+																																							<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+		&lt;div class="form-group"&gt;
+			&lt;label for="word2"&gt;&lt;span class="field-name"&gt;Minimum of 2 words&lt;/span&gt;&lt;/label&gt;
+			&lt;input class="form-control" id="word2" name="word2" type="text" data-rule-minWords="2" /&gt;
+		&lt;/div&gt;</code>
+																																						</pre>
+																																					</details>
+																																					<div class="form-group">
+																																						<label for="word3">
+																																							<span class="field-name">Between 2 and 10 words</span>
+																																						</label>
+																																						<input class="form-control" id="word3" name="word3" type="text" data-rule-rangewords="[2,10]">
+</div>
+																																						<details class="mrgn-bttm-md">
+																																							<summary>View code</summary>
+																																							<pre>
+																																								<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+		&lt;div class="form-group"&gt;
+			&lt;label for="word3"&gt;&lt;span class="field-name"&gt;Between 2 and 10 words&lt;/span&gt;&lt;/label&gt;
+			&lt;input class="form-control" id="word3" name="word3" type="text" data-rule-rangeWords="[2,10]" /&gt;
+		&lt;/div&gt;</code>
+																																							</pre>
+																																						</details>
+																																						<div class="form-group">
+																																							<label for="nowhitespace1">
+																																								<span class="field-name">No white space</span>
+																																							</label>
+																																							<input class="form-control" id="nowhitespace1" name="nowhitespace1" type="text" data-rule-nowhitespace="true">
+</div>
+																																							<details class="mrgn-bttm-md">
+																																								<summary>View code</summary>
+																																								<pre>
+																																									<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+		&lt;div class="form-group"&gt;
+			&lt;label for="nowhitespace1"&gt;&lt;span class="field-name"&gt;No white space&lt;/span&gt;&lt;/label&gt;
+			&lt;input class="form-control" id="nowhitespace1" name="nowhitespace1" type="text" data-rule-nowhitespace="true" /&gt;
+		&lt;/div&gt;</code>
+																																								</pre>
+																																							</details>
+																																							<div class="form-group">
+																																								<label for="password1">
+																																									<span class="field-name">Password</span> (between 5 and 10 characters)</label>
+																																								<input class="form-control" id="password1" name="password1" type="password" autocomplete="new-password" maxlength="10" size="10" data-rule-rangelength="[5,10]">
+																																									<label for="passwordconfirm">
+																																										<span class="field-name">Confirm your password</span>
+																																									</label>
+																																									<input class="form-control" id="passwordconfirm" name="passwordconfirm" type="password" autocomplete="new-password" maxlength="10" size="10" data-rule-equalto="#password1">
+</div>
+																																									<details class="mrgn-bttm-md">
+																																										<summary>View code</summary>
+																																										<pre>
+																																											<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+		&lt;div class="form-group"&gt;
+			&lt;label for="password1"&gt;&lt;span class="field-name"&gt;Password&lt;/span&gt; (between 5 and 10 characters)&lt;/label&gt;
+			&lt;input class="form-control" id="password1" name="password1" type="password" autocomplete="new-password" maxlength="10" size="10" data-rule-rangelength="[5,10]" /&gt;
+			&lt;label for="passwordconfirm"&gt;&lt;span class="field-name"&gt;Confirm your password&lt;/span&gt;&lt;/label&gt;
+			&lt;input class="form-control" id="passwordconfirm" name="passwordconfirm" type="password" autocomplete="new-password" maxlength="10" size="10" data-rule-equalTo="#password1" /&gt;
+		&lt;/div&gt;</code>
+																																										</pre>
+																																									</details>
+																																								</fieldset>
+																																								<div class="form-group">
+																																									<div class="checkbox checkbox-standalone required">
+																																										<label for="agree1">
+																																											<input id="agree1" name="agree1" type="checkbox" required>
+																																											<span class="field-name">I agree</span>
+																																											<strong class="required">(required)</strong>
+																																										</label>
+																																									</div>
+																																								</div>
+																																								<details class="mrgn-bttm-md">
+																																									<summary>View code</summary>
+																																									<div class="alert alert-info">
+																																										<p>Consider adding an <code>aria-hidden="true"</code> attribute to <code>&lt;strong class="required"&gt;</code> (i.e. <code>&lt;strong class="required" aria-hidden="true"&gt;</code>) in required field labels. Hardcoding it will prevent screen readers from announcing "required" twice in the noscript and basic HTML versions of the page. The form validation plugin automatically adds the attribute to the JavaScript version. Don't use the attribute in required <code>&lt;legend&gt;</code> elements.</p>
+																																									</div>
+																																									<pre>
+																																										<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+			&lt;div class="form-group"&gt;
+				&lt;div class="checkbox checkbox-standalone required"&gt;
+					&lt;label for="agree1"&gt;&lt;input id="agree1" name="agree1" type="checkbox" required&gt; &lt;span class="field-name"&gt;I agree&lt;/span&gt; &lt;strong class="required"&gt;(required)&lt;/strong&gt;&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;</code>
+																																									</pre>
+																																								</details>
+																																								<fieldset class="chkbxrdio-grp">
+																																									<legend class="required">
+																																										<span class="field-name">Favourite pets</span>
+																																										<strong class="required">(required)</strong>
+																																									</legend>
+																																									<div class="checkbox">
+																																										<label for="animal1">
+																																											<input type="checkbox" name="animal" value="1" id="animal1" data-rule-required="true"> Dog</label>
+																																										</div>
+																																										<div class="checkbox">
+																																											<label for="animal2">
+																																												<input type="checkbox" name="animal" value="2" id="animal2"> Cat</label>
+																																											</div>
+																																											<div class="checkbox">
+																																												<label for="animal3">
+																																													<input type="checkbox" name="animal" value="3" id="animal3"> Fish</label>
+																																												</div>
+																																												<div class="checkbox">
+																																													<label for="animal4">
+																																														<input type="checkbox" name="animal" value="4" id="animal4"> Other</label>
+																																													</div>
+																																												</fieldset>
+																																												<details class="mrgn-bttm-md">
+																																													<summary>View code</summary>
+																																													<div class="alert alert-info">
+																																														<p>It is recommended to use <code>data-rule-required="true"</code> vs <code>required="required"</code> as this avoids screen readers indicating that the first option is required.</p>
+																																													</div>
+																																													<pre>
+																																														<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+		&lt;fieldset class="chkbxrdio-grp"&gt;
+			&lt;legend class="required"&gt;&lt;span class="field-name"&gt;Favourite pets&lt;/span&gt; &lt;strong class="required"&gt;(required)&lt;/strong&gt;&lt;/legend&gt;
+			&lt;div class="checkbox"&gt;
+				&lt;label for="animal1"&gt;&lt;input type="checkbox" name="animal" value="1" id="animal1" data-rule-required="true" /&gt; Dog&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div class="checkbox"&gt;
+				&lt;label for="animal2"&gt;&lt;input type="checkbox" name="animal" value="2" id="animal2" /&gt; Cat&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div class="checkbox"&gt;
+				&lt;label for="animal3"&gt;&lt;input type="checkbox" name="animal" value="3" id="animal3" /&gt; Fish&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div class="checkbox"&gt;
+				&lt;label for="animal4"&gt;&lt;input type="checkbox" name="animal" value="4" id="animal4" /&gt; Other&lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/fieldset&gt;</code>
+																																													</pre>
+																																												</details>
+																																												<fieldset class="chkbxrdio-grp">
+																																													<legend class="required">
+																																														<span class="field-name">Citizenship status</span>
+																																														<strong class="required">(required)</strong>
+																																													</legend>
+																																													<div class="radio">
+																																														<label for="status1">
+																																															<input type="radio" name="status" value="1" id="status1" data-rule-required="true"> Canadian citizen</label>
+																																														</div>
+																																														<div class="radio">
+																																															<label for="status2">
+																																																<input type="radio" name="status" value="2" id="status2"> Permanent resident</label>
+																																															</div>
+																																															<div class="radio">
+																																																<label for="status3">
+																																																	<input type="radio" name="status" value="3" id="status3"> Work permit</label>
+																																																</div>
+																																																<div class="radio">
+																																																	<label for="status4">
+																																																		<input type="radio" name="status" value="4" id="status4"> Other</label>
+																																																	</div>
+																																																</fieldset>
+																																																<details class="mrgn-bttm-md">
+																																																	<summary>View code</summary>
+																																																	<div class="alert alert-info">
+																																																		<p>It is recommended to use <code>data-rule-required="true"</code> vs <code>required="required"</code> as this avoids screen readers indicating that the first option is required.</p>
+																																																	</div>
+																																																	<pre>
+																																																		<code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+		...
+		&lt;fieldset class="chkbxrdio-grp"&gt;
+			&lt;legend class="required"&gt;&lt;span class="field-name"&gt;Citizenship status&lt;/span&gt; &lt;strong class="required"&gt;(required)&lt;/strong&gt;&lt;/legend&gt;
+			&lt;div class="radio"&gt;
+				&lt;label for="status1"&gt;&lt;input type="radio" name="status" value="1" id="status1" data-rule-required="true" /&gt; Canadian citizen&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div class="radio"&gt;
+				&lt;label for="status2"&gt;&lt;input type="radio" name="status" value="2" id="status2" /&gt; Permanent resident&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div class="radio"&gt;
+				&lt;label for="status3"&gt;&lt;input type="radio" name="status" value="3" id="status3" /&gt; Work permit&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div class="radio"&gt;
+				&lt;label for="status4"&gt;&lt;input type="radio" name="status" value="4" id="status4" /&gt; Other&lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/fieldset&gt;</code>
+																																																	</pre>
+																																																</details>
+																																																<input type="submit" value="Submit" class="btn btn-primary">
+																																																	<input type="reset" value="Reset page to defaults" class="btn btn-link btn-sm show p-0 mrgn-tp-md">
+</form>
+																																																</div>
+            <div id="def-preFooter">
+                <!-- Write closure fall-back static file -->
+                <div class="row pagedetails">
+                    <div class="col-sm-5 col-xs-12 datemod">
+                        <dl id="wb-dtmd">
+                            <dt>Date modified:&#32;</dt>
+                            <dd>
+                                <time property="dateModified">2020-03-31
+                                </time>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <!-- Write closure template -->
+            <script type="text/javascript">
+                var defPreFooter = document.getElementById("def-preFooter");
+                defPreFooter.outerHTML = wet.builder.preFooter({
+                cdnEnv: "prod",
+                dateModified: "2020-03-31",
+                showPostContent: true,
+                showFeedback: false,
+                showShare: false
+                });
+            </script>
+        </main>
+        <div id="def-footer">
+		
+	</div>
+	<!-- Write closure template -->
+	<script type="text/javascript">
+	var defFooter = document.getElementById("def-footer");
+	defFooter.outerHTML = wet.builder.footer({
+		cdnEnv: "prod",
+		"contextualFooter": {
+			"title": "Indigenous Services Canada",
+			"links": [{
+				"text": "Contact us",
+				"href": "/eng/1291132820288"
+			},
+			{
+				"text": "News",
+				"href": "https://www.canada.ca/en/news/advanced-news-search/news-results.html?_=1583265230614&dprtmnt=indigenousservicescanada&start=&end="
+			}]
+		}
+	});
+	</script>
+	<!-- Write closure template -->
+	<script type="text/javascript">
+		document.write(wet.builder.refFooter({
+			cdnEnv: "prod",
+		}));
+	</script>
+    </body>
+</html>
